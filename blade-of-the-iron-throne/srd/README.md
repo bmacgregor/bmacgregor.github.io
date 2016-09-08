@@ -1,3 +1,3 @@
 # Blade SRD
 
-A home for all the SRD files
+A home for all the SRD pages
