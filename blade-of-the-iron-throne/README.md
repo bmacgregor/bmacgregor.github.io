@@ -4,7 +4,7 @@ The rules (pretty much) as written, with some notable edits.  These include a re
 throughout the rules, fixing spelling and grammar mistakes (as well as adding my own), and trying to clean up the rules by 
 adding some addendum-type stuff.  Blade's a crunchy system, which is awesome, but at times can be difficult to understand.
 
-<rant>
+//<rant>
 
 The choice to mess with the pronouns stems from how the game's presented.  Yes, it's Sword & Sorcery, but the actual rule-book 
 features naked women on *every single page* which is both grating and awkward, especially if you're trying to read the book 
@@ -19,4 +19,4 @@ best, but then having a total lack of a female presence throughout feels skeezy 
 buy a copy of the rules for yourself where you don't have to deal with my semi-social justice warrior hangups and get all of the 
 naked ladies you could possibly want.  It just doesn't sit well with my group and me.
 
-</rant>
+//</rant>
