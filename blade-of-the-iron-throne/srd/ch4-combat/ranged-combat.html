@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ranged Combat</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Ranged Combat</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_MakingAnAttack">Making a Ranged Attack</a></li>
+					<li><a href="#P_RangeIncrements">Range Increments</a></li>
+					<li><a href="#P_Cover">Cover</a></li>
+					<li><a href="#P_RangedAttackZones">Ranged Attack Zones</a></li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li class="active"><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Ranged Combat Overview</p>
+			<p>In <em>Blade</em>, ranged combat can include attacks from a thrown rock to a steel-pronged crossbow and 
+			everything in between. Attacks may sometimes occur as a single, sniper-like shot with no chance for the target 
+			to react, but more frequently the attack will be launched into a melee, or will perhaps lead to a melee 
+			situation. Such attacks are rolled with dice from the Character’s Archery Pool, and consists of (Aim + Missile 
+			Proficiency).</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Ranged Combat (Continued)</p>
+			<p>For the latter case, ranged combat must be integrated with melee combat in order to give archers a place in 
+			the Order of Limelights. This spot in the Limelight sequence is determined exactly as if the archer was a melee 
+			combatant, with the same principles holding true for both participants.</p>
+			
+			<p>That is to say that sometimes, when it is clear who is going first (for example when an encounter is 
+			initiated by a crossbow bolt from an ambush), the Game Master will establish the Order of Limelights by calling 
+			Players in a logical order. However, in cases where the sequence is more random, Players will be called to play 
+			out their Characters’ Limelights in ascending order of Cunning, as described in the section on Limelights and 
+			the Combat Round.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MakingAnAttack">Making a Ranged Attack</p>
+			<p>During his Limelight, a Character intending to launch a missile attack can do so, provided he has the 
+			weapon at hand. There is no preparation, loading, or aiming times, as a Limelight is considered a span of 
+			time sufficient to accomplish a significant task, which includes firing a weapon, not merely preparing to fire 
+			it. As melee combatants move about during their own Limelights, distances and line of sight usually won't be 
+			apparent during the ranged combatant's Limelight. It's up to the Game Master to decide these things based upon 
+			common sense, the Players’ description of their Characters’ actions, and the scene’s dramatic requirements.</p>
+			
+			<p>If the Player of a missile combatant is not happy with the GM's judgement, she can have her character move 
+			into a more advantageous firing position. Such movement to get an unobstructed line of sight - or merely closer 
+			to the target - is accomplished with a Terrain Check made with dice from the character’s Archery Pool. The Game 
+			Master announces the Challenge Level to get to closer range or to achieve a free line of sight (rarely harder 
+			than Difficult - two successes - if even that). The Player then attempts to pass the Check using dice out of 
+			her Archery Pool, rolling any amount of dice desired.</p>
+			
+			<p>Success means that the Character achieves her objective, while failure signifies that she must either take 
+			the shot at a longer range, or has to contend with cover obscuring the target, and occasioanlly, she might have 
+			to deal with both circumstances (at a longer range <em>and</em> shooting past cover) – it never means that a 
+			shot is outright impossible. A Terrain Check can also be used when a missile combatant is charged by an enemy 
+			and must shoot her before being engaged in melee. In such cases, the Game Master decides the Challenge Level 
+			based on how close the charging party currently is, and how ready the missile combatant is to fire.</p>
+			
+			<p>Casting a spear that is ready in hand before being engaged shouldn't be harder than Average (one success), 
+			while spanning and discharging a heavy crossbow may be as difficult as Legendary (five successes), provided the 
+			attacker isn’t very far off. If both opponents are important Characters or NPCs, the Terrain Check is an 
+			Opposed one. The charging combatant declares how many dice out of his Melee Pool he is going to spend to engage 
+			<em>before</em> he can be fired at, and then the missile combatant declares the number of dice from his Archery 
+			Pool he is going to spend. Depending on the Game Master's appraisal of the situation (distance of the opponent 
+			versus the readiness of the missile weapon), one opponent will likely need a Quality of Success of just one to 
+			succeed, whereas the other may well need a higher Quality of Success.</p>
+			
+			<p>Whether the situation is handled by an Opposed Check or not, victory on the part of the missile combatant 
+			will mean that he gets a shot off at practically point blank range. Failure, however, signifies that he will 
+			be engaged before he can fire, and that the Combat Round immediately commences with the missile combatant’s 
+			initial Melee Pool reduced by the number of dice the ranged Character spent from his Archery Pool on the 
+			Terrain Check.</p>
+			
+			<p>If he was trying to throw a spear or similar weapon useful in close combat, he may opt to retain it in his 
+			hand, combat-ready. Otherwise, he is assumed to have realized that his attempt to shoot his opponent would not 
+			pan out, has dropped his missile weapon, and barely managed to whip out a melee weapon – if he has one.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_RangeIncrements">Range Increments</p>
+			<p>Range, like many aspects of <em>Blade</em> combat, is handled in an abstract way. First and foremost, it 
+			depends on the principle that the ultimate limitation to all range is human vision - it doesn’t matter that a 
+			heavy crossbow can launch a bolt over 300 yards if one can’t discern the target at such a distant range. Even 
+			missile weapons with theoretical maximum ranges as long as some bows and crossbows have realistic 
+			<em>practical</em> ranges that are only a fraction of that maximum. Extreme ranges are for wide-shooting 
+			contests and battlefield area-fire, not for taking down individual targets.</p>
+			
+			<p>Practical ranges vary from two to one-hundred meters, and are divided into Range Bands from Point Blank to 
+			Extreme. The actual distance each Range Band covers is different for each type of ranged weapon. Weapons that 
+			are thrown in such a way that they tumble while in the air (knives and hatchets) have the least range, while 
+			those that are cast to fly straight (spears and javelins) can achieve a middling range, and finally those that 
+			are launched (arrows, bolts and sling stones) travel the furthest.</p>
+			
+			<p>Each Range Band determines how easy or difficult it is to aim for a specific body part by governing how 
+			many dice from the Archery Pool must be spent for a single +/- 1 modifier on the following Table. The Target 
+			Zone of a ranged attack is determined randomly by rolling 2d6 on the Ranged Attack Zones table. That said, a 
+			missile combatant has some degree of control over the exact Target Zone, and can spend dice from her Archery 
+			Pool before rolling the attack.</p>
+			
+			<p>The number of dice needed to be spent for a single +/- 1 move on the Ranged Attack Zones table is listed in 
+			each range band found in the following table (Range Band Modifiers). Also note that at Point Blank range, the 
+			missile combatant receives a free modifier of +/- 2; if your target is right in front of you, you're not likely 
+			to aim either high or low. Apart from this free +/- 2, the cost for further modifiers is the same as Near 
+			range. This modifier does not have to be spent in full on the Ranged Attack Zones table; it can also be spent 
+			in part or not at all, depending on the Player’s wishes.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_RangeBandMods">Range Band Modifiers</p>
+			<table class="table table-striped table-hover" id="TBL_SurpriseLevels">
+				<thead>
+					<th>Range Types</th>
+					<th>Thrown Weapons</th>
+					<th>Cast Weapons</th>
+					<th>Launched Missiles</th>
+					<th>Cost for +/- 1 move</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Point Blank</td>
+						<td>Two Meters</td>
+						<td>Four Meters</td>
+						<td>Six Meters</td>
+						<td>Free +/- 2</td>
+					</tr>
+					<tr>
+						<td>Near</td>
+						<td>Four Meters</td>
+						<td>Eight Meters</td>
+						<td>Twelve Meters</td>
+						<td>One die</td>
+					</tr>
+					<tr>
+						<td>Medium</td>
+						<td>Eight Meters</td>
+						<td>Sixteen Meters</td>
+						<td>Twenty-four Meters</td>
+						<td>Two dice</td>
+					</tr>
+					<tr>
+						<td>Far</td>
+						<td>Fifteen Meters</td>
+						<td>Thirty Meters</td>
+						<td>Fifty Meters</td>
+						<td>Three dice</td>
+					</tr>
+					<tr>
+						<td>Extreme</td>
+						<td>Thirty Meters *</td>
+						<td>Sixty Meters *</td>
+						<td>One-hundred Meters +</td>
+						<td>Four dice</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p><strong>* Only hatchets and javelins can be thrown at Extreme range. Spears and daggers are limited to Far 
+			range. Shortbows, unlike other launched missile weapons, are also limited to Far range.</strong></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Cover">Cover</p>
+			<p>Cover can complicate a ranged attack. While some obstacles can be avoided by means of a Terrain Check, this 
+			isn't possible in all cases – no maneuvering in the world will do away with the cover given by a breastwork to 
+			defenders manning a wall. Soft cover that obstructs vision but doesn't completely block it, like foliage or a 
+			moving crowd of people, imparts a negative modifier to the Archery Pool.</p>
+			
+			<p>Depending on the GM’s judgement of how obscured the target is by soft cover, this modifier can range from –1 
+			to –3 per line on the Range Band Modifier table. The possible modifiers are therefore for example –1, 
+			–2, or –3 at Point Blank range (line one on the Range Band Modifier table), and –3, –6, and –9 at Medium range. 
+			It can range from a mild –1 for a target at Point Blank range past a single person moving through the line of 
+			sight, to a whopping –15 for a target at Extreme range that is made almost invisible by the densest of 
+			foliage.</p>
+			
+			<p>The rules for soft cover also apply if one wants to fire into an on-going melee and hit one combatant while 
+			avoiding the other, a difficult feat due to the unpredictable movements of both. In this case, the minimum 
+			penalty for soft cover (ex. –1 per line on the Range Band Modifier table, effectively –1 to –5) is used – and a 
+			Botch on the attack roll usually means a hit on a person the missile combatant doesn't want to hit.</p>
+			
+			<p>If that happens, the attack roll is repeated. The original penalty dice for firing into a melee still apply 
+			for this roll, but neither penalty dice for soft cover or any dice possibly set aside for buying modifiers 
+			on the Ranged Attack Zones table do. Any such penalty dice on the original roll are added to the new attack 
+			roll, and any hit resulting from this second roll applied to the new target. The exact attack location on the 
+			new target is determined randomly on the Ranged Attack Zones table with no modifiers to this roll.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_RangedCombat">
+				<p><em><strong>Example</strong>: Otho is throwing his dagger at Far range to aid his friend Galen in his 
+				melee against two opponents. Otho has an Archery Pool of 13. Four dice are subtracted for firing into a 
+				melee at Far range, and a further three dice for buying a +/– 1 modifier on the Ranged Attack Zones table. 
+				Otho Botches the attack roll with his remaining six dice, and has to reroll his attack, now with Galen as 
+				target. The four dice penalty for firing into a melee still applies, but the three dice traded in for a +/– 
+				1 modifier don’t; his Archery Pool is therefore 10.</p>
+				
+				<p>Should the attack hit, the damage location will be determined randomly on the Ranged Attack Zones table, 
+				without the +/– 1 modifier Otho had purchased for his original attack.</em></p>
+			</div>
+			
+			<br/>
+			
+			<p class="h4" id="P_RangedAttackZones">Ranged Attack Zones</p>
+			<table class="table table-striped table-hover" id="TBL_RangedAttackZones">
+				<thead>
+					<th>Roll</th>
+					<th>Location</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>Head (Area 13)</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Arm (Area 14, choose randomly)</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Arm (Area 14, choose randomly)</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Torso (Area 12)</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Torso (Area 12)</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Torso (Area 11)</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Torso (Area 10)</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Torso (Area 10)</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Upper Legs (Area 9, choose randomly)</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Upper Legs (Area 9, choose randomly)</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>Lower Legs (Area 8, choose randomly)</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Hard cover that cannot be fired through represents a more extreme problem for a missile combatant. If it 
+			can’t be circumvented to get a clear shot, the attacker will just have to take his chances by investing heavily 
+			into modifiers on the Ranged Attack Zones table and hope that this modifier is sufficient to hit a location 
+			which isn't covered.</p>
+			
+			<p>Defending against missile attacks is only possible against attacks that one is aware of. It is preferably 
+			done with a large shield, or alternatively by evading. Details on that process and its associated Target 
+			Numbers can be found in the section on defending.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
