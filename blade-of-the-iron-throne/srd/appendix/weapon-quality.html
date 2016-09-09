@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weapon Quality</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Weapon Quality</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_EnchantedWeapons">Enchanted Weapons</a></li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li class="active"><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li><a href="npcs.html">NPC's</a></li>
+							<li><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Weapon Quality</p>
+			<p>In <em>Blade</em>, different qualities of weapons are not handled with modifications to the weapons’ stats, 
+			but rather as situational modifiers that come into play when a weapon of better quality opposes one of lower 
+			quality. In such cases, the wielder of the better weapon receives a +1 bonus to his MP. This +1 is sufficient to 
+			cover basically all differences in weapon quality, but in those rare cases when the difference seems huge – as 
+			for instance in a master weapon smith’s steel sword opposing a bronze sword. In addition, the wielder of the 
+			lesser weapon can also be penalized with –1 die to his MP.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_EnchantedWeapons">Enchanted Weapons</p>
+			<p>In the Sword & Sorcery genre, magical weapons are exceedingly rare, and most campaigns of <em>Blade</em> could 
+			be played out without even a single enchanted weapon figuring in them; in any case, there rarely should ever be 
+			more than a single magic weapon per campaign.</p>
+			
+			<p>With enchanted weapons being so scarce, it should be clear that they cannot be treated as mere combat 
+			efficiency booster. No, magic weapons in <em>Blade</em> are artifacts with a purpose, of a stature on par with 
+			Stormbringer or Excalibur. The recommended way to handle such a powerful artifact is to provide it with its own 
+			individual Passion Attribute.</p>
+			
+			<p>At the beginning of every combat Round, the wielder of the weapon may choose whether to add the entire 
+			Passion score of the weapon to his MP, or but 1 point. If he decides to add the entire score, the weapon’s 
+			Passion rating will drop by 1 point, but if he decides to add but 1 point, the rating remains unchanged. Note 
+			also that some artifacts are sufficiently willful to withhold use of their full Passion Attribute if currently 
+			at cross purposes with the wielder; in that case, only 1 point can be added, period, until the weapon is once 
+			again mollified.</p>
+			
+			<p>How the weapon’s Passion Attribute is recharged depends on the purpose of the weapon. As a rule of the thumb, 
+			most weapons will regain 1 Passion point every time they slay or maim an opponent, 1 additional point if 
+			overcoming this opponent furthers the goal of the weapon, and 1-point every time the wielder does something 
+			that furthers the cause of the weapon. However, some rare artifacts may be willful enough to not only withhold 
+			their full benefits but to actually actively oppose their wielder. Such weapons can deduct 1 die from its 
+			wielder’s MP, but every time it does so, its Passion score drops by 1.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
