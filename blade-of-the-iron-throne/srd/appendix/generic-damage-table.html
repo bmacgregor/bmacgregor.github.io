@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generic Damage Table</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Generic Damage Table</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li class="active"><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li><a href="npcs.html">NPC's</a></li>
+							<li><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4" id="P_GenericTable">Generic Damage Table</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBLGenericTable">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Negligible</td>
+						<td>Slight</td>
+						<td>Minor</td>
+						<td>Substantial</td>
+						<td>Grevious</td>
+						<td>Catastrophic</td>
+					</tr>
+					<tr>
+						<td>See Chapter Five</td>
+						<td>See Chapter Five</td>
+						<td>
+							<p>Shock: 2</p>
+							<p>Pain: 2</p>
+						</td>
+						<td>
+							<p>Shock: 4</p>
+							<p>Pain: 4</p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 6</p>
+							<p>Pain: 6</p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 8</p>
+							<p>Pain: 8</p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 10</p>
+							<p>Pain: 10</p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 12</p>
+							<p>Pain: 12</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+						
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
