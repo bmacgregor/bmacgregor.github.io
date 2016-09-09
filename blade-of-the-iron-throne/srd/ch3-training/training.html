@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Training and Advancement</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Training and Advancement</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Buying and Raising Items : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Buying and Raising Statistics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Proficiencies">Proficiencies</a></li>
+							<li><a href="#P_Assets">Assets</a></li>
+							<li><a href="#P_Skills">Skills</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#P_Loot">Loot</a></li>
+					
+					<!-- Character Creation : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Training<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="training.html">Training and Advancement</a></li>
+							<li class="divider"></li>
+							<li><a href="assets.html">Assets</a></li>
+							<li><a href="proficiencies.html">Proficiencies</a></li>
+							<li><a href="proficiency-table.html">Proficiency Table</a></li>
+							<li><a href="skills.html">Skills</a></li>
+							<li><a href="skill-guide.html">Skill Guide</a></li>
+							<li class="divider"></li>
+							<li><a href="passion-attributes.html">Passion Attributes</a></li>
+							<li><a href="drama.html">Drama</a></li>
+							<li><a href="karma.html">Karma</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Character Progression</p>
+			<p>As your Character experiences new things, furthers his own goals, beliefs, and personal philosophies, he 
+			will also improve in many ways. There is no concept of Character “levels”, as each trait grows independently, 
+			allowing the entire Character to grow and change according to his Player’s wishes. All advancement comes from 
+			one source: constant effort in playing out and furthering one’s Passion Attributes.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Raising Basic Attributes</p>
+			<p>Any Attribute may be raised by spending Passion Attribute equal to three times its current score. Raising a 
+			character’s “Focus” Attribute costs 1 point less. No Attribute may be increased by more than one point per 
+			session.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Proficiencies">Buying and Raising Proficiencies</p>
+			<p>Proficiencies are easier to raise than Attributes, but require that a Character either spend some time 
+			training or using the Proficiency during the course of play. Not much training is needed, assuming the 
+			Character has an hour or so a day to spend practicing. </p>
+			
+			<p>To raise a Proficiency by one level, spend a number of Passion Attribute points equal to twice the current 
+			Proficiency level. The cost to raise the Greatsword Proficiency from four to five would be eight Passion 
+			Points. As with Attributes, only one level increase per Proficiency is allowed during any one game session.</p>
+			
+			<p>Acquiring a new Proficiency requires either that the Proficiency has been used during the course of play 
+			or that a teacher with Proficiency level three or better was consulted. These cost a single Passion point. 
+			Entirely new Proficiencies are bought up from the Character’s best default rating in that Proficiency. Buying 
+			Cut & Thrust would cost one point to begin at level one, but if the Character is already proficient in 
+			Greatsword (which defaults to Cut & Thrust at -3) you could buy the new Proficiency as if you were already at 
+			the same level as Greatsword -3.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Assets">Buying and Raising Assets</p>
+			<p>Some Assets may be bought (or bought off) during the game, provided that these developments seem plausible to 
+			the group. Acquiring an entirely new Good Asset or buying off a Poor Asset <em>acquired from the Culture 
+			Priority Pick</em> costs twenty Passion. Otherwise, buying off a Poor Asset or acquiring the Good aspect of an 
+			Asset which the Character already has the Poor aspect costs fifteen Passion.</p>
+			
+			<p>With some Assets, for example Berserk and Spell-Gifted, it does not make sense to have both their Good and 
+			Poor aspects simultaneously. If a Character has the Poor aspect of one and buys it off, she can never acquire 
+			its Good aspect. If she has designs of changing such an Asset’s Poor aspect into the Good one, she first must 
+			purchase the Good aspect and <em>then</em> buy off the Poor aspect. For as long as she has not bought off the 
+			Poor aspect, it applies in full and she will not receive the benefits from the purchased Good aspect.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Skills">Buying and Raising Skills</p>
+			<p>Skills are easy to develop. To raise a Skill by one level, spend a number of Passion Attribute points equal 
+			to the current Skill level. Entirely new Skills may be purchased for one Passion Attribute point, and begin at 
+			level one. Keep in mind that when purchasing a new Skill at a level lower than the rating the Character has in 
+			that Skill’s applicable Attribute (as listed in the Skill’s description), it will cost one point less than the 
+			Attribute’s rating, though always at least one point.</p>
+			
+			<p>Finally, improving one’s Skill rating in either the Ancient Languages or Foreign Language Skill costs one 
+			less Passion point than would otherwise be charged, though again a minimum of one point must be spent. 
+			Furthermore, the initial Passion point expended towards the acquisition of an entirely new Foreign Language 
+			(though not Ancient Language) Skill immediately buys an initial rating level of two, not one.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Loot">Loot</p>
+			<p>The Loot rating measures a Character’s wealth. Every point in it represents an abstract amount of 
+			affluence. In concrete terms, every point of Loot represents roughly ten times the wealth of the level below 
+			it. This encompasses a Character’s total wealth in money, as well as both movable and immovable goods.</p>
+			
+			<ul>
+				<li>0 : Dead broke. Just the shabby or torn (and thus worthless) clothes on your back</li>
+				<li>1 : Poor. A set of clothes, some coin, or a few items</li>
+				<li>2 : Average. The normal amount of wealth for a commoner</li>
+				<li>3 : Rich. Fashionable clothes and spending money</li>
+				<li>4 : Filthy Rich. Accompianied by servants, lower nobility</li>
+				<li>5 : Fantastically Rich. Titled nobility such as Kings, Lords, Queens, and Ladies</li>
+			</ul>
+			
+			<p>If a Character wants to buy something, the Game Master judges whether his Loot score suggests that he should 
+			be able to afford it or not. If the purchase seems within the Character’s means, he can buy it. If it’s judged 
+			to be well beyond it, he can’t.</p>
+			
+			<p>If the issue seems questionable, the Character’s Cunning pool is rolled against either a Challenging (two 
+			successes) or Difficult (three successes) task. If the Check is successful, the Character can make the 
+			purchase, but he can’t afford to make another purchase that would require a roll for the remainder of the 
+			session.</p>
+			
+			<p>A newly created Character’s Loot is set at any level the Player wants, provided it corresponds to the 
+			Character’s backstory and the circumstances under which she commences play. The entire group is the communal 
+			arbitrator of whether an assigned Loot score is reasonable or not.</p>
+			
+			<p>When a Character acquires money or valuables of a magnitude that suggests an increase to her current Loot, 
+			her rating is increased automatically, provided the wealth gained is judged to be clearly many times greater 
+			than the Character’s current means. If it is merely deemed to be considerably greater, the Character should 
+			make a Cunning Check with her possible new Loot rating as the Challenge Level. If she passes the test, her Loot 
+			rating increases.</p>
+			
+			<p>Sword & Sorcery protagonists are notoriously bad at hanging on to money, either because they spend 
+			fistfuls of it on drink, wenching, gambling, and other forms of hard carousing, or because they simply don’t 
+			seem to care much about keeping their accounts balanced. Because of this, a Character’s Loot rating is 
+			decreased by one between game sessions, provided that a considerable amount of time has passed since the last 
+			session.</p>
+			
+			<p>Players can avoid having their Loot levels deteriorate if they pass a Check of their Character’s Cunning 
+			with a Challenge Level of (5 – current Loot level). Passion Attributes don’t apply to this roll, but Drama can 
+			be spent in the usual manner. What constitutes a sufficient span of time for Loot to decrease due to spending 
+			depends on the circumstances in which this time is passed. In a city, a week is sufficient, but in a remote 
+			monastery or some such, several months could pass before a roll might become necessary.</p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
