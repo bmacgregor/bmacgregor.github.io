@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karma</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Karma</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Character Creation : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Training<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="training.html">Training and Advancement</a></li>
+							<li class="divider"></li>
+							<li><a href="assets.html">Assets</a></li>
+							<li><a href="proficiencies.html">Proficiencies</a></li>
+							<li><a href="proficiency-table.html">Proficiency Table</a></li>
+							<li><a href="skills.html">Skills</a></li>
+							<li><a href="skill-guide.html">Skill Guide</a></li>
+							<li class="divider"></li>
+							<li><a href="passion-attributes.html">Passion Attributes</a></li>
+							<li><a href="drama.html">Drama</a></li>
+							<li class="active"><a href="karma.html">Karma</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Karma</p>
+			<p>A special aspect of spending Passion Attribute points is Karma. One point of Karma is gained every time you 
+			spend a Passion point. These points come into play after your Character dies or leaves the game, allowing you 
+			to build a stronger Character.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4" id="P_Karma"></p>
+			
+			
+			<p>When you are creating a new Character (whether the last one died or was simply “retired”), the Player may 
+			spend any number of his Karma points for better choices on the Talent Table, as shown on the following table.</p>
+			
+			<p class="h4">Karma Rewards</p>
+			<table class="table table-striped table-hover" id="TBL_KarmaRewards">
+				<thead>
+					<th>Karma</th>
+					<th>Bonus Priorities</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>11 - 30</td>
+						<td>E</td>
+					</tr>
+					<tr>
+						<td>31 - 50</td>
+						<td>D</td>
+					</tr>
+					<tr>
+						<td>51 - 70</td>
+						<td>C</td>
+					</tr>
+					<tr>
+						<td>71 - 90</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>91 - 110</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>111 - 130</td>
+						<td>A, C</td>
+					</tr>
+					<tr>
+						<td>131 - 150</td>
+						<td>A, B</td>
+					</tr>
+					<tr>
+						<td>151 - 170</td>
+						<td>A, A</td>
+					</tr>
+					<tr>
+						<td>171 - 190</td>
+						<td>A, A, C</td>
+					</tr>
+					<tr>
+						<td>191 - 210</td>
+						<td>A, A, B</td>
+					</tr>
+					<tr>
+						<td>211+</td>
+						<td>A, A, A</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Higher Karma grants additional Priorities for Character creation. Thus, instead of one Priority A, B, C and 
+			so on, you might begin with one Priority A, two Priority B’s, one C, D and so on. Karma is earned and amassed 
+			by the <em>Player</em>, rather than the Character. Players can spend (or hoard) Karma across over several 
+			Characters. If the Character dies or retires permanently and the player creates another Character, even for a 
+			different campaign, he can spend part or all of his Karma to create a new and better Character. Karma that the 
+			player does not spend is retained by him, and noted on the appropriate space of the new Character’s sheet.</p>
+			
+			<p>Karma is also earned by the Game Master, most likely in greater quantity than any other Player in his group.
+			Every session, the GM receives Karma points equal to the Player who gained the most Karma during the session. 
+			These points act as a safeguard against the Game Master being left behind, should he one day become a Player 
+			himself. He can then use his amassed Karma to create a stronger character, just as his former Players did, who 
+			earned Karma while he was directing the game.</p>
+			
+			<br/>
+			
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
