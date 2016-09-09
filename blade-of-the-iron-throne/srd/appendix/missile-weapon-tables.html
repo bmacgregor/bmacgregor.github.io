@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Missile Weapon Tables</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Ranged Weapon Tables</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Thrown Weapons : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Thrown Weapons<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_THROWN_Dagger">Dagger</a></li>
+							<li><a href="#P_THROWN_Hatchet">Hatchet</a></li>
+							<li><a href="#P_THROWN_Javelin">Javelin</a></li>
+							<li><a href="#P_THROWN_Sling">Sling</a></li>
+							<li><a href="#P_THROWN_Spear">Spear</a></li>
+						</ul>
+					</li>
+					
+					<!-- Bows : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Bows<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Bows">Bow Overview</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BOW_Bow">Bow</a></li>
+							<li><a href="#P_BOW_CompositeBow">Composite Bow</a></li>
+							<li><a href="#P_BOW_Longbow">Longbow</a></li>
+							<li><a href="#P_BOW_Shortbow">Shortbow</a></li>
+						</ul>
+					</li>
+					
+					<!-- Crossbows : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Crossbows<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Crossbows">Crossbow Overview</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_CROSS_Arbalest">Arbalest</a></li>
+							<li><a href="#P_CROSS_HeavyCrossbow">Heavy Crossbow</a></li>
+							<li><a href="#P_CROSS_LightCrossbow">Light Crossbow</a></li>
+						</ul>
+					</li>
+					
+					<!-- Black Powder Weapons : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Black Powder Weapons<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_BlackPowderWeapons">Black Powder Weapons Overview</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BLK_Arquebus">Arquebus</a></li>
+							<li><a href="#P_BLK_Handgun">Handgun</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li class="active"><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li><a href="npcs.html">NPC's</a></li>
+							<li><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h3" id="P_Brawling">Thrown Weapons</p>
+			
+			<p class="h4" id="P_THROWN_Dagger">Dagger</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Dagger">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>n/a</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Daggers cannot attain extreme range.</p>
+			<p>The dagger thrown to deadly effect is a mainstay of the Sword & Sorcery genre, and the stats reflect this. 
+			We strongly recommend that you use those stats for your game of Blade, but if you really can’t bring yourself 
+			to cater to this cliché, you can tone down the thrown dagger by changing its Damage Rating to –1.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_THROWN_Hatchet">Hatchet</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Hatchet">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Hatchets cause Cleaving damage.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_THROWN_Javelin">Javelin</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Javelin">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_THROWN_Sling">Sling</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Sling">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Does not use half firer’s BN for damage calculation but one third BN instead. As always, round up fractions 
+			of 0.50 and above.</p>
+			<p>Additional +1 Damage Rating against armor.</p>
+			<p>Additional +1 Shock on any wound.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_THROWN_Spear">Spear</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Spear">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>n/a</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Spears cannot attain extreme range.</p>
+			
+			<hr/>
+						
+			<p class="h3" id="P_Bows">Bows</p>
+			<p>All bows have a BN Attribute of their own, one related to their individual draw weight. Half of this BN is 
+			used to calculate damage instead of half the user’s BN. Nobody can use a bow possessing a higher BN rating than 
+			he himself possesses. Maximum BN possible for shortbows is 4, for bows 5, and for longbows and composite bows 
+			6.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BOW_Bow">Bow</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Shortbow">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BOW_CompositeBow">Composite Bow</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Longbow">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Damage Rating for composite bows against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BOW_Longbow">Longbow</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Longbow">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Damage Rating for longbows against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BOW_Shortbow">Shortbow</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Shortbow">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>n/a</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Shortbows cannot attain extreme range.</p>
+			
+			<hr/>
+			
+			<p class="h3" id="P_Crossbows">Crossbows</p>
+			<p>Crossbow damage is not affected by the wielder’s BN. Damage is calculated using only QoS + DR.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CROSS_Arbalest">Arbalest</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Arbalest">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+6</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +4 Damage Rating for arbalest against armor; this bonus cannot exceed the armour’s Armor 
+			Value.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CROSS_HeavyCrossbow">Heavy Crossbow</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_HeavyCrossbow">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+5</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +2 Damage Rating for heavy crossbow against armor; this bonus cannot exceed the armour’s Armor 
+			Value.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CROSS_LightCrossbow">Light Crossbow</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_LightCrossbow">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Damage Rating for light crossbow against armor.</p>
+			
+			<hr/>
+			
+			<p class="h3" id="P_BlackPowderWeapons">Black Powder Weapons</p>
+			<p>Handgun and arquebus damage are not affected by the wielder’s BN. Damage is calculated using only QoS + 
+			DR.</p>
+			<p>Damage is Piercing.</p>
+			<p>Additional +1 Damage Rating against armor.</p>
+			<p>Additional Shock equal to half the Wound Level inflicted (round up).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BLK_Arquebus">Arquebus</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Arquebus">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>+6</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BLK_Handgun">Handgun</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Handgun">
+				<thead>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+					<th>Extreme Target Number</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>11</td>
+						<td>+4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
