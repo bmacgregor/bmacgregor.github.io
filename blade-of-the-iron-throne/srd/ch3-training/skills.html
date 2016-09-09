@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blade SRD Skills</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Skills</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- A to C : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Skills : A to C<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Acting">Acting (HT)</a></li>
+							<li><a href="#P_AncLanguages">Ancient Languages (SY)</a></li>
+							<li><a href="#P_AniKen">Animal Ken (HT)</a></li>
+							<li><a href="#P_Apothecary">Apothecary (SY)</a></li>
+							<li><a href="#P_BattleTactics">Battlefield Tactics (SY)</a></li>
+							<li><a href="#P_Climbing">Climbing (DG)</a></li>
+							<li><a href="#P_Customs">Customs (HT)</a></li>
+						</ul>
+					</li>
+					
+					<!-- D to F : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Skills : D to F<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Dancing">Dancing (DG)</a></li>
+							<li><a href="#P_Decipher">Decipher (SY)</a></li>
+							<li><a href="#P_DetectSorc">Detect Sorcery (CG)</a></li>
+							<li><a href="#P_Disguise">Disguise (CG)</a></li>
+							<li><a href="#P_Etiquette">Etiquette (HT)</a></li>
+							<li><a href="#P_Falsehood">Falsehood (HT / SY)</a></li>
+							<li><a href="#P_FrgnLanguages">Foreign Languages (SY)</a></li>
+						</ul>
+					</li>
+					
+					<!-- H to N : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Skills : H to N<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Healing">Healing (SY)</a></li>
+							<li><a href="#P_InfoGather">Information Gathering (HT)</a></li>
+							<li><a href="#P_LightStep">Light Step (CG)</a></li>
+							<li><a href="#P_LockPick">Lock Picking (CG)</a></li>
+							<li><a href="#P_Music">Music (HT)</a></li>
+							<li><a href="#P_Navigation">Navigation (TY)</a></li>
+							<li><a href="#P_Negotiation">Negotiation (HT)</a></li>
+						</ul>
+					</li>
+					
+					<!-- O to R : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Skills : O to R<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Occultism">Occultism (SY)</a></li>
+							<li><a href="#P_OmenReading">Omen Reading (HT)</a></li>
+							<li><a href="#P_PickPockets">Pick Pockets (CG)</a></li>
+							<li><a href="#P_Precog">Precognition (CG)</a></li>
+							<li><a href="#P_Riding">Riding (DG)</a></li>
+						</ul>
+					</li>
+					
+					<!-- S to T : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Skills : S to T<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Seamanship">Seamanship (TY)</a></li>
+							<li><a href="#P_Seduction">Seduction (HT)</a></li>
+							<li><a href="#P_Sneaking">Sneaking (CG)</a></li>
+							<li><a href="#P_Soldiering">Soldiering (TY)</a></li>
+							<li><a href="#P_Survival">Survival (CG)</a></li>
+							<li><a href="#P_Swimming">Swimming (DG)</a></li>
+							<li><a href="#P_Theology">Theology (SY)</a></li>
+							<li><a href="#P_Tracking">Tracking (CG)</a></li>
+							<li><a href="#P_Trailing">Trailing (CG)</a></li>
+							<li><a href="#P_Trapping">Trapping (CG)</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#P_MoreSkills">More Skills?</a></li>
+					
+					<!-- Character Creation : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Training<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="training.html">Training and Advancement</a></li>
+							<li class="divider"></li>
+							<li><a href="assets.html">Assets</a></li>
+							<li><a href="proficiencies.html">Proficiencies</a></li>
+							<li><a href="proficiency-table.html">Proficiency Table</a></li>
+							<li class="active"><a href="skills.html">Skills</a></li>
+							<li><a href="skill-guide.html">Skill Guide</a></li>
+							<li class="divider"></li>
+							<li><a href="passion-attributes.html">Passion Attributes</a></li>
+							<li><a href="drama.html">Drama</a></li>
+							<li><a href="karma.html">Karma</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Skills Overview</p>
+			<p>Skills are specialized bits of knowledge that a character can learn and eventually master. They are more 
+			specific applications of an Attribute. For example, Trapping is a more specific use of a Character’s Cunning. 
+			Skills are areas of expertise that are not necessarily common to every living creature - some creatures simply 
+			don’t have the capacity to learn certain Skills. Initially purchased with Skill points and chosen according to 
+			the Player’s particular interest, Characters learn their Skills through instruction or experience.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Skill Descriptions</p>
+			<p>As this Skill list includes broad definitions not applicable to all settings for which <em>Blade</em> could 
+			be used, the Game Master has the final say on actual Skill applications. Skills are described with the 
+			Attribute with which they are most commonly associated.</p>
+			
+			<hr/>
+			
+			<p class="h3">A</p>
+			
+			<p class="h4" id="P_Acting">Acting (Heart)</p>
+			<p>The Character is skilled in all aspects of stage acting in front of crowds. Memorizing lines, voice 
+			projection, body control, and mimicry are all within the range of the normal use of this Skill. A Character may 
+			be required to make Checks when putting on an important show, in front of a large crowd, or if required to 
+			speak difficult lines. The Character can accurately mimic the voice of any given individual that he has heard 
+			speak at least once.</p>
+			
+			<p>Without the Disguise Skill, this can be useful when shouting or speaking to another person from behind a 
+			door or out of sight. When combined with Disguise, Acting can be used to play the part of a specific person. 
+			In this case, only the worse of the two Skills is checked during the interaction, not both.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_AncLanguages">Ancient Languages (Sagacity)</p>
+			<p>This Skill provides the ability to read, write, and eventually speak one chosen language from a long ago, 
+			lost civilization. Ancient Languages can only be used to learn languages from the past that are not typically 
+			spoken in the Character’s modern world. The Character’s ability with this Skill is directly related to its 
+			level.</p>
+			
+			<p>At levels 1-3, the Character can recognize common written glyphs and symbols in the language. As the Skill's 
+			level increases, she gains an understanding of progressively more obscure elements of the language.</p>
+			
+			<p>At levels 4-6, she can begin to surmise how the ancient language was spoken, based on her knowledge of the 
+			language and later languages developed from it.</p>
+			
+			<p>By levels 7-9, she can speak the language with fluency and flair. Literacy is a prerequisite for this Skill. 
+			At Character creation, every Skill point invested into Ancient Languages buys two points in a specific Ancient 
+			Language.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_AniKen">Animal Ken (Heart)</p>
+			<p>A Character with Animal Ken is particularly keen on determining the drive, desires, demeanor, and feelings 
+			of an animal. To use this Skill, the Character must observe a creature for a few minutes, and then roll a Skill 
+			Check. If successful, the Character can sense something about the creature’s current motivation, desires, or 
+			the specifics of its emotional state. Additional information may be gained through further Skill Checks.</p>
+			
+			<p>This Skill is useful when attempting to train animals, however, it can only be used to teach an animal 
+			something it is able to perform, within the constraints of its intelligence level and body shape.</p>
+			
+			<p>Tricks might include searching out or tracking specific prey, retrieving objects, guarding others or an 
+			area, reacting in specific ways to symbols or hand motions, returning home from any location, attacking or 
+			retreating on command, walking with a particular gait, and many more.</p>
+			
+			<p>This Skill can also be used to affect the creature’s overall behavior - perhaps to make it more passive or 
+			more aggressive than it normally would be, for example. </p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Apothecary">Apothecary (Sagacity)</p>
+			<p>Throughout history, different cultures have devised remedies for a wide range of ailments. The Character 
+			with an Apothecary skill is able to create non-magical, medicinal drugs from plants, minerals, and animal 
+			parts. These medicines’ benefits are not instant; efficacy may take between minutes and several hours. They may 
+			carry side effects, especially when they are potent.</p>
+			
+			<p>This skill includes the study of poisons, their effects and detection, and the treatment of poisoned 
+			individuals. The Character can diagnose a poisoned Character and recommend an antidote or treatment if he can 
+			identify the symptoms and the source of the poison, or if he has a sample of the poison itself.</p>
+			
+			<p>A successful Skill Check allows the creation of medicines, poisons, or antidotes from ingredients at hand. 
+			Note that while this skill provides the knowledge of how to prepare ingredients to make medicines, poisons, 
+			and antidotes, it does not provide the Character with the ability to find the ingredients in the wild, which 
+			is an application of the Survival Skill.</p>
+			
+			<hr>
+			
+			<p class="h3">B</p>
+			
+			<p class="h4" id="P_BattleTactics">Battlefield Tactics (Sagacity)</p>
+			<p>This Skill gives a Character the savvy to move troops and resources into optimal battle-field position. She 
+			knows when and where to fight to make the most of her available troops and resources, taking advantage of 
+			terrain and weather. This allows an experienced tactician to fight large-scale battles with fewer soldiers than 
+			an opponent with a reasonable chance of success.</p>
+			
+			<p>With knowledge of the battlefield and the standard tactics of her opponent, the Character will spend a few 
+			minutes with her comrades, explaining the tactics to be employed in the upcoming battle. This discussion must 
+			take place within two hours of battle. She then makes an opposed Battlefield Tactics Check against the enemies’ 
+			commander. If successful, all comrades that received the instructions gain a –1 Target Number modifier to all 
+			Soldiering Checks made during that combat.</p>
+			
+			<hr/>
+			
+			<p class="h3">C</p>
+			
+			<p class="h4" id="P_Climbing">Climbing (Daring)</p>
+			<p>This Skill provides a Character with the ability to climb many types of vertical surfaces. The number of 
+			successful Climbing Checks needed to complete a task may vary, and especially long climbs may require a 
+			string of Checks. In this case each single Skill Check should represent a real and tangible benefit, like a 
+			concrete leg of the trek being completed, not just some distance climbed.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Customs">Customs (Heart)</p>
+			<p>This Skill provides an understanding of other cultures’ customs. A Character does not risk of offending 
+			people from a known culture, and is adept at quickly recognizing and reacting to the customs of newly 
+			encountered cultures. This differs from Etiquette in that Etiquette only provides knowledge of the social 
+			intricacies of the elite, whereas Customs is equally effective across all portions of a population. Customs 
+			cannot be used to duplicate the effects of Etiquette, so a Character with Customs - but without Etiquette - 
+			could not appear as one of the aristocracy.</p>
+			
+			<hr/>
+			
+			<p class="h3">D</p>
+			
+			<p class="h4" id="P_Dancing">Dancing (Daring)</p>
+			<p>The Character knows the artistry of dancing, and is trained in the art of performing in front of an 
+			audience. The Character is well versed in all the popular dances of the time, including those with complex or 
+			detailed steps. He is also adept at picking up new dances, and can create his own which may become popular.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Decipher">Decipher (Sagacity)</p>
+			<p>This Skill provides the ability to decipher unknown written words, codes or glyphs. When faced with an 
+			unknown text, a Character uses this Skill to appraise the frequency and patterns of certain symbols, and to 
+			come up with theories of what she believes the communication to hold.</p>
+			
+			<p>This time consuming process could take several minutes or several months, depending upon the length of the 
+			text. It should be noted that while Decipher can be used to interpret any text, including unknown languages, 
+			the process for reading such a text is much longer than it would be with any of the language Skills, and it 
+			does not result in any improved knowledge of the language.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DetectSorc">Detect Sorcery (Cunning)</p>
+			<p>Successful use of this Skill allows a Character to detect the presence and effects of sorcerous spells and 
+			the eldritch energies that are emitted by all sorcerous objects and supernatural beings. She is also, using the 
+			Scrying Lesser Mystery, able to detect a disembodied consciousness. However, this Skill is not sensitive enough 
+			for awareness of spells or effects once they have worn off.</p>
+			
+			<p>Sorcery can be detected casually, even in passing, although detection is easier if a Character touches an 
+			object and concentrates for a full Limelight. During that time, a single object or the Character’s immediate 
+			vicinity (to about 3 meters) can be examined.</p>
+			
+			<p>To detect sorcery in a single object or being, one Success is usually sufficient, providing the Character 
+			touches it and concentrates. Two Successes are required if she actively examines it without touching it.</p>
+			
+			<p>Detecting sorcery by chance - simply touching an object without actively looking for sorcerous energies - 
+			requires three Successes. For detection of sorcery in the vicinity, two Successes will alert a Character to the 
+			presence of sorcerous energies. Three Successes will locate their approximate source, and four Successes will 
+			accurately pinpoint the origin as long as the Character uses the Skill actively. To notice sorcery in passing 
+			requires one additional Success.</p>
+			
+			<p>This Skill is especially sensitive to the presence of any disembodied consciousness’ using the Scrying 
+			Lesser Mystery. These presences can be noticed at a distance of up to twn meters, and one less Success is 
+			required than for detection of sorcery. In other words one to three successes if one uses the Skill actively, 
+			or two to four successes if using it passively. If enough Successes are achieved to pinpoint the origin of this 
+			supernatural effect (ex. three or four), the Character does not just feel the disembodied presence; she 
+			actually sees it.</p>
+			
+			<p>Especially faint or strong manifestations of sorcerous energies may require one or more additional or 
+			fewer Successes than given in the guidelines above.</p>
+			
+			<p><em><strong>This Skill is available only to characters created with Talent Table “Sorcery” choices of 
+			A-C.</strong></em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Disguise">Disguise (Cunning)</p>
+			<p>This Skill endows a Character with the ability to transform himself or someone else. A basic Check allows 
+			the Character to appear different from his current self with changes of hair, clothing, sex, or social class, 
+			along with measurable changes such as weight and height. When combined with Acting, Disguise can be used to 
+			play the part of a specific person. To do this, all Skill Checks must be successful. In this situation, only 
+			the worse of the two Skills need be checked during the interaction, not both.</p>
+			
+			<hr/>
+			
+			<p class="h3">E</p>
+			
+			<p class="h4" id="P_Etiquette">Etiquette (Heart)</p>
+			<p>The Character understands the social intricacies of encounters with the elite. She knows what to talk about 
+			(and what not to), how to greet others, which utensils to use when eating and how these should be held, which 
+			dance steps are in vogue, and any number of other verbal and non-verbal upper-class courtesies. With the 
+			Customs skill, but without Etiquette, one might pass as a member of another culture, but not as one of their 
+			aristocracy.</p>
+			
+			<hr/>
+			
+			<p class="h3">F</p>
+			
+			<p class="h4" id="P_Falsehood">Falsehood (Heart / Sagacity)</p>
+			<p>Characters may use this Skill to tell lies (Heart), or to detect lies (Sagacity) and resist the detection 
+			of their own lies (Heart). Success is automatic unless the lie is outlandish enough for listeners to become 
+			suspicious. Such a case would require a Falsehood vs. Falsehood Check. Should the target not possess the 
+			Falsehood Skill, he would employ Sagacity with twice the number of needed successes. Studying the various 
+			forms of dishonesty, one becomes necessarily both doubtful of people’s honesty and adept at behaving in a 
+			controlled way so as to give nothing away.</p>
+			
+			<p>When somebody proficient in Falsehood tells the truth and is suspected otherwise, as lying has become 
+			second nature to him, he must use his Falsehood Skill and score <em>twice</em> the usual number of successes 
+			required in order to overcome the doubts of the listener. Should the Check be tied or fails, he is automatically 
+			considered to be lying.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_FrgnLanguages">Foreign Languages (Sagacity)</p>
+			<p>This Skill provides a Character the ability to speak one chosen non-native language that is in current 
+			use in her world. The level of the Skill determines the extent of her knowledge. Thus, a Character with a 
+			level of one to three would be able to speak like a person who has arrived in a new country, and be able to 
+			read everyday signs about town.</p>
+			
+			<p>Those with the Skill at the level of seven to nine have the vocabulary of a highly intelligent scholar or 
+			writer. At Character creation, every Skill point invested into a Foreign Language Skill buys two points in that 
+			language.</p>
+			
+			<hr/>
+			
+			<p class="h3">H</p>
+			
+			<p class="h4" id="P_Healing">Healing (Sagacity)</p>
+			<p>In the event of injury, illness or disease, the Healing Skill endows a Character with an understanding of 
+			medical procedures and medicines to help himself and others. (Note that the creation of medicines and 
+			poisons, or the neutralizing of poisons requires the Apothecary Skill.)</p>
+			
+			<p>One of the most important uses of the Healing Skill is First Aid. When an injury occurs, if a successful 
+			Healing Check is performed within an hour, the patient regains one Pain point per success against the wound 
+			being tended.</p>
+			
+			<p>Healing can also be used to provide continuing care to an injured patient. When a Character rolls his weekly 
+			Tenacity Check to determine if he has shed Pain points, a Character with the Healing Skill can tend to him, 
+			rolling his own Healing Skill Check just prior to the injured Character’s Tenacity Check. If the Healing Check 
+			is successful, the injured character gains one bonus success for his Tenacity Check for each success scored in 
+			the Healer’s Check.</p>
+			
+			<hr/>
+			
+			<p class="h3">I</p>
+			
+			<p class="h4" id="P_InfoGather">Information Gathering (Heart)</p>
+			<p>A Character with this Skill is adept at tracking down the answers to questions and mysteries by finding 
+			the right person to talk to. Usually in a public location - perhaps a bar or a shop - the Character is led step 
+			by step to the information she seeks through conversation, purchasing goods, or making small bribes.</p>
+			
+			<p>The Character should be smart about how she asks questions, especially when she is seeking information about 
+			a powerful person that has a lot of influence in the area. It may require several steps, each with a Check of 
+			its own, and each with its own role-playing opportunity. </p>
+			
+			<p>Penalties may be applied to the Checks if the Character is speaking to someone who may be reluctant to 
+			reveal information. </p>
+			
+			<hr/>
+			
+			<p class="h3">L</p>
+			
+			<p class="h4" id="P_LightStep">Light Step (Cunning)</p>
+			<p>A Character can use this Skill to place less pressure upon any surface on which he steps. This allows him 
+			to leave no tracks in mud or snow, or even to walk across short distances of liquid. If a trap were to be 
+			triggered by a pressure plate, this Skill could be used to move across it without incident.</p>
+			
+			<p>In all cases, the Character must move briskly while using Light Step. <em>Attributes can never be used to 
+			stand in for a Check of this Skill. If a Character isn’t explicitly trained in its use, he cannot attempt 
+			it.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LockPick">Lock Picking (Cunning)</p>
+			<p>A Character with this Skill is able to pick or disable locks. Generally, two tools are needed to pick a 
+			lock: a flat-headed implement (called a “tension wrench”) used to turn the lock, and a pointed tool (the 
+			“pick”) used to manipulate the pins inside the lock. These can be makeshift versions, but without tools of some 
+			type, the Character cannot use this Skill to open a mechanical lock.</p>
+			
+			<p>This Skill can also be used to disable other kinds of locks, including bars and latches on the opposite 
+			side of the door, as long as some crack in or around the door is accessible. </p>
+			
+			<p>Most locks are Average (one success) to pick, if proper tools are at hand. Quality locks, lack of tools, 
+			or adverse conditions will increase this difficulty.</p>
+			
+			<hr/>
+			
+			<p class="h3">M</p>
+			
+			<p class="h4" id="P_Music">Music (Heart)</p>
+			<p>The Character is skilled at singing or playing a particular type of musical instrument. Those with a higher 
+			Skill rating can perform more complex music. A Character may be required to make Checks when putting on an 
+			important show in front of a significant audience, or when required to perform an especially difficult piece 
+			of music.</p>
+			
+			<hr/>
+			
+			<p class="h3">N</p>
+			
+			<p class="h4" id="P_Navigation">Navigation (Tenacity)</p>
+			<p>Navigation is the process of monitoring and controlling the movement of a ship from one place to another. 
+			It is also the term used for the specialized knowledge used to perform navigational tasks, which involve 
+			locating the navigator’s position in conjunction to known locations.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Negotiation">Negotiation (Heart)</p>
+			<p>The Character with this Skill understands the procedures and tactics of negotiations between people, 
+			groups, and states. In practice, a Check should be attempted at key points in a negotiation or diplomatic 
+			encounter. Success means the encounter turns favorably for the Character. Failure means that the Character 
+			may need to give some concessions. Depending upon the importance of the issues and the stubbornness of her 
+			adversary, the exchange could go on lengthily with many Checks.</p>
+			
+			<p>If a Character has occasion to properly assess her opponent’s weaknesses, she gains up to a –2 modifier to 
+			the pertinent Negotiation Checks. Such assessment may require roleplaying and the use of any number of Skills 
+			like Information Gathering, Falsehood, or many possible others.</p>
+			
+			<hr/>
+			
+			<p class="h3">O</p>
+			
+			<p class="h4" id="P_Occultism">Occultism (Sagacity)</p>
+			<p>This is the knowledge of the arcane, the supernatural and the sorcerous, the professional knowledge of 
+			sorcerers and those intimate with their ways.</p>
+			
+			<p><em><strong>It cannot be learned if the character has neither an Asset nor a Talent choice suggesting 
+			such familiarity.</strong></em></p>
+			
+			<p>The Skill entails a degree of knowledge of mythical famous sorcerers, dead and living, and their exploits, 
+			as well as concrete knowledge of what sorcery is and isn’t capable of. It also grants understanding of 
+			exactly how sorcery works (to the extent that this is understood at all). Depending on the setting, it 
+			provides knowledge of supernatural beings like demons - their names, spheres of influence, attributes, and 
+			other purported information about them.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OmenReading">Omen Reading (Heart)</p>
+			<p>Often performed for profit, Omen Reading allows a Character to determine general information about his 
+			future or that of another person. </p>
+			
+			<p>Fortune telling methods vary with each culture. Examples include: throwing bones, palm reading, astrology, 
+			tarot cards, reading tea leaves, visions brought on by drugs, dreams, and signs from gods, gaining insight 
+			from dead ancestors, and many others. Usually fixed around a celestial event, a reading’s insight may span 
+			the minimum of a day, or it may cover the time to the new moon, the next week, or until the group reaches 
+			the next town. However, Omen Reading never provides exact information about an event at an exact time.</p>
+			
+			<p>The information provided by Omen Reading is often general and vague, such as “ill luck will come to 
+			those that travel during the next two days” or “with great chances come great rewards in your near future” 
+			or “the man in white has a forked tongue.”</p>
+			
+			<p>Omens are the Game Masters creations, but it is up to the Characters to determine their meaning. The GM 
+			should put real effort into making each omen meaningful for the Characters, without giving away too much 
+			information.</p>
+			
+			<p>To use this Skill, the Character identifies the person or people for whom he wishes to perform a reading, 
+			during which he will make a Skill Check.</p>
+			
+			<p><em><strong>This Skill is available only to Characters created with Talent Table “Sorcery” choices of 
+			A-C.</strong></em></p>
+			
+			<hr/>
+			
+			<p class="h3">P</p>
+			
+			<p class="h4" id="P_PickPockets">Pick Pockets (Cunning)</p>
+			<p>This Skill allows a Character to secretly palm an object or plant one onto another person, or to covertly 
+			manipulate objects in the presence of others. Using this skill one could, for example, steal coins from a 
+			target’s pouch, a ring from a finger, a dagger from a sheath, or plant a stolen object on a target to frame 
+			her. This Skill could be employed to secretly swipe an item off a table or slip poison into someone’s 
+			drink.</p>
+			
+			<p>When using this Skill in front of observers other than the target, the Challenge rating increases by one 
+			level for every two people that might potentially see the Pick Pocket attempt.</p>
+			
+			<p>Note: in larger groups, depending upon what is happening in the surrounding area, it is unlikely that 
+			everyone would have their attention focused towards the thief and her target. A significant distraction, such 
+			as a performer on a stage in front of a crowd, would draw almost everyone’s attention, allowing an easy 
+			harvest for a thief. </p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Precog">Precognition (Cunning)</p>
+			<p>A Character with this Skill has the uncanny ability to sense danger a moment before it occurs. Whenever 
+			the character is asked to make a Surprise Check, he may choose to roll a Precognition Check first. One Success 
+			does away with the need for the Character to roll for Surprise. Two Successes gives the Character time to warn 
+			his closest team mate.</p>
+			
+			<p>Three Successes afford these bonuses, and an indication of the direction from whence the danger is coming. 
+			Four Successes allow adequate time to warn all of the Character’s teammates of the danger, thus completely 
+			negating the Surprise. Finally, five Successes would indicate the nature and origin of the danger a full Round 
+			before it occurs.</p>
+			
+			<p>There is no penalty for a failed Precognition Check.</p>
+			
+			<p><em><strong>This Skill is available only to Characters created with Talent Table “Sorcery” choices of 
+			A-C.</strong></em></p>
+			
+			<hr/>
+			
+			<p class="h3">R</p>
+			
+			<p class="h4" id="P_Riding">Riding (Daring)</p>
+			<p>This Skill enables a Character to control a mount of a specific type. If she wishes to control another 
+			type of mount, she will need time to familiarize herself with it, until which time all Skill Checks for the 
+			new mount are one Challenge level more difficult.</p>
+			
+			<p>A Character with this Skill can keep control of an animal at a full gallop without a Skill Check, or roll 
+			a Check to calm a startled animal. With a Check modified for difficulty, the Character can direct her mount 
+			to leap obstacles and perform other tricks. A successful skill Check allows the Character, in combat, to 
+			mount or dismount without penalty. If this Skill Check fails, additional time for mounting or dismounting 
+			is required, however this incurs no additional cost.</p>
+			
+			<p>To guide an animal in combat the character must spend a Melee Pool die during any round in which she wishes 
+			to change direction or speed of movement, as, having established these, the animal is considered to continue 
+			along in that direction and at that speed until the Character chooses to change either. This does not require 
+			a Skill Check.</p>
+			
+			<p>Any attack that causes damage to an animal requires the Character, in order to maintain control of it, to 
+			spend an additional Melee Pool die as well as make a successful Skill Check. If is the Check is failed, the 
+			rider will be thrown from the mount, and the animal will run until calmed in a following round. Also a penalty, 
+			appropriate to the amount of damage done, is awarded.</p>
+			
+			<hr/>
+			
+			<p class="h3">S</p>
+			
+			<p class="h4" id="P_Seamanship">Seamanship (Tenacity)</p>
+			<p>Skilled in operating ships and boats, a Character with Seamanship is adept in all aspects of vessel 
+			management from stringing rigging, organizing the crew’s jobs, repairing canvas and hulls, to steering and 
+			rowing.</p>
+			
+			<p>A penalty may apply to the Skill Check if the ship or boat encounters rough waters. Especially harsh storms 
+			may require up to three additional Successes, making them treacherous to all but the most seasoned sea 
+			captain.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Seduction">Seduction (Heart)</p>
+			<p>While it is possible for a Character without Seduction to have a romantic relationship, one skilled in the 
+			arts of romance, enticement, and the seduction of those in whom he is interested is far more adept at 
+			successfully pursuing others, including those who may be hesitant. He knows the right things to say, when to 
+			make eye contact, and how to lie to succeed in his courtship. Seduction can be used to entice those who might 
+			benefit the Character or his ambitions. Thus the use of this Skill includes cool calculation, feigned emotions, 
+			and allusions, or outright promises.</p>
+			
+			<p>In practice, the Character describes his methods and motives for wooing his subject and rolls a Skill 
+			Check, adjusted for difficulty. Seduction takes time, and the higher the Challenge Level, the longer it will 
+			take. If the Character is trying to convince his subject to do something that they would not normally do, the 
+			subject may contest the attempt with Tenacity or their own Seduction Skill. Continuous failure of a Skill Check 
+			against the same target will only increase the Challenge Level, as well as the subject’s annoyance with the 
+			Character, until the Checks begin automatically to fail.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Sneaking">Sneaking (Cunning)</p>
+			<p>A Character with this Skill has the ability to obfuscate herself and her movements, and to survey her 
+			surroundings to find the best places to hide. She understands how other people will see and move through an 
+			area, and knows how to create minor disturbances to distract them. Most importantly, she knows how to position 
+			and fit her body to into small hiding spots and move silently between them. A Character with this Skill can 
+			hide behind something which provides less than complete cover.</p>
+			
+			<p>To use this Skill, the Character rolls a Skill Check, with the Challenge Level based on the amount of 
+			coverage available and vigilance of others in the area. The Skill Check is rolled when the Character first 
+			moves into a concealed position, and again with each movement.</p>
+			
+			<p><em>This Skill cannot be used to hide from others that are already aware and within vision of the 
+			Character.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Soldiering">Soldiering (Tenacity)</p>
+			<p>This incorporates the professional skills of all soldiers, including low-level organizational decisions 
+			such as how and where best to set up camp, how and where to station guards, estimating the size of an enemy 
+			body by the size of its camp, judging the quality of a troop by watching it perform, executing drills, 
+			drawing up formations, and a variety of other tasks.</p>
+			
+			<p>More importantly, this Skill entirely replaces weapon Proficiencies in any battlefield setting in which 
+			fighting is in a cramped, closed formation, such as a shield wall. In any such situation, a weapon Proficiency 
+			functions at 20% of it’s normal value, but Soldiering can be used in its stead, no matter what the weapon. If a 
+			Character breaks rank to fight alone – endangering both himself and his comrades – his Proficiencies are 
+			no longer penalized, but he cannot use Soldiering in their stead.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Survival">Survival (Cunning)</p>
+			<p>Survival provides the Character with the ability to find food, water, and shelter in any environment. She 
+			has knowledge of the harsh conditions in all of them, and can plan ahead by packing the proper provisions. She 
+			has a general idea of the risks posed by the creatures, plants and terrain of a given environment, and can 
+			take precautions to avoid them.</p>
+			
+			<p>Additionally, this Skill helps the Character maintain a sense of direction and to navigate unknown 
+			wildernesses and other surroundings. This is important to any explorer travelling overland without the 
+			benefit of a road, or delving into the twisted caverns of the underworld.</p>
+			
+			<p>If she arrives in a location that she does not recognize, she can use Survival to get her bearings and a 
+			general idea of the direction in which she needs to head to reach a familiar destination. She will also be 
+			able to retrace her steps in a confusingly arranged environment. </p>
+			
+			<p>As well as skill in determining direction, Survival equips the Character to estimate distance, travel 
+			time, and to recall important landmarks along the way. The Character must have some method of orientation, 
+			such as the sun, stars, a compass, or known landmarks (ex. a mountain in the distance). Without such 
+			directional indications, the Skill Check will be at least one Challenge Level more difficult than 
+			otherwise.</p>
+			
+			<p>When this Skill is chosen, a Character is basically competent in all terrains and climates, but if she 
+			encounters circumstances in which she has no previous first-hand experience, then all Survival tasks are one 
+			Challenge Level higher in difficulty until three meaningful Survival Checks have been passed. Thereafter all 
+			Survival Checks revert to their normal Challenge Level, and the Character is assumed to have familiarized 
+			herself with the new environment.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Swimming">Swimming (Daring)</p>
+			<p>Every hero in <em>Blade</em> can stay afloat and even swim clumsily, if unencumbered and in reasonably calm 
+			waters. Swimming incorporates the skills to brave agitated waters under difficult conditions, to dive, to stay 
+			afloat for extended periods, and to move at speed while in and under water.</p>
+			
+			<p>In combat, a Skill Check should be made once per Combat Round, with the swimmer’s Melee Pool for the Round 
+			penalized by one die for every Success this Check falls short of.</p>
+			
+			<hr/>
+			
+			<p class="h3">T</p>
+			
+			<p class="h4" id="P_Theology">Theology (Sagacity)</p>
+			<p>With this skill a Character has an intimate academic knowledge of his religion. Common areas of learning 
+			include religious beliefs, temples, and cults of a chosen region and its surrounding area. This Skill is likely 
+			acquired during academic education training at a religious school, and will likely be unknown to the majority 
+			of priests.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Tracking">Tracking (Cunning)</p>
+			<p>A Character with this Skill has the ability to follow the trail left by another creature by observing 
+			clues in the environment – footprints, crushed grass, broken twigs, dropped items, bits of cloth or fur, and 
+			other signs.</p>
+			
+			<p>To use the Tracking Skill, the Character rolls a Skill Check with a Challenge Level based on how 
+			featureless she might find the surface of that trail. This Challenge Level is further adjusted by how old the 
+			trail is and the current weather conditions. If the Check fails, the trail is considered gone.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Trailing">Trailing (Cunning)</p>
+			<p>A Character with this Skill is proficient at covertly following another person or creature. (This is 
+			different from the Tracking Skill because the target must be within sight when the character begins following 
+			it.) To use Trailing, the Character begins by spotting the person or creature he wishes to trail before 
+			performing a Skill Check. A successful Check of average difficulty (one success) achieves success for the 
+			entirety of the chase, with the Character going unnoticed.</p>
+			
+			<p>Greater Challenge Levels occur only when passing through particularly open ground or especially deserted 
+			environs. Initially failure results with being seen and remembered, though not automatically being recognized 
+			as a tail.</p>
+			
+			<p>Once seen, a new Check is made for the remainder of the chase, and this Check is now Opposed with Trailing, 
+			(or Cunning, doubling the required Successes needed if the target does not possess the Trailing Skill). Failure 
+			of this Opposed Check will result in the trailer being revealed.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Trapping">Trapping (Cunning)</p>
+			<p>A Character with this Skill can plan, set, find, and disable traps of all sorts. The primary ability within 
+			Trapping is a predictive one: What path is the target likely to take? What will lure the target into the trap? 
+			Where would I set a trap in this area?</p>
+			
+			<p>When planning and setting a trap, this Skill provides the ability to produce very basic devices, such as a 
+			cover of branches and leaves for a pit in the forest. The damage incurred by a trap should be in accordance 
+			with such devices.</p>
+			
+			<p>The Game Master secretly rolls the Skill Check for the Character setting a trap. Failing the Skill Check 
+			could mean one of several things: the trap may be visible to the target, the trap may not go off as planned, 
+			or the trap may accidentally spring while the Character is working on it. Success implies that the trap has 
+			been properly set.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MoreSkills">More Skills?</p>
+			<p>The Skills listed above should suffice for the majority of campaigns and settings, but groups are encouraged 
+			to create new Skills they feel are vital for their game. That said, some care should be taken because Skills 
+			are a relatively expensive commodity when compared with Attributes. They must therefore be truly useful.</p>
+			
+			<p>Having a Skill or not should matter in a game situation. Things that do little more than add flavor or  
+			flesh out a Character’s background should not be elevated to Skill status. For example, carousing, teamster, 
+			fishing, or animal husbandry - although these doubtless require skill or at least talent and are probably known 
+			to a number of Characters, they are unlikely to be important outside of rare instances. If something isn't 
+			likely to be critical to the action of an adventure, it shouldn't be a Skill.</p>
+			
+			<p>Below follows two examples of additional Skills that might be suitable for some campaigns.</p>
+			
+			<hr/>
+			
+			<p class="h4">Charioteering (Daring)</p>
+			<p>Charioteering may be relevant as a Skill in games where chariots fulfill a role in warfare, or in those in 
+			which chariot races figure prominently. It involves proficiency at driving not just any old cart or wagon, 
+			but an actual chariot, often under adverse conditions. Among other things, this Skill encompasses: use of 
+			chariots on the battlefield, chariot racing, familiarity with all types of chariot and basic knowledge about 
+			their construction, the ability to affect simple repairs, and the proper treatment of horses or whichever 
+			animals pull the chariots.</p>
+			
+			<hr/>
+			
+			<p class="h4">Streetwise (Cunning)</p>
+			<p>Replacing the Customs, Etiquette, and Information Gathering Skills in many underworld situations, this 
+			Skill represents familiarity with criminal subcultures and everything that goes with them. Characters 
+			proficient in this Skill know how to behave among members of the half-world, how to pass themselves off as 
+			one of their number (if they are not already one), how to employ and read secret signs and codes, and the 
+			usual criminal modus operandi of a location. Streetwise is a measure of the Character’s knowledge (who's-who 
+			and what-is-what) of the under and half worlds’ criminal structures in any place he has spent some time.</p>
+			
+			<p>Streetwise is relevant as a Skill if a large part of the campaign is intended to be set in the urban 
+			underworld and to revolve around it. Don’t bother making this into a Skill if the underworld serves merely as 
+			a backdrop.</p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
