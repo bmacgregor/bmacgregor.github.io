@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Character Creation</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Character Creation</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Sorcery : Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Sorcery<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Sorcery">Sorcery Overview</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_Sorc_Mysteriarch">Mysteriarch</a></li>
+							<li><a href="#P_Sorc_Sorcerer">Sorcerer</a></li>
+							<li><a href="#P_Sorc_Dabbler">Dabbler</a></li>
+							<li><a href="#P_Sorc_Mundane">Mundane</a></li>
+							<li><a href="#P_Sorc_Cursed">Cursed</a></li>
+							<li><a href="#P_Sorc_Doomed">Doomed</a></li>
+						</ul>
+					</li>
+					
+					<!-- Culture : Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Culture<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Culture">Culture Overview/a></li>
+							<li class="divider"></li>
+							<li><a href="#P_Cult_Enlightened">Enlightened</a></li>
+							<li><a href="#P_Cult_Savage">Savage</a></li>
+							<li><a href="#P_Cult_HillmanNomad">Hillman / Nomad</a></li>
+							<li><a href="#P_Cult_Civilized">Civilized</a></li>
+							<li><a href="#P_Cult_Decadent">Decadent</a></li>
+							<li><a href="#P_Cult_Degenerate">Degenerate</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#P_Attributes">Attributes</a></li>
+					<li><a href="#P_Skills">Skills</a></li>
+					<li><a href="#P_Proficiencies">Proficiencies</a></li>
+					<li><a href="#P_Assets">Assets</a></li>
+					
+					<!-- Character Creation : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Character Creation<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="character-creation.html">Character Creation</a></li>
+							<li><a href="talent-table.html">Talent Table</a></li>
+							<li class="divider"></li>
+							<li><a href="character-creation-example.html">Character Creation Example</a></li>
+							<li><a href="your-own-talent-table.html">Your Own Talent Table</a></li>
+						</ul>
+					</li>
+					
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li class="active"><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Characters and Talents</p>
+			<p>Characters in <em>Blade</em> are painted in broad strokes by their Talents. These Talents, primarily 
+			Attributes, Skills, and Proficiencies, are used by the player as a metric of their Character’s strengths and 
+			weaknesses.</p>
+			
+			<p>Players can and should consult the wide body of Sword & Sorcery literature available for their inspiration. 
+			Joining in with their Game Maser and fellow players, they can then exchange ideas and work on creating 
+			Character histories (and Passions) that will work in harmony with the rest of the group’s goals and story 
+			direction.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Characters and Talents (Continued)</p>
+			<p>This is where the <a href="Talent Table.html">Talent Table</a> now comes into play. Our particular 
+			<em>Blade</em> Talent Table is comprised of six Talents. While the described categories of Attributes, Skills, 
+			nd Proficiencies form the heart of the entries on the <em>Blade</em> Talent Table, there are many more 
+			possibilities that could be made for your game.</p>
+			
+			<p class="h4">Talents</p>
+			<p>Having by now gotten a sense of the Character that they wish to build stories around, Players then translate 
+			these ideas to <em>Blade</em> by selecting Talent levels based on their importance to the player’s vision of 
+			their Character. Will the character be a man of fierce fighting ability? Or, perhaps a deft thief prowling the 
+			rooftops of fantastic cities! <strong>The prime focus of the Character should be their A or B picks</strong>.</p>
+			
+			<p>Next come aspects of the character that should still demonstrate competence or training. These will likely 
+			merit a C or D pick.</p>
+			
+			<p>Last comes those picks that the player has determined are not of major concern to his <em>Blade</em> 
+			experience, the E and F picks. Bear in mind, these last choices are where the Character will be at their 
+			weakest - choose carefully!</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Sorcery">Sorcery</p>
+			<p>The lands of the Sword & Sorcery campaign, though dominated by skillful swordsmen, are haunted by powerful 
+			Sorcerers wielding their dark magic. The Sorcery Priority governs the relation of your Character to the occult 
+			mysteries of the supernatural, whether your character is steeped in them, a regular person, or victimized by 
+			those dark forces. If you plan on playing a non-sorcerer Character, then select either <em>Mundane</em> as your 
+			Priority D (the Average priority), or <em>Cursed</em> as your Priority E. Selecting <em>Doomed</em> as your 
+			Priority F also gives you a character without sorcerous powers, but shouldn’t be done lightly; the character 
+			is not likely to survive this choice.</p>
+			
+			<p>If you want to play any type of wielder of arcane powers, chose Sorcery as your Priority A, B, or C, 
+			but choose carefully as <strong>the sorcerous Mysteries to which those Picks give your character access are 
+			all she will ever be able to learn</strong>; no sorcerer can ever learn more Mysteries than those allowed by 
+			his initial Sorcery Pick.</p>
+			
+			<p>Once you have made your choice, create a background that fits your concept, discussing your choice with 
+			your fellow Players and the GM. This gives others the chance to riff off your inspiration and create 
+			character origins that will work well with your own.</p>
+			
+			<div class="panel-body" id="DIV_SorceryPicks">
+				<p class="h4" id="P_Sorc_Mysteriarch">A : Mysteriarch</p>
+				<p>A Mysteriarch is one of the greatest masters of the arcane alive. He can know all Mysteries, both 
+				Lesser and Greater, and he starts out the game with knowledge of a single Arcane Secret. He receives 
+				one free point in the Occultism Skill and one free Proficiency point to spend on Mysteries, but may not 
+				put more Proficiency points into Greater than into Lesser Mysteries.</p>
+				
+				<p class="h4" id="P_Sorc_Sorcerer">B : Sorcerer</p>
+				<p>Sorcerer denotes somebody deeply steeped and well versed in arcane knowledge. She can know either all 
+				six Lesser Mysteries, or three Lesser and one Greater Mystery. She receives one free point in the 
+				Occultism Skill.</p>
+				
+				<p>Should she opt for a Greater Mystery, it may be of no greater value than his highest Lesser 
+				Mystery.</p>
+				
+				<p class="h4" id="P_Sorc_Dabbler">C : Dabbler</p>
+				<p>Dabbler encompasses hedge wizards, witch doctors, sages of secret lore, some of the more devoted 
+				cultists of unwholesome deities and other serious meddlers in the occult. Such characters may know up 
+				to two Lesser Mysteries and may also have the Occultism Skill. Enslavement and Witchfire may not both 
+				be chosen.</p>
+				
+				<p class="h4" id="P_Sorc_Mundane">D : Mundane</p>
+				<p>Mundane denotes the common man. He has heard whispers of sorcery but has most likely never 
+				encountered it, has no affinity for it, and most certainly doesn’t know any.</p>
+				
+				<p class="h4" id="P_Sorc_Cursed">E : Cursed</p>
+				<p>Cursed denotes a person not only unskilled in the arcane, but also somehow particularly vulnerable 
+				to harmful sorcery. When she checks to resist sorcerous harm or influence, she does so at a +2 
+				Target Number penalty.</p>
+				
+				<p class="h4" id="P_Sorc_Doomed">F : Doomed</p>
+				<p>Doomed is a person not only devastatingly open to harmful sorcery, but actually victimized by it. He 
+				resists sorcery as per the E Pick, Cursed (at a +2 Target Number penalty), and on top of this has 
+				already contracted some kind of terrible supernatural doom. This doom is geared toward a specific, utterly 
+				ruinous fate, expressing itself in mechanical terms as the equivalent of a Curse Rating six (See the 
+				<a href="../ch6 Sorcery/Sorcerous Mysteries/#P_LSR_Cursing">Cursing Mystery</a>), which can be lifted by 
+				neither faith or sorcery.</p>
+				
+				<p>This doom need not be geared toward the Character's death, but if it isn’t it needs to be geared to the 
+				total destruction of all the Character holds dear and wants to achieve. Whatever the doom may be, it must 
+				run its course, undoing the Character in some nasty fashion. Alternatively, it might be remotely possible 
+				to lift by means of an impossible quest. Such a quest should take up more than five game sessions devoted 
+				solely to it, during which time the Character (and likely his companions) should face more than even odds 
+				of dying at least three times; in short, the Game Master should make sure that such a quest fails more 
+				often than it succeeds.</p>
+				
+				<p><strong>Please be advised that this Priority Pick should not be taken lightly! The severity of the curse 
+				will more likely than not result in the destruction of the PC before the quest to lift it can be 
+				completed.</strong></p>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Culture">Culture</p>
+			<p>The Protagonists of the Sword & Sorcery genre are often quite a bit darker than those of heroic fantasy 
+			works like Tolkien’s <em>Lord of the Rings</em>. They tend to be outsiders or social outcasts, rejected or 
+			looked down upon by the powers of the society they find themselves in. Sword and Sorcery also diverges sharply 
+			from high fantasy in that non-humans such as elves and dwarves typically don’t exist, and both Player 
+			Characters and Non-Player Characters tend to be Human.</p>
+			
+			<p>The archetypes listed are not meant as character classes, nor do they represent Human realities, but 
+			rather are descriptive clichés of the genre; tropes that can be used to distinguish characters that 
+			otherwise would have the same racial abilities.</p>
+		
+			<div class="panel-body" id="DIV_CulturePicks">
+				<p class="h4" id="P_Cult_Enlightened">A : Enlightened</p>
+				<p>A few great civilizations rise above others and gain near mythical status. Learned beyond normal 
+				men, people of enlightened cultures are builders of cyclopean pyramids and towers that pierce the 
+				skies. Their magnificent buildings can last forever, and likewise monuments to an enlightened one’s 
+				achievement can withstand the passage of time. Enlightened characters are especially long lived and 
+				begin play with these modifiers:</p>
+				
+				<ul>
+					<li>+1 each to Tenacity, Sagacity and Heart; minimum 2, maximum 8/9</li>
+					<li>One bonus supernatural or culture related Asset Occultism Skill always allowed</li>
+					<li>Fourteen (14) bonus Skill points</li>
+					<li>Enlightened Ones live half again to three times as long as mere mortals and need little to 
+					no sustenance or sleep</li>
+				</ul>
+				
+				<p class="h4" id="P_Cult_Savage">B : Savage</p>
+				<p>Savages include warriors from the frozen north and witch-doctors from the trackless wastes of the 
+				south. Savages tend to have a close connection with nature, but remain ignorant of many developments 
+				that more civilized people take for granted. Savage characters begin play with these modifiers:</p>
+				
+				<ul>
+					<li>+1 each to Brawn, Daring and Tenacity; minimum 2, maximum 8/9</li>
+					<li>Seven (7) bonus Skill points related to Survival, Climbing, Animal Ken, etc.</li>
+				</ul>
+				
+				<p class="h4" id="P_Cult_HillmanNomad">C : Hillman / Nomad</p>
+				<p>Hillmen live in broken mountainous regions that are hard to traverse. Their homeland lies either at 
+				the edge of civilized lands or is surrounded by them and might even be at least nominally part of a 
+				civilized nation. In any case, the isolation offered by their hills make Hillmen independent, 
+				and it is not uncommon for them to sally forth from their mountain fastness to prey upon softer people, 
+				forcibly collecting tribute from all who trespass their land.</p>
+				
+				<p>Nomads roam the empty wastes beyond the civilized cities; quick to strike and bound by no laws. 
+				Nomads live with their animals and usually ride into battle with them; they feel ill at ease without 
+				them. Nomadic and Hillmen characters begin play with the following modifiers:</p>
+				
+				<ul>
+					<li>Seven (7) bonus Skill points related to Survival, Climbing, Animal Ken, etc.</li>
+				</ul>
+				
+				<p class="h4" id="P_Cult_Civilized">D : Civilized</p>
+				<p>Savages and Hillmen eventually gather together to cultivate the land, build great cities, develop 
+				trade, and study medicine, mathematics and languages. In the civilized lands dwell noble knights, wise 
+				kings, and learned sages — as well as greedy merchants and cunning thieves. Civilized characters begin 
+				play with no particular advantages or disadvantages.</p>
+				
+				<p class="h4" id="P_Cult_Decadent">E : Decadent</p>
+				<p>Great civilizations reach their peak and eventually start to decline. Such fallen empires are ruled 
+				by jaded nobles, corrupt priests and wicked slave-traders. Demon-worship, human sacrifice and drug 
+				abuse is all too common in these cultures. Decadent characters begin play with the following 
+				modifiers:</p>
+				
+				<ul>
+					<li>-1 to Tenacity; minimum 1, maximum 7</li>
+					<li>Either -1 to Brawn (minimum 1, maximum 7) or one Poor Asset related to mental handicaps like 
+					Addiction, Sadism, etc.</li>
+				</ul>
+				
+				<p class="h4" id="P_Cult_Degenerate">F : Degenerate</p>
+				<p>The last survivors of decadent civilizations start to feud over dwindling resources, or are driven 
+				away by stronger cultures. Fleeing into the wilderness, or deep underground beneath their ruins, they 
+				start to inbreed and devolve into something no longer entirely human. Degenerates may outwardly 
+				resemble savages, but they carry the evil taint of fallen empires. Degenerate characters begin play 
+				with the following modifiers:</p>
+				
+				<ul>
+					<li>-1 to three Attributes; minimum 1, maximum 7</li>
+					<li>Two Poor Assets chosen by player, focused on bodily handicaps and gruesome mental illnesses 
+					such as Necrophilia, Inhuman, etc.</li>
+				</ul>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Attributes">Attributes</p>
+			<p>Assigning points to your attributes is vital to constructing an exciting character. Each player is given 
+			a number of points to distribute amongst the six Basic Attributes. Available points are determined by the 
+			Priority level selected.</p>
+			
+			<p>These points are assigned as you will, with but two cautions: All players must nominate one of their 
+			attributes as their “Focus.” No other attribute may exceed the point value of the “Focus” during the 
+			process of character creation.</p>
+			
+			<p>In addition, <strong>no character should start with any Attribute at the unique level of nine</strong>. This 
+			level is reserved for development during play.</p>
+			
+			<p>Next, work with your fellow players and Game Master to create your four Passion Attributes and fill them in 
+			on your character sheet. Beginning Passion Attribute Points are the same for each beginning character: Seven 
+			(7) points to be distributed between the four open Attributes and the fixed Drama Attribute. Any given 
+			Passion Attribute may be as low as zero or as high as five. Passion Attributes are described 
+			<a href="../ch1 Mechanics/Passions.html">here</a>.</p>
+			
+			<p>Combined Attributes are calculated by combining two or more existing attributes. These should be 
+			calculated once all Basic and Passion Attributes are finalized. All numbers equal to or greater than .50 
+			are rounded up.</p>
+			
+			<ul>
+				<li>Reflex = (Cunning + Daring) / 2</li>
+				<li>Aim = (Cunning + Sagacity) / 2</li>
+				<li>Knockdown = (Brawn + Daring) / 2</li>
+				<li>Knockout = (Brawn + Tenacity) / 2</li>
+				<li>Move = (Brawn + Cunning + Daring) / 3</li>
+			</ul>
+			
+			<p class="h4">Attribute Points by Priority Level</p>
+			<table class="table table-striped table-hover" id="TBL_AttributePoints">
+				<thead>
+					<th>Priority Level</th>
+					<th>Attribute Points</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>34 Points</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>29 Points</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>26 Points</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>24 Points</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>22 Points</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>18 Points</td>
+					</tr>
+				</tbody>
+			</table>
+						
+			<hr/>
+						
+			<p class="h4" id="P_Skills">Skills</p>
+			<p>Next, assign all available Skill points to those Skills you desire for your character. Again, available 
+			points are determined by the Priority level selected, and no character should begin initial play with any 
+			Skill at level nine. Pay close attention for any Sorcery, Cultural, or Asset modifiers to your Skills that you 
+			may be entitled to, and once each Skill has been chosen; write those Skills down on your sheet.</p>
+			
+			<p>For a complete listing and description of Skills, click <a href="../ch3 Training/Skills.html">here</a>. For a 
+			guide to choosing your Characters skills, click <a href="../ch3 Training/Skill Guide.html">here</a>.</p>
+			
+			<hr/>
+			
+			<p class="h4">Skill Points by Priority Level</p>
+			<table class="table table-striped table-hover" id="TBL_SkillPoints">
+				<thead>
+					<th>Priority Level</th>
+					<th>Skill Points</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>48 Points</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>33 Points</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>24 Points</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>18 Points</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>12 Points</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>0 Points</td>
+					</tr>
+				</tbody>
+			</table>
+						
+			<hr/>
+						
+			<p class="h4" id="P_Proficiencies">Proficiencies</p>
+			<p>Proficiencies refer to weapons' training. Each selected Melee Proficiency or Missile Proficiency conveys 
+			training in a single style of combat or grouping of weapons. As always, available points are determined by 
+			the Priority level selected. Points may be distributed in any manner the player desires, though no 
+			Proficiency may start out with the maximum rating of thirteen.</p>
+			
+			<p>Once you have your Proficiencies assigned, write down any associated Maneuvers or Mysteries (Both are 
+			described in <a href="../ch3 Training/Maneuvers.html">Chapters Three</a> and 
+			<a href="../ch6 Sorcery/Sorcerous Mysteries.html">Six</a> respectively) on your character sheet.</p>
+			
+			<p>Points granted by the Proficiency Priority can also be spent on sorcerous Mysteries, provided the 
+			character has access to any. Again, points may be distributed in any way the player desires.</p>
+			
+			<p class="h4">Proficiency Points by Priority Level</p>
+			<table class="table table-striped table-hover" id="TBL_ProficiencyPoints">
+				<thead>
+					<th>Priority Level</th>
+					<th>Proficiency Points</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>16 Points</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>11 Points</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>8 Points</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>6 Points</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>4 Points</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>0 Points</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Assets">Assets</p>
+			<p>Assets are aspects of a character’s personality, background, or physique, that make him better at some 
+			activities (Good) and worse at others (Poor) depending on which portion of the Asset is being explored. 
+			In addition to their mechanical effects, Assets suggest characteristics about the Character’s personality 
+			that might lead to interesting role-playing opportunities.</p>
+			
+			<p>Assets offer a way for game mechanics to encourage deeper character backgrounds and more consistent 
+			role-playing.</p>
+			
+			<p>Any character can begin play with up to six Good or three Poor Assets, chosen by the Player at the time 
+			of character creation, plus any other Assets the character may derive from other Picks such as Culture. On 
+			top of the Good or Poor Assets gained from his Picks, a player may opt to choose one (and only one), 
+			additional Good Asset for his character, if he balances this with a Poor Asset.</p>
+			
+			<p>When selecting your “Good” or “Poor” Asset keep in mind that the entire Asset (both Good and Poor) is 
+			now yours to develop as you wish, but whatever form (again, Good or Poor) you initially selected it in will 
+			be the aspect that you first focus your role-playing efforts on.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_Assets">			
+				<p><em><strong>Example</strong>: Picture a Barbarian who arrives in his first big city, a character 
+				that has begun the game with the Poor aspect of the “Uncivilized” Asset. He’s a savage man in civilized 
+				surroundings and therefore his asset would initially be rather detrimental to him.</p>
+				
+				<p>But over time as he gradually gets accustomed to city life, he learns to better deal with his own 
+				uncivilized nature - he then begins to develop the Good aspect of the Asset, which reflects how he has 
+				learned to use his own savage nature to his advantage in certain situations!</p>
+				
+				<p>With the passing of yet more adventure time, while he is still every bit as uncivilized as he was in 
+				the beginning (years before in some cases), he no longer suffers for it, and has apparently learned to 
+				compensate for it in other ways. The “Uncivilized” portion of his nature is truly now an advantage for 
+				him!</em></p>
+			</div>
+			
+			<br/>
+			
+			<p>As soon as you feel that you have explored the current aspect of the Asset to your (and the group’s) 
+			satisfaction and would like to expand your role-playing vision, please feel free to purchase the Asset’s 
+			opposite side. You can then move between the two aspects of the Asset as desired. When no longer interested 
+			in the Asset you can always buy it off.</p>
+			
+			<p>For a complete listing and description of Assets, click <a href="../ch3 Training/Assets.html">here</a>.</p>
+			
+			<p><em><strong>Note that Poor Assets normally derived from the Culture Priority Pick can only be bought off 
+			under exceptional circumstances, and only then if both the referee and the rest of the gaming group agree 
+			that Characters experiences warrant such a radical development.</strong></em></p>
+			
+			<p class="h4">Assets by Priority Level</p>
+			<table class="table table-striped table-hover" id="TBL_ProficiencyPoints">
+				<thead>
+					<th>Priority Level</th>
+					<th>Assets</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A</td>
+						<td>Six Good Assets</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>Three Good Assets</td>
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>One Good Asset</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>No Assets</td>
+					</tr>
+					<tr>
+						<td>E</td>
+						<td>One Poor Asset</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>Three Poor Assets</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
