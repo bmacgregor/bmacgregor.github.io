@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Melee Combat</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Melee Combat</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_CombatOrder">Combat Order</a></li>
+					
+					<!-- Stances : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Stances<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Stance_Aggressive">Aggressive</a></li>
+							<li><a href="#P_Stance_Defensive">Defensive</a></li>
+							<li><a href="#P_Stance_Neutral">Neutral</a></li>
+						</ul>
+					</li>
+					
+					<!-- Initiative : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Initiative<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Initiative">Initiative</a></li>
+							<li><a href="#P_StealInitiative">Stealing Initiative</a></li>
+							<li><a href="#P_Surprise">Surprise</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#P_TheExchange">The Exchange</a></li>
+					<li><a href="#P_Damage">Damage</a></li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Melee Combat</p>
+			<p>The world of <em>Blade</em> is a dangerous one. Though fierce monsters and abominations inhabit the far 
+			corners of the world, adventurers must also be on the lookout for thugs, cutpurses, assassins, mercenaries, 
+			and anybody else who would kill them for their silver. But the most deadly foes care nothing for treasure, 
+			and instead want a hero’s corpse for darker purposes...</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Melee Combat Overview</p>
+			<p>As Characters adventure throughout the world, they will encounter those who stand in their way. 
+			Unfortunately, not all villains will launch themselves at the Characters with sword in hand. The more 
+			dangerous ones use their snake tongues, devious minds, or sorcery to bring the heroes to ruin. Game Masters 
+			will throw all types of foes against the Characters – those who fight with tooth and claw, cowards who would 
+			sooner run than battle, and those who seek to undermine adventurers with a labyrinth of plans and 
+			deception.</p>
+			
+			<p>Sometimes, battle is inevitable. Though the warriors of <em>Blade</em> are well trained and deadly, even the 
+			most inexperienced knave can thrust a pitchfork into the throat of a battle-hardened king. Players should keep 
+			in mind that more people walk into battle than away from it...</p>
+			
+			<hr/>
+		
+			<p class="h4" id="P_CombatOrder">The Order of a Combat Round</p>
+			<p>A Combat Round is fought in the following sequence:</p>
+			
+			<ol>
+				<li>All stances are declared</li>
+				<li>Aggressor and defender is established. Melee Pools fills or refreshes, with all Modifiers.</li>
+				<li>During the first half of the Combat Round - the first Exchange - the aggressor attacks and defender 
+				defends</li>
+				<li>Damage is resolved and new attitudes can be determined (aggressor or defender)</li>
+				<li>During the second half of the Combat Round - the second Exchange - the aggressor attacks and defender 
+				defends. <em>These roles may have been reversed since the first Exchange</em></li>
+				<li>All damage is resolved and new attitudes can be determined (aggressor or defender)</li>
+			</ol>
+			
+			<p>Steps two through six continue to repeat until the resolution of the combat or until the flow of combat is 
+			interrupted. At the beginning of each new melee conflict (or following a pause) begin at step one, and then 
+			repeat two through six as normal.</p>
+			
+			<hr/>
+			
+			<p class="h4">Steps One & Two: Stances, Initiative, and Surprise</p>
+			<p>Unless taken by surprise, combatants will usually have time and opportunity to declare a stance – these 
+			should be clearly announced at the table. Stances provide for a stronger attack or defence, but may add 
+			rigidity to a combatant’s action.</p>
+			
+			<p>Though every school speaks with confidence on the superiority of its teaching, three stances are universal; 
+			Aggressive, Defensive, and Neutral stances.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_Stance_Aggressive">Aggressive Stance</p>
+			<p>Aggressive stances provide an attack bonus at the cost of making one’s defense more difficult. Assuming 
+			them adds two Melee Pool dice for an attack, but increases Activation Costs for Defensive Maneuvers by two 
+			Melee Pool dice.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_Stance_Defensive">Defensive Stance</p>
+			<p>Defensive stances grant a defensive bonus, while making attack more difficult. Such stances add two Melee 
+			Pool dice when Defending, but increase the activation costs for any Offensive Maneuver by two dice.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_Stance_Neutral">Neutral Stance</p>
+			<p>Neutral stances are the favorite of many. In a Neutral stance, one’s weapon is positioned to allow for quick 
+			attacks or defensive responses. Neutral stances provide no bonus to either attack or defense.</p>
+			
+			<br/>
+			
+			<p><em>Note: Stances are only in effect until the first blow or movement — once a Character’s weapon moves, the 
+			stance is gone. Once melee is joined the stances of both attacker and defender are treated as Neutral, with 
+			no bonus conveyed to either. A stance cannot be taken (or regained) until the combatants separate for a full 
+			pause.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Initiative">Initiative</p>
+			<p>Initiative is determined after stances are declared, when each combatant announces their intent to either 
+			attack or defend. The intent of the combatants will usually be very clear from the circumstances under which 
+			they enter combat – more often than not, one or even both will charge the other. Apart from counting as an 
+			Aggressive stance, such a charge automatically suggests the intent to attack, leaving the other party to decide 
+			whether to receive the charge, or to attack as well.</p>
+			
+			<p>Some rare combat encounters, for example formal duels or gladiatorial bouts, might start out less clearly, 
+			with both combatants gauging each other, shifting from stance to stance, and waiting for an opening. In these 
+			cases, it is advisable to demand that both parties declare their intent to attack or defend simultaneously, 
+			maybe by lifting one finger for attack and two for defence. Until at least one party declares an attack, the 
+			bout does not actually commence.</p>
+			
+			<p>If a party fails to declare intent while the other declares an attack, then this Character is considered to 
+			have hesitated, and may only defend for one full Combat Round – if even that (see Surprise, below).</p>
+			
+			<p>The attacker, now having the initiative, declares how many dice from his Melee Pool are being spent on the 
+			attack, where the attack is aimed, and what Maneuver, if any, is being used.</p>
+			
+			<p>In response, the defender declares how many dice from his Melee Pool are going towards defense, what defense 
+			is being used, and what Maneuver, if any, is being executed.</p>
+			
+			<p>If both combatants declare as aggressors, Offensive Maneuvers and assigned dice are announced before the 
+			Reflex Check to see who goes fractionally first. The combatant with the higher Reflex may choose whether to 
+			declare first or second; tied Reflex scores are broken by the higher Cunning score, and tied Cunning scores by 
+			the higher Proficiency.</p>
+			
+			<p>An Opposed Reflex Check (with the combatants’ own Attack Target Number for Target Numbers) determines whose 
+			strike lands first. <strong>For every step of Reach difference of the weapons used, the wielder of the longer 
+			weapon receives one bonus dice to this Check, and the wielder of the shorter weapon is penalized by one 
+			die.</strong> In the rare cases where the combat begins at the optimum engagement range of the shorter Reach 
+			weapon, these modifiers are reversed.</p>
+			
+			<p>Note that no defense is possible in the middle of an attack, so the loser of this Check will likely be 
+			killed. In the Exchange that follows, the winner of this Exchange now assumes the role of aggressor and his 
+			opponent that of defender. Should the Opposed Reflex Check be tied, both combatants strike at exactly the same 
+			time.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_StealInitiative">Stealing Initiative</p>
+			<p>Stealing Initiative is only possible immediately before the first blows of any bout are traded, and is 
+			usually done in one of two circumstances: The first is when two combatants declare as aggressors and attack 
+			simultaneously. If one combatant turns out to be fractionally slower than the other, he may attempt to Steal 
+			Initiative. If both combatants attack at exactly the same time, the combatant with the higher Reflex score can 
+			try to Steal Initiative; tied Reflex scores are broken by the higher Cunning score, and tied Cunning scores by 
+			the higher Proficiency. Should she decline to try to Steal Initiative, the other combatant may try to steal 
+			it.</p>
+			
+			<p>The party attempting to Steal Initiative pays an Activation Cost equal to half his opponent’s Sagacity 
+			(0.50 rounds up). The attempt is an Opposed Check between the initiator’s Cunning and his opponent’s Daring.</p>
+			
+			<p>This contest is modified by differences in the Reach of the weapons used; if there is any difference, the 
+			wielder of the longer weapon receives a flat +1 die bonus on his Check while the wielder of the shorter weapon 
+			must incur a flat -1 die penalty. When the combatants begin the bout already at the Reach of the shorter of 
+			the weapons involved, these modifiers are reversed.</p>
+			
+			<p>Finally, the initiator of the attempt, and only he, may buy bonus dice for his Check by spending dice from 
+			his Melee Pool on a one-to-one basis, up to the value of his Daring. Passion Attributes do not modify to this 
+			check, as Passion Attributes are already added to one’s Melee Pool at the beginning of the combat scene, and 
+			are already accounted for.</p>
+			
+			<p>The winner of the Opposed Check strikes first, and the loser, should he still be able to continue after his 
+			opponent’s attack, second. In a tie, the combatants strike simultaneously, which might leave both of them dead. 
+			In any case, a combatant who had the Initiative stolen may immediately try to steal it back. Such attempts to 
+			Steal Initiative or steal it back may theoretically continue until one party depletes his entire Melee Pool.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Surprise">Surprise</p>
+			<p>Surprise can occur at any time, even when you suspect that danger is near. When a Surprise Check is called 
+			for, the Player checks Reflex against a Target Number of seven, with the difficulty based on how alert the 
+			Character or NPC was. The following table, Surprise Challenge Levels, provides some guidelines for this. 
+			Failure indicates no action can be taken until the next Combat Round.</p>
+			
+			<p>Meeting the required number of Successes means that the target may defend themselves (or attempt to Steal 
+			Initiative).</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_SurpriseLevels">Surprise Challenge Levels</p>
+			<table class="table table-striped table-hover" id="TBL_SurpriseLevels">
+				<thead>
+					<th>Successes Needed</th>
+					<th>Circumstance</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Target is on high alter, waiting for an attack</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Target is uneasy or suspicious, attack comes from than unexpected source or player 
+						hesitated</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Target is caught completely off-guard</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Target is caught completely off-guard, plus attacked from the side or rear</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_TheExchange">Steps Three & Five: The Exchange</p>
+			<p>Each Combat Round consists of two Exchanges. During an Exchange, each participant may perform one action, 
+			usually attacking or defending by useing an Offensive or Defensive Maneuver.</p>
+			
+			<p>The aggressor may utilize both Offensive and Defensive Maneuvers. The defender can only use Defensive 
+			Maneuvers, but may choose to execute an Offensive Maneuver if she pays a special Activation Cost (see below).</p>
+			
+			<p>All attacks must be aimed at a specific location, numbered from one to fourteen on the Target Zone diagrams. 
+			Arrows indicate swing Target Zones while circles mark Target Zones for thrusting or missile attacks. While a 
+			Player need not declare a specific number, dhe must describe the attack in terms that can be easily understood, 
+			(ex, Thrust to the face, Slash to the right foot, etc). Random attacks are not part of <em>Blade</em> melee 
+			combat. Maneuvers and chosen Target Zones may increase or decrease the Target Numbers for the attacker and 
+			defender, and may also require an additional Activation Cost. <em>Optionally, all melee thrusts to head and 
+			limbs (Target Zones eight, nine, thirteen, and fourteen) may require an additional one-point Activation Cost to 
+			execute.</em></p>
+			
+			<p>Both participants now roll the allotted Dice from their Melee Pool (See Step two), with all modifiers totaled 
+			from all Maneuvers, stances, or other situations. This is a normal Opposed Check, where one party’s successes 
+			are subtracted from the other’s, leaving the winner with a net Quality of Success. An attack causes damage only 
+			if the attacker achieves a Quality of Success of one or more. Ties in the Opposed Check means no damage was 
+			inflicted.</p>
+			
+			<p>All Target Numbers for this Check come from the Attack Target Number or Defense Target Number listed with 
+			each weapon (see the Appendix) or defence. After all damage is resolved, a winning aggressor maintains his role 
+			as the aggressor unless he declines it or cannot continue to fight because of a depleted Melee Pool while his 
+			opponent still retains uncommitted Melee Pool dice. If either is the case, the defender may choose to take 
+			on the role of aggressor.</p>
+			
+			<p>With a successful net Quality of Success, the defender may now take on the role of aggressor, unless she 
+			tied the aggressor, in which case the latter retains their role.</p>
+			
+			<p><em>Note that some Defensive Maneuvers may (on a case-by-case basis) allow a successful defender to either 
+			assume the role of aggressor on a tie, on paying an additional Activation Cost, or perhaps under no 
+			circumstances at all. Any such special mechanics are explained within their respective Maneuvers.</em></p>
+			
+			<p>Finally, should a defender enter an Exchange and wish to execute an Offensive Maneuver, he may declare an 
+			Offensive Maneuver like the aggressor, announcing both his Maneuver for the Exchange and the number of dice 
+			allocated to it. This declaration of an Offensive Maneuver carries an Activation Cost equal to <strong>half the 
+			aggressor’s Daring</strong> (0.50 rounds up, as always) above and beyond any normal Activation Cost for the 
+			Offensive Maneuver.</p>
+			
+			<p>In such circumstances, the aggressor resolves his Maneuver first. Sneaking in an attack does not in itself 
+			turn the previous defender into the aggressor; she still begins the next Exchange as the defender and her 
+			opponent the aggressor. However, should the defender manage to inflict a higher Wound Level on the aggressor 
+			than she received herself, she steals the role of aggressor from her opponent.</p>
+			
+			<p>Visibility has a profound effect on combat. In dim lighting (for example, dusk) deduct one die from all Melee 
+			Pools. During hours of darkness (moonlight) reduce all Melee Poolss to ¾. In pitch black conditions drop all 
+			Melee Pools to half value. Archery Pools are affected twice as severely as Melee Pools, losing two dice from 
+			all Archery Pools for dim lighting, and operating at half value for darkness. In pitch black conditions, all 
+			Archery Pools are at 0.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Damage">Steps 4 & 6: Damage</p>
+			<p>Should an attacker have one or more Success over his opponent then the attack has landed (see Steps three & 
+			five). A d6 is rolled to determine the specific location within the Target Zone. Normally, a lower roll means a 
+			lower hit on the body, and a higher roll a strikes higher. A Character can exert some control over where this 
+			blow lands by paying an <em>additional activation cost before launching his attack</em>. Spending one 
+			additional die from his Melee Pool allows him to modify the d6 roll for the exact hit location within the 
+			Target Zone by +/–1; an additional two dice (for a total of three) purchases a modifier of up to +/– 2, and 
+			further 3 dice (for a total of 6 dice spent) achieves a modifier of up to +/– 3.</p>
+			
+			<p><em>Note that a Player need not use his full modifier, but may use it in part or none at all. Damage is 
+			calculated by adding the Quality of Success from the attack roll to the Damage Rating of the weapon 
+			used.</em></p>
+			
+			<p>The Damage Ratings for the various types of attacks possible with a weapon are found in the Weapon Tables 
+			in the Appendix, and will often fall in a range of –2 to +3. <strong>To this value, half the attacker’s Brawn 
+			(rounded up for .50 or higher) is added</strong>. This represents muscle power put behind the attack, the 
+			overall toughness and muscle mass protecting the body from serious injury (with a bit of good fortune), and 
+			creates an Impact Rating. From this Impact Rating, <strong>half the defender’s Brawn (again, .50 or higher 
+			rounds up) is subtracted</strong>, representing a mixture of grit, health, and muscle mass protecting the 
+			vitals.</p>
+			
+			<p>Last, if the defender is wearing armour at the location hit, its Armour Value is subtracted from the Impact 
+			Rating to arrive at a final damage number. This damage number is the Wound Level. For every wound’s location 
+			and severity, there is a corresponding entry rendering a few words describing the wound, accompanied by several 
+			numeric values in the Appendix.</p>
+			
+			<p>Wound Levels are rated from one to six. A level one wound is usually a bruise, scratch or minor cut with no 
+			adverse effects. Wounds of level two and three are worse, but not debilitating, while a level four wound is 
+			a serious matter that will, more likely than not, decide the fight against the wounded person.</p>
+			
+			<p>While level four wounds are debilitating, those of level five and six are lethal, either immediately because 
+			of massive bleeding, or eventually fatal.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_Limelights">
+				<p><em><strong>Example</strong>: Otho’s weapon has a Damage Rating of two, and the wound that Otho inflicted 
+				on Galb has a sub-total (or Impact Rating) of eleven. Rolling the location on a d6, we reference a direct 
+				hit by Otho to Galb’s unprotected neck!</p>
+				
+				<p>Having no armour at this location, Galb may only subtract half his Brawn (5) from the Impact Rating... 
+				11 - 3 (2.5 rounded up) = 8. This value of eight defaults down to a level six wound, a Wound Level which 
+				indicates the complete decapitation of Galb’s head!</em></p>
+			</div>
+			
+			<br/>
+			
+			<p>Location always makes a difference with wounds – a stab to an off-hand will be much less damaging than the 
+			same level stab wound to the belly, and a well-placed cut to the throat can be deadly at even low Wound Levels. 
+			Wound Levels are not cumulative, even from multiple wounds to the exact same location. Each wound and all 
+			consequences from the wound description are recorded separately, and while the consequences of wounds may 
+			add up (see below), many small wounds do not combine into one larger wound. To kill somebody, a solid injury 
+			is needed, not a lot of minor ones.</p>
+			
+			<p>Of course, a number of minor wounds may well – and often will – accumulate and handicap a fighter so that 
+			his enemy is likely to drive home that one telling hit needed to dispatch him. Barring more esoteric forms of 
+			damage such as sorcery, the most common are listed <a href="Damage Types">here</a>.</p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
