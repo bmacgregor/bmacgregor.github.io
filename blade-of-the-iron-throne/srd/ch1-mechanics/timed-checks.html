@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timed Checks</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Timed Checks</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Mechanics : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Mechanics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="introduction.html">Introduction</a></li>
+							<li class="divider"></li>
+							<li><a href="major-checks.html">Major Checks</a></li>
+							<li class="active"><a href="timed-checks.html">Timed Checks</a></li>
+							<li><a href="complications.html">Complications</a></li>
+							<li class="divider"></li>
+							<li><a href="attributes.html">Attributes</a></li>
+							<li><a href="passions.html">Passions</a></li>
+						</ul>
+					</li>
+					
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Timed Checks</p>
+			<p><strong>Timed Checks</strong> can be made of any check (Attribute, Skill, Proficiency, or Opposed). These 
+			rolls are made when how long a task takes to finish is of importance. This would include pursuing research,
+			crafting an item, searching the wilderness for an outlaws’ encampment, or other checks of this nature.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<div class="panel-body" id="P_TimedChecks">				
+				<p>Each Timed Check requires a number of successes that must be achieved over the course of any amount of 
+				rolls. Each roll usually represents the passage of a fixed amount of time. With Opposed Timed Checks, the 
+				numbers of successes from each Check are not usually subtracted from each other. Instead, every party totals 
+				their successes. As soon as one party achieves the required number of successes, it achieves its goal. This 
+				number of successes doesn't have to be the same. For instance, a race would have the same number of successes
+				needed for both (or all) sides, while a pursuit might require fewer successes for the Character fleeing.</p>
+				
+				<div class="panel-body bg-warning" id="DIV_Example_TimedChecks">			
+					<p><em><strong>Example One</strong>: Otho, having been cheated out of some swag from a robbery, is 
+					chasing a group of thieves through the Shattered Hills. As both parties are navigating the trackless 
+					wilderness on foot, the Game Master determines that this is an Opposed Check matching Otho’s Survival 
+					Skill against the fugitives’ single worst Survival Skill (staying together, they are travelling at the 
+					speed of the slowest among them).</em></p>
+					
+					<p><em>He advises that Otho will need a Quality of Success of twelve (12) against the fugitive’s Quality
+					of Success of eight (8) to catch up with them before they reach, cross, and destroy the sole rope 
+					bridge across Traem's Gorge.</em></p>
+					
+					<hr/>
+					
+					<p><em><strong>Example Two</strong>: As the stars align, marking the return of the demon lord Yslsl, 
+					Magister Braddeyas is attempting to make sense of a coded passage in the Tome of Du’Karrn that is 
+					thought to instruct about Yslsl’s weakness. The GM informs him that he has to achieve a Quality of 
+					Success of twenty on his Decipher Skill Check, with every Check taking an entire day. The stars will be 
+					in position in seven days.</em></p>
+				</div>
+			</div>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
