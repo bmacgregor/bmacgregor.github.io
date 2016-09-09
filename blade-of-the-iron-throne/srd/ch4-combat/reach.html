@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weapon Reach</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Weapon Reach</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li class="active"><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4" id="P_Reach">Weapon Reach</p>
+			<p>Weapon Reach plays an enormous role in any combat. Weapon Reach divided into six distinct Steps:</p>
+			
+			<ol>
+				<li><strong>Hand</strong>: Fists, daggers, knee-strikes, grappling, etc.</li>
+				<li><strong>Short</strong>: Long daggers, short swords, maces, etc.</li>
+				<li><strong>Medium</strong>: Arming swords, flails, sabers, short spears, etc.</li>
+				<li><strong>Long</strong>: Hand-and-a-half swords, rapiers, spears, short polearms, etc.</li>
+				<li><strong>Very Long</strong>: Greatswords, long polearms, etc.</li>
+				<li><strong>Extremely Long</strong>: Lances, pikes, etc.</li>
+			</ol>
+			
+			<p>Engaging the wielder of a longer weapon is conducted at a -1 Melee Pool penalty for each Reach increment 
+			(Hand to Short, Short to Medium, etc.) the attacker needs to close; the extreme case of engaging a pikeman with 
+			bare fists would carry a penalty of 5 Melee Pool points. This penalty holds until the shorter weapon makes a 
+			damaging strike, after which the penalty transfers to the longer weapon until he scores a damaging blow, when 
+			again the penalty goes to the shorter weapon. When the shorter weapon is out of range this penalty applies only 
+			to attacks; when the longer weapon is penalized, it applies to <em>both</em> offense and defense. Often, the 
+			best course of action for long weapons is to use a full evasion in the event of sudden close combat, or to drop 
+			weapons and wrestle! Certain maneuvers (such as the Half-sword) are particularly effective in these 
+			situations.</p>
+			
+			<p>Likewise, many weapons — such as spears and other two-handed weapons — may shorten their reach. Botching in 
+			combat is left for the Game Master to introduce as Complications at dramatic moments, to spice up events, 
+			increase tension, and put pressure on the Characters. Still, if a group absolutely feels it has to have a 
+			mechanic for random botches, this optional rule can be used:</p>
+			
+			<p><em>When an attack or defence comes up with zero Successes, a botch results. No Complication arises from this 
+			botch, but the character’s Melee Pool for the remainder of the Combat Round, or the following Combat Round (if 
+			the botch occurs on the second Exchange) is reduced by the number of dice rolled on the botched Check. In 
+			addition, if the botched roll was made with 5+ dice, something detrimental happens. The exact nature of this 
+			fumble is up to the GM, but most likely occurrences are the weapon breaking, slipping from the Character’s 
+			hand, or the Character falling prone.</em></p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
