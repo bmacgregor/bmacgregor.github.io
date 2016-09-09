@@ -1,19 +1,6 @@
 <!-- hide script from old browsers
 
-<script src="table-setup.js"></script>
 
-var allBlunt = new Array();
-var allCleaving = new Array();
-var allPiercing = new Array();
-var allSwung = new Array();
-		
-function setupPage(){
-	updateLocations();
-	setupBlunt(); // beginning to build this array
-	setupCleaving();
-	setupPiercing();
-	setupSwung();
-}
 		
 function updateLocations(){
 	switch (document.getElementById("damageType").value){
