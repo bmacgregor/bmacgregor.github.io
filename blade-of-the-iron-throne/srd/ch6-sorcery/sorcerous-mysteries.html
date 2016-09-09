@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blade SRD Sorcerous Mysteries</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Sorcerous Mysteries</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Lesser Mysteries : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Lesser Mysteries<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_LSR_Cursing">Cursing</a></li>
+							<li><a href="#P_LSR_Enslavement">Enslavement</a></li>
+							<li><a href="#P_LSR_Mending">Mending</a></li>
+							<li><a href="#P_LSR_Prophecy">Prophecy</a></li>
+							<li><a href="#P_LSR_Scrying">Scrying</a></li>
+							<li><a href="#P_LSR_Witchfire">Witchfire</a></li>
+						</ul>
+					</li>
+					
+					<!-- Greater Mysteries : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Greater Mysteries<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_GRT_Overview">Greater Mysteries Overview</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_GRT_Goety">Goety</a></li>
+							<li><a href="#P_GRT_Necromancy">Necromancy</a></li>
+						</ul>
+					</li>
+					
+					<!-- Sorcery : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Sorcery<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sorcery.html">Sorcery</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="sorcerous-mysteries.html">Sorcerous Mysteries</a></li>
+							<li><a href="arcane-secrets.html">Arcane Secrets</a></li>
+							<li class="divider"></li>
+							<li><a href="duel-of-wills.html">Duel of Wills</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li class="active"><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">The Lesser Mysteries</p>
+			<p>The six lesser Mysteries are:</p>
+			
+			<ul>
+				<li>Cursing</li>
+				<li>Enslavement</li>
+				<li>Mending</li>
+				<li>Prophecy</li>
+				<li>Scrying</li>
+				<li>Witchfire</li>
+			</ul>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LSR_Cursing">Cursing</p>
+			<p>Cursing is the art of placing a doom on someone. Curses are best placed on someone in the sorcerer’s 
+			immediate presence, but if the victim of the curse is not present, the sorcerer must at least know the victim 
+			and have either a close personal possession (a piece of well-worn clothing or other item to which the victim is 
+			emotionally attached), or a body part or secretion (hair, saliva, fingernails, etc.) of the victim at hand.</p>
+			
+			<p>In this case, a small ritual of about five minutes is necessary to place the curse. However, if the victim 
+			is in the sorcerer’s immediate presence – no more than a stone’s throw – the curse can be placed in a single 
+			combat round, simply by uttering the curse formula and pointing at the victim.</p>
+			
+			<p>To curse someone, the sorcerer makes his Casting Check as an Opposed Check against the victim’s Tenacity. A 
+			targeted sorcerer (A to C Sorcery Priority) may opt instead to use his Power instead of Tenacity to oppose this 
+			Mystery. Should he also know the Cursing Mystery himself, receives bonus dice equal to half of his Power, 
+			though no more than his rating in the Cursing Mystery to add to his choice of Tenacity or Power for the 
+			Opposed Check. If the victim equals or surpasses the sorcerer’s Casting Successes, the curse does not take 
+			effect. If the sorcerer is victorious, his curse takes hold.</p>
+			
+			<p>The sorcerer’s total Successes, not just those surpassing the victim’s Successes, translate into a curse 
+			rating, which works much like a Passion Attribute. Whenever the cursed Character makes a Check to avoid 
+			dire consequences, the curse’s rating is either subtracted from the number of dice he rolls, or is added to the 
+			dice pool of whoever is opposing him (but not both).</p>
+			
+			<p>Each time the curse causes something bad to happen to the Character, the rating drops by 2 until it is 
+			finally reduced to 0, at which time the curse will have run its course. Barring that, the only other way to get 
+			rid of the curse is to have it lifted.</p>
+			
+			<p>A sorcerer can also curse a victim with a specific doom. In this case, the curse rating is not equal to the 
+			Casting Successes; if the specific doom is merely unpleasant, the curse rating is 1 point less than the number 
+			of Casting Successes; if it is something very serious that would be hard to put right again, the curse rating 
+			is 2 points less; and if it is something deadly or utterly ruinous the curse rating is 3 points less. Should 
+			the resulting curse rating drop below 1, the curse fails to take hold.</p>
+			
+			<p>Curses of this type in any case works very similar to a curse of bad fortune, but instead of applying to all 
+			Checks to avoid something bad happening, it is subtracted either from <em>all</em> of the cursed Character’s 
+			dice pools to avoid the specific doom, or added to <em>all</em> die pools of people working to bring the doom 
+			about (again, not both in the same instance).</p>
+			
+			<p>This type of curse lasts until it is lifted, or until the doom has come to pass. Lifting a curse requires a 
+			Mending spell to be cast upon the cursed Character that achieves more Successes than the original Casting 
+			Successes (which can be different from the curse rating).</p>
+			
+			<p>Alternatively, if the cursed Character has a faith-related Passion Attribute he can, at a suitable locale, 
+			make an offering to his deity and ask for remittance of the curse. To do so, the Character Checks the relevant 
+			Passion Attribute against a Target Number of 7. If he achieves Successes at least equal to the curse rating, 
+			the curse lifted, fewer Successes have no effect at all. This is all-or-nothing, and it can only be attempted 
+			once per curse.</p>
+			
+			<p><em>Optional: A dying curse is a mainstay of sorcerers everywhere. Such a curse will be powerful, since the 
+			sorcerer need not worry about Containing the spell, but if this rule is in effect, it can be made even more 
+			powerful. A dying curse can always be uttered, no matter how instant the manner of the sorcerer’s death, and is 
+			made with a –2 Casting bonus to the Target Number.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LSR_Enslavement">Enslavement</p>
+			<p>With the Mystery of Enslavement, the sorcerer forces her will on her victims’, right up to the point where 
+			the sorcerer commands her victim’s view of reality. In essence, it's a kind of high-powered hypnosis. This 
+			Mystery requires neither formulas nor gestures, just that the sorcerer makes eye contact with her victim.</p>
+			
+			<p>The sorcerer <strong>first</strong> makes his Casting Check, which the victim can oppose with the better of 
+			her Tenacity or Sagacity. A sorcerous victim (A to C Sorcery Priority) may opt to use Power instead of Tenacity 
+			or Sagacity to oppose the Mystery. Should she also know the Enslavement Mystery, she gets additional bonus dice 
+			equal to half of her Power (though no more than her rating in the Enslavement Mystery) to her choice of 
+			Tenacity, Sagacity, or Power. If the sorcerer is victorious, the victim begins gazing into the sorcerer’s eyes, 
+			forgetting everything else, and is largely motionless, oblivious to everything around her.</p>
+
+			<p>As long as the sorcerer maintains unbroken eye contact, the victim cannot snap out of her trance, and is 
+			unable to take action, even if her life is in serious danger; she is like a rabbit before a snake. Any sharp 
+			pain will tear the victim out of the trance – a slap to the face is insufficient, but a hard punch to the 
+			stomach will suffice.</p>
+			
+			<p>Apart from filching a Character’s pockets or just slitting her throat, a sorcerer can use Enslavement to 
+			achieve one of two effects on the victim:</p>
+			
+			<ol>
+				<li><p>A sorcerer can command her victim to do something, anything, really. The sorcerer tells the victim 
+				in a language the victim can understand what to do, and makes another Casting Check Opposed by the better 
+				of the victim’s Sagacity or Tenacity. For the attacking sorcerer, while this second Check must be made with 
+				the same base number of dice as the original, additional bonus dice equal to the Quality of Success from 
+				the first Check are added as bonus dice. This second check does not necessitate another Containment Check. 
+				Sorcerous targets do not gain any benefits from their own knowledge of the occult in resisting the 
+				Enslavement. Their supernatural defences have already been invaded by the previous Opposed Check.</p>
+				
+				<p>If the victim at least ties the sorcerer, she immediately snaps out of the ensorcelment and is once again 
+				her own master. If the sorcerer is victorious, the victim will carry out the command, no matter what. If 
+				the command is more than one single, concrete action, like disembowelling oneself, or jumping down a cliff 
+				or striking at somebody, its fulfilment can take no longer than about one minute per Casting Success of 
+				the sorcerer (the total Successes, not just the surpassing ones).</p>
+				
+				<p>Such a command must be a simple action; a single, concrete thing. It can encompass walking to a locale 
+				where the mission can be fulfilled, but it cannot include sub-clauses or follow-ups. During the pursuit of 
+				this command, the enslaved Character moves in a trance, unable to react to people and events outside of 
+				her command’s scope; she won’t be even conscious of them. Once the command is carried out, the ensorcelled 
+				person will stand inactive for the remainder of the Enslavement’s duration, after which she will regain her 
+				senses and a hazy memory of what has transpired.</p></li>
+				
+				<li><p>In the victim’s mind, one thing in her vicinity appears as something completely different. The 
+				sorcerer must tell the enslaved person what the thing “really” is (“What a fool you are, to wear a reptile 
+				about your waist!”), and the victim will react as if the object actually were what she is told it is, 
+				providing any movement or action of the hallucination from her own imagination. </p>
+				
+				<p>The limit to this suggestive power is that any object can only appear as something of a similar shape and 
+				size – sword to snake, horse to tiger, one man to another, cup to tarantula, etc. To befuddle somebody, the 
+				sorcerer makes a second Casting Check, again Opposed by the better of the victim’s Sagacity or Tenacity.</p>
+				
+				<p>The number of Casting dice used is the same as the dice used in the original Casting Check, but with the 
+				addition of bonus dice equal to the Quality of Success from the initial Check added. There is no need for a 
+				Containment Check. Again, sorcerous targets receive no special benefits to resist this Check.</p>
+				
+				<p>If the victim at least ties the sorcerer, she will immediately snap out of the hypnotic trance. If the 
+				sorcerer is victorious, the affected Character sees the object as what she is told it is and will act 
+				accordingly – the hallucination is fuelled by the Character’s imagination and expectations. If anything 
+				hallucinatory happens that would cause the death of the victim (ex. a bite from a poisonous animal, or 
+				having her throat torn out by a predator), the victim passes out and must pass a Tenacity Check of Average 
+				difficulty (one success) to avoid dying from the shock.</p>
+				
+				<p>If nothing of the kind happens, the befuddled state lasts for as many Limelights as the sorcerer had 
+				Successes on her Casting Check (the total Successes, not just the surpassing ones), after which time the 
+				victim will regain her senses.</p></li>
+			</ol>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LSR_Mending">Mending</p>
+			<p>The Mending Mystery can be used to aid and speed up the recovery from injuries, though it does not normally 
+			heal them immediately. The Casting Check is made Unopposed, and the resulting number of Successes is divided 
+			into two equal halves.</p>
+			
+			<p>The first (and smaller, if applicable) half is the combined Pain rating that is deducted from all the target 
+			Character’s current wounds. These deductions must be spread among the injuries as evenly as possible. If, for 
+			instance, three Pain is deducted from a Character’s three wounds, 1 Pain would be subtracted from every wound, 
+			if from his two wounds, 1 Pain would be subtracted from one and 2 Pain from the other.</p>
+			
+			<p>The other (and larger, if applicable) half of the Casting Successes speeds up subsequent wound recovery. 
+			Under normal circumstances, healing Checks are made every seven days, but if a Character has been treated with 
+			the Mending Mystery this interval is halved, once for each one of the second half of the Casting Successes.</p>
+			
+			<p>For example, if 6 Casting Successes are achieved, putting 3 into the second half of the Successes, healing 
+			Checks are made every day (first Success halves the interval from 7 to 4 days, the second Success halves the 
+			interval from 4 to 2 days, and the third Success halves the interval from 2 to 1 day).</p>
+			
+			<p>A Character cannot benefit from the Mending Mystery until all such magically treated wounds have fully 
+			healed. New injuries sustained during this time can only be treated with Mending once all previously majicked 
+			wounds have healed. Healing Checks for these are made at the normal interval of every seven days.</p>
+			
+			<p>Mending can also be used to lift a curse (from the Lesser Mystery of this name). More Casting Successes than 
+			were achieved to with Cursing Mystery are necessary to break the curse. The Mending Mystery will also aid and 
+			speed up recovery from diseases to a comparable degree than from wounds, but as Sword & Sorcery tales do not 
+			concern themselves with things as mundane as diseases, no mechanics are provided. Should this aspect of the 
+			Mystery be needed for flavour, the effects should be estimated.</p>
+			
+			<p>The Mystery can also be used maliciously, to inflict pain upon someone. This can be done to a victim who 
+			is either present, or a distant victim of whom the sorcerer owns either a close personal possession (well-worn 
+			clothing, item to which the victim is emotionally attached, etc) or a body part or secretion (hair, nail 
+			clippings, blood, etc). In the latter case, a small ritual of five to ten minutes is necessary. In the former 
+			case, the sorcery can be worked much quicker, merely and is done by pointing out the victim and intoning a 
+			spell aloud.</p>
+			
+			<p>The sorcerer’s Casting Check is resisted by the victim’s Tenacity. Targeted sorcerers (A to C Sorcery 
+			Priority) may opt to use their Power instead of Tenacity to oppose. Should they also know the Mending Mystery, 
+			they receive additional bonus dice equal to half their Power (though no more than their rating in the Mending 
+			Mystery) to their choice of Tenacity or Power. If the sorcerer achieves more Successes than his victim, the 
+			victim immediately feels intense stabs of pain, corresponding to a Pain rating equal to three times the 
+			sorcerer’s total (not just surpassing) Casting Successes.</p>
+			
+			<p>This Pain, from which Tenacity is subtracted as usual, persists for as long as the sorcerer focuses his 
+			attention on the victim, and increases by 3 with every subsequent Limelight. Should the sorcerer be distracted 
+			from the victim or chooses to end the effect, Pain drains away at a rate of 3 points every Limelight. Sorcerers 
+			proficient in the Mending Mystery have to decide whether they want to devote themselves to its beneficent or 
+			malicious use.</p>
+			
+			<p>The aspect that they opt for as their main use of the Mystery has the usual Casting and Containment Target 
+			Numbers, and the opposite suffers a +2 Target Number penalty for both Casting <em>and</em> Containment.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LSR_Prophecy">Prophecy</p>
+			<p>Prophecy is the art of seeing into the future and divining something that is not readily apparent. The kinds 
+			of questions that can be answered by Prophecy fall into two categories; the broader “Will I succeed?” or 
+			“Should I continue?” type of questions, and the much more specific “Who is...” or “Where is...” 
+			type.</p>
+			
+			<p>To answer either, the sorcerer needs to utilize a Prophecy ritual specific to the setting and her own 
+			preferences: It might be prophetic dreams, stargazing, the casting of bones, reading tarot cards, studying the 
+			entrails of sacrificial animals, and much more. For the broad type of question, the Player first states whether 
+			she’d like a negative or positive answer to the question and then makes a Casting Check. If the answer 
+			is obvious to the Game Master, she simply decides on “yes” or “no”. If it isn’t, she rolls a d12 and subtracts 
+			one third the sorcerer’s Casting Successes if the Player wanted a positive answer, or adding this number if the 
+			Player wished for a negative one. A result of 1-5 yields a “yes”, 6-7 is indifferent, and 8-12 is “no”. 
+			Regardless of the answer, it translates into an Omen rating of 1, which functions like a Passion Attribute.</p>
+			
+			<p>The Omen rating is added to all Checks to bring about a result in accordance with the answer, and subtracted 
+			from all Checks to bring about a result contrary to the answer. The more specific type of question - things 
+			like something’s or someone’s location or identity - is not as easily cast into rules. A correct answer 
+			will require any number of Successes deemed appropriate by the GM, with 1 success sufficient for trivial 
+			questions (like the location of a misplaced item), while divining the identity of an unseen mastermind 
+			behind some hardly grasped intrigue would for instance require at least 6 Successes, possibly more.</p>
+			
+			<p>If insufficient Successes are achieved, the Prophecy is inconclusive, but if the Casting Check is a Botch, 
+			the resultant Complication is an answer that is either dangerously ambiguous or outright maliciously 
+			misleading.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LSR_Scrying">Scrying</p>
+			<p>The Mystery of Scrying is the practice of sending one’s consciousness, spirit, astral body, or soul away 
+			from one’s physical self, having it travel quickly to distant places to spy out what is happening there. To do 
+			so, the sorcerer enters a deep trance, usually aided by mind-altering drugs. Depending on the specifics of the 
+			setting, certain paraphernalia, like mirrors or crystals to gaze into, might also be necessary.</p>
+			
+			<p>While his body is senseless, his consciousness rises out of it, and is able to pass unseen and unfelt 
+			through all matter, and capable of travelling at vast speeds. This immaterial embodiment of the sorcerer is 
+			unable to affect the physical world, but it can observe and listen in on what is taking place in it. Once the 
+			sorcerer’s magical trance is sufficiently deep (taking anywhere from ten minutes to over an hour) he makes a 
+			Casting Check.</p>
+			
+			<p>For every Success, depending on the setting or the sorcerous tradition employed, he can either stay out of 
+			his body for five minutes while traveling at about 600 km an hour, or for half an hour while travelling at 200 
+			km an hour. The more Successes he achieves, the longer his consciousness can stay away from his body, and the 
+			more distant the places his consciousness may visit. At the end of this timespan, the consciousness will snap 
+			back into the physical self and the sorcerer will awaken, usually disoriented, fatigued, or hung over.</p>
+			
+			<p>He can elect to have his consciousness return before the maximum time is up, but he is entirely unconscious 
+			of what is happening around and to his body while his sorcerous self is travelling to distant places. Wounds, 
+			danger, or discomfort will come to his attention only when he comes out of his magical trance. Should his body 
+			die while it is in trance, so does the embodiment of his consciousness, and the soul then goes to whatever 
+			place souls go after death.</p>
+			
+			<p>The presence of a scrying consciousness cannot be noticed by humans, save those with the Detect Sorcery 
+			Skill, who can make a Check to sense a presence, and to other sorcerers who know the Mystery of Scrying and 
+			who will detect the presence of a scryer’s sorcerous vision on a single Success on an Unopposed Sagacity Check, 
+			and are able to see the presence as a kind of astral body with two Successes.</p>
+			
+			<p>Disembodied spirits can detect a sorcerer’s consciousness automatically, as can many supernatural beings 
+			like demons or ghosts. Many of these entities may even be able to interact with the spiritual body, possibly 
+			even harming it as if it were physical. Should the astral body be killed by such an attack, the sorcerer’s 
+			physical body dies as well.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LSR_Witchfire">Witchfire</p>
+			<p>The Witchfire Mystery unleashes energies to damage or outright destroy inanimate and animate things. Despite 
+			the Mystery’s name, those energies need not manifest as fire, but can take any number of forms depending on the 
+			setting and the sorcerous tradition employed. It can be beams of searing light from the sorcerer’s eyes, bolts 
+			of fire leaping from her fingertips, a spectral vortex of slavering demonic shapes, lightning or pillars of 
+			fire from the sky, a dagger appearing in the sorcerer’s hands and launched by her, and a thousand other things. 
+			It can even be innocuous, and take the form of a handy object striking the target, like masonry collapsing, or 
+			a horse kicking it.</p>
+			
+			<p class="h4" id="P_WitchfireStats">Witchfire Statistics</p>
+			<table class="table table-striped table-hover" id="TBL_WitchfireStats">
+				<thead>
+					<th>Weapon</th>
+					<th>Point Blank Target Number</th>
+					<th>Near Target Number</th>
+					<th>Medium Target Number</th>
+					<th>Far Target Number</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Witchfire</strong></td>
+						<td>5</td>
+						<td>7</td>
+						<td>9</td>
+						<td>11</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>In game terms, Witchfire manifests as a ranged weapon of the launched type without the capability to attack 
+			at Extreme Range, and with an Archery Pool cost for every +/– 1, taken from one Range band worse than the 
+			actual attack (ex. Near to Extreme). Witchfire is notoriously hard to aim precisely.</p>
+			
+			<p>The sorcerer utilizing Witchfire makes Casting and Containment Checks as normal. Any Casting Successes 
+			double as both the Witchfire’s eventual Damage Rating and as Proficiency dice for the Archery Pool, which is 
+			equal to (Aim + Successes).</p>
+			
+			<p>Defence against Witchfire is possible though Blocking and Evasion, the same as dealing with launched 
+			missiles such as arrows and bolts, however, to defend against it, the target must realize in time what is 
+			coming her way. Most targets will need to pass a Surprise Check of Challenge Level 4, even if they are watching 
+			the sorcerer intently.</p>
+			
+			<p>Any previous experience with Witchfire makes this Check one degree easier, as will previous experience with 
+			Witchfire from the same sorcerer, and already having been attacked by Witchfire in the same Scene, for a 
+			minimum Challenge Level of 1 if all three apply. A successful Precognition Skill Check does away with the need 
+			for a Surprise Check, as does any degree of the Occultism Skill, unless the target is in a situation where she 
+			would have to Check for Surprise even for a mundane attack. If the Witchfire strike is successful, hit location 
+			is determined as with any other missile weapon.</p>
+			
+			<p>The hit’s Impact Rating is calculated by adding the original Casting Successes to the Quality of Success of 
+			the attack Roll (Quality of Success + Casting Successes). Both Brawn and Armour Value protects against 
+			Witchfire as normal. The Damage Table and Armour Values used are the ones most closely corresponding to the 
+			manifestation of Witchfire, or Cleaving if none seems to fit outright.</p>
+			
+			<p>The eldritch nature of sorcerers offers them additional protection against Witchfire. Any sorcerous 
+			Character (A through C Sorcery Priority) can use half her Power Attribute as additional Armour Value against 
+			Witchfire strikes, or their full Power if they know the Witchfire Mystery themselves.</p>
+			
+			<p>Characters built with the E or F Sorcery Priorities are particularly vulnerable against Witchfire and may 
+			not use their Brawn ratings to soak up damage from it.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_GRT_Overview">Greater Mystery Overview</p>
+			<p>The two Greater Mysteries are:</p>
+			
+			<ul>
+				<li>Goety</li>
+				<li>Necromancy</li>
+			</ul>
+			
+			<hr/>
+			
+			<p class="h4" id="P_GRT_Goety">Goety</p>
+			<p>One of the two greater Mysteries, this is the sorcery of conjuration, command, and banishment of 
+			supernatural creatures from beyond the boundaries of the world. From where these creatures originate is 
+			specific to the setting – they may be from out of the dark between the stars, from other dimensions, from alien 
+			planets light years away, or some other unfathomably strange place. The attitude of these demons towards 
+			humanity and the sorcerer also varies with the setting – it may be anything from annoyed irritation to haughty 
+			expectations of worship to all-consuming hatred.</p>
+			
+			<p>Whatever it is, it is never friendly. The Occultism Skill provides knowledge on the outlook of demons, or at 
+			least what their outlook is perceived to be. The type of ritual required to conjure a demon depends on the 
+			flavour of the setting.</p>
+			
+			<p>The three necessary components of conjuration in all settings are purification of the sorcerer (which might 
+			take anywhere from under an hour to over a day, depending on the setting), a ritual taking from under ten 
+			minutes to over an hour, and a blood sacrifice. The minimum sacrifice that is acceptable depends on the setting. 
+			Examples include large animals, a human being, or a virgin.</p>
+			
+			<p>To conjure the demon, the sorcerer makes his Casting Check. His Sorcery pool for this Casting Check is 
+			modified by the result of a Difficult Occultism Check (three successes); every Success the Occultism Check is 
+			short of the required 3 successes penalizes the Sorcery Pool by 1 die, while every Success over 3 adds 1 die to 
+			the pool. The second modifier is the extent of the sacrifice.</p>
+			
+			<p>The minimum sacrifice required adds nothing, but every ‘step up’ from this base (mammal to man, man to 
+			virgin, etc) adds 1 extra die, as does every time the minimum is multiplied by 10. If the minimum acceptable 
+			sacrifice is a human being and the sorcerer offers up 10 virgins he receives 2 bonus dice to his Sorcery Pool. 
+			For the practiced sorcerer, piercing the divides to the realms where demons dwell isn’t difficult, but finding 
+			the demon he <em>wants</em> to conjure may well be. The search for the right one takes time, during which the 
+			sorcerer’s consciousness is in close contact with an alien realm, exposing him to massive degrees of Taint. To 
+			successfully conjure a demon into his presence, the sorcerer needs to achieve 1 Success on his Casting Check. 
+			However, for the summoned demon to be the right one, five Casting Successes are necessary.</p>
+			
+			<p>If the wrong demon is called forth, its exact type depends on the GM’s approach to demons. Some Game Masters 
+			might enjoy statting out long catalogues of demons, from which the sorcerer may choose one to conjure; if 
+			that's the case, the GM chooses another demon from the catalogue, its difference in stats and powers to the 
+			desired one being 1 point less or greater per each Casting Success short of 5. Other Game Masters may allow 
+			players to stat out their own demons; in this case, the GM changes the Attribute total of the arriving demon by 
+			2 points per Casting Success short of 5, or adds or subtracts one special power per Casting Success short. 
+			Please note that all the changes should either make the demon more or less powerful – which one should be 
+			determined randomly. Whatever the approach, the sorcerer has to state what demon he wants to conjure before the 
+			dice are rolled, either by choosing one from a list or by statting it out.</p>
+			
+			<p>Should the sorcerer achieve more than 5 Casting Successes, the extra Successes carry over as bonus dice to 
+			his Sorcery Pool for the next stage of the summoning, the Coercion Check. This Check represents the sorcerer 
+			bargaining with the demon, or intimidating it into compliance and is a second Casting Check, with a Sorcery 
+			Pool already impacted by any Taint the sorcerer may have picked up during the summoning itself. The demon 
+			Opposes this Casting Check with its worst Attribute, with a +1 die donus added for every special power it 
+			possesses.</p>
+			
+			<p>Tying this Opposed Check yields an inconclusive outcome, with the demon departing or being pulled back from 
+			whence it came. If the demon is victorious, it is unshackled from the sorcerous constraints holding it during 
+			the Coercion Check, and is free to attack the summoner, depart, or stray into the world to cause havoc. How 
+			long such an unbound demon may roam the world depends on the setting – it might be a day or a year per initial 
+			Casting Success, as long as the sorcerer lives, or anything else. Should the demon choose to attack the 
+			sorcerer and manage to incapacitate him (immobilize him through grappling, knock him out, reduce his pools to 0 
+			through Pain, etc.), he may and probably will carry him off to its place of origin, never to be heard of 
+			again.</p>
+			
+			<p>For the remainder of the scene in which the sorcerer failed his Opposed Coercion Check against the demon, 
+			he is at +1 a Target Number penalty for all actions directed against the demon. In addition, and cumulative 
+			with this penalty, he suffers a +2 Target Number penalty to use Goety against the demon for as long as it 
+			remains free in the world.</p>
+			
+			<p>If the sorcerer is victorious in the Coercion Check, he may demand a number of tasks from the demon equal to 
+			his Quality of Success. A task is defined as a simple, straightforward service (for instance attempting to kill 
+			a single person). If the fulfillment of this task requires travel over a greater distance than a few hundred 
+			meters, this counts as a separate task, as does returning to the sorcerer (should the sorcerer demand this). If 
+			the place where the demon is to travel to is ill-defined or entirely undefined (such as attepmting to slay a 
+			person whose current location is unknown to the sorcerer), determining the locale also counts as a separate 
+			task.</p>
+			
+			<p>Similarly, if a task can only be accomplished in stages, each stage also counts as a task of its own. 
+			Finally, if a task requires more than an hour of the demon’s time, every doubling of this initial span of time 
+			also counts as a task all of its own. The exception to this is when the task is to guard a stationary person, 
+			item, or locale; in this case, with no travelling required of the demon, the initial span of time for the task 
+			is a day, not an hour.</p>
+			
+			<p>Please note that demons travel instantaneously, as long as they are not carrying living beings; if they are 
+			to take along a living being, their travel times are determined by their mode and speed of locomotion.</p>
+			
+			<p>Examples:</p>
+			
+			<ul>
+				<li><em>Fetch me the sceptre of King Yezdigerd.</em> – 4 tasks (1 base + 1 travel to location + 1 location 
+				ill-defined + 1 return to sorcerer)</li>
+				<li><em>Kill Conan.</em> – 3 tasks (1 base + 1 travel to location + 1 location undefined)</li>
+				<li><em>Carry me to the top of Mount Yimsha.</em> – 2 tasks (1 base + 1 time), assuming a travel time of 
+				over one but no more than two hours</li>
+				<li><em>Fetch me the Heart of Ahriman from the vaults of the temple of Mitra.</em> – 6 tasks (1 base + 1 
+				travel to location + 1 location ill-defined + 1 overcoming magical wards + 1 defeating guardian of the 
+				Heart + 1 return to sorcerer), and a hefty chance of failing with ward and guardian</li>
+			</ul>
+			
+			<p>If the scope of such service is clear at the moment of the Coercion attempt, any shortage of the required 
+			number of Successes results in the demon declaring that the sorcerer is asking too much and returning from 
+			whence it came. If the scope is variable, such as killing an unspecified number of people or guarding something 
+			for as long as possible, the demon will - provided that the sorcerer was successful at all - begin the task, 
+			but will abandon it as soon as the sorcerer’s Successes are ‘spent.’</p>
+			
+			<p>Sometimes, a sorcerer will want to banish a demon. This is relatively straightforward in the case of a demon 
+			he himself conjured, as he is already familiar with the demon and its attributes, but it is more difficult if 
+			the demon was conjured by someone else. In the latter case, the sorcerer must make an Occultism Check at 
+			Legendary difficulty (five successes). For every Success short of 5, his sorcery pool to banish the demon is 
+			penalized by 1.</p>
+			
+			<p>The banishing ritual takes anywhere from half a minute to several minutes, and is setting-specific. Once the 
+			ritual has been begun, the demon cannot leave the immediate surroundings of the sorcerer, but must remain 
+			within earshot and sight. It may not attack the sorcerer, who is protected by the ritual he has invoked, but is 
+			otherwise free to do as it pleases, including trying to kill the sorcerer’s companions, causing havoc to 
+			distract the sorcerer, or by harming him indirectly (for example, setting the sorcerer’s immediate surroundings 
+			ablaze).</p>
+			
+			<p>The sorcerer’s Casting Check is Opposed by the demon’s worst Attribute, with a +1 die bonus per special power 
+			it possesses. To banish a demon successfully, the sorcerer has to emerge victorious from the contest; a tie 
+			or a defeat for the sorcerer allows the demon to remain. If a sorcerer successfully banishes a demon he didn't 
+			conjure in the first place, he accrues only one third the normal Taint (after the Containment Check is made), 
+			unless the Containment Check results in a Taint discharge, in which case he accumulates the ordinary amount of 
+			Taint.</p>
+			
+			<p>A few guidelines to the power of demons: Demons never have Heart scores, not even the succubus-like ones. 
+			Cunning is used instead, where necessary. Demons should not have Attribute scores much higher than 12, and 
+			their lowest Attribute should not normally be less than a quarter of their highest. Their Proficiency scores in 
+			all modes of attack should be identical to Reflex, or very close to it, or to Aim in case of ranged attacks. 
+			Their Damage Rating with special forms of attack (like fire breathing) should be close to the Damage Rating of 
+			more mundane forms of attack like bites. If the demon knows any Mysteries (which could have been purchased 
+			as a special power), its rating in it should be identical (or close to) its Tenacity.</p>
+			
+			<p>Demons may have additional traits that are in line with their physical appearance – a winged demon should 
+			be able to fly, and a shaggy demon should have some kind of Armour Value. Only traits that are not reflected by 
+			their appearance, or that go clearly beyond anything a mundane animal might exhibit, should be regarded as 
+			‘special powers’ in the sense referred to above. This includes special forms of attack like hypnosis or acid 
+			spitting, any armour beyond an Armour Value 2 or not reflected by the demon’s appearance, useful special 
+			abilities like regeneration or ultramundane modes of movement like shifting through walls, and anything else 
+			along these lines.</p>
+			
+			<p>Special powers also include bulk (and the accompanying reduction of damage). A demon should receive one of 
+			these traits for free only if it is large – for example, the trait ‘large’ should only be applied for free if 
+			the demon is of a bulk where one would already consider assigning the trait ‘huge’; otherwise, the trait needs 
+			to be purchased as a special power. If a demon who would not receive ‘large’, counting it as 'huge' costs two 
+			special powers.</p>
+			
+			<p>Size and bulk also extend to the special trait of some large creatures to engage several opponents at once, 
+			acting on their respective Limelights. Being able to engage a second opponent should only be assigned for free 
+			if the demon is huge and of a bodily configuration to suggest this, otherwise, it has to be purchased as a 
+			special power, as would the ability to engage every extra opponent.</p>
+			
+			<p>Both Players and GM should realize that Goety is powerful and versatile, and that every summoning requires 
+			two Casting Checks (Conjuration and Coercion), and thus two Checks to contain Taint. Trafficking with entities 
+			from beyond the human domain is a sure way to amass Taint quickly.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_GRT_Necromancy">Necromancy</p>
+			<p>Necromancy deals with calling up the dead from the beyond to question the shades of the deceased, and 
+			learn secrets beyond human ken. Where Goety allows the sorcerer to exert power in the world, Necromancy enables 
+			her to learn things <em>about</em> the world. The core of necromancy involves calling up the spirit of 
+			a particular deceased person. How this spirit manifests itself (as a traditional ghost, a disembodied voice 
+			from the grave, or a vision in a mirror) is specific to the setting. In any case, the summoned spirit is unable 
+			to affect the physical world, save perhaps with a Complication on its Containment Check.</p>
+			
+			<p>To summon a spirit from the underworld, the sorcerer must at least know the deceased’s name; if the name is 
+			unknown, it cannot be summoned. The Sorcery Pool for the Necromancy Mystery is modified as follows:</p>
+			
+			<p>In addition to knowing the name, at least one of the following three things must also apply for the 
+			summoning to be possible at all. If two of them apply, the sorcerer receives +1 to her Sorcery Pool, and +2 if 
+			all three apply:</p>
+			
+			<ul>
+				<li>+spec. if the sorcerer is in the presence of the person’s mortal remains</li>
+				<li>+spec. if the sorcerer has one or more items at hand that were of great personal importance to the 
+				person while alive </li>
+				<li>+ spec. if the sorcerer is in the place where the person died, there are  further modifiers:
+					<ul>
+						<li>+1 if the sorcerer knew the person in life</li>
+						<li>+1 if the sorcerer knows extensive and correct biographic details of the person (equivalent of 
+							at least twenty pages of writing)</li>
+						<li>+1 if the sorcerer is a direct descendant of the person</li>
+						<li>-1 if the person has been dead for longer than a month </li>
+						<li>-1 if the person has been dead for longer than a year (cumulative with above)</li>
+						<li>-1 if the person has been dead for longer than 10 years (cumulative with above)</li>
+						<li>-1 if the person has been dead for longer than 100 years (cumulative with above)</li>
+						<li>-1 if the person has been dead for longer than 1000 years (cumulative with above)</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<p>The sorcerer makes her Casting Check, Opposed by the spirit’s Tenacity, modified cumulatively as follows:</p>
+			
+			<ul>
+				<li>+1 : spirit was a powerful person (sorcerer, nobleman, wealthy merchant, ranking priest)</li>
+				<li>+1 : spirit was an independent ruler or head of a cult</li>
+				<li>+1 : spirit knew one or more Lesser sorcerous Mysteries</li>
+				<li>+1 : spirit knew one or two Greater sorcerous Mysteries</li>
+				<li>+1 : spirit knew Necromancy (cumulative with above; sorcerers knowing just Goety get +1, those knowing 
+					Necromancy or both Necromancy and Goety gain +2)</li>
+			</ul>
+			
+			<p>If the spirit is victorious or ties the sorcerer, the spirit does not appear, and the sorcerer cannot attempt 
+			to summon this spirit again for a number of months equal to the spirit’s total number of Successes (not just 
+			the surpassing ones), unless she achieves a change in summoning circumstances in her favour (ex. better 
+			summoning modifiers than her last attempt).</p>
+			
+			<p>If the sorcerer is victorious, the spirit must answer one question per Success of the sorcerer (total 
+			Successes, not just surpassing ones) to its best ability. Asking a question the spirit cannot answer uses up 
+			one of the sorcerer’s questions.</p>
+			
+			<p>Spirits know details from their own life, but they seem to also learn from other spirits and therefore know 
+			about things that have come to pass after their death, but know nothing that is only known to those still 
+			alive. They keep less track of more recent events. To see whether a spirit knows the answer to any given 
+			question, the spirit’s Tenacity (<em>not</em> Sagacity) is checked, with the following numbers of Successes 
+			required:</p>
+			
+			<ul>
+				<li>0 if it pertains to something from the spirit’s own life</li>
+				<li>+1 if it pertains to something from the spirit’s walk of life that has happened in the geographical 
+					area of the spirit’s life</li>
+				<li>+2 if it pertains to either something from the spirit’s walk of life that has happened outside its 
+					geographical area of life, or to something outside the spirit’s walk of life that has happened in its 
+					geographical area of life</li>
+				<li>+3 if it pertains to something both outside the spirit’s walk of life and outside its geographical area 
+					of life</li>
+				<li>+1 if it pertains to something that has happened either closer to the present time than the spirit’s 
+					time of death (ex. within the last 10 years if the spirit died 20 years ago) or that has happened a 
+					longer time before its birth than it has beem dead (ex. more than 20 years before its birth if the 
+					spirit died 20 years ago). This is cumulative with all modifiers above</li>
+				<li>+1 if it pertains to something that has happened either within the recent 10% of time since the spirit’s 
+					time of death (ex. within the last 2 years if the spirit died 20 years ago) or that has happened more 
+					than five times as long as it is dead before the time of its birth (ex. more than 100 years before its 
+					birth if the spirit died 20 years ago). This is cumulative with all modifiers above</li>
+				<li>+1 if it pertains to something that has happened either within the recent 1% of time since the spirit’s 
+					time of death (ex. within the last 0.2 years if the spirit died 20 years ago) or that has happened more 
+					than twenty times as long as it is dead before the time of its birth (ex. more than 400 years before 
+					its birth if the spirit died 20 years ago). This is cumulative with all modifiers above</li>
+			</ul>
+			
+			<p>Spirits will not (and possibly cannot) answer questions pertaining to the afterlife itself, including 
+			questions as to whether they are well or unwell in the afterlife, or if they are acquainted to a certain 
+			person’s spirit. Any such question is a wasted one. Spirits can only report about things that were known to a 
+			person – any person, really – in life, provided this person is by now dead. If something is only known to 
+			people who are still alive, no spirit can know it.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
