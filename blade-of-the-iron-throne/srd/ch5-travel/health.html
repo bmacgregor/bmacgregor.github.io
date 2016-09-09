@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Health and Healing</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Health and Healing</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_FallingDamage">Falling Damage</a></li>
+					<li><a href="#P_GenericDamage">Generic Damage</a></li>
+					<li><a href="#P_Poison">Poison</a></li>
+					<li><a href="#P_ItsJustAScratch">Pain - It's Just a Scratch! (Optional)</a></li>
+					
+					<!-- Travel and Health : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Travel and Health<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="scenes.html">Scene Requests</a></li>
+							<li class="active"><a href="health.html">Health and Healing</a></li>
+							<li class="divider"></li>
+							<li><a href="encumbrance.html">Encumbrance (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li class="active"><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Health, Healing, and Wounds</p>
+			<p>In <em>Blade</em>, even a slight wound is no laughing matter. For the healing process to begin in earnest, 
+			there are some mandates:</p>
+			
+			<p>First, you must be in a state of rest. Second, at least for the more serious wounds, you need some form of 
+			treatment. Wounds can be tended to by anyone possessing the Healing Skill. Note that each wound must be 
+			treated individually. A successful Healing Skill Check reduces Blood Loss by 3 per Success. A failed Healing 
+			Check <em>increases</em> Blood Loss by 1, while a Botched Healing Check <strong>doubles</strong> the wound’s 
+			Blood Loss.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Dealing with Bloodloss</p>
+			<p>At the end of the Limelight in which the Character first acquired points of Blood Loss and on the end of 
+			each subsequent Limelight, a Brawn check is required. This Check must yield Successes equal to or greater than 
+			the current Blood Loss number.</p>
+			
+			<p>With this in mind, any Limelight Blood Loss Check made while the subject is at rest (or at most, moving or 
+			walking very slowly) requires one less Success than indicated by the current Blood Loss rating to be 
+			successful. This includes characters unconscious from Blood Loss. However, even if a character’s Blood Loss 
+			rating is reduced to 0, the penalties accrued due to bleeding will not diminish immediately. Such penalties are 
+			reduced by 2 for the Melee, Archery, and Sorcery Pools for each passing day spent resting with proper 
+			nourishment and low activity, or by 1 per passing day of exertion.</p>
+			
+			<p>Any Wound Level beyond 2 calls for a chirurgeon (someone with the Healing Skill at level 3 or higher). At 
+			the end of each week make a Tenacity Check versus the Pain rating of each individual wound. Each Success lowers 
+			that wound’s Pain value by 1. This Check is modified by three things: Rest, medical care, and damage type.</p>
+			
+			<p>During convalescence, moderate activity with no more than one or two instances of strenuous activity is 
+			assumed. If a Character spends a week completely at rest, with no more than occasional light activity, the 
+			Tenacity Check for each injury is made against a Target Number of (Pain - 1). On the other hand, if she doesn’t 
+			take it easy, the Target Number is equal to (Pain + 1).</p>
+			
+			<p>A caregiver Character using the Healing Skill and available throughout much of the week of healing time may 
+			make a Skill Check before the patient rolls. Each Success in this Check lowers the difficulty of all 
+			patient-rolled healing Checks for this week by 1. Failure adds nothing, but if no success are achieved on the 
+			Skill Check, all the patient’s healing Checks for the week are made at a +2 Target Number.</p>
+			
+			<p>Damage type — meaning Cleaving, Piercing, or Blunt— affects this TenaciY Check as well. To heal a Blunt 
+			wound, the basic Target Number is equal to Pain, but Piercing or Cleaving injuries heal with a basic Target 
+			Number of (Pain + 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_FallingDamage">Falling Damage</p>
+			<p>Falling is defined as the free descent by force of gravity. All damage derived from falling is a result of 
+			both the distance fallen and the surface landed upon. See the following table.</p>
+			
+			<p class="h4">Falling Damage Table</p>
+			<table class="table table-striped table-hover" id="TBL_FallingDamage">
+				<thead>
+					<th>Landing Surface</th>
+					<th>Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Soft; a large pile of hay, a featherbed, water (with a successful Swimming check)</td>
+						<td>One per Three Meters fallen</td>
+					</tr>
+					<tr>
+						<td>Mixed; a crowd of people, falling (not diving) into shallow water, muddy banks</td>
+						<td>One per Two Meters fallen</td>
+					</tr>
+					<tr>
+						<td>Hard; ground, stone, armoured people falling from horses, water (with a failed Swimming 
+						check)</td>
+						<td>One per Meter fallen</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>All damage caused by the fall is Blunt damage. Damage is randomly assigned to some location on the 
+			recipient’s body; for every two points of damage suffered, roll once on the following table and assign damage 
+			accordingly. Damage to any area rolled more than once is cumulative, and applied with a single d6 roll on the 
+			Target Zone Charts (See Appendices).</p>
+			
+			<p class="h4" id="P_AllocateFallDamage">Allocation of Falling Damage</p>
+			<table class="table table-striped table-hover" id="TBL_AllocateFallDamage">
+				<thead>
+					<th>d12 Roll</th>
+					<th>Area Location</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 - 2</td>
+						<td>One</td>
+					</tr>
+					<tr>
+						<td>3 - 4</td>
+						<td>Two</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Three</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Four</td>
+					</tr>
+					<tr>
+						<td>7 - 8</td>
+						<td>Five</td>
+					</tr>
+					<tr>
+						<td>9 - 10</td>
+						<td>Six</td>
+					</tr>
+					<tr>
+						<td>11 - 12</td>
+						<td>Seven</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Only the longest of falls can affect more than one Target Zone. The number of Zones the damage can be spread 
+			to can never be higher than two, or one quarter the fall’s height in meters, whichever is greater. As soon as 
+			this number of Zones has been derived, further damage is assigned randomly to the Zones already determined.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_Falling">
+				<p><em><strong>Example</strong>: Otho is knocked from his horse. The fall from the saddle corresponds to a 
+				fall of 2m to the hard ground. Consulting Table 5.3, we see that’s a hard fall. He then rolls 3 and 4 on a 
+				D12. Consulting Table 5.4 we note that Otho takes a level two Blunt wound to his upper leg (area 2). He 
+				now must roll 1D6 on the Damage Table in the Appendices to determine the exact location of the 
+				injury.</em></p>
+			</div>
+			
+			<br/>
+			
+			<hr/>
+			
+			<p class="h4" id="P_GenericDamage">Generic Damage</p>
+			<p>Any damage from fire, cold, electricity, sorcery, the elements, or not specifically covered by rules uses 
+			the “Generic Damage” chart in the Appendix. Such damage is calculated like damage from any other attack 
+			described in chapter four. Such damage is applied randomly using the Falling Damage Table, unless impacting a 
+			specific area (such as someone with a flaming arrow, in which case any fire damage is simply applied to the 
+			area struck).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Poison">Poison</p>
+			<p>When a Character is poisoned, she must pass frequent Checks to avoid advancing along the six levels of the 
+			Poison Track, which, much like the six combat Wound Levels are progressive in their severity. Should she 
+			advance to Poison Level 6, she dies. The frequency of such “Progression” Checks (using the Knockout Attribute) 
+			depend on how fast the poison acts. Such can either be:</p>
+			
+			<ul>
+				<li>A Limelight</li>
+				<li>A few minutes</li>
+				<li>Half an hour</li>
+				<li>A few hours</li>
+			</ul>
+			
+			<p>Ingested poisons generally have a progression rate of a half hour to several hours, unless sorcerous in 
+			nature, in which case they may have a progression time of only a few minutes.</p>
+			
+			<p>Injected poisons generally have a progression rate of a few minutes to one half hour, but if injected to the 
+			head, neck, or torso, become faster by one “step”. In such cases, a progression rate of a single Limelight 
+			is possible. To successfully inject a poison, no Wound Levels need be inflicted. For as long as the poison 
+			attack’s Impact Rating surpasses the victim’s Armour Value, the poison is successfully injected, even if Brawn 
+			soaks up all actual damage.</p>
+			
+			<p>To avoid advancing along the Poison Track, a Progression Check must be passed. This Check’s required amount 
+			of successes is dependent on the strength of the poison being resisted. Such Checks typically must yield a  
+			Qulaity of Success of 2 or 3. Poisons requiring a Quality of Success 1 certainly exist and are much more common 
+			than the more virulent ones, but their progression is hardly dramatic enough to bother with at all.</p>
+			
+			<p>Conversely, poisons necessitating Quality of Success 4 or greater are possible, but are so sublimely deadly 
+			that Game Masters are strongly advised to have them appear more as a threat of something to avoid at all costs, 
+			rather than something to actually afflict on the Characters.</p>
+			
+			<p>Medical aid can be provided to the afflicted by any Character with either the Apothecary or the Healing 
+			Skill. A successful Apothecary Check with a Challenge Level equalling the virulence of the poison (the Quality 
+			of Success required by the Knockout Check to avoid further progression on the Poison Track) will lower the 
+			Target Number of further Progression Checks by 1.</p>
+			
+			<p>A Check using the Healing Skill brings the same benefit, but instead must meet a Challenge Level equal to 
+			twice the poison’s virulence. Once a Character has passed three successive poison Progression Checks, further 
+			advancement on the Poison Track is stopped, and the Character has “ridden out” the poisoning. From this point 
+			on he must pass a Knockout Check every few hours at a Target Number of 7, with the poison recovery Challenge 
+			Level equal to the poison’s current virulence.</p>
+			
+			<p>Successfully meeting this Check signifies one step back along the Poison Progression Chart and a 
+			reduction to the poison’s recovery Challenge Level. This downward spiral of Checks continues until the effects 
+			of the poisoning fade completely and the subject is hale once more.</p>
+			
+			<p class="h4" id="P_PoisonProgression">Poison Progression Chart</p>
+			<table class="table table-striped table-hover" id="TBL_PoisonProgression">
+				<thead>
+					<th>Poison Level</th>
+					<th>Effect</th>
+					<th>Target Number</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One</td>
+						<td>Soreness and itching; slight nausea if ingested. Pain 1</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Two</td>
+						<td>Sweating and rapid breathing. Pain 3</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Three</td>
+						<td>Hyperventilating. Pain 5</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Four</td>
+						<td>Stops hyperventilating, but has trouble breathing. Pain 7, +1 Success required on all checks 
+						for any activity. Pass knockout Check (Challenge Level 1) to not pass out</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Five</td>
+						<td>Heart murmurs / palpitations. Pain 9, +2 Successes required on all Checks for any activity. 
+						Pass Knockout Check (Challenge Level 2) to not pass out</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Six</td>
+						<td>Coma followed by death within about half the progression time</td>
+						<td>6</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ItsJustAScratch">Pain - It's Just a Scratch! (Optional)</p>
+			<p>The protagonists of Sword & Sorcery tales are notoriously tough. Whether because of an indomitable force of 
+			will or just sheer machismo, they often shrug off hurt that would lay low lesser men. The same is true for 
+			Characters and named NPCs in <em>Blade</em>.</p>
+			
+			<p>As soon as the action in a scene in which the Character has received a wound subsides, the higher of either 
+			Brawn or Tenacity may be Checked for the Character (Passion Attributes are not applied to this Check!). Once 
+			Checked, an amount of Pain equal to the Quality of Success of the successful Check may be subtracted from any 
+			newly inflicted wounds. The Player then decides how this Quality of Success bonus is applied against those 
+			wounds, distributing Pain relief to any fresh wound as desired.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_JustAScratch">
+				<p><em><strong>Example</strong>: Otho has 3 cuts received during the fight he just emerged from as victor:</p></em>
+				
+				<ul>
+					<li>A Pain 1 cut to his hand</li>
+					<li>A Pain 1 cut to his jaw</li>
+					<li>A Pain 2 cut to his side</li>
+				</ul>
+				
+				<p>Rolling against a Target Number of 7 with his Tenacity (because Otho's Tenacity is higher than his 
+				Brawn) he scores 3 Successes and opts to reduce the Pain 2 cut to his side down to zero, and to also get 
+				rid of the Pain 1 cut to his hand. The cut to his jaw he opts to leave as a dueling scar for the ladies to 
+				admire.</em></p>
+			</div>
+			
+			<br/>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
