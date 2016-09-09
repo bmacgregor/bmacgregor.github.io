@@ -696,7 +696,7 @@ function setupCleaving(){
 	allCleaving[59] = new damage("area_2", "level_4", "d6_6", 9, 10, 3, 2, 0, "You extend on your slashing arc and deliver a crushing strike", "Hip", "m", false);
 	
 	allCleaving[60] = new damage("area_2", "level_5", "d6_1", 11, 13, 4, 3, 0, "Slash Foe's knee. Your strike tears garments and armor off", "Knee and Nearby Areas", "m", false);
-	allCleaving[61] = new damage("area_2", "level_5", "d6_2", 11, 13, 4, 3, 0, "Slash Foe's knee. Your strike tears garments and armor off", "Knee and Nearby Areas");			
+	allCleaving[61] = new damage("area_2", "level_5", "d6_2", 11, 13, 4, 3, 0, "Slash Foe's knee. Your strike tears garments and armor off", "Knee and Nearby Areas", "m", false);			
 	allCleaving[62] = new damage("area_2", "level_5", "d6_3", 11, 10, 5, 3, 0, "Wound falls open and Foe is in agony. His guard is somehow still up", "Thigh", "m", false);
 	allCleaving[63] = new damage("area_2", "level_5", "d6_4", 11, 10, 5, 3, 0, "Wound falls open and Foe is in agony. His guard is somehow still up", "Thigh", "m", false);
 	allCleaving[64] = new damage("area_2", "level_5", "d6_5", 11, 10, 5, 3, 0, "Wound falls open and Foe is in agony. His guard is somehow still up", "Thigh", "m", false);
@@ -932,312 +932,318 @@ function setupCleaving(){
 }
 
 function setupPiercing(){
-	// area one values
-	allPiercing[0] = new damage("area_1", "level_1", "d6_1", 0, 3, 0, 0, 0, "Weak strike", "Foot", "m", false);
-	allPiercing[1] = new damage("area_1", "level_1", "d6_2", 0, 2, 0, 0, 0, "Feeble strike taps the Foe", "Shin and Lower Leg", "m", false);
-	allPiercing[2] = new damage("area_1", "level_1", "d6_3", 0, 2, 0, 0, 0, "Feeble strike taps the Foe", "Shin and Lower Leg", "m", false);
-	allPiercing[3] = new damage("area_1", "level_1", "d6_4", 0, 2, 0, 0, 0, "Feeble strike taps the Foe", "Shin and Lower Leg", "m", false);
-	allPiercing[4] = new damage("area_1", "level_1", "d6_5", 1, 3, 0, 0, 0, "Unbalanced Foe", "Knee and Nearby Areas", "m", false);
-	allPiercing[5] = new damage("area_1", "level_1", "d6_6", 1, 3, 0, 0, 0, "Unbalanced Foe", "Knee and Nearby Areas", "m", false);
+	// area eight values
+	allPiercing[0] = new damage("area_8", "level_1", "d6_1", 0, 2, 0, 0, 0, "Strike lands without energy", "Foot", "m", false);
+	allPiercing[1] = new damage("area_8", "level_1", "d6_2", 0, 2, 0, 0, 0, "Your thrust nicks Foe's calf", "Shin and Lower Leg", "m", false);
+	allPiercing[2] = new damage("area_8", "level_1", "d6_3", 0, 2, 0, 0, 0, "Your thrust nicks Foe's calf", "Shin and Lower Leg", "m", false);
+	allPiercing[3] = new damage("area_8", "level_1", "d6_4", 0, 2, 0, 0, 0, "Your thrust nicks Foe's calf", "Shin and Lower Leg", "m", false);
+	allPiercing[4] = new damage("area_8", "level_1", "d6_5", 0, 2, 0, 0, 0, "Foe questions his resolve", "Knee and Nearby Areas", "m", false);
+	allPiercing[5] = new damage("area_8", "level_1", "d6_6", "-", "-", "-", "-", "-", "Missed the target - better luck next time", "Passed between Legs", "m", false);
 	
-	allCleaving[6] = new damage("area_1", "level_2", "d6_1", 2, 5, 1, 0, 0, "Struck Foe with more force than edge", "Foot", "m", false);
-	allCleaving[7] = new damage("area_1", "level_2", "d6_2", 3, 4, 1, 1, 0, "An opening appears; you smack the Foe lightly", "Shin and Lower Leg", "m", false);
-	allCleaving[8] = new damage("area_1", "level_2", "d6_3", 3, 4, 1, 1, 0, "An opening appears; you smack the Foe lightly", "Shin and Lower Leg", "m", false);
-	allCleaving[9] = new damage("area_1", "level_2", "d6_4", 3, 4, 1, 1, 0, "An opening appears; you smack the Foe lightly", "Shin and Lower Leg", "m", false);
-	allCleaving[10] = new damage("area_1", "level_2", "d6_5", 4, 5, 1, 1, 0, "You strike Foe's knee while recovering from a lunge", "Knee and Nearby Areas", "m", false);
-	allCleaving[11] = new damage("area_1", "level_2", "d6_6", 4, 5, 1, 1, 0, "You strike Foe's knee while recovering from a lunge", "Knee and Nearby Areas", "m", false);
+	allPiercing[6] = new damage("area_8", "level_2", "d6_1", 1, 4, 0, 0, 0, "Foe's evasion puts him out of position", "Foot", "m", false);
+	allPiercing[7] = new damage("area_8", "level_2", "d6_2", 1, 4, 1, 0, 0, "Strike lands oddly", "Shin and Lower Leg", "m", false);
+	allPiercing[8] = new damage("area_8", "level_2", "d6_3", 1, 4, 1, 0, 0, "Strike lands oddly", "Shin and Lower Leg", "m", false);
+	allPiercing[9] = new damage("area_8", "level_2", "d6_4", 1, 4, 1, 0, 0, "Strike lands oddly", "Shin and Lower Leg", "m", false);
+	allPiercing[10] = new damage("area_8", "level_2", "d6_5", 2, 4, 1, 0, 0, "Cheap shot to Foe's knee", "Knee and Nearby Areas", "m", false);
+	allPiercing[11] = new damage("area_8", "level_2", "d6_6", "-", "-", "-", "-", "-", "Missed the target - better luck next time", "Passed between Legs", "m", false);
 	
-	allCleaving[12] = new damage("area_1", "level_3", "d6_1", 5, 7, 2, 1, 0, "Foe steps quickly out of your reach", "Foot", "m", false);
-	allCleaving[13] = new damage("area_1", "level_3", "d6_2", 5, 6, 2, 1, 0, "Foe avoids your main effort, but you nick him on the recovery", "Shin and Lower Leg", "m", false);
-	allCleaving[14] = new damage("area_1", "level_3", "d6_3", 5, 6, 2, 1, 0, "Foe avoids your main effort, but you nick him on the recovery", "Shin and Lower Leg", "m", false);
-	allCleaving[15] = new damage("area_1", "level_3", "d6_4", 5, 6, 2, 1, 0, "Foe avoids your main effort, but you nick him on the recovery", "Shin and Lower Leg", "m", false);
-	allCleaving[16] = new damage("area_1", "level_3", "d6_5", 6, 8, 2, 1, 0, "Nick Foe above knee. Wound bleeds strongly", "Knee and Nearby Areas", "m", false);
-	allCleaving[17] = new damage("area_1", "level_3", "d6_6", 6, 8, 2, 1, 0, "Nick Foe above knee. Wound bleeds strongly", "Knee and Nearby Areas", "m", false);
+	allPiercing[12] = new damage("area_8", "level_3", "d6_1", 3, 6, 1, 1, 0, "Foe panics", "Foot", "m", false);
+	allPiercing[13] = new damage("area_8", "level_3", "d6_2", 3, 6, 2, 1, 0, "Foe is fearful of your skill and steps back from your onslaught", "Shin and Lower Leg", "m", false);
+	allPiercing[14] = new damage("area_8", "level_3", "d6_3", 3, 6, 2, 1, 0, "Foe is fearful of your skill and steps back from your onslaught", "Shin and Lower Leg", "m", false);
+	allPiercing[15] = new damage("area_8", "level_3", "d6_4", 3, 6, 2, 1, 0, "Foe is fearful of your skill and steps back from your onslaught", "Shin and Lower Leg", "m", false);
+	allPiercing[16] = new damage("area_8", "level_3", "d6_5", 4, 7, 2, 1, 0, "Foe steps back defensively", "Knee and Nearby Areas", "m", false);
+	allPiercing[17] = new damage("area_8", "level_3", "d6_6", "-", "-", "-", "-", "-", "Missed the target - better luck next time", "Passed between Legs", "m", false);
 	
-	allCleaving[18] = new damage("area_1", "level_4", "d6_1", 8, 9, 3, 2, 0, "Foe stumbles, quality strike", "Foot", "m", false);
-	allCleaving[19] = new damage("area_1", "level_4", "d6_2", 8, 9, 3, 2, 0, "Blow lands solidly on Foe's shin. You get some slashing action, but no mortal wound", "Shin and Lower Leg", "m", false);
-	allCleaving[20] = new damage("area_1", "level_4", "d6_3", 8, 9, 3, 2, 0, "Blow lands solidly on Foe's shin. You get some slashing action, but no mortal wound", "Shin and Lower Leg", "m", false);
-	allCleaving[21] = new damage("area_1", "level_4", "d6_4", 8, 9, 3, 2, 0, "Blow lands solidly on Foe's shin. You get some slashing action, but no mortal wound", "Shin and Lower Leg", "m", false);
-	allCleaving[22] = new damage("area_1", "level_4", "d6_5", 9, 10, 3, 2, 0, "Blow lands solidly on Foe's knee", "Knee and Nearby Areas", "m", false);
-	allCleaving[23] = new damage("area_1", "level_4", "d6_6", 9, 10, 3, 2, 0, "Blow lands solidly on Foe's knee", "Knee and Nearby Areas", "m", false);
+	allPiercing[18] = new damage("area_8", "level_4", "d6_1", 6, 8, 2, 1, 0, "Foe staggers from the impact", "Foot", "m", false);
+	allPiercing[19] = new damage("area_8", "level_4", "d6_2", 6, 8, 3, 2, 0, "Deal Foe a measurable blow to his leg. Any low hanging container on your Foe is sliced open", "Shin and Lower Leg", "m", false);
+	allPiercing[20] = new damage("area_8", "level_4", "d6_3", 6, 8, 3, 2, 0, "Deal Foe a measurable blow to his leg. Any low hanging container on your Foe is sliced open", "Shin and Lower Leg", "m", false);
+	allPiercing[21] = new damage("area_8", "level_4", "d6_4", 6, 8, 3, 2, 0, "Deal Foe a measurable blow to his leg. Any low hanging container on your Foe is sliced open", "Shin and Lower Leg", "m", false);
+	allPiercing[22] = new damage("area_8", "level_4", "d6_5", 7, 9, 3, 2, 0, "Catch Foe's leg, opening a wounds below the knee", "Knee and Nearby Areas", "m", false);
+	allPiercing[23] = new damage("area_8", "level_4", "d6_6", "-", "-", "-", "-", "-", "Missed the target - better luck next time", "Passed between Legs", "m", false);
 	
-	allCleaving[24] = new damage("area_1", "level_5", "d6_1", 10, 12, 4, 3, 0, "Foe dances right into your swing", "Foot", "m", false);
-	allCleaving[25] = new damage("area_1", "level_5", "d6_2", 10, 12, 4, 3, 0, "Reached long and caught Foe in lower leg. He twists out of it, but is unbalanced", "Shin and Lower Leg", "m", false);
-	allCleaving[26] = new damage("area_1", "level_5", "d6_3", 10, 12, 4, 3, 0, "Reached long and caught Foe in lower leg. He twists out of it, but is unbalanced", "Shin and Lower Leg", "m", false);
-	allCleaving[27] = new damage("area_1", "level_5", "d6_4", 10, 12, 4, 3, 0, "Reached long and caught Foe in lower leg. He twists out of it, but is unbalanced", "Shin and Lower Leg", "m", false);
-	allCleaving[28] = new damage("area_1", "level_5", "d6_5", 11, 13, 4, 3, 0, "Foe mistakenly brings his leg in line with your attack. Severed tendons", "Knee and Nearby Areas", "m", false);
-	allCleaving[29] = new damage("area_1", "level_5", "d6_6", 11, 13, 4, 3, 0, "Foe mistakenly brings his leg in line with your attack. Severed tendons", "Knee and Nearby Areas", "m", false);
+	allPiercing[24] = new damage("area_8", "level_5", "d6_1", 8, 10, 3, 2, 0, "Massive thrust to foot. If Foe has shoe, the blow rips it off", "Foot", "m", false);
+	allPiercing[25] = new damage("area_8", "level_5", "d6_2", 8, 10, 3, 2, 0, "Foe is too late to leap away from your thrust", "Shin and Lower Leg", "m", false);
+	allPiercing[26] = new damage("area_8", "level_5", "d6_3", 8, 10, 3, 2, 0, "Foe is too late to leap away from your thrust", "Shin and Lower Leg", "m", false);
+	allPiercing[27] = new damage("area_8", "level_5", "d6_4", 8, 10, 3, 2, 0, "Foe is too late to leap away from your thrust", "Shin and Lower Leg", "m", false);
+	allPiercing[28] = new damage("area_8", "level_5", "d6_5", 9, 11, 3, 2, 0, "Strike plunges into leg with deadly effect. Foe panics", "Knee and Nearby Areas", "m", false);
+	allPiercing[29] = new damage("area_8", "level_5", "d6_6", "-", "-", "-", "-", "-", "Missed the target - better luck next time", "Passed between Legs", "m", false);
 	
-	allCleaving[30] = new damage("area_1", "level_6", "d6_1", 13, 14, 5, 4, 0, "Opens up a terrible wound. Blood everywhere", "Foot", "m", false);
-	allCleaving[31] = new damage("area_1", "level_6", "d6_2", 13, 14, 5, 4, 0, "Slashed muscle and tendons in lower leg. Foe stumbles forward into you with his guard down", "Shin and Lower Leg", "m", false);
-	allCleaving[32] = new damage("area_1", "level_6", "d6_3", 13, 14, 5, 4, 0, "Slashed muscle and tendons in lower leg. Foe stumbles forward into you with his guard down", "Shin and Lower Leg", "m", false);
-	allCleaving[33] = new damage("area_1", "level_6", "d6_4", 13, 14, 5, 4, 0, "Slashed muscle and tendons in lower leg. Foe stumbles forward into you with his guard down", "Shin and Lower Leg", "m", false);
-	allCleaving[34] = new damage("area_1", "level_6", "d6_5", 14, 15, 5, 4, 0, "Your weapon slices through Foe's calf. Foe is instantly pale from the pain", "Knee and Nearby Areas", "m", false);
-	allCleaving[35] = new damage("area_1", "level_6", "d6_6", 14, 15, 5, 4, 0, "Your weapon slices through Foe's calf. Foe is instantly pale from the pain", "Knee and Nearby Areas", "m", false);
+	allPiercing[30] = new damage("area_8", "level_6", "d6_1", 11, 12, 3, 3, 0, "Your strike pins Foe's foot to the floor", "Foot", "m", false);
+	allPiercing[31] = new damage("area_8", "level_6", "d6_2", 11, 12, 4, 3, 0, "Agonizing blow to Foe's leg. He stumbles five feet to your left", "Shin and Lower Leg", "m", false);
+	allPiercing[32] = new damage("area_8", "level_6", "d6_3", 11, 12, 4, 3, 0, "Agonizing blow to Foe's leg. He stumbles five feet to your left", "Shin and Lower Leg", "m", false);
+	allPiercing[33] = new damage("area_8", "level_6", "d6_4", 11, 12, 4, 3, 0, "Agonizing blow to Foe's leg. He stumbles five feet to your left", "Shin and Lower Leg", "m", false);
+	allPiercing[34] = new damage("area_8", "level_6", "d6_5", 12, 13, 4, 3, 0, "Strike pierces both of Foe's legs. He moans in agony", "Knee and Nearby Areas", "m", false);
+	allPiercing[35] = new damage("area_8", "level_6", "d6_6", "-", "-", "-", "-", "-", "Missed the target - better luck next time", "Passed between Legs", "m", false);
 	
-	// area two values
-	allCleaving[36] = new damage("area_2", "level_1", "d6_1", 1, 3, 0, 0, 0, "Foe's evasion puts him out of an aggressive posture", "Knee and Nearby Areas", "m", false);
-	allCleaving[37] = new damage("area_2", "level_1", "d6_2", 1, 3, 0, 0, 0, "Foe's evasion puts him out of an aggressive posture", "Knee and Nearby Areas", "m", false);			
-	allCleaving[38] = new damage("area_2", "level_1", "d6_3", 1, 2, 1, 0, 0, "Foe evades frantically", "Thigh", "m", false);
-	allCleaving[39] = new damage("area_2", "level_1", "d6_4", 1, 2, 1, 0, 0, "Foe evades frantically", "Thigh", "m", false);
-	allCleaving[40] = new damage("area_2", "level_1", "d6_5", 1, 2, 1, 0, 0, "Foe evades frantically", "Thigh", "m", false);
-	allCleaving[41] = new damage("area_2", "level_1", "d6_6", 1, 2, 0, 0, 0, "Foe backpedals five feet", "Hip", "m", false);
+	// area nine values
+	allPiercing[36] = new damage("area_9", "level_1", "d6_1", 0, 2, 0, 0, 0, "Glancing blow to Foe's upper leg", "Knee and Nearby Areas", "m", false);
+	allPiercing[37] = new damage("area_9", "level_1", "d6_2", 0, 2, 0, 0, 0, "Foe twitches away; slight damage", "Thigh", "m", false);
+	allPiercing[38] = new damage("area_9", "level_1", "d6_3", 0, 2, 0, 0, 0, "Foe twitches away; slight damage", "Thigh", "m", false);
+	allPiercing[39] = new damage("area_9", "level_1", "d6_4", 0, 2, 0, 0, 0, "Foe twitches away; slight damage", "Thigh", "m", false);
+	allPiercing[40] = new damage("area_9", "level_1", "d6_5", 0, 2, 0, 0, 0, "Foe twitches away; slight damage", "Thigh", "m", false);
+	allPiercing[41] = new damage("area_9", "level_1", "d6_6", 0, 2, 0, 0, 0, "Foe steps back and avoids the worst", "Hip", "m", false);
 	
-	allCleaving[42] = new damage("area_2", "level_2", "d6_1", 4, 5, 1, 0, 0, "The blow does nothing more than open a wide shallow cut", "Knee and Nearby Areas", "m", false);
-	allCleaving[43] = new damage("area_2", "level_2", "d6_2", 4, 5, 1, 0, 0, "The blow does nothing more than open a wide shallow cut", "Knee and Nearby Areas", "m", false);			
-	allCleaving[44] = new damage("area_2", "level_2", "d6_3", 4, 4, 2, 0, 0, "Foe goes airborne to evade your strike", "Thigh", "m", false);
-	allCleaving[45] = new damage("area_2", "level_2", "d6_4", 4, 4, 2, 0, 0, "Foe goes airborne to evade your strike", "Thigh", "m", false);
-	allCleaving[46] = new damage("area_2", "level_2", "d6_5", 4, 4, 2, 0, 0, "Foe goes airborne to evade your strike", "Thigh", "m", false);
-	allCleaving[47] = new damage("area_2", "level_2", "d6_6", 4, 4, 1, 0, 0, "Strike passes across left hip and grazes right", "Hip", "m", false);
+	allPiercing[42] = new damage("area_9", "level_2", "d6_1", 2, 4, 1, 0, 0, "Strike to Foe's leg causes his stride to falter", "Knee and Nearby Areas", "m", false);
+	allPiercing[43] = new damage("area_9", "level_2", "d6_2", 2, 4, 1, 0, 0, "Foe's evasion lowers his guard", "Thigh", "m", false);
+	allPiercing[44] = new damage("area_9", "level_2", "d6_3", 2, 4, 1, 0, 0, "Foe's evasion lowers his guard", "Thigh", "m", false);
+	allPiercing[45] = new damage("area_9", "level_2", "d6_4", 2, 4, 1, 0, 0, "Foe's evasion lowers his guard", "Thigh", "m", false);
+	allPiercing[46] = new damage("area_9", "level_2", "d6_5", 2, 4, 1, 0, 0, "Foe's evasion lowers his guard", "Thigh", "m", false);
+	allPiercing[47] = new damage("area_9", "level_2", "d6_6", 2, 4, 1, 0, 0, "Hip strike leaves Foe shaken and trying to recover", "Hip", "m", false);
 	
-	allCleaving[48] = new damage("area_2", "level_3", "d6_1", 6, 8, 2, 1, 0, "Slight leg wound", "Knee and Nearby Areas", "m", false);
-	allCleaving[49] = new damage("area_2", "level_3", "d6_2", 6, 8, 2, 1, 0, "Slight leg wound", "Knee and Nearby Areas", "m", false);			
-	allCleaving[50] = new damage("area_2", "level_3", "d6_3", 6, 6, 3, 1, 0, "Slash to Foe's thigh sends a piece of equipment flying", "Thigh", "m", false);
-	allCleaving[51] = new damage("area_2", "level_3", "d6_4", 6, 6, 3, 1, 0, "Slash to Foe's thigh sends a piece of equipment flying", "Thigh", "m", false);
-	allCleaving[52] = new damage("area_2", "level_3", "d6_5", 6, 6, 3, 1, 0, "Slash to Foe's thigh sends a piece of equipment flying", "Thigh", "m", false);
-	allCleaving[53] = new damage("area_2", "level_3", "d6_6", 6, 7, 2, 0, 0, "Miss Foe's arm and strike his hip. He drops something", "Hip", "m", false); // double check this value
+	allPiercing[48] = new damage("area_9", "level_3", "d6_1", 4, 7, 2, 1, 0, "Strike Foe in upper leg, blade grinds against bone", "Knee and Nearby Areas", "m", false);
+	allPiercing[49] = new damage("area_9", "level_3", "d6_2", 4, 6, 2, 1, 0, "Deep wound in Foe's thigh", "Thigh", "m", false);
+	allPiercing[50] = new damage("area_9", "level_3", "d6_3", 4, 6, 2, 1, 0, "Deep wound in Foe's thigh", "Thigh", "m", false);
+	allPiercing[51] = new damage("area_9", "level_3", "d6_4", 4, 6, 2, 1, 0, "Deep wound in Foe's thigh", "Thigh", "m", false);
+	allPiercing[52] = new damage("area_9", "level_3", "d6_5", 4, 6, 2, 1, 0, "Deep wound in Foe's thigh", "Thigh", "m", false);
+	allPiercing[53] = new damage("area_9", "level_3", "d6_6", 4, 6, 2, 0, 0, "Strike bites into Foe's hip. The impact sounds terrible", "Hip", "m", false); // double check this value
 	
-	allCleaving[54] = new damage("area_2", "level_4", "d6_1", 9, 10, 3, 2, 0, "Foe leaps back, but you catch his thigh", "Knee and Nearby Areas", "m", false);
-	allCleaving[55] = new damage("area_2", "level_4", "d6_2", 9, 10, 3, 2, 0, "Foe leaps back, but you catch his thigh", "Knee and Nearby Areas", "m", false);			
-	allCleaving[56] = new damage("area_2", "level_4", "d6_3", 9, 10, 4, 2, 0, "The blow delivers significant impact", "Thigh", "m", false);
-	allCleaving[57] = new damage("area_2", "level_4", "d6_4", 9, 10, 4, 2, 0, "The blow delivers significant impact", "Thigh", "m", false);
-	allCleaving[58] = new damage("area_2", "level_4", "d6_5", 9, 10, 4, 2, 0, "The blow delivers significant impact", "Thigh", "m", false);
-	allCleaving[59] = new damage("area_2", "level_4", "d6_6", 9, 10, 3, 2, 0, "You extend on your slashing arc and deliver a crushing strike", "Hip", "m", false);
+	allPiercing[54] = new damage("area_9", "level_4", "d6_1", 7, 9, 3, 2, 0, "Excellent attack to knee slides deeply and punctures muscle", "Knee and Nearby Areas", "m", false);
+	allPiercing[55] = new damage("area_9", "level_4", "d6_2", 7, 8, 3, 1, 0, "Strike to Foe's thigh slashes muscle. Foe spins off-balance", "Thigh", "m", false);
+	allPiercing[56] = new damage("area_9", "level_4", "d6_3", 7, 8, 3, 1, 0, "Strike to Foe's thigh slashes muscle. Foe spins off-balance", "Thigh", "m", false);
+	allPiercing[57] = new damage("area_9", "level_4", "d6_4", 7, 8, 3, 1, 0, "Strike to Foe's thigh slashes muscle. Foe spins off-balance", "Thigh", "m", false);
+	allPiercing[58] = new damage("area_9", "level_4", "d6_5", 7, 8, 3, 1, 0, "Strike to Foe's thigh slashes muscle. Foe spins off-balance", "Thigh", "m", false);
+	allPiercing[59] = new damage("area_9", "level_4", "d6_6", 7, 9, 3, 1, 0, "Solid blow to Foe's hip leaves his side numb and bloody", "Hip", "m", false);
 	
-	allCleaving[60] = new damage("area_2", "level_5", "d6_1", 11, 13, 4, 3, 0, "Slash Foe's knee. Your strike tears garments and armor off", "Knee and Nearby Areas", "m", false);
-	allCleaving[61] = new damage("area_2", "level_5", "d6_2", 11, 13, 4, 3, 0, "Slash Foe's knee. Your strike tears garments and armor off", "Knee and Nearby Areas");			
-	allCleaving[62] = new damage("area_2", "level_5", "d6_3", 11, 10, 5, 3, 0, "Wound falls open and Foe is in agony. His guard is somehow still up", "Thigh", "m", false);
-	allCleaving[63] = new damage("area_2", "level_5", "d6_4", 11, 10, 5, 3, 0, "Wound falls open and Foe is in agony. His guard is somehow still up", "Thigh", "m", false);
-	allCleaving[64] = new damage("area_2", "level_5", "d6_5", 11, 10, 5, 3, 0, "Wound falls open and Foe is in agony. His guard is somehow still up", "Thigh", "m", false);
-	allCleaving[65] = new damage("area_2", "level_5", "d6_6", 11, 13, 5, 3, 0, "Catch part of Foe's hip. You make an ugly wound", "Hip", "m", false);
+	allPiercing[60] = new damage("area_9", "level_5", "d6_1", 9, 11, 3, 2, 0, "Savage strike to kneecap has Foe shrieking in agony", "Knee and Nearby Areas", "m", false);
+	allPiercing[61] = new damage("area_9", "level_5", "d6_2", 9, 10, 4, 2, 0, "Strike pierces cleanly and tears free in a bloody finish", "Thigh", "m", false);
+	allPiercing[62] = new damage("area_9", "level_5", "d6_3", 9, 10, 4, 2, 0, "Strike pierces cleanly and tears free in a bloody finish", "Thigh", "m", false);
+	allPiercing[63] = new damage("area_9", "level_5", "d6_4", 9, 10, 4, 2, 0, "Strike pierces cleanly and tears free in a bloody finish", "Thigh", "m", false);
+	allPiercing[64] = new damage("area_9", "level_5", "d6_5", 9, 10, 4, 2, 0, "Strike pierces cleanly and tears free in a bloody finish", "Thigh", "m", false);
+	allPiercing[65] = new damage("area_9", "level_5", "d6_6", 9, 12, 4, 2, 0, "Foe is run through the hip. His eyes glaze over", "Hip", "m", false);
 	
-	allCleaving[66] = new damage("area_2", "level_6", "d6_1", 14, 15, 5, 4, 0, "Strong blow to Foe's leg. Foe drops his guard and almost his weapon", "Knee and Nearby Areas", "m", false);
-	allCleaving[67] = new damage("area_2", "level_6", "d6_2", 14, 15, 5, 4, 0, "Strong blow to Foe's leg. Foe drops his guard and almost his weapon", "Knee and Nearby Areas", "m", false);			
-	allCleaving[68] = new damage("area_2", "level_6", "d6_3", 14, 12, 6, 4, 0, "Foe blocks your attack with his thigh; blood everywhere", "Thigh", "m", false);
-	allCleaving[69] = new damage("area_2", "level_6", "d6_4", 14, 12, 6, 4, 0, "Foe blocks your attack with his thigh; blood everywhere", "Thigh", "m", false);
-	allCleaving[70] = new damage("area_2", "level_6", "d6_5", 14, 12, 6, 4, 0, "Foe blocks your attack with his thigh; blood everywhere", "Thigh", "m", false);
-	allCleaving[71] = new damage("area_2", "level_6", "d6_6", "-", "-", "-", "-", "-", "Your blade gets stuck in Foe's hip. Lots of screaming before he dies", "Hip", "m", true);
+	allPiercing[66] = new damage("area_9", "level_6", "d6_1", 12, 13, 4, 3, 0, "Amazing strike to knee area. If Foe has armor it is ripped away", "Knee and Nearby Areas", "m", false);
+	allPiercing[67] = new damage("area_9", "level_6", "d6_2", 12, 12, 5, 4, 0, "Foe runs up half the length of your blade", "Thigh", "m", false);
+	allPiercing[68] = new damage("area_9", "level_6", "d6_3", 12, 12, 5, 4, 0, "Foe runs up half the length of your blade", "Thigh", "m", false);
+	allPiercing[69] = new damage("area_9", "level_6", "d6_4", 12, 12, 5, 4, 0, "Foe runs up half the length of your blade", "Thigh", "m", false);
+	allPiercing[70] = new damage("area_9", "level_6", "d6_5", 12, 12, 5, 4, 0, "Foe runs up half the length of your blade", "Thigh", "m", false);
+	allPiercing[71] = new damage("area_9", "level_6", "d6_6", 12, 14, 6, 3, 0, "Foe's sloppy footwork gets him stuck on your blade", "Hip", "m", false);
 	
-	// area three values
-	allCleaving[72] = new damage("area_3", "level_1", "d6_1", 1, 2, 0, 0, 0, "Foe evades much of your swing", "Hip", "m", false);
-	allCleaving[73] = new damage("area_3", "level_1", "d6_2", 2, 2, 0, 0, 0, "Your grip fails you", "Upper Abdominals", "m", false);			
-	allCleaving[74] = new damage("area_3", "level_1", "d6_3", 2, 2, 0, 0, 0, "Your grip fails you", "Lower Abdominals", "m", false);
-	allCleaving[75] = new damage("area_3", "level_1", "d6_4", 2, 2, 0, 0, 0, "Foe steps right then left, almost evading your blow", "Ribcage", "m", false);
-	allCleaving[76] = new damage("area_3", "level_1", "d6_5", 2, 2, 0, 0, 0, "Foe steps right then left, almost evading your blow", "Ribcage", "m", false);
-	allCleaving[77] = new damage("area_3", "level_1", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	// area ten values
+	allPiercing[72] = new damage("area_10", "level_1", "d6_1", 2, 2, 0, 0, 0, "Strike fails to pierce", "Hip", "m", false);
+	allPiercing[73] = new damage("area_10", "level_1", "d6_2", 2, 2, 0, 0, 0, "Strike fails to pierce", "Hip", "m", false);
+	allPiercing[74] = new damage("area_10", "level_1", "d6_3", 2, 5, 1, 0, 0, "Close call has him sweating", "Groin (Male)", "m", false);
+	allPiercing[75] = new damage("area_10", "level_1", "d6_4", 2, 5, 1, 0, 0, "Close call has him sweating", "Groin (Male)", "m", false);
+	allPiercing[76] = new damage("area_10", "level_1", "d6_3", 0, 2, 0, 0, 0, "Foe is fearful of your skill and leaps back from your flashing blade", "Groin (Female)", "f", false);
+	allPiercing[77] = new damage("area_10", "level_1", "d6_4", 2, 2, 0, 0, 0, "Strike fails to pierce", "Groin (Female)", "f", false);
+	allPiercing[78] = new damage("area_10", "level_1", "d6_5", 0, 2, 0, 0, 0, "Foe is fearful of your skill and leaps back from your flashing blade", "Lower Abdomen", "m", false);
+	allPiercing[79] = new damage("area_10", "level_1", "d6_6", 0, 2, 0, 0, 0, "Foe is fearful of your skill and leaps back from your flashing blade", "Lower Abdomen", "m", false);
 	
-	allCleaving[78] = new damage("area_3", "level_2", "d6_1", 4, 4, 1, 0, 0, "You should have swung harder", "Hip", "m", false);
-	allCleaving[79] = new damage("area_3", "level_2", "d6_2", 5, 5, 1, 0, 0, "Glancing blow takes skin with it", "Upper Abdominals", "m", false);			
-	allCleaving[80] = new damage("area_3", "level_2", "d6_3", 5, 5, 1, 0, 0, "Glancing blow takes skin with it", "Lower Abdominals", "m", false);
-	allCleaving[81] = new damage("area_3", "level_2", "d6_4", 5, 4, 1, 0, 0, "Destroy one of Foe's silly decorations", "Ribcage", "m", false);
-	allCleaving[82] = new damage("area_3", "level_2", "d6_5", 5, 4, 1, 0, 0, "Destroy one of Foe's silly decorations", "Ribcage", "m", false);
-	allCleaving[83] = new damage("area_3", "level_2", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	allPiercing[80] = new damage("area_10", "level_2", "d6_1", 2, 4, 1, 0, 0, "Thrust slices into Foe's hip. He yells as though burned", "Hip", "m", false);
+	allPiercing[81] = new damage("area_10", "level_2", "d6_2", 2, 4, 1, 0, 0, "Thrust slices into Foe's hip. He yells as though burned", "Hip", "m", false);
+	allPiercing[82] = new damage("area_10", "level_2", "d6_3", 6, 7, 2, 0, 0, "Foe dances clear of the worst", "Groin (Male)", "m", false);
+	allPiercing[83] = new damage("area_10", "level_2", "d6_4", 6, 7, 2, 0, 0, "Foe dances clear of the worst", "Groin (Male)", "m", false);
+	allPiercing[84] = new damage("area_10", "level_2", "d6_3", 3, 5, 2, 0, 0, "Foe evades and maneuvers for a better position", "Groin (Female)", "f", false);
+	allPiercing[85] = new damage("area_10", "level_2", "d6_4", 2, 4, 1, 0, 0, "Thrust slices into Foe's hip. She yells as though burned", "Groin (Female)", "f", false);
+	allPiercing[86] = new damage("area_10", "level_2", "d6_5", 3, 5, 2, 0, 0, "Foe evades and maneuvers for a better position", "Lower Abdomen", "m", false);
+	allPiercing[87] = new damage("area_10", "level_2", "d6_6", 3, 5, 2, 0, 0, "Foe evades and maneuvers for a better position", "Lower Abdomen", "m", false);
 	
-	allCleaving[84] = new damage("area_3", "level_3", "d6_1", 6, 7, 2, 0, 0, "Blow to Foe's hip causes his right leg to falter for a moment", "Hip", "m", false);
-	allCleaving[85] = new damage("area_3", "level_3", "d6_2", 7, 8, 3, 0, 0, "Strike blunted by clothing", "Upper Abdominals", "m", false);			
-	allCleaving[86] = new damage("area_3", "level_3", "d6_3", 7, 8, 3, 0, 0, "Strike blunted by clothing", "Lower Abdominals", "m", false);
-	allCleaving[87] = new damage("area_3", "level_3", "d6_4", 7, 7, 2, 0, 0, "Blow is forceful, not hard", "Ribcage", "m", false);
-	allCleaving[88] = new damage("area_3", "level_3", "d6_5", 7, 7, 2, 0, 0, "Blow is forceful, not hard", "Ribcage", "m", false);
-	allCleaving[89] = new damage("area_3", "level_3", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	allPiercing[88] = new damage("area_10", "level_3", "d6_1", 4, 6, 2, 0, 0, "Probing strike makes Foe cautious", "Hip", "m", false);
+	allPiercing[89] = new damage("area_10", "level_3", "d6_2", 4, 6, 2, 0, 0, "Probing strike makes Foe cautious", "Hip", "m", false);
+	allPiercing[90] = new damage("area_10", "level_3", "d6_3", 8, 9, 3, 0, 0, "Foe reels back from blow", "Groin (Male)", "m", false);
+	allPiercing[91] = new damage("area_10", "level_3", "d6_4", 8, 9, 3, 0, 0, "Foe reels back from blow", "Groin (Male)", "m", false);
+	allPiercing[92] = new damage("area_10", "level_3", "d6_3", 5, 8, 4, 0, 0, "Strike through Foe's bladder has her frantic to escape", "Groin (Female)", "f", false);
+	allPiercing[93] = new damage("area_10", "level_3", "d6_4", 4, 6, 2, 0, 0, "Probing strike makes Foe cautious", "Groin (Female)", "f", false);
+	allPiercing[94] = new damage("area_10", "level_3", "d6_5", 5, 8, 4, 0, 0, "Strike through Foe's bladder has him frantic to escape", "Lower Abdomen", "m", false);
+	allPiercing[95] = new damage("area_10", "level_3", "d6_6", 5, 8, 4, 0, 0, "Strike through Foe's bladder has him frantic to escape", "Lower Abdomen", "m", false);
 	
-	allCleaving[90] = new damage("area_3", "level_4", "d6_1", 9, 10, 3, 2, 0, "Disorient Foe with a clever strike to the hip", "Hip", "m", false);
-	allCleaving[91] = new damage("area_3", "level_4", "d6_2", 10, 11, 5, 0, 0, "Solid strike to Foe's shield side", "Upper Abdominals", "m", false);			
-	allCleaving[92] = new damage("area_3", "level_4", "d6_3", 10, 11, 5, 0, 0, "Solid strike to Foe's shield side", "Lower Abdominals", "m", false);
-	allCleaving[93] = new damage("area_3", "level_4", "d6_4", 10, 10, 3, 0, 0, "Strong blow breaks Foe's guard. He is unbalanced", "Ribcage", "m", false);
-	allCleaving[94] = new damage("area_3", "level_4", "d6_5", 10, 10, 3, 0, 0, "Strong blow breaks Foe's guard. He is unbalanced", "Ribcage", "m", false);
-	allCleaving[95] = new damage("area_3", "level_4", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	allPiercing[96] = new damage("area_10", "level_4", "d6_1", 7, 9, 3, 1, 0, "Foe's sluggish defense gives you the opening you’ve waited for", "Hip", "m", false);
+	allPiercing[97] = new damage("area_10", "level_4", "d6_2", 7, 9, 3, 1, 0, "Foe's sluggish defense gives you the opening you’ve waited for", "Hip", "m", false);
+	allPiercing[98] = new damage("area_10", "level_4", "d6_3", 10, 11, 4, 1, 0, "Foe screeches in pain from your vicious attack", "Groin (Male)", "m", false);
+	allPiercing[99] = new damage("area_10", "level_4", "d6_4", 10, 11, 4, 1, 0, "Foe screeches in pain from your vicious attack", "Groin (Male)", "m", false);
+	allPiercing[100] = new damage("area_10", "level_4", "d6_3", 8, 10, 5, 0, 0, "Strike up and through Foe's kidney", "Groin (Female)", "f", false);
+	allPiercing[101] = new damage("area_10", "level_4", "d6_4", 7, 9, 3, 1, 0, "Foe's sluggish defense gives you the opening you’ve waited for", "Groin (Female)", "f", false);
+	allPiercing[102] = new damage("area_10", "level_4", "d6_5", 8, 10, 5, 0, 0, "Strike up and through Foe's kidney", "Lower Abdomen", "m", false);
+	allPiercing[103] = new damage("area_10", "level_4", "d6_6", 8, 10, 5, 0, 0, "Strike up and through Foe's kidney", "Lower Abdomen", "m", false);
 	
-	allCleaving[96] = new damage("area_3", "level_5", "d6_1", 11, 13, 5, 3, 0, "Catch Foe with devastating hit. A terrible howl erupts from him", "Hip", "m", false);
-	allCleaving[97] = new damage("area_3", "level_5", "d6_2", 12, 14, 7, 0, 0, "Masterful strike to Foe's chest", "Upper Abdominals", "m", false);			
-	allCleaving[98] = new damage("area_3", "level_5", "d6_3", 12, 14, 7, 0, 0, "Masterful strike to Foe's chest", "Lower Abdominals", "m", false);
-	allCleaving[99] = new damage("area_3", "level_5", "d6_4", 12, 13, 5, 0, 0, "Foe yells out before the impact and is silenced by the blow. Ribs crackle", "Ribcage", "m", false);
-	allCleaving[100] = new damage("area_3", "level_5", "d6_5", 12, 13, 5, 0, 0, "Foe yells out before the impact and is silenced by the blow. Ribs crackle", "Ribcage", "m", false);
-	allCleaving[101] = new damage("area_3", "level_5", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	allPiercing[104] = new damage("area_10", "level_5", "d6_1", 9, 12, 4, 2, 0, "Savage strike rips equipment from right side of Foe's waist", "Hip", "m", false);
+	allPiercing[105] = new damage("area_10", "level_5", "d6_2", 9, 12, 4, 2, 0, "Savage strike rips equipment from right side of Foe's waist", "Hip", "m", false);
+	allPiercing[106] = new damage("area_10", "level_5", "d6_3", 12, 13, 5, 2, 0, "Foe stumbles free, tearing himself off of your point. He is having trouble breathing", "Groin (Male)", "m", false);
+	allPiercing[107] = new damage("area_10", "level_5", "d6_4", 12, 13, 5, 2, 0, "Foe stumbles free, tearing himself off of your point. He is having trouble breathing", "Groin (Male)", "m", false);
+	allPiercing[108] = new damage("area_10", "level_5", "d6_3", 10, 12, 6, 0, 0, "Major abdominal wound. Blood pours out in frightening quantities", "Groin (Female)", "f", false);
+	allPiercing[109] = new damage("area_10", "level_5", "d6_4", 9, 12, 4, 2, 0, "Savage strike rips equipment from right side of Foe's waist", "Groin (Female)", "f", false);
+	allPiercing[110] = new damage("area_10", "level_5", "d6_5", 10, 12, 6, 0, 0, "Major abdominal wound. Blood pours out in frightening quantities", "m", false);
+	allPiercing[111] = new damage("area_10", "level_5", "d6_6", 10, 12, 6, 0, 0, "Major abdominal wound. Blood pours out in frightening quantities", "m", false);
 	
-	allCleaving[102] = new damage("area_3", "level_6", "d6_1", "-", "-", "-", "-", "-", "Foe dies from your brutal assault", "Hip", "m", true);
-	allCleaving[103] = new damage("area_3", "level_6", "d6_2", "-", "-", "-", "-", "-", "You strike Foe's abdomen with stunning effect. He's dead", "Upper Abdominals", "m", true);			
-	allCleaving[104] = new damage("area_3", "level_6", "d6_3", "-", "-", "-", "-", "-", "You strike Foe's abdomen with stunning effect. He's dead", "Lower Abdominals", "m", true);
-	allCleaving[105] = new damage("area_3", "level_6", "d6_4", "-", "-", "-", "-", "-", "Blow thunders as it connects. Foe's ribs shatter. Heart destroyed", "Ribcage", "m", true);
-	allCleaving[106] = new damage("area_3", "level_6", "d6_5", "-", "-", "-", "-", "-", "Blow thunders as it connects. Foe's ribs shatter. Heart destroyed", "Ribcage", "m", true);
-	allCleaving[107] = new damage("area_3", "level_6", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	allPiercing[112] = new damage("area_10", "level_6", "d6_1", 12, 14, 6, 3, 0, "Authoritative thrust briefly pins Foe's weapon hand to his hip", "Hip", "m", false);
+	allPiercing[113] = new damage("area_10", "level_6", "d6_2", 12, 14, 6, 3, 0, "Authoritative thrust briefly pins Foe's weapon hand to his hip", "Hip", "m", false);
+	allPiercing[114] = new damage("area_10", "level_6", "d6_3", 14, 15, 7, 3, 0, "Rip Foe's groin wide open with twisting strike that leaves him horrified", "Groin (Male)", "m", false);
+	allPiercing[115] = new damage("area_10", "level_6", "d6_4", 14, 15, 7, 3, 0, "Rip Foe's groin wide open with twisting strike that leaves him horrified", "Groin (Male)", "m", false);
+	allPiercing[116] = new damage("area_10", "level_6", "d6_3", "-", "-", "-", "-", "-", "Tear out Foe's guts in a graphic display of violence", "Groin (Female)", "f", true);
+	allPiercing[117] = new damage("area_10", "level_6", "d6_4", 12, 14, 6, 3, 0, "Authoritative thrust briefly pins Foe's weapon hand to her hip", "Groin (Female)", "f", false);
+	allPiercing[118] = new damage("area_10", "level_6", "d6_5", "-", "-", "-", "-", "-", "Tear out Foe's guts in a graphic display of violence", "Lower Abdomen", "m", true);
+	allPiercing[119] = new damage("area_10", "level_6", "d6_6", "-", "-", "-", "-", "-", "Tear out Foe's guts in a graphic display of violence", "Lower Abdomen", "m", true);
 	
-	// area four values
-	allCleaving[108] = new damage("area_4", "level_1", "d6_1", 1, 2, 0, 0, 0, "Good form, but it disappoints", "Upper Arm and Shoulder", "m", false);
-	allCleaving[109] = new damage("area_4", "level_1", "d6_2", 1, 2, 0, 0, 0, "Good form, but it disappoints", "Upper Arm and Shoulder", "m", false);			
-	allCleaving[110] = new damage("area_4", "level_1", "d6_3", 2, 2, 0, 0, 0, "Strike lands poorly", "Chest Crosscut", "m", false);
-	allCleaving[111] = new damage("area_4", "level_1", "d6_4", 2, 2, 1, 0, 0, "Foe is shaken by your attack. He screams", "Neck", "m", false);
-	allCleaving[112] = new damage("area_4", "level_1", "d6_5", 3, 4, 1, 0, 0, "Blade misses Foe's eye by inches", "Head (Lower), including the Face", "m", false);
-	allCleaving[113] = new damage("area_4", "level_1", "d6_6", 2, 2, 1, 0, 0, "You force your opponent back. He keeps you at bay with wild swings", "Head (Upper)", "m", false);
+	// area eleven values
+	allPiercing[120] = new damage("area_11", "level_1", "d6_1", 0, 2, 0, 0, 0, "Your thrust falls short when Foe leaps back", "Lower Abdomen", "m", false);
+	allPiercing[121] = new damage("area_11", "level_1", "d6_2", 0, 2, 0, 0, 0, "Your thrust falls short when Foe leaps back", "Lower Abdomen", "m", false);
+	allPiercing[122] = new damage("area_11", "level_1", "d6_3", 0, 2, 0, 0, 0, "Your thrust falls short when Foe leaps back", "Lower Abdomen", "m", false);
+	allPiercing[123] = new damage("area_11", "level_1", "d6_4", 0, 2, 0, 0, 0, "Your thrust falls short when Foe leaps back", "Lower Abdomen", "m", false);
+	allPiercing[124] = new damage("area_11", "level_1", "d6_5", 0, 2, 0, 0, 0, "Your thrust falls short when Foe leaps back", "Lower Abdomen", "m", false);
+	allPiercing[125] = new damage("area_11", "level_1", "d6_6", "Level +1", "Level +2", 1, 0, 0, "Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts and bleeds, but probably isn’t lethal", "Flesh to the Side", "m", false);
 	
-	allCleaving[114] = new damage("area_4", "level_2", "d6_1", 4, 4, 1, 0, 0, "Hard strike with no edge. Foe steps clear before you sort it out", "Upper Arm and Shoulder", "m", false);
-	allCleaving[115] = new damage("area_4", "level_2", "d6_2", 4, 4, 1, 0, 0, "Hard strike with no edge. Foe steps clear before you sort it out", "Upper Arm and Shoulder", "m", false);			
-	allCleaving[116] = new damage("area_4", "level_2", "d6_3", 5, 4, 1, 0, 0, "Strike passes under Foe's arm and fails to bite. He recoils", "Chest Crosscut", "m", false);
-	allCleaving[117] = new damage("area_4", "level_2", "d6_4", 5, 4, 3, 0, 0, "Blow opens shallow but bloody cut in neck", "Neck", "m", false);
-	allCleaving[118] = new damage("area_4", "level_2", "d6_5", 6, 5, 2, 0, 0, "Foe defends energetically to avoid disaster", "Head (Lower), including the Face", "m", false);
-	allCleaving[119] = new damage("area_4", "level_2", "d6_6", 5, 4, 2, 0, 0, "Your strike lands weakly", "Head (Upper)", "m", false);
+	allPiercing[126] = new damage("area_11", "level_2", "d6_1", 3, 5, 2, 0, 0, "Thrust catches Foe lightly as he spins away", "Lower Abdomen", "m", false);
+	allPiercing[127] = new damage("area_11", "level_2", "d6_2", 3, 5, 2, 0, 0, "Thrust catches Foe lightly as he spins away", "Lower Abdomen", "m", false);
+	allPiercing[128] = new damage("area_11", "level_2", "d6_3", 3, 5, 2, 0, 0, "Thrust catches Foe lightly as he spins away", "Lower Abdomen", "m", false);
+	allPiercing[129] = new damage("area_11", "level_2", "d6_4", 3, 5, 2, 0, 0, "Thrust catches Foe lightly as he spins away", "Lower Abdomen", "m", false);
+	allPiercing[130] = new damage("area_11", "level_2", "d6_5", 3, 5, 2, 0, 0, "Thrust catches Foe lightly as he spins away", "Lower Abdomen", "m", false);
+	allPiercing[131] = new damage("area_11", "level_2", "d6_6", "Level +1", "Level +2", 1, 0, 0, "Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts and bleeds, but probably isn’t lethal", "Flesh to the Side", "m", false);
 	
-	allCleaving[120] = new damage("area_4", "level_3", "d6_1", 6, 6, 3, 0, 0, "You push aside Foe's weapon and force him back", "Upper Arm and Shoulder", "m", false);
-	allCleaving[121] = new damage("area_4", "level_3", "d6_2", 6, 6, 3, 0, 0, "You push aside Foe's weapon and force him back", "Upper Arm and Shoulder", "m", false);			
-	allCleaving[122] = new damage("area_4", "level_3", "d6_3", 7, 7, 2, 0, 0, "Foe twists awkwardly and takes a strike to the chest", "Chest Crosscut", "m", false);
-	allCleaving[123] = new damage("area_4", "level_3", "d6_4", 7, 6, 5, 0, 0, "Strike lands against Foe's neck. Foe is horrified", "Neck", "m", false);
-	allCleaving[124] = new damage("area_4", "level_3", "d6_5", 8, 7, 3, 1, 1, "Foe is shaken by your blow. His defensive measures look clumsy", "Head (Lower), including the Face", "m", false);
-	allCleaving[125] = new damage("area_4", "level_3", "d6_6", 7, 6, 3, 1, 2, "Foe staggers back, blood running down his face", "Head (Upper)", "m", false);
+	allPiercing[132] = new damage("area_11", "level_3", "d6_1", 5, 8, 4, 0, 0, "Foe staggers away from the worst of your strike", "Lower Abdomen", "m", false);
+	allPiercing[133] = new damage("area_11", "level_3", "d6_2", 5, 8, 4, 0, 0, "Foe staggers away from the worst of your strike", "Lower Abdomen", "m", false);
+	allPiercing[134] = new damage("area_11", "level_3", "d6_3", 5, 8, 4, 0, 0, "Foe staggers away from the worst of your strike", "Lower Abdomen", "m", false);
+	allPiercing[135] = new damage("area_11", "level_3", "d6_4", 5, 8, 4, 0, 0, "Foe staggers away from the worst of your strike", "Lower Abdomen", "m", false);
+	allPiercing[136] = new damage("area_11", "level_3", "d6_5", 5, 8, 4, 0, 0, "Foe staggers away from the worst of your strike", "Lower Abdomen", "m", false);
+	allPiercing[137] = new damage("area_11", "level_3", "d6_6", "Level +1", "Level +2", 1, 0, 0, "Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts and bleeds, but probably isn’t lethal", "Flesh to the Side", "m", false);
 	
-	allCleaving[126] = new damage("area_4", "level_4", "d6_1", 9, 8, 4, 0, 0, "You strike Foe's shoulder and slash muscles", "Upper Arm and Shoulder", "m", false);
-	allCleaving[127] = new damage("area_4", "level_4", "d6_2", 9, 8, 4, 0, 0, "You strike Foe's shoulder and slash muscles", "Upper Arm and Shoulder", "m", false);			
-	allCleaving[128] = new damage("area_4", "level_4", "d6_3", 10, 10, 3, 0, 0, "You crack Foe's rib with a lightning strike", "Chest Crosscut", "m", false);
-	allCleaving[129] = new damage("area_4", "level_4", "d6_4", 10, 8, 7, 1, 0, "Foe tries to disarm you and pays with a massive chop to the neck", "Neck", "m", false);
-	allCleaving[130] = new damage("area_4", "level_4", "d6_5", 11, 9, 4, 2, 2, "Foe twists oddly to avoid your attack. Blow strikes Foe's chin", "Head (Lower), including the Face", "m", false);
-	allCleaving[131] = new damage("area_4", "level_4", "d6_6", 10, 9, 4, 2, 4, "Foe sobs as an ear is removed", "Head (Upper)", "m", false);
+	allPiercing[138] = new damage("area_11", "level_4", "d6_1", 8, 10, 5, 0, 0, "Plunge through Foe's guts with impressive follow-through", "Lower Abdomen", "m", false);
+	allPiercing[139] = new damage("area_11", "level_4", "d6_2", 8, 10, 5, 0, 0, "Plunge through Foe's guts with impressive follow-through", "Lower Abdomen", "m", false);
+	allPiercing[140] = new damage("area_11", "level_4", "d6_3", 8, 10, 5, 0, 0, "Plunge through Foe's guts with impressive follow-through", "Lower Abdomen", "m", false);
+	allPiercing[141] = new damage("area_11", "level_4", "d6_4", 8, 10, 5, 0, 0, "Plunge through Foe's guts with impressive follow-through", "Lower Abdomen", "m", false);
+	allPiercing[142] = new damage("area_11", "level_4", "d6_5", 8, 10, 5, 0, 0, "Plunge through Foe's guts with impressive follow-through", "Lower Abdomen", "m", false);
+	allPiercing[143] = new damage("area_11", "level_4", "d6_6", "Level +1", "Level +2", 1, 0, 0, "Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts and bleeds, but probably isn’t lethal", "Flesh to the Side", "m", false);
 	
-	allCleaving[132] = new damage("area_4", "level_5", "d6_1", 11, 10, 5, 0, 0, "Foe mistakenly brings his weapon arm across your blade's path", "Upper Arm and Shoulder", "m", false);
-	allCleaving[133] = new damage("area_4", "level_5", "d6_2", 11, 10, 5, 0, 0, "Foe mistakenly brings his weapon arm across your blade's path", "Upper Arm and Shoulder", "m", false);			
-	allCleaving[134] = new damage("area_4", "level_5", "d6_3", 12, 13, 5, 0, 0, "Vicious Slash to Foe's chest. Massive internal organ damage", "Chest Crosscut", "m", false);
-	allCleaving[135] = new damage("area_4", "level_5", "d6_4", "-", "-", "-", "-", "-", "Your edge bites half its width into Foes throat. He dies", "Neck", "m", true);
-	allCleaving[136] = new damage("area_4", "level_5", "d6_5", 13, 11, 5, 3, 3, "Foe moves his shield arm too slowly and takes a slash to the face", "Head (Lower), including the Face", "m", false);
-	allCleaving[137] = new damage("area_4", "level_5", "d6_6", "-", "-", "-", "-", "-", "Strike to Foe's head cracks skull and causes massive brain damage. He gibbers and dies", "Head (Upper)", "m", true);
+	allPiercing[144] = new damage("area_11", "level_5", "d6_1", 10, 12, 6, 0, 0, "Strike tears in just below Foe's belt. He's frozen in pain", "Lower Abdomen", "m", false);
+	allPiercing[145] = new damage("area_11", "level_5", "d6_2", 10, 12, 6, 0, 0, "Strike tears in just below Foe's belt. He's frozen in pain", "Lower Abdomen", "m", false);
+	allPiercing[146] = new damage("area_11", "level_5", "d6_3", 10, 12, 6, 0, 0, "Strike tears in just below Foe's belt. He's frozen in pain", "Lower Abdomen", "m", false);
+	allPiercing[147] = new damage("area_11", "level_5", "d6_4", 10, 12, 6, 0, 0, "Strike tears in just below Foe's belt. He's frozen in pain", "Lower Abdomen", "m", false);
+	allPiercing[148] = new damage("area_11", "level_5", "d6_5", 10, 12, 6, 0, 0, "Strike tears in just below Foe's belt. He's frozen in pain", "Lower Abdomen", "m", false);
+	allPiercing[149] = new damage("area_11", "level_5", "d6_6", "Level +1", "Level +2", 1, 0, 0, "Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts and bleeds, but probably isn’t lethal", "Flesh to the Side", "m", false);
 	
-	allCleaving[138] = new damage("area_4", "level_6", "d6_1", 14, 12, 6, 0, 0, "You bury your sword into Foe's shoulder", "Upper Arm and Shoulder", "m", false);
-	allCleaving[139] = new damage("area_4", "level_6", "d6_2", 14, 12, 6, 0, 0, "You bury your sword into Foe's shoulder", "Upper Arm and Shoulder", "m", false);			
-	allCleaving[140] = new damage("area_4", "level_6", "d6_3", "-", "-", "-", "-", "-", "Strike cleaves through lungs and buries your blade near Foe's heart. Instant death", "Chest Crosscut", "m", true);
-	allCleaving[141] = new damage("area_4", "level_6", "d6_4", "-", "-", "-", "-", "-", "Meat chopping strike severs Foe's head", "Neck", "m", true);
-	allCleaving[142] = new damage("area_4", "level_6", "d6_5", "-", "-", "-", "-", "-", "Foe turns out and away from your swing. You catch his face and destroy his head", "Head (Lower), including the Face", "m", true);
-	allCleaving[143] = new damage("area_4", "level_6", "d6_6", "-", "-", "-", "-", "-", "Strike down, in, and across Foe's forehead. Destroy Foe's eyes. He drops dead in his tracks", "Head (Upper)", "m", true);
+	allPiercing[150] = new damage("area_11", "level_6", "d6_1", "-", "-", "-", "-", "-", "Strike through Foe's belly spills his guts to the floor. He's dead", "Lower Abdomen", "m", true);
+	allPiercing[151] = new damage("area_11", "level_6", "d6_2", "-", "-", "-", "-", "-", "Strike through Foe's belly spills his guts to the floor. He's dead", "Lower Abdomen", "m", true);
+	allPiercing[152] = new damage("area_11", "level_6", "d6_3", "-", "-", "-", "-", "-", "Strike through Foe's belly spills his guts to the floor. He's dead", "Lower Abdomen", "m", true);
+	allPiercing[153] = new damage("area_11", "level_6", "d6_4", "-", "-", "-", "-", "-", "Strike through Foe's belly spills his guts to the floor. He's dead", "Lower Abdomen", "m", true);
+	allPiercing[154] = new damage("area_11", "level_6", "d6_5", "-", "-", "-", "-", "-", "Strike through Foe's belly spills his guts to the floor. He's dead", "Lower Abdomen", "m", true);
+	allPiercing[155] = new damage("area_11", "level_6", "d6_6", "Level +1", "Level +2", 1, 0, 0, "Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts and bleeds, but probably isn’t lethal", "Flesh to the Side", "m", false);
 	
-	// area five values
-	allCleaving[144] = new damage("area_5", "level_1", "d6_1", 2, 2, 1, 0, 0, "Your strike slides off", "Head (Upper)", "m", false);
-	allCleaving[145] = new damage("area_5", "level_1", "d6_2", 2, 2, 1, 0, 0, "Your strike slides off", "Head (Upper)", "m", false);			
-	allCleaving[146] = new damage("area_5", "level_1", "d6_3", 2, 2, 1, 0, 0, "Your strike slides off", "Head (Upper)", "m", false);
-	allCleaving[147] = new damage("area_5", "level_1", "d6_4", 3, 3, 1, 0, 0, "Your strike lands flatly", "Head (Lower), including the Face", "m", false);
-	allCleaving[148] = new damage("area_5", "level_1", "d6_5", 1, 2, 0, 0, 0, "A glancing blow", "Shoulders", "m", false);
-	allCleaving[149] = new damage("area_5", "level_1", "d6_6", 1, 2, 0, 0, 0, "A glancing blow", "Shoulders", "m", false);
+	// area twelve values
+	allPiercing[156] = new damage("area_12", "level_1", "d6_1", 0, 2, 0, 0, 0, "Catch Foe in ribs. He drops his guard and leaps back", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[157] = new damage("area_12", "level_1", "d6_2", 0, 2, 0, 0, 0, "Catch Foe in ribs. He drops his guard and leaps back", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[158] = new damage("area_12", "level_1", "d6_3", 0, 3, 0, 0, 0, "Minor chest wound. It could have been much better", "Chest", "m", false);
+	allPiercing[159] = new damage("area_12", "level_1", "d6_4", 0, 3, 0, 0, 0, "Minor chest wound. It could have been much better", "Chest", "m", false);
+	allPiercing[160] = new damage("area_12", "level_1", "d6_5", 0, 3, 0, 0, 0, "Minor chest wound. It could have been much better", "Chest", "m", false);
+	allPiercing[161] = new damage("area_12", "level_1", "d6_6", 0, 3, 0, 0, 0, "Minor chest wound. It could have been much better", "Chest", "m", false);
 	
-	allCleaving[150] = new damage("area_5", "level_2", "d6_1", 5, 4, 2, 0, 0, "You clip your Foe across the forehead", "Head (Upper)", "m", false);
-	allCleaving[151] = new damage("area_5", "level_2", "d6_2", 5, 4, 2, 0, 0, "You clip your Foe across the forehead", "Head (Upper)", "m", false);			
-	allCleaving[152] = new damage("area_5", "level_2", "d6_3", 5, 4, 2, 0, 0, "You clip your Foe across the forehead", "Head (Upper)", "m", false);
-	allCleaving[153] = new damage("area_5", "level_2", "d6_4", 6, 5, 2, 0, 0, "Your strike unbalaces the Foe", "Head (Lower), including the Face", "m", false);
-	allCleaving[154] = new damage("area_5", "level_2", "d6_5", 4, 4, 1, 0, 0, "Strike failed to connect well", "Shoulders", "m", false);
-	allCleaving[155] = new damage("area_5", "level_2", "d6_6", 4, 4, 1, 0, 0, "Strike failed to connect well", "Shoulders", "m", false);
+	allPiercing[162] = new damage("area_12", "level_2", "d6_1", 3, 5, 2, 0, 0, "Foe mostly deflects your attack", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[163] = new damage("area_12", "level_2", "d6_2", 3, 5, 2, 0, 0, "Foe mostly deflects your attack", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[164] = new damage("area_12", "level_2", "d6_3", 3, 5, 2, 0, 0, "Foe's attempt at daring riposte costs him", "Chest", "m", false);
+	allPiercing[165] = new damage("area_12", "level_2", "d6_4", 3, 5, 2, 0, 0, "Foe's attempt at daring riposte costs him", "Chest", "m", false);
+	allPiercing[166] = new damage("area_12", "level_2", "d6_5", 3, 5, 2, 0, 0, "Foe's attempt at daring riposte costs him", "Chest", "m", false);
+	allPiercing[167] = new damage("area_12", "level_2", "d6_6", 3, 5, 2, 0, 0, "Foe's attempt at daring riposte costs him", "Chest", "m", false);
 	
-	allCleaving[156] = new damage("area_5", "level_3", "d6_1", 7, 6, 3, 1, 2, "Your blade wickers out, slicing off Foe's ear", "Head (Upper)", "m", false);
-	allCleaving[157] = new damage("area_5", "level_3", "d6_2", 7, 6, 3, 1, 2, "Your blade wickers out, slicing off Foe's ear", "Head (Upper)", "m", false);			
-	allCleaving[158] = new damage("area_5", "level_3", "d6_3", 7, 6, 3, 1, 2, "Your blade wickers out, slicing off Foe's ear", "Head (Upper)", "m", false);
-	allCleaving[159] = new damage("area_5", "level_3", "d6_4", 8, 7, 3, 1, 1, "Catch Foe in the cheek. He drops his guard and stumbles away from you", "Head (Lower), including the Face", "m", false);
-	allCleaving[160] = new damage("area_5", "level_3", "d6_5", 6, 6, 2, 0, 0, "Foe dances clear of the worst", "Shoulders", "m", false);
-	allCleaving[161] = new damage("area_5", "level_3", "d6_6", 6, 6, 2, 0, 0, "Foe dances clear of the worst", "Shoulders", "m", false);
+	allPiercing[168] = new damage("area_12", "level_3", "d6_1", 5, 8, 4, 0, 0, "Foe's evasion puts him out of position", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[169] = new damage("area_12", "level_3", "d6_2", 5, 8, 4, 0, 0, "Foe's evasion puts him out of position", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[170] = new damage("area_12", "level_3", "d6_3", 6, 7, 4, 0, 0, "Minor chest wound numbs Foe", "Chest", "m", false);
+	allPiercing[171] = new damage("area_12", "level_3", "d6_4", 6, 7, 4, 0, 0, "Minor chest wound numbs Foe", "Chest", "m", false);
+	allPiercing[172] = new damage("area_12", "level_3", "d6_5", 6, 7, 4, 0, 0, "Minor chest wound numbs Foe", "Chest", "m", false);
+	allPiercing[173] = new damage("area_12", "level_3", "d6_6", 6, 7, 4, 0, 0, "Minor chest wound numbs Foe", "Chest", "m", false);
 	
-	allCleaving[162] = new damage("area_5", "level_4", "d6_1", 10, 9, 4, 2, 4, "Strike to brain sends Foe sprawling", "Head (Upper)", "m", false);
-	allCleaving[163] = new damage("area_5", "level_4", "d6_2", 10, 9, 4, 2, 4, "Strike to brain sends Foe sprawling", "Head (Upper)", "m", false);			
-	allCleaving[164] = new damage("area_5", "level_4", "d6_3", 10, 9, 4, 2, 4, "Strike to brain sends Foe sprawling", "Head (Upper)", "m", false);
-	allCleaving[165] = new damage("area_5", "level_4", "d6_4", 11, 9, 4, 2, 2, "Strike along Foe's neck. Foe is frantic to escape death", "Head (Lower), including the Face", "m", false);
-	allCleaving[166] = new damage("area_5", "level_4", "d6_5", 9, 9, 4, 0, 0, "Foe staggers away from your onslaught", "Shoulders", "m", false);
-	allCleaving[167] = new damage("area_5", "level_4", "d6_6", 9, 9, 4, 0, 0, "Foe staggers away from your onslaught", "Shoulders", "m", false);
+	allPiercing[174] = new damage("area_12", "level_4", "d6_1", 8, 10, 5, 0, 0, "Solid thrust to Foe's abdomen has blood spraying everywhere", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[175] = new damage("area_12", "level_4", "d6_2", 8, 10, 5, 0, 0, "Solid thrust to Foe's abdomen has blood spraying everywhere", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[176] = new damage("area_12", "level_4", "d6_3", 9, 9, 5, 0, 0, "Foe whirls left into your strike", "Chest", "m", false);
+	allPiercing[177] = new damage("area_12", "level_4", "d6_4", 9, 9, 5, 0, 0, "Foe whirls left into your strike", "Chest", "m", false);
+	allPiercing[178] = new damage("area_12", "level_4", "d6_5", 9, 9, 5, 0, 0, "Foe whirls left into your strike", "Chest", "m", false);
+	allPiercing[179] = new damage("area_12", "level_4", "d6_6", 9, 9, 5, 0, 0, "Foe whirls left into your strike", "Chest", "m", false);
 	
-	allCleaving[168] = new damage("area_5", "level_5", "d6_1", "-", "-", "-", "-", "-", "Devastating strike through Foe's cranium. He falls to the left, dead", "Head (Upper)", "m", true);
-	allCleaving[169] = new damage("area_5", "level_5", "d6_2", "-", "-", "-", "-", "-", "Devastating strike through Foe's cranium. He falls to the left, dead", "Head (Upper)", "m", true);			
-	allCleaving[170] = new damage("area_5", "level_5", "d6_3", "-", "-", "-", "-", "-", "Devastating strike through Foe's cranium. He falls to the left, dead", "Head (Upper)", "m", true);
-	allCleaving[171] = new damage("area_5", "level_5", "d6_4", 13, 11, 5, 3, 3, "Slice through Foe's cheek and into the throat", "Head (Lower), including the Face", "m", false);
-	allCleaving[172] = new damage("area_5", "level_5", "d6_5", 11, 12, 5, 0, 0, "Tear open Foe's shoulder in a graphic display of violence", "Shoulders", "m", false);
-	allCleaving[173] = new damage("area_5", "level_5", "d6_6", 11, 12, 5, 0, 0, "Tear open Foe's shoulder in a graphic display of violence", "Shoulders", "m", false);
+	allPiercing[180] = new damage("area_12", "level_5", "d6_1", 10, 12, 6, 0, 0, "Lightning strike up and through ribs staggers Foe back and off your blade", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[181] = new damage("area_12", "level_5", "d6_2", 10, 12, 6, 0, 0, "Lightning strike up and through ribs staggers Foe back and off your blade", "Under the Ribs (Upper Abdomen)", "m", false);
+	allPiercing[182] = new damage("area_12", "level_5", "d6_3", 12, 11, 6, 0, 0, "Strike plunges into Foe's chest and emerges from the other side", "Chest", "m", false);
+	allPiercing[183] = new damage("area_12", "level_5", "d6_4", 12, 11, 6, 0, 0, "Strike plunges into Foe's chest and emerges from the other side", "Chest", "m", false);
+	allPiercing[184] = new damage("area_12", "level_5", "d6_5", 12, 11, 6, 0, 0, "Strike plunges into Foe's chest and emerges from the other side", "Chest", "m", false);
+	allPiercing[185] = new damage("area_12", "level_5", "d6_6", 12, 11, 6, 0, 0, "Strike plunges into Foe's chest and emerges from the other side", "Chest", "m", false);
 	
-	allCleaving[174] = new damage("area_5", "level_6", "d6_1", "-", "-", "-", "-", "-", "Your weapon slices through Foe's head and out the other side. Foe drops and dies", "Head (Upper)", "m", true);
-	allCleaving[175] = new damage("area_5", "level_6", "d6_2", "-", "-", "-", "-", "-", "Your weapon slices through Foe's head and out the other side. Foe drops and dies", "Head (Upper)", "m", true);			
-	allCleaving[176] = new damage("area_5", "level_6", "d6_3", "-", "-", "-", "-", "-", "Your weapon slices through Foe's head and out the other side. Foe drops and dies", "Head (Upper)", "m", true);
-	allCleaving[177] = new damage("area_5", "level_6", "d6_4", "-", "-", "-", "-", "-", "Destroys Foe's jaw. Drives bone through brain. Foe dies instantly", "Head (Lower), including the Face", "m", true);
-	allCleaving[178] = new damage("area_5", "level_6", "d6_5", "-", "-", "-", "-", "-", "Strike to Foe's shoulder severs an artery. Foe drops to his knees and dies", "Shoulders", "m", true);
-	allCleaving[179] = new damage("area_5", "level_6", "d6_6", "-", "-", "-", "-", "-", "Strike to Foe's shoulder severs an artery. Foe drops to his knees and dies", "Shoulders", "m", true);
+	allPiercing[186] = new damage("area_12", "level_6", "d6_1", "-", "-", "-", "-", "-", "Strike through both lungs. Foe drops and passes out. He dies during the next Limelight", "Under the Ribs (Upper Abdomen)", "m", true);
+	allPiercing[187] = new damage("area_12", "level_6", "d6_2", "-", "-", "-", "-", "-", "Strike through both lungs. Foe drops and passes out. He dies during the next Limelight", "Under the Ribs (Upper Abdomen)", "m", true);
+	allPiercing[188] = new damage("area_12", "level_6", "d6_3", "-", "-", "-", "-", "-", "Shot through heart sends Foe reeling back ten feet to a place suitable for death", "Chest", "m", true);
+	allPiercing[189] = new damage("area_12", "level_6", "d6_4", "-", "-", "-", "-", "-", "Shot through heart sends Foe reeling back ten feet to a place suitable for death", "Chest", "m", true);
+	allPiercing[190] = new damage("area_12", "level_6", "d6_5", "-", "-", "-", "-", "-", "Shot through heart sends Foe reeling back ten feet to a place suitable for death", "Chest", "m", true);
+	allPiercing[191] = new damage("area_12", "level_6", "d6_6", "-", "-", "-", "-", "-", "Shot through heart sends Foe reeling back ten feet to a place suitable for death", "Chest", "m", true);
 	
-	// area six values
-	allCleaving[180] = new damage("area_6", "level_1", "d6_1", 1, 2, 1, 0, 0, "Foe is concerned with his own preservation. He steps back five feet", "Inner Thigh", "m", false);
-	allCleaving[181] = new damage("area_6", "level_1", "d6_2", 1, 2, 1, 0, 0, "Foe is concerned with his own preservation. He steps back five feet", "Inner Thigh", "m", false);			
-	allCleaving[182] = new damage("area_6", "level_1", "d6_3", 1, 2, 1, 0, 0, "Foe is concerned with his own preservation. He steps back five feet", "Inner Thigh", "m", false);
-	allCleaving[183] = new damage("area_6", "level_1", "d6_4", 4, 5, 1, 0, 0, "Your swing falls short when Foe leaps back", "Groin (Male)", "m", false);
-	allCleaving[184] = new damage("area_6", "level_1", "d6_4", 1, 2, 0, 0, 0, "Your swing falls short when Foe leaps back", "Groin (Female)", "f", false);
-	allCleaving[185] = new damage("area_6", "level_1", "d6_5", 2, 2, 0, 0, 0, "Good form but ineffectual", "Abdomen", "m", false);
-	allCleaving[186] = new damage("area_6", "level_1", "d6_6", 2, 2, 0, 0, 0, "Foe rears back just in time to save his hide", "Chest", "m", false);
+	// area thirteen values
+	allPiercing[192] = new damage("area_13", "level_1", "d6_1", 0, 2, 1, 0, 0, "Foe dodges with vigor to avoid the worst of your assault", "Collar and Throat", "m", false);
+	allPiercing[193] = new damage("area_13", "level_1", "d6_2", 0, 2, 1, 0, 0, "Foe dodges with vigor to avoid the worst of your assault", "Collar and Throat", "m", false);
+	allPiercing[194] = new damage("area_13", "level_1", "d6_3", 1, 2, 1, 0, 0, "Foe slips, narrowly escaping", "Face", "m", false);
+	allPiercing[195] = new damage("area_13", "level_1", "d6_4", 1, 2, 1, 0, 0, "Foe slips, narrowly escaping", "Face", "m", false);
+	allPiercing[196] = new damage("area_13", "level_1", "d6_5", 1, 2, 1, 0, 0, "Foe slips, narrowly escaping", "Face", "m", false);
+	allPiercing[197] = new damage("area_13", "level_1", "d6_6", 1, 2, 1, 0, 0, "Foe slips, narrowly escaping", "Face", "m", false);
 	
-	allCleaving[187] = new damage("area_6", "level_2", "d6_1", 4, 4, 2, 0, 0, "Good attack angle but poor follow up", "Inner Thigh", "m", false);
-	allCleaving[188] = new damage("area_6", "level_2", "d6_2", 4, 4, 2, 0, 0, "Good attack angle but poor follow up", "Inner Thigh", "m", false);			
-	allCleaving[189] = new damage("area_6", "level_2", "d6_3", 4, 4, 2, 0, 0, "Good attack angle but poor follow up", "Inner Thigh", "m", false);
-	allCleaving[190] = new damage("area_6", "level_2", "d6_4", 8, 7, 2, 0, 0, "Light swing to Foe's groin nicks Foe", "Groin (Male)", "m", false);
-	allCleaving[191] = new damage("area_6", "level_2", "d6_4", 4, 4, 1, 0, 0, "Light swing to Foe's groin nicks Foe", "Groin (Female)", "f", false);
-	allCleaving[192] = new damage("area_6", "level_2", "d6_5", 5, 5, 1, 0, 0, "Your weapon stings Foe, but nothing solid", "Abdomen", "m", false);
-	allCleaving[193] = new damage("area_6", "level_2", "d6_6", 5, 4, 1, 0, 0, "Foe's fancy move earns him the tip of your blade", "Chest", "m", false);
+	allPiercing[198] = new damage("area_13", "level_2", "d6_1", 3, 4, 3, 0, 0, "Foe deflects the weight of your strike at the last moment", "Collar and Throat", "m", false);
+	allPiercing[199] = new damage("area_13", "level_2", "d6_2", 3, 4, 3, 0, 0, "Foe deflects the weight of your strike at the last moment", "Collar and Throat", "m", false);
+	allPiercing[200] = new damage("area_13", "level_2", "d6_3", 4, 4, 1, 0, 0, "Foe's defense earns him a momentary reprieve", "Face", "m", false);
+	allPiercing[201] = new damage("area_13", "level_2", "d6_4", 4, 4, 1, 0, 0, "Foe's defense earns him a momentary reprieve", "Face", "m", false);
+	allPiercing[202] = new damage("area_13", "level_2", "d6_5", 4, 4, 1, 0, 0, "Foe's defense earns him a momentary reprieve", "Face", "m", false);
+	allPiercing[203] = new damage("area_13", "level_2", "d6_6", 4, 4, 1, 0, 0, "Foe's defense earns him a momentary reprieve", "Face", "m", false);
 	
-	allCleaving[194] = new damage("area_6", "level_3", "d6_1", 6, 6, 3, 1, 0, "Foe jumps in the wrong direction and gets clipped", "Inner Thigh", "m", false);
-	allCleaving[195] = new damage("area_6", "level_3", "d6_2", 6, 6, 3, 1, 0, "Foe jumps in the wrong direction and gets clipped", "Inner Thigh", "m", false);			
-	allCleaving[196] = new damage("area_6", "level_3", "d6_3", 6, 6, 3, 1, 0, "Foe jumps in the wrong direction and gets clipped", "Inner Thigh", "m", false);
-	allCleaving[197] = new damage("area_6", "level_3", "d6_4", 10, 9, 3, 0, 0, "Glancing blow takes skin with it", "Groin (Male)", "m", false);
-	allCleaving[198] = new damage("area_6", "level_3", "d6_4", 6, 7, 2, 0, 0, "Glancing blow takes skin with it", "Groin (Female)", "f", false);
-	allCleaving[199] = new damage("area_6", "level_3", "d6_5", 8, 8, 3, 0, 0, "Great finesse but low power", "Abdomen", "m", false);
-	allCleaving[200] = new damage("area_6", "level_3", "d6_6", 8, 7, 2, 0, 0, "Your blow, though minor, causes Foe to drop back five feet", "Chest", "m", false);
+	allPiercing[204] = new damage("area_13", "level_3", "d6_1", 6, 6, 5, 0, 0, "Shot caroms off Foe's shoulder and up into throat", "Collar and Throat", "m", false);
+	allPiercing[205] = new damage("area_13", "level_3", "d6_2", 6, 6, 5, 0, 0, "Shot caroms off Foe's shoulder and up into throat", "Collar and Throat", "m", false);
+	allPiercing[206] = new damage("area_13", "level_3", "d6_3", 6, 6, 3, 0, 0, "Thrust slips through lips and jaw", "Face", "m", false);
+	allPiercing[207] = new damage("area_13", "level_3", "d6_4", 6, 6, 3, 0, 0, "Thrust slips through lips and jaw", "Face", "m", false);
+	allPiercing[208] = new damage("area_13", "level_3", "d6_5", 6, 6, 3, 0, 0, "Thrust slips through lips and jaw", "Face", "m", false);
+	allPiercing[209] = new damage("area_13", "level_3", "d6_6", 6, 6, 3, 0, 0, "Thrust slips through lips and jaw", "Face", "m", false);
 	
-	allCleaving[201] = new damage("area_6", "level_4", "d6_1", 9, 8, 4, 2, 0, "Foe loses resolve from your solid strike", "Inner Thigh", "m", false);
-	allCleaving[202] = new damage("area_6", "level_4", "d6_2", 9, 8, 4, 2, 0, "Foe loses resolve from your solid strike", "Inner Thigh", "m", false);			
-	allCleaving[203] = new damage("area_6", "level_4", "d6_3", 9, 8, 4, 2, 0, "Foe loses resolve from your solid strike", "Inner Thigh", "m", false);
-	allCleaving[204] = new damage("area_6", "level_4", "d6_4", 12, 11, 4, 2, 0, "Solid blow to Foe's groint", "Groin (Male)", "m", false);
-	allCleaving[205] = new damage("area_6", "level_4", "d6_4", 10, 9, 3, 2, 0, "Solid blow to Foe's groin", "Groin (Female)", "f", false);
-	allCleaving[206] = new damage("area_6", "level_4", "d6_5", 11, 11, 5, 0, 0, "Solid strike sends Foe into defensive frenzy", "Abdomen", "m", false);
-	allCleaving[207] = new damage("area_6", "level_4", "d6_6", 11, 10, 3, 0, 0, "A hard blow that leaves your Foe gasping for breath", "Chest", "m", false);
+	allPiercing[210] = new damage("area_13", "level_4", "d6_1", 9, 8, 6, 0, 0, "Excellent strike to collar slices through muscle and tendon", "Collar and Throat", "m", false);
+	allPiercing[211] = new damage("area_13", "level_4", "d6_2", 9, 8, 6, 0, 0, "Excellent strike to collar slices through muscle and tendon", "Collar and Throat", "m", false);
+	allPiercing[212] = new damage("area_13", "level_4", "d6_3", 9, 8, 4, 1, 0, "Strike through nose. Foe's eyes cross momentarily", "Face", "m", false);
+	allPiercing[213] = new damage("area_13", "level_4", "d6_4", 9, 8, 4, 1, 0, "Strike through nose. Foe's eyes cross momentarily", "Face", "m", false);
+	allPiercing[214] = new damage("area_13", "level_4", "d6_5", 9, 8, 4, 1, 0, "Strike through nose. Foe's eyes cross momentarily", "Face", "m", false);
+	allPiercing[215] = new damage("area_13", "level_4", "d6_6", 9, 8, 4, 1, 0, "Strike through nose. Foe's eyes cross momentarily", "Face", "m", false);
 	
-	allCleaving[208] = new damage("area_6", "level_5", "d6_1", 11, 10, 6, 3, 0, "Strike to side slips down into Foe's thigh. Foe reels away in agony", "Inner Thigh", "m", false);
-	allCleaving[209] = new damage("area_6", "level_5", "d6_2", 11, 10, 6, 3, 0, "Strike to side slips down into Foe's thigh. Foe reels away in agony", "Inner Thigh", "m", false);			
-	allCleaving[210] = new damage("area_6", "level_5", "d6_3", 11, 10, 6, 3, 0, "Strike to side slips down into Foe's thigh. Foe reels away in agony", "Inner Thigh", "m", false);
-	allCleaving[211] = new damage("area_6", "level_5", "d6_4", 14, 13, 5, 3, 0, "Strike destroys Foe's vital organs", "Groin (Male)", "m", false);
-	allCleaving[212] = new damage("area_6", "level_5", "d6_4", 11, 13, 5, 3, 0, "Strike destroys Foe's vital organs", "Groin (Female)", "f", false);
-	allCleaving[213] = new damage("area_6", "level_5", "d6_5", 14, 14, 7, 0, 0, "Your weapon rips into Foe's stomach. Major abdominal wound", "Abdomen", "m", false);
-	allCleaving[214] = new damage("area_6", "level_5", "d6_6", 14, 13, 5, 0, 0, "Upward swing gets hung up in Foe's ribs. Screaming, he tears himself away from your blade", "Chest", "m", false);
+	allPiercing[216] = new damage("area_13", "level_5", "d6_1", 12, 10, 7, 1, 0, "Strike through throat mangles veins and arteries. Foe can't breathe", "Collar and Throat", "m", false);
+	allPiercing[217] = new damage("area_13", "level_5", "d6_2", 12, 10, 7, 1, 0, "Strike through throat mangles veins and arteries. Foe can't breathe", "Collar and Throat", "m", false);
+	allPiercing[218] = new damage("area_13", "level_5", "d6_3", "-", "-", "-", "-", "-", "Strike plunges through Foe's eye. Instant death", "Face", "m", true);
+	allPiercing[219] = new damage("area_13", "level_5", "d6_4", "-", "-", "-", "-", "-", "Strike plunges through Foe's eye. Instant death", "Face", "m", true);
+	allPiercing[220] = new damage("area_13", "level_5", "d6_5", "-", "-", "-", "-", "-", "Strike plunges through Foe's eye. Instant death", "Face", "m", true);
+	allPiercing[221] = new damage("area_13", "level_5", "d6_6", "-", "-", "-", "-", "-", "Strike plunges through Foe's eye. Instant death", "Face", "m", true);
 	
-	allCleaving[215] = new damage("area_6", "level_6", "d6_1", 14, 12, 7, 4, 0, "Blow to Foe's thigh. Screaming, Foe twists out of it", "Inner Thigh", "m", false);
-	allCleaving[216] = new damage("area_6", "level_6", "d6_2", 14, 12, 7, 4, 0, "Blow to Foe's thigh. Screaming, Foe twists out of it", "Inner Thigh", "m", false);			
-	allCleaving[217] = new damage("area_6", "level_6", "d6_3", 14, 12, 7, 4, 0, "Blow to Foe's thigh. Screaming, Foe twists out of it", "Inner Thigh", "m", false);
-	allCleaving[218] = new damage("area_6", "level_6", "d6_4", "-", "-", "-", "-", "-", "Chop through the top of Foe's groin and sever Foe's leg. Foe drops and dies", "Groin (Male)", "m", true);
-	allCleaving[219] = new damage("area_6", "level_6", "d6_4", "-", "-", "-", "-", "-", "Chop through the top of Foe's groin and sever Foe's leg. Foe drops and dies", "Groin (Female)", "f", true);
-	allCleaving[220] = new damage("area_6", "level_6", "d6_5", "-", "-", "-", "-", "-", "Disembowel Foe, killing him instantly", "Abdomen", "m", true);
-	allCleaving[221] = new damage("area_6", "level_6", "d6_6", "-", "-", "-", "-", "-", "Upward slash through Foe's heart. Foe dies instantly", "Chest", "m", true);
+	allPiercing[222] = new damage("area_13", "level_6", "d6_1", "-", "-", "-", "-", "-", "Piercing strike up through Adam's Apple. Foe dies instantly", "Collar and Throat", "m", true);
+	allPiercing[223] = new damage("area_13", "level_6", "d6_2", "-", "-", "-", "-", "-", "Piercing strike up through Adam's Apple. Foe dies instantly", "Collar and Throat", "m", true);
+	allPiercing[224] = new damage("area_13", "level_6", "d6_3", "-", "-", "-", "-", "-", "Thrust goes through both ears. Foe drops dead", "Face", "m", true);
+	allPiercing[225] = new damage("area_13", "level_6", "d6_4", "-", "-", "-", "-", "-", "Thrust goes through both ears. Foe drops dead", "Face", "m", true);
+	allPiercing[226] = new damage("area_13", "level_6", "d6_5", "-", "-", "-", "-", "-", "Thrust goes through both ears. Foe drops dead", "Face", "m", true);
+	allPiercing[227] = new damage("area_13", "level_6", "d6_6", "-", "-", "-", "-", "-", "Thrust goes through both ears. Foe drops dead", "Face", "m", true);
 	
-	// area seven values
-	allCleaving[222] = new damage("area_7", "level_1", "d6_1", 1, 2, 0, 0, 0, "A weak strike", "Hand", "m", false);
-	allCleaving[223] = new damage("area_7", "level_1", "d6_2", 1, 2, 0, 0, 0, "Strike lands poorly", "Forearm", "m", false);			
-	allCleaving[224] = new damage("area_7", "level_1", "d6_3", 1, 2, 0, 0, 0, "Strike lands poorly", "Forearm", "m", false);
-	allCleaving[225] = new damage("area_7", "level_1", "d6_4", 1, 3, 0, 0, 0, "The worst of your attack is caught by Foe's shield", "Elbow", "m", false);
-	allCleaving[226] = new damage("area_7", "level_1", "d6_5", 1, 2, 0, 0, 0, "Foe steps out of your reach", "Upper Arm and Shoulder", "m", false);
-	allCleaving[227] = new damage("area_7", "level_1", "d6_6", 1, 2, 0, 0, 0, "Foe steps out of your reach", "Upper Arm and Shoulder", "m", false);
+	// area fourteen values
+	allPiercing[228] = new damage("area_14", "level_1", "d6_1", 0, 2, 0, 0, 0, "Foe evades, maneuvering for a better position", "Hand", "m", false);
+	allPiercing[229] = new damage("area_14", "level_1", "d6_2", 0, 2, 0, 0, 0, "Strike lands without energy", "Forearm", "m", false);
+	allPiercing[230] = new damage("area_14", "level_1", "d6_3", 0, 2, 0, 0, 0, "Strike lands without energy", "Forearm", "m", false);
+	allPiercing[231] = new damage("area_14", "level_1", "d6_4", 0, 2, 0, 0, 0, "Strike prods Foe back", "Elbow", "m", false);
+	allPiercing[232] = new damage("area_14", "level_1", "d6_5", 0, 2, 0, 0, 0, "Foe veers away and avoids all but the tip of your blade", "Upper Arm", "m", false);
+	allPiercing[233] = new damage("area_14", "level_1", "d6_6", 0, 2, 0, 0, 0, "Foe veers away and avoids all but the tip of your blade", "Upper Arm", "m", false);
 	
-	allCleaving[228] = new damage("area_7", "level_2", "d6_1", 4, 4, 1, 0, 0, "Foe's evasion puts him on the defensive", "Hand", "m", false);
-	allCleaving[229] = new damage("area_7", "level_2", "d6_2", 4, 4, 1, 0, 0, "Foe reels away from the worst of your attack", "Forearm", "m", false);			
-	allCleaving[230] = new damage("area_7", "level_2", "d6_3", 4, 4, 1, 0, 0, "Foe reels away from the worst of your attack", "Forearm", "m", false);
-	allCleaving[231] = new damage("area_7", "level_2", "d6_4", 4, 5, 1, 0, 0, "Point of your blade makes Foe yelp", "Elbow", "m", false);
-	allCleaving[232] = new damage("area_7", "level_2", "d6_5", 4, 4, 1, 0, 0, "Your assault catches Foe in bicep and forces him back five feet", "Upper Arm and Shoulder", "m", false);
-	allCleaving[233] = new damage("area_7", "level_2", "d6_6", 4, 4, 1, 0, 0, "Your assault catches Foe in bicep and forces him back five feet", "Upper Arm and Shoulder", "m", false);
+	allPiercing[234] = new damage("area_14", "level_2", "d6_1", 2, 3, 0, 0, 0, "Strike twists as it lands, blunting the attack", "Hand", "m", false);
+	allPiercing[235] = new damage("area_14", "level_2", "d6_2", 2, 3, 1, 0, 0, "Slice Foe's forearm with long follow-through", "Forearm", "m", false);
+	allPiercing[236] = new damage("area_14", "level_2", "d6_3", 2, 3, 1, 0, 0, "Slice Foe's forearm with long follow-through", "Forearm", "m", false);
+	allPiercing[237] = new damage("area_14", "level_2", "d6_4", 2, 4, 1, 0, 0, "Strike pierces flesh of Foe's elbow", "Elbow", "m", false);
+	allPiercing[238] = new damage("area_14", "level_2", "d6_5", 2, 4, 1, 0, 0, "Strike costs Foe", "Upper Arm", "m", false);
+	allPiercing[239] = new damage("area_14", "level_2", "d6_6", 2, 4, 1, 0, 0, "Strike costs Foe", "Upper Arm", "m", false);
 	
-	allCleaving[234] = new damage("area_7", "level_3", "d6_1", 6, 6, 2, 0, 0, "Foe's knuckles are laid bare defending against your strike", "Hand", "m", false);
-	allCleaving[235] = new damage("area_7", "level_3", "d6_2", 6, 6, 2, 0, 0, "You make a long slice in Foe's weapon arm", "Forearm", "m", false);			
-	allCleaving[236] = new damage("area_7", "level_3", "d6_3", 6, 6, 2, 0, 0, "You make a long slice in Foe's weapon arm", "Forearm", "m", false);
-	allCleaving[237] = new damage("area_7", "level_3", "d6_4", 6, 7, 2, 0, 0, "Strike to Foe's elbow sends his shield into his teeth", "Elbow", "m", false);
-	allCleaving[238] = new damage("area_7", "level_3", "d6_5", 6, 6, 3, 0, 0, "Your great form makes Foe cautious", "Upper Arm and Shoulder", "m", false);
-	allCleaving[239] = new damage("area_7", "level_3", "d6_6", 6, 6, 3, 0, 0, "Your great form makes Foe cautious", "Upper Arm and Shoulder", "m", false);
+	allPiercing[240] = new damage("area_14", "level_3", "d6_1", 4, 5, 1, 0, 0, "Stinging thrust through fleshy web of Foe's hand", "Hand", "m", false);
+	allPiercing[241] = new damage("area_14", "level_3", "d6_2", 4, 5, 2, 0, 0, "Strike along Foe's arm. The damage takes a moment to show", "Forearm", "m", false);
+	allPiercing[242] = new damage("area_14", "level_3", "d6_3", 4, 5, 2, 0, 0, "Strike along Foe's arm. The damage takes a moment to show", "Forearm", "m", false);
+	allPiercing[243] = new damage("area_14", "level_3", "d6_4", 4, 6, 2, 0, 0, "Foe catches your attack on his elbow", "Elbow", "m", false);
+	allPiercing[244] = new damage("area_14", "level_3", "d6_5", 4, 5, 2, 0, 0, "Stinging shot through Foe's bicep", "Upper Arm", "m", false);
+	allPiercing[245] = new damage("area_14", "level_3", "d6_6", 4, 5, 2, 0, 0, "Stinging shot through Foe's bicep", "Upper Arm", "m", false);
 	
-	allCleaving[240] = new damage("area_7", "level_4", "d6_1", 9, 8, 3, 0, 0, "Foe tries to disarm you and pays with fingers", "Hand", "m", false);
-	allCleaving[241] = new damage("area_7", "level_4", "d6_2", 9, 8, 3, 0, 0, "You are lucky to strike Foe's forearm while recovering from a lunge", "Forearm", "m", false);			
-	allCleaving[242] = new damage("area_7", "level_4", "d6_3", 9, 8, 3, 0, 0, "You are lucky to strike Foe's forearm while recovering from a lunge", "Forearm", "m", false);
-	allCleaving[243] = new damage("area_7", "level_4", "d6_4", 9, 9, 3, 0, 0, "Foe's clumsy shield work costs him", "Elbow", "m", false);
-	allCleaving[244] = new damage("area_7", "level_4", "d6_5", 9, 8, 4, 0, 0, "Foe's awkward parry gives you the opening you've been waiting for", "Upper Arm and Shoulder", "m", false);
-	allCleaving[245] = new damage("area_7", "level_4", "d6_6", 9, 8, 4, 0, 0, "Foe's awkward parry gives you the opening you've been waiting for", "Upper Arm and Shoulder", "m", false);
+	allPiercing[246] = new damage("area_14", "level_4", "d6_1", 7, 7, 2, 0, 0, "Artful attack claims a digit", "Hand", "m", false);
+	allPiercing[247] = new damage("area_14", "level_4", "d6_2", 7, 7, 3, 0, 0, "Deep wound to Foe's arm bleeds fiercly", "Forearm", "m", false);
+	allPiercing[248] = new damage("area_14", "level_4", "d6_3", 7, 7, 3, 0, 0, "Deep wound to Foe's arm bleeds fiercly", "Forearm", "m", false);
+	allPiercing[249] = new damage("area_14", "level_4", "d6_4", 7, 9, 3, 0, 0, "Foe's leap sends your point through the flesh of his elbow. He pulls free", "Elbow", "m", false);
+	allPiercing[250] = new damage("area_14", "level_4", "d6_5", 7, 7, 3, 0, 0, "Solid strike pierces flesh and digs into bone", "Upper Arm", "m", false);
+	allPiercing[251] = new damage("area_14", "level_4", "d6_6", 7, 7, 3, 0, 0, "Solid strike pierces flesh and digs into bone", "Upper Arm", "m", false);
 	
-	allCleaving[246] = new damage("area_7", "level_5", "d6_1", 11, 11, 4, 0, 0, "Butcher chop to hand freezes Foe in agony", "Hand", "m", false);
-	allCleaving[247] = new damage("area_7", "level_5", "d6_2", 11, 11, 4, 0, 0, "Your blow cuts deep and severs an important vein", "Forearm", "m", false);			
-	allCleaving[248] = new damage("area_7", "level_5", "d6_3", 11, 11, 4, 0, 0, "Your blow cuts deep and severs an important vein", "Forearm", "m", false);
-	allCleaving[249] = new damage("area_7", "level_5", "d6_4", 11, 11, 4, 0, 0, "Your strike opens Foe's elbow to the bone", "Elbow", "m", false);
-	allCleaving[250] = new damage("area_7", "level_5", "d6_5", 11, 10, 5, 0, 0, "Blow to shoulder has Foe panting in pain", "Upper Arm and Shoulder", "m", false);
-	allCleaving[251] = new damage("area_7", "level_5", "d6_6", 11, 10, 5, 0, 0, "Blow to shoulder has Foe panting in pain", "Upper Arm and Shoulder", "m", false);
-	
-	allCleaving[252] = new damage("area_7", "level_6", "d6_1", 14, 13, 5, 0, 0, "Foe screams as severed hand lands behind him", "Hand", "m", false);
-	allCleaving[253] = new damage("area_7", "level_6", "d6_2", 14, 13, 5, 0, 0, "Block Foe's weapon arm away and nearly sever it", "Forearm", "m", false);			
-	allCleaving[254] = new damage("area_7", "level_6", "d6_3", 14, 13, 5, 0, 0, "Block Foe's weapon arm away and nearly sever it", "Forearm", "m", false);
-	allCleaving[255] = new damage("area_7", "level_6", "d6_4", 14, 13, 5, 0, 0, "Foe dances away in shock, pulling free of your blade", "Elbow", "m", false);
-	allCleaving[256] = new damage("area_7", "level_6", "d6_5", 14, 12, 6, 0, 0, "Massive wound to upper arm causes Foe to howl in agony", "Upper Arm and Shoulder", "m", false);
-	allCleaving[257] = new damage("area_7", "level_6", "d6_6", 14, 12, 6, 0, 0, "Massive wound to upper arm causes Foe to howl in agony", "Upper Arm and Shoulder", "m", false);
+	allPiercing[252] = new damage("area_14", "level_5", "d6_1", 9, 9, 3, 0, 0, "Strike and flick leaves two fingers hanging by threads", "Hand", "m", false);
+	allPiercing[253] = new damage("area_14", "level_5", "d6_2", 9, 9, 3, 0, 0, "Savage stab to Foe's arm makes him hiss with pain", "Forearm", "m", false);
+	allPiercing[254] = new damage("area_14", "level_5", "d6_3", 9, 9, 3, 0, 0, "Savage stab to Foe's arm makes him hiss with pain", "Forearm", "m", false);
+	allPiercing[255] = new damage("area_14", "level_5", "d6_4", 9, 11, 3, 0, 0, "Foe is stunned when his flurry ends with your steel buried in him", "Elbow", "m", false);
+	allPiercing[256] = new damage("area_14", "level_5", "d6_5", 9, 9, 4, 0, 0, "Foe loses concentration long enough for your thrust to connect", "Upper Arm", "m", false);
+	allPiercing[257] = new damage("area_14", "level_5", "d6_6", 9, 9, 4, 0, 0, "Foe loses concentration long enough for your thrust to connect", "Upper Arm", "m", false);
+
+	allPiercing[258] = new damage("area_14", "level_6", "d6_1", 11, 11, 4, 0, 0, "Brutal thrust pierces Foe's hand", "Hand", "m", false);
+	allPiercing[259] = new damage("area_14", "level_6", "d6_2", 11, 11, 4, 0, 0, "Strike ricochets through muscle in shield arm. If Foe has shield, he drops it", "Forearm", "m", false);
+	allPiercing[260] = new damage("area_14", "level_6", "d6_3", 11, 11, 4, 0, 0, "Strike ricochets through muscle in shield arm. If Foe has shield, he drops it", "Forearm", "m", false);
+	allPiercing[261] = new damage("area_14", "level_6", "d6_4", 11, 13, 4, 0, 0, "Strike plunges into doomed Foe's elbow and rips out through other side", "Elbow", "m", false);
+	allPiercing[262] = new damage("area_14", "level_6", "d6_5", 11, 11, 5, 0, 0, "Savage strike pins Foe's arm briefly to his side", "Upper Arm", "m", false);
+	allPiercing[263] = new damage("area_14", "level_6", "d6_6", 11, 11, 5, 0, 0, "Savage strike pins Foe's arm briefly to his side", "Upper Arm", "m", false);
 }
 	
 function setupSwung(){}
