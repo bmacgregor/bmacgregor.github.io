@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mounted Combat</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Mounted Combat</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_RideByAttacks">Ride-by Melee Attacks</a></li>
+					<li><a href="#P_Jousting">Jousting</a></li>
+					<li><a href="#P_MountedArchery">Mounted Archery</a></li>
+					<li><a href="#P_Barding">Barding</a></li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li class="active"><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Mounted Combat Overview</p>
+			<p>In <em>Blade</em>, the value of a mount extends far beyond being just a means of transportation. In a game 
+			where bloody, brutal, and action-oriented combat is held in such high regard, it seemed only natural that 
+			mounted combat should be exhilarating. Rider and mount are treated as a single entity for the purpose of 
+			mounted combat. All combat actions, whether by the rider or by the mount, and whether Maneuvers or Terrain 
+			Checks, are performed out of the rider’s Melee Pool, and the following rules apply while the character is 
+			fighting mounted: If fighting opponents on the ground, the mounted character receives +2 dice to his Melee 
+			Pool, as he is effectively attacking from higher ground.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Mounted Combat Continued</p>
+			<p>For as long as the mount is moving, the mounted combatant’s Riding Skill aids her in remaining the tactical 
+			master of the combat situation. At the beginning of every Combat Round, the mounted combatant makes a Riding 
+			Check, unaided by any Passion Attributes. The number of Successes on this Riding Check (or half their number if 
+			a Daring Check is substituted for a Riding Check) become bonus dice to the mounted character’s Melee Pool for 
+			this Combat Round, useable solely for Terrain Checks. An exception to this limitation are Full Evasions 
+			and Bash or Stampede Maneuvers performed with the mount – the bonus dice from the Riding Skill Check can be 
+			used for these.</p>
+			
+			<p>If the Riding Check comes up with no Successes, the character’s Melee Pool for the Combat Round is penalized 
+			by one die. In addition, an immediate second Riding Check has to be made. If this Check again comes up with no 
+			Successes, the character is thrown from their mount. If a group isn’t bothered by the absence of the likelihood 
+			that a poor rider receives no benefit from being mounted and wants to speed up resolution, this Riding Check 
+			can be waived and bonus dice equal to half the mounted character’s Riding Skill level awarded as a flat bonus 
+			every Combat Round. In this case, low Riding Skill levels impart no benefit. Skill level one (or Daring one or 
+			two in absence of the Skill) penalizes the Melee Pool by one die, Skill level two (or Daring three or four) adds 
+			nothing, and Skill level three (or Daring five or six) imparts a one die bonus. Riding Skill levels of four or 
+			greater impart the usual modifier of bonus dice equal to half the level.</p>
+			
+			<p>If the optional Encumbrance rules are being used, a mounted combatant must only pay the additional Evasion 
+			Activation Cost from Encumbrance for Partial Evasion, and Duck and Weave. If he performs a Full Evasion, he 
+			pays no additional Activation Cost, no matter what his or his mount’s Encumbrance. In addition, bonus Melee 
+			Pool dice from the Riding Check at the outset of the Combat Round are usable on a Full Evasion roll. If a 
+			mounted Character’s only Maneuvers for an entire Combat Round are Full Evasions, he may use his Riding Skill, 
+			plus any bonus dice derived from the initial Riding Skill Check in lieu of a weapon Proficiency to calculate 
+			his Melee Pool for the Combat Round.</p>
+			
+			<p>If the optional Fatigue rules are being used, a mounted combatant needs one Success less at the Brawn Check 
+			to avoid Fatigue than suggested by her Encumbrance. In many cases, this will mean that the Brawn Check is an 
+			automatic Success. The Character can, under certain circumstances, use her mount like a weapon. Only a 
+			combat-trained mount can be made to kick at opponents on the ground, but nearly any mount can be forced to ride 
+			down an opponent on the ground. To do so, the mounted Character can resort to the animal combat Maneuvers Bash 
+			and Stampede, using her own Melee Pool for the attack, but her mount’s Brawn to determine any hits Impact 
+			Rating. Bonus Melee Pool dice from the Riding Check can be used to deliver such attacks.</p>
+			
+			<p>If the Character during a Combat Round performs no other Maneuver but have his mount Bash or Stampede, he 
+			may use his Riding Skill, plus any bonus dice derived from the initial Riding Skill Check, in lieu of a weapon 
+			Proficiency to calculate his Melee Pool for the Round. If a Character performs both a Bash or Stampede with his 
+			mount and any weapon-based Maneuver, the usual mechanic for switching Proficiencies during a single Combat 
+			Round is used, treating Riding Skill plus bonus dice from the Skill Check like a Proficiency: The Melee Pool is 
+			re-calculated based on the new Proficiency used. If the Melee Pool based on the new Proficiency is lower than 
+			the original one, the current Melee Pool is immediately penalized by the difference in the pool sizes.</p>
+			
+			<p>A Bash with the mount can never be performed as a ride by attack, and a Stampede with the mount may only be 
+			performed as a ride by attack (see below). Some common sense is required in adjudicating what Maneuvers are or 
+			aren’t possible in mounted combat, with a few pointers being given here:</p>
+			
+			<p>Unless using weapons of at least very Long Reach, attacking Target Zones 1, 6, or 8 of an opponent on the 
+			ground should be impossible for a mounted combatant, and carry an additional Activation Cost of 1 for even 
+			these weapons.</p>
+			
+			<p>Attacking Target Zones 2 and 9 should be impossible with weapons of a Reach shorter than Long, and carry an 
+			additional Activation Cost of 1 even for them. Some attacks can be declared outright impossible (ex. dagger 
+			thrust at the groin). Conversely, a combatant on foot will not be able to attack a mounted opponent with 
+			swings aimed at Target Zones 4 or 5, unless she is using a weapon of at least Long Reach and pays an additional 
+			Activation Cost of 1.</p>
+			
+			<p>Thrusts at Zone 13 should require an additional Activation Cost of 2 for weapons with Reach Hand and of 1 
+			for weapons with Short Reach, and thrusts at Zone 12 should require an additional Activation Cost of 1 for 
+			weapons with Reach Hand. Some attacks can be declared outright impossible.</p>
+			
+			<p>If a combatant on the ground is being attacked with a ride by Stampede and also declares an attack as his 
+			action for Exchange One, he may only target the mount, not the rider. If a mounted combatant performs an 
+			Evasion, keep in mind that Full Evasion is always thought of as completely disengaging both mount and rider, 
+			while both Duck and Weave and Partial Evasion can be thought of as being performed either by the rider alone, 
+			without moving the mount much, or as being performed by moving the mount. Evasions performed by moving 
+			the mount, no matter with which of the three evasive options, are also the only means by which attacks directed 
+			against the mount can be defended against. Neither blocking nor parrying such attacks is possible.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_RideByAttacks">Ride-by Melee Attacks</p>
+			<p>Canny horsemen will use their mount’s speed to quickly strike and swoop out again before their opponent 
+			has a chance to retaliate. This requires that the mount be moving at least at a canter, preferably a gallop, 
+			and is performed as a Terrain Check, unless the opponent who is about to be attacked while being ridden by 
+			does not object to this; in this case, no Check is necessary and a one Exchange long combat is conducted, as 
+			if the rider’s Terrain Check had been victorious. Against unimportant NPCs, this Check is an Unopposed one. 
+			A single Success on the rider’s part will limit the Combat Round to a single Exchange as the mounted combatant 
+			swoops past his opponent. If no Success is achieved, the Combat Round lasts the usual two Exchanges.</p>
+			
+			<p>Against a Character, the Terrain Check is an Opposed one. The party that is ridden by announces a number of 
+			dice from her Melee Pool to prolong the contact with the mounted opponent, who then sets aside a number of 
+			dice from her own Melee Pool in opposition. If the party wishing to prolong the contact is victorious, the 
+			Combat Round has the usual two Exchanges. If the result is a tie or a victory for the mounted party, it is 
+			limited to a single Exchange.</p>
+			
+			<p>No matter whether the Combat Round of the ride-by attack last for one or two Exchanges, the bout is over at 
+			the end of the Combat Round as the mounted combatant rides away, possibly to turn around his mount for another 
+			ride-by attack. If both combatants are mounted and either stationary or going in the same direction, a ride-by 
+			attack is impossible, and a normal, multi-Round combat is conducted. If they are not going in the same 
+			direction, it is automatically a ride-by attack of either one or two Exchanges depending on the outcome of the 
+			Terrain Check, provided the Check is not forgone by both riders being equally desirous to limit their 
+			contact.</p>
+			
+			<p>During the first Exchange of a ride-by attack, the combatant with the longer weapon performs his attack at 
+			the optimum Reach for his weapon. If the combatant with the shorter weapon attacks as well, and happens to 
+			attack fractionally before his opponent, either by winning the Opposed Reflex Check or by Stealing Initiative, 
+			he attacks at the Reach of his opponent’s longer weapon, with all attendant penalties. Independently of this 
+			attack hitting or not, the opponent with the longer weapon attacks at his own optimum Reach.</p>
+			
+			<p>If a second Exchange is being fought, this takes place at the optimum Reach for the weapon of the combatant 
+			on foot, or at the Reach of the shorter weapon if both combatants happen to be mounted.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Jousting">Jousting</p>
+			<p>The following mechanics are used to simulate a joust between two opponents who are both armed with lances. 
+			If only one of the combatants is using a lance, normal mounted combat rules for ride-by attacks are used, of 
+			course with the mount’s full Brawn being used instead to calculate the Impact Rating, as per the description of 
+			the lance in the Appendix.</p>
+			
+			<p>A knightly joust, whether for sport or actual combat, is a ride-by attack un-resisted by both combatants 
+			and handled in three stages: The charge is the usual Riding Check at the beginning of the Combat Round, but 
+			this time performed as an Opposed Check. The Quality of Success is applied twice – once as an Melee Pool bonus 
+			for the winner and once as an Melee Pool penalty for the loser. These dice become regular parts of the Melee 
+			Pool, and can be used without restrictions.</p>
+			
+			<p>The clash sees each opponent declaring a Simultaneous Block/Strike and dividing his dice pool in any way 
+			they choose between attack and defence. If the joust is for sport, no initiative is determined – both attacks 
+			are thought to occur at the same time. If the joust is for combat, there are also no Reflex Checks made to 
+			determine which attack occurs fractionally earlier, but Stealing Initiative is allowed. If nobody attempts to 
+			Steal Initiative, both attacks occur simultaneously.</p>
+			
+			<p>The check occurs only in sporting jousts; in case of a combat joust, damage is determined as normal. For 
+			formal jousts, with lances prepared to break, each opponent makes a Riding Check, with the Successes required 
+			being equal to (3 – his Block Quality of Success). Failure means that the combatant is unhorsed. If one 
+			combatant fails to block his opponent’s lance with his shield, he makes a Riding Check, requiring four 
+			Successes, and suffers damage from the hit. With prepared jousting lances, the damage caused is <em>half</em> 
+			of the mount’s Brawn +1 (Blunt) instead of the mount’s full Brawn +1 (Piercing).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MountedArchery">Mounted Archery</p>
+			<p>Firing any type of missile, not just arrows, from a mount moving at speed is a tricky thing. Any Character 
+			attempting to do so cannot use her Missile Proficiency at a rating higher than she has in the Riding Skill (a 
+			theoretical maximum of nine). Should the Character lack formal training in the Riding Skill, her Proficiency is 
+			instead capped at half of her Daring.</p>
+			
+			<p>Speeding chariots are a slightly more stable archery platform than galloping horses or similar riding 
+			animals. The same rules apply as for firing missiles from horseback (using Charioteering instead of Riding, 
+			of course), but the thresholds are increased by one point. Because of this, firing missiles from a chariot is 
+			done at a Proficiency no higher than Charioteering +1, or (Daring / 2) +1 if the Skill is unknown.</p>
+			
+			<p>In any case, missile weapons that require both hands to use may never be fired by the driver of the chariot 
+			himself, but only by a passenger. The passenger’s applicable Missile Proficiency is also limited exactly as 
+			outlined above.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Barding">Barding</p>
+			<p>Barding is armour for horses, granting them some measure of protection in battle. The <strong>criniere
+			</strong> is a set of lamellar, scale, maille, or segmented plates that protects the horse’s neck. The 
+			<strong>chanfron</strong> protects the horse’s face. It is made of plate, lamellar, or scale and often includes 
+			cheek plates. The <strong>peytral</strong> hangs down from the Chanfron and protects the chest of the horse 
+			down to the top of its front legs. It may be had in either leather (with or without metal reinforcement), 
+			scale, lamellar, maille or plate.</p>
+			
+			<p>The <strong>croupiere</strong> protects the horse’s hind quarters. It can be made of leather (with or 
+			without metal), scale, lamellar, maille, or plate. The <strong>saddle</strong> is what the rider sits on. 
+			It has a high cantle and pommel to prevent the rider from being unseated, and is built on a wooden frame that 
+			supports more weight from a rider with armor and weapons.</p>
+			
+			<p>Saddles are made of wood and many layers of thick and tough leather and protect part of the mounts back 
+			like leather lamellar armor.</p>
+			
+			<p>The <strong>flanchard</strong> is attached to the side of the saddle, then around the front or rear of the 
+			horse and back to the saddle again, protecting both sides and back of the mount. These are either metal plates 
+			riveted to leather (protecting like brigandine), or else scale, lamellar, or maille. The use of such armour 
+			requires that a saddle, croupiere and peytral also be used, as the flanchard needs to be attached to those 
+			items.</p>
+			
+			<p>The <strong>cuissart</strong> and <strong>grevíere</strong> are greaves for the upper and lower legs of a 
+			horse, respectively. They come in sets of four and must be carefully attached to the horse’s leg. Very thin 
+			metal plating is used, and neither of the two guards the knee or hoof. The Armour Value provided by barding is 
+			identical to the Armour Value of the corresponding armor pieces for humans, found in the Armour Value table in 
+			the defence section of the rules. The sole exceptions are cuissarts and grevíeres, which protect with only 
+			Armour Value 5 against Piercing and Armour Value 3 against Blunt damage.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
