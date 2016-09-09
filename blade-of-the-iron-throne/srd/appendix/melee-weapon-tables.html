@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Melee Weapon Tables</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Melee Weapon Tables</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Weapon Groups : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Weapon Groups<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Brawling">Brawling</a></li>
+							<li><a href="#P_CutNThrust">Cut & Thrust</a></li>
+							<li><a href="#P_Dagger">Dagger</a></li>
+							<li><a href="#P_Greatsword">Greatsword</a></li>
+							<li><a href="#P_Lance">Lance</a></li>
+							<li><a href="#P_Longsword">Longsword</a></li>
+							<li><a href="#P_MassWeapon">Mass Weapon</a></li>
+							<li><a href="#P_Polearm">Polearm</a></li>
+							<li><a href="#P_SpearNShield">Spear & Shield</a></li>
+							<li><a href="#P_SwordNShield">Sword & Shield</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li><a href="npcs.html">NPC's</a></li>
+							<li><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4" id="P_Brawling">Brawling</p>
+			<p>The one weapon everyone has is his body. Variations of unarmed combat exist all over the world. This 
+			version is popular throughout the western half. Brawling involves, first and foremost, punching and kicking - 
+			delivered by means of the Bash Maneuver –and also grappling and plenty of dirty tricks. While mostly an unarmed 
+			Proficiency, the use of knuckledusters, saps and the like is also incorporated.</p>
+			
+			<br/>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Brawling">
+				<thead>
+					<th>Attack</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Punch</td>
+						<td>Hand</td>
+						<td>5</td>
+						<td>-1</td>
+						<td>5</td>
+						<td>-2</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>Kick</td>
+						<td>Hand, Short</td>
+						<td>6</td>
+						<td>0</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>7</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<br/>
+			
+			<p>Swing-type Offensive Maneuvers with a punch require an additional +1 MP Activation Cost (minimum 1). Bash 
+			Activation Cost 0 is for punches, 1 for kicks and any other Bashes that might come up.</p>
+			
+			<p>Damage Rating for both punches and kicks is reduced by –1 against pliable textile and leather armor, and 
+			by –2 against any other type of armor.</p>
+			
+			<p>A kick can equally be aimed at Hand and Short Reach, but requires an additional 1 MP Activation Cost if at 
+			Short Reach (minimum 1).</p>
+			
+			<p>Use of a knuckleduster or metal-capped boots or an equivalent will increase punch and kick DRs respectively 
+			by +1.</p>
+			
+			<br/>
+			
+			<p>Common sense is needed in adjudicating what body parts can be targets of unarmed attacks and what attacks 
+			can be defended against unarmed. Unless the opponent is in something other than an upright position, kicks can 
+			usually not be aimed higher than the hips, and punches cannot usually be thrown lower than the groin. For 
+			defence, the leg can usually not parry attacks aimed higher than the hips, and arms cannot usually parry 
+			attacks aimed lower than the thighs.</p>
+			
+			<p>A successful parry with hand or foot against anything other than an unarmed attack will result in damage to 
+			the parrying limb.</p>
+			
+			<p>Against a swung Cleaving attack, the parrying limb suffers a hit as if struck from an attack with 
+			<strong>double the QoS the attacker actually achieved, and against all other attack forms one and a half times the 
+			QoS the attacker ultimately achieved. The final wound to the defender is thus calculated as if the attack had 
+			been aimed at the limb to which damage is now inflicted</strong>.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_Brawling">
+				<p><em><strong>Example</strong>: Galba thrusts at unarmed Otho’s belly with a dagger. Galba’s 8 attack dice 
+				yield 5 successes and Otho’s 9 parrying dice yield 6 successes, successfully deflecting the belly thrust. 
+				To see whether Otho managed to full deflect the dagger, Galba’s attack successes are multiplied by 1.5, 
+				for a total of 8 successes, from which Otho’s 6 parrying successes are subtracted, for a difference of 2 
+				in Galba’s favor.</p>
+				
+				<p>Adding the dagger’s Damage Rating(0), Galba’s BN (4 halved to 2, for damage purposes, remember?), +QoS 
+				of 2 equals 4 total. We then subtract Otho’s BN (5 halved to 3) and hand armor (0) leaving us with a level 
+				1 wound to Otho’s hand – a small price to pay for averting a knife in the belly.</em></p>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CutNThrust">Cut & Thrust</p>
+			<p>This Proficiency refers to swords that are usually wielded in a quick fencing style, not in conjunction with 
+			a shield. This includes such blades as side swords, rapiers, and perhaps sabres. With this Proficiency, the 
+			sword is often accompanied by a buckler, dagger or arming glove in the off hand.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CUT_Dao">Dao</p>
+			<p><em>A far Eastern type of saber with a slight flare towards the – rather blunt – point of the blade.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Dao">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>8</td>
+						<td>+2</td>
+						<td>9</td>
+						<td>0</td>
+						<td>7</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Defensive Maneuvers with this heavy blade require an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CUT_Pata">Pata</p>
+			<p><em>An arming sword blade with a perpendicular handle set in a tubular metal glove, the Pata is slightly more 
+			unwieldy on the swing, but more powerful on the thrust.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Pata">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type offensive Maneuvers require an additional +1 MP Activation cost (minimum 1). Additional +1 thrust 
+			Damage against all types of armor.</p>
+			<p>Protects the hand and wrist like light plate armour worn without gambeson (i.e. AV Piercing 3, Blunt 2).</p>
+			<p><em>Cannot</em> execute the Quick-Draw Maneuver. Drawing the weapon always takes one full Exchange.</p>
+			<p>Knockdown Checks to avoid being disarmed of the Pata using the Disarm Maneuver only require successes equal to 
+			one third the opponent’s QoS.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CUT_Rapier">Rapier</p>
+			<p><em>A sidesword with a somewhat longer but even more slender blade, tapering for much of its length to a 
+			very acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Rapier">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Long</td>
+						<td>6</td>
+						<td>-3</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-3</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>DR decreased by –2 against all metal armor with the exception of maille. DR decreased by –1 against maille 
+			and all non-metal armor.</p>
+			<p>The DTN is increased by +1 against daggers and sideswords, by +2 against one-handed swords, by +3 against 
+			two-handed and heavy one-handed swords, by +4 against light pole-arms and one-handed mass weapons, and by +5 
+			against heavy pole-arms and two-handed mass weapons.</p>
+			<p>Point will break on any connecting swing against armor better than gambeson or pliable leather unreinforced 
+			by metal, reducing Reach to Medium and Thrust DR to 0.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CUT_Sabre">Sabre</p>
+			<p><em>A one edged arming sword with a slight to moderate back-curve.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Sabre">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers have their Activation Cost reduced by 1 MP. If the Activation Cost thus 
+			becomes –1, +1 is added to the MP for the Maneuver.</p>
+			<p>Swing DR decreased by –1 against all types of armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CUT_Scimitar">Scimitar</p>
+			<p><em>A saber with a more pronounced back-curve.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Scimitar">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>9</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers have their Activation Cost reduced by 1 MP. If the Activation Cost thus 
+			becomes –1, +1 is added to the MP for the Maneuver.</p>
+			<p>Swing DR decreased by –1 against all types of armor with the exception of gambeson and pliable leather 
+			unreinforced by metal.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CUT_Sidesword">Sidesword</p>
+			<p><em>An arming sword with a slender blade of stiff diamond cross-section tapering to an acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Sidesword">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>6</td>
+						<td>-1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust-type Offensive Maneuvers have their Activation Cost reduced by 1 MP. If the Activation Cost thus 
+			becomes –1, +1 is added to the MP for the Maneuver.</p>
+			<p>Swing DR decreased by –1 against all metal armor.</p>
+			<p>Thrust DR decreased by –1 against all metal armor with the exception of maille.</p>
+			<p>The DTN is increased by +1 against two-handed and heavy one-handed swords, by +2 against light pole-arms 
+			and one-handed mass weapons, and by +3 against heavy pole-arms and two-handed mass weapons.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Dagger">Dagger</p>
+			<p>This small, easily hidden weapon comes in many forms. Found in every place in the world, daggers and knives 
+			are used as both tools and instruments of death. Daggers are extremely popular civilian weapons, and are carried 
+			by almost everyone. This Proficiency covers stilettos, poniards, rondels, and all manner of short stabbing and 
+			slicing blades.</p>
+			
+			<p>Bash Activation Cost 1 is for punches, 2 for any other Bashes that might come up.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_BroadDagger">Broad Dagger</p>
+			<p><em>A dagger with a slightly longer and significantly broader, two-edged blade.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_BroadDagger">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand, Short</td>
+						<td>6</td>
+						<td>0</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Can equally be used at Hand and Short Reach at the same time.</p>
+			<p>Swing-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_CrescentDagger">Crescent Dagger</p>
+			<p><em>Usually a two-edged dagger with a slight to moderate curve and tapering along its entire length to an 
+			acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_CrescentDagger">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>6</td>
+						<td>0</td>
+						<td>6</td>
+						<td>0</td>
+						<td>9</td>
+						<td>-3</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing DR decreased by –1 against all armour with the exception of gambeson.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_Dagger">Dagger</p>
+			<p><em>A straight fighting knife with a substantial blade, usually two-edged.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Dagger">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>6</td>
+						<td>-1</td>
+						<td>5</td>
+						<td>0</td>
+						<td>9</td>
+						<td>-3</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_Katar">Katar</p>
+			<p><em>A stabbing dagger with a perpendicular handle set between two metal bars and a two-edged, triangular 
+			blade that’s broad at the base and tapers rather evenly to an acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Katar">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand, Short</td>
+						<td>6</td>
+						<td>0</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type offensive Maneuvers require an additional +1 MP Activation cost (minimum 1).</p>
+			<p>Additional +1 thrust Damage against all types of armor.</p>
+			<p>Partially protects the hand and wrist; use AV of the gambeson (Piercing 1, Blunt & Cleaving 2).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_Knife">Knife</p>
+			<p><em>A dagger with a shorter blade, one- or two-edged.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Knife">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>6</td>
+						<td>-2</td>
+						<td>5</td>
+						<td>0</td>
+						<td>10</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_ParryingDagger">Parrying Dagger</p>
+			<p><em>A dagger with – usually – a slightly more slender blade, but a very broad and sturdy cross-guard.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_ParryingDagger">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>6</td>
+						<td>-1</td>
+						<td>5</td>
+						<td>0</td>
+						<td>6</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>The DTN is increased by +1 against one-handed swords, by +2 against two-handed and heavy one-handed swords, 
+			by +3 against light pole-arms and one-handed mass weapons, and by +4 against heavy pole-arms and two-handed 
+			mass weapons. Remember: Parrying with the off-hand is at an additional +1 DTN.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_Stiletto_Blunt">Stiletto (Blunt)</p>
+			<p><em>An immensely stiff three- or four-sided bar of metal set in a dagger grip and tapering to a very acute 
+			point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Stiletto_Blunt">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>-</td>
+						<td>-</td>
+						<td>5</td>
+						<td>0</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +2 Thrust DR against armor; this bonus cannot exceed the armour’s AV.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_Stiletto_Edged">Stiletto (Edged)</p>
+			<p><em>A dagger with a slender blade of very stiff diamond cross-section, tapering to a very acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Stiletto_Edged">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>6</td>
+						<td>-2</td>
+						<td>5</td>
+						<td>0</td>
+						<td>9</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Thrust DR against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DGR_Wakizashi">Wakizashi</p>
+			<p><em>A short sword with a blade of the Katana type.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Wakizashi">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers have their Activation Cost reduced by 1 MP. If the Activation Cost thus 
+			becomes –1, +1 is added to the MP for the Maneuver.</p>
+			<p>Swing DR decreased by –1 against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Greatsword">Greatsword</p>
+			<p>The true two-handed sword is an enormous weapon. It resembles a spear more than a sword in actual use, and 
+			is wielded frequently with a wide, half-swording grip. Greatswords are generally at least 1.5 meters long – 
+			about a quarter of that being hilt – and they often sport a second pair of cross guards. They are fearsome 
+			weapons with great range, but the greatswordsman is easily overcome by any fighter agile enough to get into 
+			close range.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_GTRSW_Greatsabre">Greatsabre</p>
+			<p><em>A two-handed version of the sabre, with a longer hilt and a longer, heavy chopping blade. The blade is 
+			one-edged, slightly to moderately curved, flaring out from the crossguard, with the end of the blunt back edge 
+			sharpened and descending towards the sharp edge to form a moderately sharp point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Greatsabre">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Long</td>
+						<td>7</td>
+						<td>+4</td>
+						<td>9</td>
+						<td>0</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers with this tip-heavy blade require an additional 1 MP Activation Cost 
+			(minimum 1).</p>
+			<p>Defensive Maneuvers with this tip-heavy blade require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Swing DR decreased by –1 against all types of armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_GTRSW_Greatsabre">Greatsword</p>
+			<p><em>A two-handed version of the sabre, with a longer hilt and a longer, heavy chopping blade. The blade is 
+			one-edged, slightly to moderately curved, flaring out from the crossguard, with the end of the blunt back edge 
+			sharpened and descending towards the sharp edge to form a moderately sharp point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Greatsword">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Very Long</td>
+						<td>8</td>
+						<td>+3</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>+1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Lance">Lance</p>
+			<p>As fighting from horseback became more and more practical and efficient, heavy cavalry came into being. 
+			Cavalry’s weapon of choice in an opening charge is the lance, a long spear, frequently of specialized design. 
+			This weapon is found anywhere there are knights or heavy cavalry. Lances range from 2.5 to just over 4 meters 
+			in length.</p>
+			
+			<p>They are usually butted under the right arm and used with a shield. Lances, though made of wood, are usually 
+			capped with a long steel or iron point. A sporting version, the jousting lance, has a blunted tip for 
+			tournaments. The primary advantages to a lance are its range and power in a charge, where it uses the mount’s 
+			full BN, not half the riders BN, to calculate Impact Rating.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LNGSW_Falchion">Falchion</p>
+			<p><em>Basically a long spear, often with additions like a guard for the hand.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Falchion">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Very Long, Extreme</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>On a mounted charge, DR is based on the mount’s full BN, not the half the wielder’s BN.</p>
+			<p>Lances can be either had in VL or EL versions.</p>
+			<p>These stats are only for couched use on a mounted charge. If used in any other way, use long spear stats 
+			instead.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Longsword">Longsword</p>
+			<p>For those warriors who prefer to fight without shields, large swords are very popular. They are fierce 
+			weapons, capable of heavy damage when cleaving or thrusting, and they are excellent for complex maneuvering 
+			and countering.</p>
+			
+			<p>The Longsword Proficiency incorporates all swords that are primarily intended for two-handed wielding. 
+			However, Longwords are still short enough to be wielded in just one hand with little or no discomfort. The 
+			primary advantages of these weapons include extended range, great cleaving power, and a wide variety of 
+			Maneuvers.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LNGSW_Falchion">Falchion</p>
+			<p><em>An arming sword with a slightly longer hilt and a heavy, broad blade, it’s back straight and blunt and 
+			its one edge curved.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Falchion">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Medium</td>
+						<td>8</td>
+						<td>+2</td>
+						<td>10</td>
+						<td>0</td>
+						<td>9</td>
+						<td>-1</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Short</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>9</td>
+						<td>0</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrusts inflict Cleaving damage, not Piercing. Additional Swing DR +1 against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LNGSW_HandAndAHalf">Hand-and-a-Half Sword</p>
+			<p><em>An arming sword with a slightly longer blade and hilt long enough to accommodate both hands.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_HandAndAHalf">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+2</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LNGSW_HandAndAHalf_Swing">Hand-and-a-Half Sword (Swing Optimized)</p>
+			<p><em>A hand-and-a-half sword with a slightly broader blade and parallel edges along most of its 
+			length.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_HandAndAHalf_Swing">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+2</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+3</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust- and swing-type Offensive Maneuvers with this tip-heavy blade require an additional 1 MP Activation 
+			Cost (minimum 1).</p>
+			<p>One-handed Thrust DR decreased by –1 against all metal armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LNGSW_HandAndAHalf_Thrust">Hand-and-a-Half Sword (Thrust Optimized)</p>
+			<p><em>A hand-and-a-half sword with a stiff diamond cross-section, and edges tapering even for most of its 
+			length.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_HandAndAHalf_Thrust">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust- and swing-type Offensive Maneuvers with this hilt-heavy blade have their Activation Cost reduced by 
+			1 MP. If the Activation Cost thus becomes –1, +1 is added to the MP for the Maneuver.</p>
+			<p>Additional +1 Thrust DR against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LNGSW_Katana">Katana</p>
+			<p><em>A far Eastern hand-and-a-half sword with a long hilt and a one-edged, back-curved blade.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Katana">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+2</td>
+						<td>9</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>-1</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers have their Activation Cost reduced by 1 MP. If the Activation Cost thus 
+			becomes –1, +1 is added to the MP for the Maneuver.</p>
+			<p>Swing DR decreased by –1 against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MassWeapon">Mass Weapon</p>
+			<p>Since the earliest clubs, mass weapons have found their place in warfare. Alongside the development of 
+			better armor, clubs and farming tools were transformed into battle-axes, picks, flails, morning stars, and 
+			maces. These weapons are in use the world over and are particularly popular both with the peasant infantryman 
+			(these weapons are cheap) and the armored gentry (these weapons are especially effective against tougher 
+			armors). Mass weapons include any single-handed (and occasionally two-handed) weapon that is particularly 
+			heavy on the business end.</p>
+			
+			<p>These weapons’ balance makes them slow on the parry and commends the use of constant evasion or- more 
+			commonly- shields. Most axes and hammers are fitted with a secondary spike or hammer on the back and/or top. 
+			To flip the weapon over, spend 1 MP <strong>if done during a Combat Round</strong>. As with Pole-arms, exact 
+			Maneuvers are dependent on the weapon at hand, and discretion and common sense need to be used. This 
+			Proficiency may also be used without a shield at no penalty, but any shield based Maneuvers are, in that case, 
+			impossible.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_BallAndChain">Ball and Chain</p>
+			<p><em>A stout stick with a single metal ball affixed to its end by a chain of moderate length.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_BallAndChain">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Very Long</td>
+						<td>8</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>10</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Swing DR against armor. Additional +2 Shock on any wounding Swing.</p>
+			<p>Blocking the ball-and-chain requires an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Parrying the ball-and-chain requires an additional 2 MP Activation Cost (minimum 2).</p>
+			<p>The Hook Maneuver is available to the Ball and Chain.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_Baton">Baton</p>
+			<p><em>A stout stick.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Baton">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>5</td>
+						<td>-1</td>
+						<td>6</td>
+						<td>-1</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_Club">Club</p>
+			<p><em>A stout stick, thicker at the business end.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Club">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>0</td>
+						<td>7</td>
+						<td>-1</td>
+						<td>8</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Shock on any wounding Swing.</p>
+			<p>Due to the surprise element inherent in such an attack, defending against the first thrust with a club in 
+			any given combat requires an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_FlangedMace">Flanged Mace</p>
+			<p><em>A mace with flanges to the sides of the head, optimized to transfer damage through armor.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_FlangedMace">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Additional +1 Swing DR against armor.</p>
+			<p>Additional +1 Shock on any wounding Swing.</p>
+			<p>Due to the surprise element inherent in such an attack, defending against the first thrust with a mace in 
+			any given combat requires an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_GreatAxe">Great Axe</p>
+			<p><em>A long-hafted axe with perhaps a slightly longer haft and a bigger axe-head, to be wielded with 
+			both hands.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_GreatAxe">
+				<thead>
+					<th>Attack Type</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Axe Blade</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+4</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9</td>
+						<td>+2</td>
+					</tr>
+					<tr>
+						<td>Axe Blade, Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>7</td>
+						<td>+1</td>
+					</tr>
+					
+					<tr>
+						<td>Back-Spike</td>
+						<td>Long</td>
+						<td>9</td>
+						<td>+4</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Back-Spike, Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>					
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers at Reach Long require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Additional Swing DR +1 against armor.</p>
+			<p>Additional +1 Shock on any wound from the axe-blade (not back-spike).</p>
+			<p>Axe damage is Cleaving, damage from the back-spike existing on some rare great-axes is Piercing.</p>
+			<p>Any switch of grip on the great-axe, whether short to long, or between attacking with the axe blade and 
+			attacking with the back-spike is free in between Rounds, but carries a 1 MP Activation Cost during Rounds.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_HandAxe">Hand Axe</p>
+			<p><em>A hatchet with a longer haft and a slightly bigger axe-head, sometime with a spike opposite the 
+			axe-head.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_HandAxe">
+				<thead>
+					<th>Attack Type</tr>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Axe Blade</td>
+						<td>Short</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Back-Spike</td>
+						<td>Short</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional Swing Damage Rating +1 against armor.</p>
+			<p>Axe damage is Cleaving, damage from the back-spike existing on some axes is Piercing.</p>
+			<p>Switching between attacking with the axe blade and the back-spike is free in between Rounds, but carries a 
+			1 MP Activation Cost during Rounds.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_Hatchet">Hatchet</p>
+			<p><em>An axe with a short haft.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Hatchet">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hand</td>
+						<td>6</td>
+						<td>0</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_LongHaftedAxe">Long-Hafted Axe</p>
+			<p><em>An axe with a much longer handle and a maybe slightly larger axe-head.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_LongHaftedAxe">
+				<thead>
+					<th>Attack Type</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>7</td>
+						<td>+1</td>
+					</tr>
+					<tr>
+						<td>Two Handed, Alternate Grip</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8</td>
+						<td>+2</td>
+					</tr>
+					<tr>
+						<td>Axe-Spike, One Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Axe-Spike, Two Handed</td>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Axe-Spike, Two Handed, Alternate Grip</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>+3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional Swing Damage Rating +1 against armor.</p>
+			<p>Additional +1 Shock on any wound from the axe-blade (not back-spike).</p>
+			<p>Axe damage is Cleaving, damage from the back-spike existing on some axes is Piercing.</p>
+			<p>Any switch of grip on the axe, whether one-handed to two-handed, short to long, or between attacking with 
+			the axe-blade and attacking with the back-spike is free in between Rounds, but carries a 1 MP Activation Cost 
+			during Rounds.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_Mace">Mace</p>
+			<p><em>A stout stick with a head bound in metal or wholly made of metal or sometimes stone.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Mace">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Additional +1 Shock on any wounding Swing.</p>
+			<p>Due to the surprise element inherent in such an attack, defending against the first thrust with a mace in 
+			any given combat requires an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_SpikedMace">Spiked Mace</p>
+			<p><em>A mace with spikes for tearing grisly wounds.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_SpikedMace">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Swing DR reduced by -1 against armor.</p>
+			<p>Additional +1 Shock, +1 Pain, and +1 Blood loss on any wounding Swing.</p>
+			<p>Due to the surprise element inherent in such an attack, defending against the first thrust with a mace in 
+			any given combat requires an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_SpikedWarFlail">Spiked War Flail</p>
+			<p><em>A war-flail with spikes all around the business end.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_SpikedWarFlail">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Very Long</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Additional +1 Shock, +1 Pain, and +1 Blood loss on any wounding Swing.</p>
+			<p>Parrying the spiked war-flail requires an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_WarFlail">War Flail</p>
+			<p><em>A long staff with a much shorter, metal-shod stick affixed to its end by a very short length of chain; 
+			wielded with two hands.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_WarFlail">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Very Long</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Additional +1 Swing DR against armor.</p>
+			<p>Additional +2 Shock on any wounding Swing.</p>
+			<p>Parrying the war-flail requires an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MASS_WarHammer">War Hammer</p>
+			<p><em>A war hammer with a rather small, but powerful head, often with a spike opposite it.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_War Hammer">
+				<thead>
+					<th>Attack Type</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Beak</td>
+						<td>Short</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Hammerhead</td>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>-1</td>
+						<td>9</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional Swing Damage Rating +1 against armor.</p>
+			<p>Additional +1 Shock on any wound from the hammerhead (not beak or top-spike).</p>
+			<p>Hammerhead damage is Blunt, damage from the beak and the top-spike is Piercing.</p>
+			<p>Switching between attacking with the hammerhead and the beak is free in between Rounds, but carries a 1 MP 
+			Activation Cost during Rounds. Thrusts with the top-spike can be delivered from any of the two grips without 
+			additional Activation Cost.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Polearm">Polearm</p>
+			<p>This broad group of weapons encompasses items as ancient as the spear; as new as the halberd; and as 
+			everlasting as the quarterstaff. It includes all staff or pole-mounted weapons at least 1.5 m long, though 
+			most range anywhere from under 2 m to just over 2.5 m.</p>
+			
+			<p>They have the advantage of range and often speed, but are hard to conceal or transport. Available Maneuvers 
+			vary greatly due to the design of each individual weapon. Use discretion and common sense.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_POLE_Halberd">Halberd</p>
+			<p><em>A long spear with additional axe-blade and a spike opposite that.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Halberd">
+				<thead>
+					<th>Attack Type</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Axe Blade</td>
+						<td>Very Long</td>
+						<td>8</td>
+						<td>+4</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+2</td>
+					</tr>
+					<tr>
+						<td>Back-Spike</td>
+						<td>Very Long</td>
+						<td>8</td>
+						<td>+4</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Offensive and Defensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Axe damage is Cleaving, damage from the spikes opposite the axe-blade and on the top (the thrusting attack) 
+			is Piercing. Additional +1 Swing Damage Rating against armor.</p>
+			<p>Switching between attacking with the axe-blade and the spike opposite it is free in between Rounds, but 
+			carries a 1 MP Activation Cost during Rounds. Thrusts with the top-spike can be delivered from any of the two 
+			grips without additional Activation Cost.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_POLE_Naginata">Naginata</p>
+			<p><em>A long spear with a long, one-edged, slightly curved blade, used with two hands for mostly slashing 
+			attacks.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Naginata">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Long, Very Long</td>
+						<td>8</td>
+						<td>+3</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Thrust DR decreased by –1 against any armor other than gambeson.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_POLE_PollAxe">Poll Axe</p>
+			<p><em>A shorter halberd – about as tall as its wielder or slightly shorter – with a more compact head.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_PollAxe">
+				<thead>
+					<th>Attack Type</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Axe Blade</td>
+						<td>Long</td>
+						<td>7</td>
+						<td>+3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>+2</td>
+					</tr>
+					<tr>
+						<td>Back-Spike</td>
+						<td>Long</td>
+						<td>7</td>
+						<td>+3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Hammerhead</td>
+						<td>Long</td>
+						<td>7</td>
+						<td>+3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Top-Spike</td>
+						<td>Medium</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Reach is different on thrusting and swung attacks without need to change the grip.</p>
+			<p>Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Additional +1 Swing Damage Rating against armor.</p>
+			<p>Additional +1 Shock on any wound from the hammerhead (not axe-blade or spikes).</p>
+			<p>All Poll Axes feature a spike at the top and an axe blade, but opposite the axe-blade there is either a 
+			hammerhead or a spike, depending on the individual weapon. Switching between attacking with the axe-blade 
+			and the hammerhead or spike opposite it is free in between Rounds, but carries a 1 MP Activation Cost during 
+			Rounds. Thrusts with the top-spike can be delivered from any of the two grips without additional Activation 
+			Cost.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_POLE_Quarterstaff">Quarterstaff</p>
+			<p><em>A stout staff, as tall as its user or slightly taller.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Quarterstaff">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Normal Grip</td>
+						<td>Medium, Long</td>
+						<td>6</td>
+						<td>0</td>
+						<td>6</td>
+						<td>0</td>
+						<td>5</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Sword Grip</td>
+						<td>Very Long</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>0</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Can equally be used at Medium and Long Reach at the same time.</p>
+			<p>Thrust-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1). This does not apply 
+			when wielded like a two-handed sword.</p>
+			<p>Quarterstaffs can be wielded like two-handed swords, using the lower set of stats while doing so. Changing 
+			between ways of wielding the quarterstaff is free of Activation Cost but can only be done at the very end or 
+			beginning of a Round and entails change of the Proficiency used (Polearm to Longsword or Greatsword).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SpearNShield">Spear & Shield</p>
+			<p>This Proficiency incorporates the use of a one-handed spear used either over or under arm, frequently 
+			together with a sizeable shield in the other hand. This method of fighting and combination of equipment is the 
+			mainstay of countless armies and warrior cultures throughout the ages. While not this Proficiency’s focus, 
+			there is also the option to fight without shield, with the spear held in either one or, more commonly, two 
+			hands. In this case all shield-based Maneuvers are, of course, not available.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SPR_LongSpear">Long Spear</p>
+			<p><em>A spear, significantly taller than its wielder.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_LongSpear">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>9</td>
+						<td>0</td>
+						<td>8</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium, Long</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Used two-handed it can equally be used at Medium and Long Reach at the same time.</p>
+			<p>Thrust Damage Rating is Piercing, Swing Damage Rating is for attacks with the shaft and thus Blunt.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SPR_ShortSpear">Short Spear</p>
+			<p><em>A spear, as tall as its wielder or slightly shorter.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_ShortSpear">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>0</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium, Long</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust DR is Piercing, Swing DR is for attacks with the shaft and thus Blunt.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SPR_Trident">Trident</p>
+			<p><em>A three-pronged spear, as tall as its wielder or slightly shorter.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Trident">
+				<thead>
+					<th>Grip</th>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>One Handed</td>
+						<td>Long</td>
+						<td>8</td>
+						<td>0</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Two Handed</td>
+						<td>Medium, Long</td>
+						<td>-</td>
+						<td>-</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust DR is Piercing, Swing DR is for attacks with the shaft and thus Blunt.</p>
+			<p>The Hook Maneuver is available to the Trident.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SwordNShield">Sword & Shield</p>
+			<p>This Proficiency involves any one-handed sword and a shield. Although this Proficiency could be used 
+			without a shield with no penalty, any shield-based Maneuvers would be impossible.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_ArmingSword">Arming Sword</p>
+			<p><em>The basic, run-of-the-mill one handed sword.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_ArmingSword">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Falx">Falx</p>
+			<p><em>A very simple short sword. It has a very long heft without any kind of crossguard and a one-edged blade. 
+			The blade curves slightly forward for about half its length and tapers to a point along this curve.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Falx">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>0</td>
+						<td>7</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust-type offensive Maneuvers with this awkward blade require an additional +1 MP Activation cost 
+			(minimum 1).</p>
+			<p>Swing DR decreased by –1 against any type of armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Gladius">Gladius</p>
+			<p><em>An ancient Roman short sword with a stiff diamond cross-section and edges either parallel for most of 
+			its length before tapering to an acute point, or else of more slightly flaring xiphos-type.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Gladius">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>0</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Additional +1 Thrust DR against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Khopesh">Khopesh</p>
+			<p><em>A short sword with a slender, peculiarly shaped, one-edged blade. The blade at first runs straight for 
+			little more than one third its overall length and then forms an arc, with the edge on the arc’s 
+			“belly”.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Khopesh">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>8</td>
+						<td>0</td>
+						<td>7</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Swing DR decreased by –1 against any type of armor.</p>
+			<p>Can be used to execute the Hook Maneuver.</p>
+			<p>Activation Cost for this Maneuver is 1 less than normal for the Proficiency used.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Kopis_Makhaira">Kopis / Makhaira</p>
+			<p><em>An ancient Greek one-edged short sword with a forward curve and a slight flare to the blade before it 
+			tapers to a point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Kopis_Makhaira">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Defensive and thrust-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Shortsword">Shortsword</p>
+			<p><em>A sword with a short, two-edged blade.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Shortsword">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>0</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Spatha">Spatha</p>
+			<p><em>The ancient Roman version of the arming sword, tapering slightly along most of its length before 
+			suddenly tapering to an acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Spatha">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_VikingSword">Viking Sword</p>
+			<p><em>The Viking version of the Roman spatha, with a less acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_VikingSword">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Thrust DR reduced by –1 against armor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Xiphos">Xiphos</p>
+			<p><em>An ancient Greek short sword with a leaf-shaped blade tapering to a slight waist before flaring out 
+			and then tapering once again to an acute point.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Xiphos">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Short</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>6</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust- and swing-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SWRD_Yatagan">Yatagan</p>
+			<p><em>A longer, Ottoman version of the kopis with a less pronounced flare to the blade.</em></p>
+			
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Yatagan">
+				<thead>
+					<th>Reach</th>
+					<th>Swing Target Number</th>
+					<th>Swing Damage Rating</th>
+					<th>Thrust Target Number</th>
+					<th>Thrust Damage Rating</th>
+					<th>Defence Target Number</th>
+					<th>Blunt Damage Rating</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Medium</td>
+						<td>7</td>
+						<td>+2</td>
+						<td>7</td>
+						<td>+1</td>
+						<td>7</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>Thrust-type Offensive Maneuvers require an additional 1 MP Activation Cost (minimum 1).</p>
+			<p>Swing DR decreased by –1 against all armour with the exception of gambeson.</p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
