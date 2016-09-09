@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Attributes</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Attributes</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Basic Attributes : Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Basic Attributes<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Brawn">Brawn</a></li>
+							<li><a href="#P_Daring">Daring</a></li>
+							<li><a href="#P_Tenacity">Tenacity</a></li>
+							<li><a href="#P_Heart">Heart</a></li>
+							<li><a href="#P_Sagacity">Sagacity</a></li>
+							<li><a href="#P_Cunning">Cunning</a></li>
+						</ul>
+					</li>
+					
+					<!-- Combined Attributes : Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combined Attributes<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Reflex">Reflex</a></li>
+							<li><a href="#P_Aim">Aim</a></li>
+							<li><a href="#P_Knockdown">Knockdown</a></li>
+							<li><a href="#P_Knockout">Knockout</a></li>
+							<li><a href="#P_Move">Move</a></li>
+						</ul>
+					</li>
+					
+					<!-- Mechanics : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Mechanics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="introduction.html">Introduction</a></li>
+							<li class="divider"></li>
+							<li><a href="major-checks.html">Major Checks</a></li>
+							<li><a href="timed-checks.html">Timed Checks</a></li>
+							<li><a href="complications.html">Complications</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="attributes.html">Attributes</a></li>
+							<li><a href="passions.html">Passions</a></li>
+						</ul>
+					</li>
+					
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-melee/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-Gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Attribute Descriptions</p>
+			<p>In <em>Blade</em>, each Character is defined by a set of Attributes that form the core of that individual. 
+			There are six basic attributes and five secondary attributes derived from the basic attributes which further 
+			develop a Characters' strengths and weaknesses.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<div class="panel-body" id="DIV_BasicAttributes">
+				<p class="h4">Basic Attributes</p>
+				<p><strong>Basic Attributes</strong>, or just Attributes, are the character’s inherent physical, spiritual, 
+				and social capabilities that govern how he is perceived by others, how strong, fast, healthy, knowledgeable, 
+				and smart he is, and how well developed his instincts and social intelligence are. The six Basic Attributes 
+				are:</p>
+							
+				<div class="panel-body bg-success" id="DIV_BasicAttributeDescription">
+					<p class="h4" id="P_Brawn">Brawn (BN)</p>
+					<p><strong>Brawn</strong> is a measure of muscle, vitality, and a Characters frame. It indicates how 
+					much damage you do unaided, and how easily you resist punishment, disease, and poison.</p>
+					
+					<p class="h4" id="P_Daring">Daring (DG)</p>
+					<p><strong>Daring</strong> is a measure of courage and ability to take decisive action. It affects 
+					how well you can strike and parry, as well as how skilled you are with actions like climbing, acrobatics 
+					and all kinds of athletics.</p>
+					
+					<p class="h4" id="P_Tenacity">Tenacity (TY)</p>
+					<p><strong>Tenacity</strong> is the ability to focus on a task, a measure of the strength of your 
+					persona. It affects how easily influenced you are, your inner discipline, and your sanity.</p>
+					
+					<p class="h4" id="P_Heart">Heart (HT)</p>
+					<p><strong>Heart</strong> is a measure of social aptitude. It affects both how charismatic you appear 
+					to others (people and animals) and how easily you can get them to do your bidding. It governs your 
+					ability for empathy, and the understanding of human and animal nature.</p>
+					
+					<p class="h4" id="P_Sagacity">Sagacity (SY)</p>
+					<p><strong>Sagacity</strong> is a measure of mental agility. It indicates how logical, intuitive, 
+					and smart you are. It affects situations that require reasoning, sharpness of the senses, as well as 
+					any judgment relating to them.</p>
+					
+					<p class="h4" id="P_Cunning">Cunning (CG)</p>
+					<p><strong>Cunning</strong> is a measure of raw instinct, agility, reaction time, and balance. It 
+					affects how skilled you are with actions like lock picking, pick pocketing, hiding, and sneaking.</p>
+				</div>
+			</div>
+				
+			<div class="panel-body" id="DIV_CombinedAttributes">
+				<p class="h4">Combined Attributes</p>
+				<p><strong>Combined Attributes</strong> are calculated by combining two or more Basic Attributes. All 
+				numbers equal to or greater than 0.50 are rounded up. The Combined Attributes are:</p>
+				
+				<div class="panel-body bg-success" id="DIV_CombinedAttributeDescriptions">
+					<p class="h4" id="P_Reflex">Reflex</p>
+					<p>
+						<strong>Reflex</strong> determines how quickly a character physically reacts to external stimulus.
+						<ul><li>Reflex = (Cunning + Daring) / 2</li></ul>
+					</p>
+					
+					<p class="h4" id="P_Aim">Aim</p>
+					<p>
+						<strong>Aim</strong> quantifies one’s natural ability to hit a target over distances.
+						<ul><li>Aim = (Cunning + Sagacity) / 2</li></ul>
+					</p>
+					
+					<p class="h4" id="P_Knockdown">Knockdown</p>
+					<p>
+						<strong>Knockdown</strong> is a measure of how solid and balanced one remains after taking a blow. 
+						<ul><li>Knockdown = (Brawn + Daring) / 2</li></ul>
+					</p>
+					
+					<p class="h4" id="P_Knockout">Knockout</p>
+					<p>
+						<strong>Knockout</strong> is a measure of how hard it is to knock a character unconscious.
+						<ul><li>Knockout = (Brawn + Tenacity) / 2</li></ul>
+					</p>
+					
+					<p class="h4" id="P_Move">Move</p>
+					<p>
+						<strong>Move</strong> is a measure of how much distance one can cover on foot in a hurry.
+						<ul><li>Move = (Brawn + Cunning + Daring) / 3</li></ul>
+					</p>	
+				</div>
+				
+				<br/>
+				
+				<p>Sorcerous characters have a sixth Combined Attribute governing the use of sorcery, <em>Power.</em> To
+				calculate Power, click <a href="../ch6-sorcery/home.html">here</a>.
+				</p>
+			</div>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h3>SRD created by Brennan MacGregor, 2016</h3>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
