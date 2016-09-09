@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proficiencies</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Proficiencies</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="Proficiency Table.html">Melee Proficiency Table</a></li>
+					
+					<!-- Melee Proficiencies : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Melee Proficiencies<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Brawling">Brawling</a></li>
+							<li><a href="#P_CutNThrust">Cut & Thrust</a></li>
+							<li><a href="#P_Dagger">Dagger</a></li>
+							<li><a href="#P_Greatsword">Greatsword</a></li>
+							<li><a href="#P_Lance">Lance</a></li>
+							<li><a href="#P_Longsword">Longsword</a></li>
+							<li><a href="#P_MassWeapons">Mass Weapon & Shield</a></li>
+							<li><a href="#P_Polearm">Polearm</a></li>
+							<li><a href="#P_SpearNShield">Spear & Shield</a></li>
+							<li><a href="#P_SwordNBoard">Sword & Shield</a></li>
+							<li><a href="#P_Wrestling">Wrestling</a></li>
+						</ul>
+					</li>
+					
+					<!-- Missile Weapon Proficiencies : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Missile Weapon Proficiencies<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_RangedDesc">Missile Weapons Description</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BlackPowder">Black Powder Weapons</a></li>
+							<li><a href="#P_Bow">Bow</a></li>
+							<li><a href="#P_Crossbow">Crossbow</a></li>
+							<li><a href="#P_Sling">Sling</a></li>
+							<li><a href="#P_SpearJavelin">Spear/Javelin</a></li>
+							<li><a href="#P_ThrownAxe">Thrown Axe</a></li>
+							<li><a href="#P_ThrownKnife">Thrown Knife</a></li>
+							<li><a href="#P_ThrownRock">Thrown Rock</a></li>
+						</ul>
+					</li>
+					
+					<!-- Character Creation : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Training<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="training.html">Training and Advancement</a></li>
+							<li class="divider"></li>
+							<li><a href="assets.html">Assets</a></li>
+							<li class="active"><a href="proficiencies.html">Proficiencies</a></li>
+							<li><a href="proficiency-table.html">Proficiency Table</a></li>
+							<li><a href="skills.html">Skills</a></li>
+							<li><a href="skill-guide.html">Skill Guide</a></li>
+							<li class="divider"></li>
+							<li><a href="passion-attributes.html">Passion Attributes</a></li>
+							<li><a href="drama.html">Drama</a></li>
+							<li><a href="karma.html">Karma</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Proficiencies Overview</p>
+			<p class="text-justify">A Proficiency is a measurement of the skill that a <em>Blade</em> Character has in a 
+			particular style of fighting or with an assortment of similar weapons.</p>
+
+			<p>It's possible for multiple Proficiencies to cover the use of any weapon. For example, a character with a 
+			sword-related Proficiency may wield a mace, as long as the mace is used in a similar fashion to that with 
+			which one would wield a sword. In other words, <em>how</em> the weapon is wielded is more important than what 
+			the weapon is; despite that, you will find the weapons grouped in a manner that makes a reasonable amount of 
+			sense in the Appendix.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Proficiencies Described</p>
+			<p>Some fighting styles are quite similar to others, and each Proficiency lists those styles that are closely 
+			related. These “Defaults” are designated with a negative Proficiency modifier based on the Proficiency from 
+			which the default originates.</p>
+			
+			<hr/>
+			
+			<p class="h3">Melee Weapons</p>
+			<p class="h4" id="P_Brawling">Brawling</p>
+			<table class="table table-bordered table-condensed" id="TBL_BrawlDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Brawling</td>
+						<td>-</td>
+						<td>-2</td>
+						<td>-1</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-1</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The one weapon everyone has is his body. Variations of unarmed combat exist all over the world. This 
+			version is popular throughout the western half. Brawling involves, first and foremost, punching and kicking - 
+			delivered by means of the Bash Maneuver – and also grappling and plenty of dirty tricks. While mostly an 
+			unarmed Proficiency, the use of knuckledusters, saps and the like is also incorporated.</p>
+			
+			<hr/>
+			<p class="h4" id="P_CutNThrust">Cut & Thrust</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_CutNThrustDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Cut & Thrust</td>
+						<td>-4</td>
+						<td>-</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Proficiency refers to swords that are usually wielded in a quick fencing style, not in conjunction 
+			with a shield. This includes such blades as side swords, rapiers, and perhaps sabres. With this Proficiency, 
+			the sword is often accompanied by a buckler, dagger or arming glove in the off hand.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Dagger">Dagger</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_DaggerDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Dagger</td>
+						<td>-1</td>
+						<td>-2</td>
+						<td>-</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This small, easily hidden weapon comes in many forms. Found in every place in the world, daggers and knives 
+			are used as both tools and instruments of death. Daggers are extremely popular civilian weapons, and are 
+			carried by almost everyone. This Proficiency covers stilettos, poniards, rondels, and all manner of short 
+			stabbing and slicing blades.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Greatsword">Greatsword</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_GreatswordDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Greatsword</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-</td>
+						<td>n/a</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The true two-handed sword is an enormous weapon. It resembles a spear more than a sword in actual use, and 
+			is wielded frequently with a wide, half-swording grip. Greatswords are generally at least 1.5 meters long - 
+			about a quarter of that being hilt – and they often sport a second pair of cross guards. They are fearsome 
+			weapons with great range, but the greatswordsman is easily overcome by any fighter agile enough to get into 
+			close range.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Lance">Lance</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_LanceDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lance</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>-</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>n/a</td>
+						<td>n/a</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>As fighting from horseback became more and more practical and efficient, heavy cavalry came into being. 
+			Cavalry’s weapon of choice in an opening charge is the lance, a long spear, frequently of specialized design. 
+			This weapon is found anywhere there are knights or heavy cavalry. Lances range from 2.5 to just over 4 meters 
+			in length.</p>
+			
+			<p>They are usually butted under the right arm and used with a shield. Lances, though made of wood, are 
+			usually capped with a long steel or iron point. A sporting version, the jousting lance, has a blunted tip for 
+			tournaments. The primary advantages to a lance are its range and power in a charge, where it uses the mount’s 
+			full Brawn, not half the riders Brawn, to calculate Impact Rating.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Longsword">Longsword</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_LongswordDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Longsword</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-1</td>
+						<td>n/a</td>
+						<td>-</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-3</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>For those warriors who prefer to fight without shields, large swords are very popular. They are fierce 
+			weapons, capable of heavy damage when cleaving or thrusting, and they are excellent for complex maneuvering 
+			and countering.</p>
+			
+			<p>The Longsword Proficiency incorporates all swords that are primarily intended for two-handed wielding. 
+			However, longwords are still short enough to be wielded in just one hand with little or no discomfort. The 
+			primary advantages of these weapons include extended range, great cleaving power, and a wide variety of 
+			Maneuvers.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_MassWeapons">Mass Weapon & Shield</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_MassWeapDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mass Weapon & Shield</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-4</td>
+						<td>-</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Since the earliest clubs, mass weapons have found their place in warfare. Alongside the development of 
+			better armor, clubs and farming tools were transformed into battle-axes, picks, flails, morning stars, and 
+			maces. These weapons are in use the world over and are particularly popular both with the peasant 
+			infantryman (these weapons are cheap) and the armored gentry (these weapons are especially effective 
+			against tougher armors). Mass weapons include any single-handed (and occasionally two-handed) weapon that is 
+			particularly heavy on the business end.</p>
+			
+			<p>These weapons’ balance makes them slow on the parry and commends the use of constant evasion or - more 
+			commonly - shields. Most axes and hammers are fitted with a secondary spike or hammer on the back and/or top. 
+			To flip the weapon over, Characters spend one point from their Melee Pool <strong>if done during a Combat 
+			Round</strong>. As with polearms, exact Maneuvers are dependent on the weapon at hand; discretion and common 
+			sense need to be used. This Proficiency may be used without a shield at no penalty, but any shield based 
+			Maneuvers are, in this case, impossible.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Polearm">Polearm</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_PolearmDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Polearm</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This broad group of weapons encompasses items as ancient as the spear, as new as the halberd, and as 
+			everlasting as the quarterstaff. It includes all staff or pole-mounted weapons at least 1.5 m long, though 
+			most range anywhere from under 2 m to just over 2.5 m.</p>
+			
+			<p>They have the advantage of range and often speed, but are hard to conceal or transport. Available 
+			Maneuvers vary greatly due to the design of each individual weapon. Use discretion and common sense.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SpearNShield">Spear & Shield</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_SpearShieldDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Spear & Shield</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-</td>
+						<td>-3</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Proficiency incorporates the use of a one-handed spear used either over or under arm, frequently 
+			together with a sizeable shield in the other hand. This method of fighting and combination of equipment is the 
+			mainstay of countless armies and warrior cultures throughout the ages. While not this Proficiency’s focus, 
+			there is also the option to fight without shield, with the spear held in either one or, more commonly, two 
+			hands. In this case all shield-based Maneuvers are not available.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SwordNBoard">Sword & Shield</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_SwordShieldDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sword & Shield</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>n/a</td>
+						<td>-2</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-</td>
+						<td>-4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Proficiency involves any one-handed sword and a shield. Although this Proficiency could be used 
+			without a shield with no penalty, any shield-based Maneuvers would be impossible.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Wrestling">Wrestling</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_WrestlingDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Wrestling</td>
+						<td>-1</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Wrestling, though popular as a sport, is really the most desperate of all battle techniques. As with 
+			brawling, wrestling is always an option for the unarmed character. When fighters find themselves unarmed on 
+			the ground in the course of battle or a duel, knowledge of wrestling comes in handy.</p>
+			
+			<hr/>
+
+			<p class="h3" id="P_RangedDesc">Missile Weapons</p>
+			<p class="h4">Description</p>
+			<p>Missile Weapon Proficiencies are not nearly as complicated as hand-to-hand Weapon Proficiencies. These 
+			Proficiencies go towards building the Archery Pool (see Chapter Four). There are no Maneuvers for ranged 
+			attacks.</p>
+			
+			<hr/>
+
+			<p class="h4" id="P_BlackPowder">Black Powder Weapons</p>
+			<p>Defaults from Bow at -3 and Crossbow at -2</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Bow">Bow</p>
+			<p>Defaults from Crossbow at -4</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Crossbow">Crossbow</p>
+			<p>Defaults from Black Powder Weapon and Bow at -2</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Sling">Sling</p>
+			<p>Defaults from Thrown Rock at -4</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SpearJavelin">Spear/Javelin</p>
+			<p>Defaults from Polearm and Spear & Shield at -3</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ThrownAxe">Thrown Axe</p>
+			<p>Defaults from Mass Weapon & Shield at -4</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ThrownKnife">Thrown Knife</p>
+			<p>Defaults from Dagger at -4</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ThrownRock">Thrown Rock</p>
+			<p>(Or irregularly shaped object) defaults from Sling and any other thrown-type Proficiency -3</p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
