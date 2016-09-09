@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blade SRD Ch 1: Major Checks</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+		
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Major Checks</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_DiceUsed">Dice Types Used</a></li>
+					
+					<li><a href="#P_AttributeChecks">Attribute Checks</a></li>
+					<li><a href="#P_SkillChecks">Skill Checks</a></li>
+					<li><a href="#P_ProficiencyChecks">Proficiency Checks</a></li>
+					<li><a href="#P_OpposedChecks">Opposed Checks</a></li>
+					
+					<!-- Tables : Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Tables<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#TBL_SuccessesNeeded">Success Needed</a></li>
+							<li><a href="#TBL_QualityOfSuccess">Quality of Success</a></li>
+							<li><a href="#TBL_SkillLevels">Skill Levels</a></li>
+						</ul>
+					</li>
+					
+					<!-- Mechanics : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Mechanics<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="introduction.html">Introduction</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="major-checks.html">Major Checks</a></li>
+							<li><a href="timed-checks.html">Timed Checks</a></li>
+							<li><a href="complications.html">Complications</a></li>
+							<li class="divider"></li>
+							<li><a href="attributes.html">Attributes</a></li>
+							<li><a href="passions.html">Passions</a></li>
+						</ul>
+					</li>
+					
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Dice Types Used</p>
+			<p>Most of the time in gaming, you don’t use a rule; you make a ruling. The Players can describe any action 
+			without needing to look at a Character sheet to see if they can do it. The Game Master, in turn, uses common 
+			sense to decide what happens or rolls a die only if she thinks there’s some random element involved. When 
+			needed, <em>Blade</em> uses two types of dice during play, <strong>twelve-sided dice</strong> (d12) and 
+			<strong>six-sided dice</strong> (d6). References throughout this book refer to twelve-sided dice unless 
+			otherwise noted.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Major Checks</p>
+			<p>In <em>Blade</em>, Checks are made by rolling an appropriate number of dice for the Attribute or Skill level 
+			being tested against a fixed Target Number (or TN) of seven. The number of successes needed for both Attribute 
+			and Skill Checks are drawn from the following table.</p>
+				
+			<div class="panel-body" id="TBL_SuccessesNeeded">
+				<p class="h4"><strong>Successes Needed</strong></p>
+				<table class="table table-striped table-hover">
+					<thead>
+						<th>Successes</th>
+						<th>Challenge Level *</th>
+					</head>
+					<tbody>
+						<tr>
+							<td>One</td>
+							<td>Average</td>
+						</tr>
+						<tr>
+							<td>Two</td>
+							<td>Challenging</td>
+						</tr>
+						<tr>
+							<td>Three</td>
+							<td>Difficult</td>
+						</tr>
+						<tr>
+							<td>Four</td>
+							<td>Amazing</td>
+						</tr>
+						<tr>
+							<td>Five</td>
+							<td>Legendary</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<p><strong>* If the applicable dice pool is more than three times the required number of successes, no roll is 
+			needed, instead the Character is considered to have achieved the amount of successes</strong>.</p>
+				
+			<p>Only dice rolled that meet or exceed the Target Number are successful. With the exception of Proficiency and 
+			Mystery Checks, all Checks are made against a Target Number of seven, unless modified by Assets. Quality of 
+			Success may also denote an action’s degree of success as indicated in the following table.</p>
+		
+			<div class="panel-body" id="TBL_QualityOfSuccess">
+				<p class="h4"><strong>Quality of Success</strong></p>
+				<table class="table table-striped table-hover">
+					<thead>
+						<th>Net Number of Successes</th>
+						<th>Result</th>
+					</head>
+					<tbody>
+						<tr>
+							<td>Zero</td>
+							<td>Failure</td>
+						</tr>
+						<tr>
+							<td>(Tie)</td>
+							<td>Result Varies</td>
+						</tr>
+						<tr>
+							<td>One</td>
+							<td>Basic Success</td>
+						</tr>
+						<tr>
+							<td>Two</td>
+							<td>Good</td>
+						</tr>
+						<tr>
+							<td>Three</td>
+							<td>Well Done</td>
+						</tr>
+						<tr>
+							<td>Four</td>
+							<td>Expertly Done</td>
+						</tr>
+						<tr>
+							<td>Five</td>
+							<td>Perfect</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+			<p>While only one success is normally needed for an action to be successful, some actions at the GM’s 
+			discretion may be tasked with additional success requirements. One example could be a Player Character 
+			attempting to pick a lock while pressed for time:</p>
+		
+			<div class="panel-body bg-warning" id="DIV_Exaple_SuccessRequirements">
+				<p><em><strong>GM: </strong>You want to pick this lock? That would normally be only Average, but to do it 
+				in time is Challenging. You’re going to need two successes. Getting no successes will mean things get 
+				complicated! (See the section on <a href="#P_Complications">Complications</a> later in this 
+				chapter)</em></p>
+				
+				<p><em><strong>Player: </strong>Damn! I don’t have Lock Picking as a skill! Can I try it using that 
+				lock-pick Otho gave me?</em></p>
+				
+				<p><em><strong>GM: </strong>Sure - but it’ll be tougher since you don’t know what you’re doing. Now you’re 
+				going to need four successes. And any result of two or less successes will earn you a Complication.</em></p>
+				
+				<p>In this example one success would normally achieve the task (opening the lock), but an additional 
+				success is required to achieve the intended result (opening it before something else happens), for a total 
+				of two successes.</p>
+			</div>
+		
+			<br/>
+		
+			<p<strong>Attempting a task as an Attribute Check instead of a Skill Check<em>doubles</em> the number of 
+			successes needed</strong>. <em>Blade</em> follows the idea that one action requires one Check. There are three 
+			basic types of Checks:</p>
+		
+			<div class="panel-body" id="P_AttributeChecks">
+				<p class="h4">Attribute Checks</p>
+				
+				<p><strong>Attribute Checks</strong> are made with a die pool derived from an Attribute level. They 
+				represent tasks attempted with one’s natural, inborn ability - one’s talent - with abilities one has picked 
+				up along the way without formal training.</p>
+			</div>
+			
+			<div class="panel-body" id="P_SkillChecks">
+				<p class="h4">Skill Checks</p>
+				<p><strong>Skill Checks</strong> are tests made with a die pool derived from a Skill level. Skills reflect 
+				a Character’s aptitude in a trained, acquired pursuit. The degree of capability a Character can attain 
+				through training is limited by his talent for it. <strong>Wwhen using a Skill, a Character’s Skill dice 
+				pool may never equal or exceed twice the value of the Attribute that would be most applicable for 
+				the task attempted</strong>.</p>
+				
+				<p>For example, a Character with a Cunning of three means that he can use no more than five dice from the 
+				Lock Picking Skill in any situation.</p>
+				
+				<p>Conversely, Characters unskilled in a particular discipline work at a disadvantage compared to their 
+				skilled counterparts. They may attempt Checks by using the its corresponding Attribute, but <strong>require 
+				twice as many successes as someone who knows the Skill</strong>.</p>
+				
+				<div class="panel-body bg-warning" id="DIV_Example_SkillCheck">
+					<p><em><strong>Example</strong>: Otho wants to accomplish a task requiring the Animal Ken Skill, but is 
+					untrained in it. He has a Heart of six, and therefore may use it for the Check instead. If someone 
+					skilled in Animal Ken would normally need two  successes to succeed at a specific Animal Ken Check, 
+					Otho would instead need four.</em></p>
+				</div>
+					
+					<br/>
+					
+					<p>Skill levels are generally rated as per the following table.</p>
+							
+					<div class="panel-body" id="TBL_SkillLevels">
+						<p class="h4">Skill Levels</p>
+						<table class="table table-striped table-hover">
+						<tbody>
+							<tr>
+								<td>Zero</td>
+								<td>Default for untrained characters</td>
+							</tr>
+							<tr>
+								<td>One</td>
+								<td>Beginner; Most students</td>
+							</tr>
+							<tr>
+								<td>Two</td>
+								<td>Apprentice; Growing in skill</td>
+							</tr>
+							<tr>
+								<td>Three - Four</td>
+								<td>Journeyman; Trained professionals</td>
+							</tr>
+							<tr>
+								<td>Five - Seven</td>
+								<td>Adept; Skilled and respected veterans</td>
+							</tr>
+							<tr>
+								<td>Eight - Nine</td>
+								<td>Master; Well-known and sought after</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+			</div>
+				
+			<div class="panel-body">				
+				<p>Attribute and Skill values range from one to eight, with <em>one</em> Skill and Attribute each at a 
+				maximum level of nine <strong>per Player or NPC. No two Characters may have a score of nine in the same 
+				Attribute or Skill</strong>. NPCs are not bound by this stricture and may have the same Skill or Attribute 
+				at level nine that his Player counterpart enjoys, however, <em>for each Attribute or Skill, there may only 
+				be a single NPC per campaign who has this Attribute or Skill at level nine. If this NPC dies or otherwise 
+				leaves the campaign, he may not be replaced by another NPC with a score of nine in that Attribute 
+				or Skill for the rest of the campaign.</em></p>
+				
+				<p>Skill Check Challenge Levels should always frame the task in terms of how hard it is for someone who 
+				does it all the time. They are invariably rolled against a Target Number seven (TN7), unless modified by 
+				an Asset.</p>
+				
+				<div class="panel-body bg-warning" id="DIV_Example_HardSkillCheck">			
+					<p><em><strong>Example</strong>: Having gained admission to the Radja’s dinner ball, Otho prowls the 
+					halls in search for his intended pickpocket victim. The GM advises that the society vultures are 
+					unusually acerbic tonight and that Otho will have to bluff his way through several social encounters 
+					before locating the victim. He declares drawing no attention whatsoever to him a Challenging (two 
+					successes needed) feat of Etiquette.</em></p>
+				</div>
+			</div>
+			
+			<div class="panel-body" id="P_ProficiencyChecks">
+				<p class="h4">Proficiency Checks</p>
+				<p><strong>Proficiency Checks</strong> are made with a dice pool calculated from several contributing 
+				scores, and are done by rolling any number of dice drawn from the appropriate pool (either the Melee, 
+				Archery, or Sorcery Pools, respectively) against Target Numbers that frequently differ from the usual 
+				Target Number of seven. They are more fully explained in chapters <a href="../ch4 Melee/Home.html">four 
+				(Combat)</a> and <a href="../ch6 Sorcery/Home.html">six (Sorcery)</a>.</p>
+			</div>
+					
+			<div class="panel-body" id="P_OpposedChecks">
+				<p class="h4">Opposed Checks</p>
+				<p><strong>Opposed Checks</strong> are made whenever two Characters or forces match each other for 
+				supremacy. Examples include attacking an opponent, detecting an ambush, or slipping past a patrol.</p>
+				
+				<p>All manner of Checks may be tested against any other, with one Player possibly attempting a Skill Check, 
+				while her opponent rolls an Attribute Check in opposition. With Opposed Checks, both participants roll 
+				against Target Number seven. The number of successes of the participant with the <em>smaller</em> number of 
+				successes are subtracted from the other participant’s, leaving the latter as the winner with a Quality of 
+				Success as an indicator of the general degree of victory.</p>
+				
+				<p>For example, if Otho is trying to lie to a Street Thug, both roll their Falsehood skill against a Target
+				Number of seven.  Otho rolls a 12, 8, 7, and 4 for a total of three successes, while the Thug rolls a 10, 3, 
+				and a 2, achieving one success.  The Thug's successes are then subtratced from Otho's (3 - 1) leaving
+				Otho with a final result - or Quality of Success - of two.</p>
+				
+				<p>If an Opposed Skill Check is called for and one party lacks the required Skill, he may substitute 
+				the most appropriate Attribute as normal, but must compare his result to twice the number of successes of 
+				his opponent.</p>
+				
+				<p>Ties are counted as a success for the party who wants to maintain the status quo. In picking somebody’s 
+				pockets, a tie would result in a failure for the thief. In attempting to avoid detection by a guard, a tie 
+				would keep the thief hidden.</p>
+				
+				<p>A Quality of Success of one will always achieve the desired task. If the Game Master deems this too easy 
+				(thinking that additional factors would make the task harder to achieve for one than the other party) he is 
+				advised not to call for an Opposed Check, but for a straight-forward (but difficult) Attribute or Skill 
+				Check instead.</p>
+				
+				<p>If an Opposed Check matches one Character against several others at the same time, a single roll is 
+				made for every Character involved. The solitary character compares his result to each opponent’s roll. 
+				For example, if a thief tries to sneak past two soldiers standing guard, one roll is made for the thief and 
+				one for every soldier. The thief’s result is then compared separately to both results, for two Qualities of 
+				Success scores.</p>
+				
+				<div class="panel-body bg-warning" id="DIV_Example_MultipleOpponents">
+					<p><em><strong>Example</strong>: Otho makes his move at the ball and invites a rich old dowager (and her 
+					beautiful diamond necklace!) to dance. As they swirl about the dance floor he directs her to a somewhat 
+					unobserved spot and tries to remove the necklace. An Opposed Check with two antagonists is now called 
+					for: The guard closest to the pair makes a Check using his Sagacity (4) Attribute, testing his powers of 
+					observation, and the dowager checks using her Sagacity (3) Attribute, to determine if she is aware of 
+					the necklace being removed.</em></p>
+					
+					<p>Otho makes a single Check using Pick Pockets (6) against both opponents. Otho needs to tie the 
+					guard’s result to pocket the necklace unobserved by the guard (the status quo being that the guard 
+					notices nothing special), but he needs to trump the dowager’s successes to filch the necklace (the 
+					status quo being that she has it).</p>
+					
+					<p><em>Unluckily, Otho achieves a single successes, the guard rolls one success, and the dowager rolls a 
+					somewhat lucky two successes. While the guard would not have noticed anything out of the ordinary, 
+					the dowager feels Otho’s groping fingers and raises a ruckus, leaving Otho to bluff his way out of a 
+					tight spot.</em></p>
+				</div>
+			</div>
+			
+			<br/>
+			
+			</div>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h3>SRD created by Brennan MacGregor, 2016</h3>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
