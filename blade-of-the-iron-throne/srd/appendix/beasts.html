@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beasts & Menaces</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Beasts & Menaces</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Beasts : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Beasts<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_BASIC_Warhorse">Warhorse</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_CanineMedium">Canine, Medium</a></li>
+							<li><a href="#P_BASIC_CanineLarge">Canine, Large</a></li>
+							<li><a href="#P_BASIC_CanineMonstrous">Canine, Monstrous</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_FelineMedium">Feline, Medium</a></li>
+							<li><a href="#P_BASIC_FelineLarge">Feline, Large</a></li>
+							<li><a href="#P_BASIC_FelineMonstrous">Feline, Monstrous</a></li>
+							<li><a href="#P_BASIC_Sabretooth">Sabretooth</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_BearMedium">Bear, Medium</a></li>
+							<li><a href="#P_BASIC_BearLarge">Bear, Large</a></li>
+							<li><a href="#P_BASIC_BearMonstrous">Bear, Monstrous</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_CrocodileLarge">Crocodile, Large</a></li>
+							<li><a href="#P_BASIC_CrocodileMonstrous">Crocodile, Monstrous</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_SnakePoisonous">Snake, Poisonous</a></li>
+							<li><a href="#P_BASIC_SnakeLarge">Snake, Large</a></li>
+							<li><a href="#P_BASIC_SnakeMonstrous">Snake, Monstrous</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_GreatApe">Great Ape</a></li>
+							<li><a href="#P_BASIC_SpiderMonstrous">Spider, Monstrous</a></li>
+							<li><a href="#P_BASIC_Dinosaur">Dinosaur</a></li>
+						</ul>
+					</li>
+					
+					<!-- Supernatural Menaces : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Supernatural Menaces<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_SUPER_Vampire">Vampire</a></li>
+							<li><a href="#P_SUPER_EarthboundDemon">Earthbound Demon</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_SUPER_WereTiger_AnimalForm">Were-Tiger, Animal Form</a></li>
+							<li><a href="#P_SUPER_WereTiger_HybridForm">Were-Tiger, Hybrid Form</a></li>
+							<li><a href="#P_SUPER_WereTiger_HumanFormForm">Were-Tiger, Human Form</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_SUPER_WalkingDead">Walking Dead</a></li>
+							<li><a href="#P_SUPER_WalkingDead_AnimatedCorpse">Walking Dead, Animated Corpse</a></li>
+							<li><a href="#P_SUPER_WalkingDead_AnimatedSkeleton">Walking Dead, Animated Skeleton</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_SUPER_SerpentFolk">Serpent Folk</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li><a href="npcs.html">NPC's</a></li>
+							<li class="active"><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Beasts</p>
+			<p>After humans and before supernatural creatures, beasts are the second most common enemies battled by 
+			protagonists of Sword & Sorcery, and thus of course <em>Blade</em>.</p>
+			
+			<p>Beasts lack both Heart and Sagacity Attributes. This is not to say that they aren't smart or social, but 
+			merely that these traits of them cannot be reasonably put in relation to a human scale. Instead of Sagacity, 
+			Cunning is used, for the purpose of Stealing Initiative, and for the rare Check that might become necessary.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Beast Overview</p>
+			<p>Animals don’t have an Aim Attribute, and they are both fast and hard to knock out; their Reflex and 
+			Knockout Attributes are calculated as normal, but receive a +1 bonus. Most beasts’ Move are calculated 
+			as (Cunning + Daring + Daring) / 2, though some animals are faster or (rarely) slower, depending on their 
+			build. In this case, a bonus or penalty is given with Move, which is already calculated into the score.</p>
+			
+			<p>Usually, creatures do not have many points of “Proficiencies”; their Melee Pools are usually not much higher 
+			than their Reflex Attribute.</p>
+			
+			<hr/>
+			
+			<p class="h3">Beasts</p>
+			<p class="h4" id="P_BASIC_Warhorse">Warhorse</p>
+			<p><em>This encompasses battle-hardened horses of the largest and fiercest type available in any given 
+			setting. Earlier, smaller warhorses (”chargers”) have a Brawn of 7, while later, more massive ones (“destriers”) 
+			have a Brawn of 8.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7 or 8</li>
+							<li>Daring 5</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 5</li>
+							<li>Reflex 6</li>
+							<li>Knockdown 6 or 7</li>
+							<li>Knockout 7 or 8</li>
+							<li>Move 10 (+2)</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Kick 7</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_CanineMedium">Canine, Medium</p>
+			<p><em>This encompasses common watch dogs and strays, as well as jackals and other canines large enough to pose 
+			a danger to humans. They can come in packs.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 4</li>
+							<li>Daring 6</li>
+							<li>Tenacity 4</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 5</li>
+							<li>Move 11 (+2)</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">			
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 8</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_CanineLarge">Canine, Large</p>
+			<p><em>Wolves, attack-trained warhounds, hyenas, or any other really big and really mean dog – you name 
+			it. In the wild they usually form packs.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Daring 6</li>
+							<li>Tenacity 4</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 6</li>
+							<li>Knockout 6</li>
+							<li>Move 9</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 9</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_CanineMonstrous">Canine, Monstrous</p>
+			<p><em>This is no earthly animal, but instead an enormous canine the size of a tiger or small pony. It might 
+			have shaggy fur protecting it with an Armour Value equivalent to a gambeson’s (1 Piercing, 2 Blunt & 
+			Cleaving).</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 7</li>
+							<li>Move 9</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 11</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_FelineMedium">Feline, Medium</p>
+			<p><em>Any large and dangerous cat, from the size of a cheetah to about the size of a jaguar, encompassing 
+			leopards, panthers, pumas, lionesses, etc. Even if they do hunt in packs, they still do rarely employ pack 
+			combat tactics.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">			
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 6</li>
+							<li>Daring 7</li>
+							<li>Tenacity 4</li>
+							<li>Cunning 7</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 6</li>
+							<li>Move 11</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 10</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_FelineLarge">Feline, Large</p>
+			<p><em>Really big cats like tigers and male lions. They rarely hunt in packs, and rarely employ pack combat 
+			tactics.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7 or 8</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 7</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 7 or 8</li>
+							<li>Move 10</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 11</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_FelineMonstrous">Feline, Monstrous</p>
+			<p><em>Any outlandishly huge feline, around the size of a horse. In some settings, such creatures might even 
+			serve as horses for select heroes. Such a beast might have shaggy fur protecting it like a gambeson (1 
+			Piercing, 2 Blunt & Cleaving).</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 10</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 7</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 8</li>
+							<li>Knockout 9</li>
+							<li>Move 9 (-1)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 13</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Sabretooth">Sabretooth</p>
+			<p><em>Sabretooths are a mainstay of Sword & Sorcery. For a “realistic” sabretooth, base it on the Large Feline 
+			with large instead of medium fangs. If you really want to go for it, base it on the Monstrous Feline instead.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 10</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 7</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 8</li>
+							<li>Knockout 9</li>
+							<li>Move 9 (-1)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 13</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_BearMedium">Bear, Medium</p>
+			<p><em>One of the smaller bears, like a brown bear. If a slightly cinematic bent is desired, it can also use 
+			the Constricting Offensive Maneuver.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7</li>
+							<li>Daring 6</li>
+							<li>Tenacity 4</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 7</li>
+							<li>Move 9</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 10</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_BearLarge">Bear, Large</p>
+			<p><em>A bear the size of a grizzly or polar bear. Usually has shaggy fur protecting it like a gambeson (1 
+			Piercing, 2 Blunt & Cleaving). At the Game Masters discretion, it may use the Constricting Maneuver to attack 
+			with a bear hug.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 9</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 7</li>
+							<li>Move 9</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 11</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_BearMonstrous">Bear, Monstrous</p>
+			<p><em>A massive bear, about half again as big as a polar bear. It has shaggy fur protecting it like a gambeson 
+			(1 Piercing, 2 Blunt & Cleaving) and may possibly use the Constricting Offensive Maneuver.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 11</li>
+							<li>Daring 6</li>
+							<li>Tenacity 6</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 9</li>
+							<li>Knockout 10</li>
+							<li>Move 9</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 12</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to torso halved after AV has been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_CrocodileLarge">Crocodile, Large</p>
+			<p><em>The larger specimen of crocodile, measuring over 5 m from snout to tail. It can use the Worrying 
+			Maneuver, and its tough hide protects it with the equivalent of leather armour (1 Blunt, AV 2 Piercing & 
+			Cleaving).</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown n/a</li>
+							<li>Knockout 7</li>
+							<li>Move 8* (-1)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 10*</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			<p>* On dry land: Move 4, Melee Pool 8, may use tail for Take Down Maneuver.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_CrocodileMonstrous">Crocodile, Monstrous</p>
+			<p><em>A huge crocodile, measuring some 10 to 12 m. It can use the Worrying Maneuver, and its tough hide 
+			protects it with the equivalent of hardened leather armour (3 Piercing, AV 2 Blunt & Cleaving).</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 10</li>
+							<li>Daring 6</li>
+							<li>Tenacity 6</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown n/a</li>
+							<li>Knockout 9</li>
+							<li>Move 7* (-2)</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 10*</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values has been applied.</p>
+			<p>* On dry land: Move 3, Melee Pool 8, may use tail for Take Down Maneuver.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_SnakePoisonous">Snake, Poisonous</p>
+			<p><em>Snakes like cobras, mambas, rattlesnakes, horn vipers, etc.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 2</li>
+							<li>Daring 7</li>
+							<li>Tenacity 3</li>
+							<li>Cunning 6</li>
+							<li>Reflex 8</li>
+							<li>Knockdown n/a</li>
+							<li>Knockout 4</li>
+							<li>Move 4 (-6)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 11</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Injects poison upon any bite whose Impact Rating surpasses victim’s AV.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_SnakeLarge">Snake, Large</p>
+			<p><em>Pythons, anacondas, and similar constricting snakes large enough to be dangerous to a human; these 
+			measure about 7 to 9 m.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Daring 6</li>
+							<li>Tenacity 4</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown n/a</li>
+							<li>Knockout 7</li>
+							<li>Move 3 (-6)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs, Constricting 10</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Piercing Wound Levels to anywhere but the head are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_SnakeMonstrous">Snake, Monstrous</p>
+			<p><em>A truly gargantuan constricting snake, well over half again as long as the largest earthly specimens.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 8</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 6</li>
+							<li>Reflex 7</li>
+							<li>Knockdown n/a</li>
+							<li>Knockout 8</li>
+							<li>Move 3 (-6)</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs, Constricting 12</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Piercing Wound Levels to anywhere but the head are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_GreatApe">Great Ape</p>
+			<p><em>A carnivorous ape similar to a gorilla, but at least a quarter again as tall. It might have shaggy fur 
+			protecting it like a gambeson (1 Piercing, 2 Blunt & Cleaving). Another Sword & Sorcery favorite!</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 9</li>
+							<li>Daring 7</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 6</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 8</li>
+							<li>Knockout 8</li>
+							<li>Move 9 (-1)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Fist, Medium Fangs 11</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to torso halved after AV has been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_SpiderMonstrous">Spider, Monstrous</p>
+			<p><em>Not an earthly spider, but one with a body at least the size of a large pumpkin. It has a chitinous 
+			exoskeleton that protects it like hardened leather (3 Piercing, 2 Blunt & Cleaving). Its murderous poison has a 
+			progression rate of a few minutes, and requires a Quality of Success of 4 to succeed at the Progression Check. 
+			Take care: This is a PC-killer!</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 6</li>
+							<li>Daring 8</li>
+							<li>Tenacity 4</li>
+							<li>Cunning 5</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 7</li>
+							<li>Move 12 (+1)</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs 10</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Injects poison upon any bite whose Impact Rating surpasses victim’s AV.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Dinosaur">Dinosaur</p>
+			<p><em>In remote places of quite a few worlds of Sword & Sorcery, remnants of an earlier age can still be 
+			encountered. This one looks like a tyrannosaur, but is only about two thirds its size. It is still massive 
+			enough to engage two Characters during their Limelights, as per the rule on huge creatures, using its bite on 
+			one and its kick or tail on another.</p>
+			
+			<p>Tail and claws can only be defended against by Evasion, but both Evasion and Block are possible against the 
+			bite; Parry is not a viable defence against any of the dinosaur’s attacks. Its tough hide protects it with the 
+			equivalent of hardened leather (3 Piercing, 2 Blunt & Cleaving).</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 12</li>
+							<li>Daring 6</li>
+							<li>Tenacity 6</li>
+							<li>Cunning 5</li>
+							<li>Reflex 7</li>
+							<li>Knockdown 9</li>
+							<li>Knockout 10</li>
+							<li>Move 9</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 12, may use tail for Take Down M</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Huge Animal</strong>: all Wound Levels are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h3" id="P_SupernaturalMenaces">Supernatural Menaces</p>
+			<p>Demons, undead, and other supernatural beings are the toughest opponents the Characters can face. If such 
+			a creature appears, it will invariably be the centre of an adventure, and the object of the adventure will be 
+			as frequently about avoiding them as overcoming them.</p>
+			
+			<p>Supernatural menaces are rarely specimens of a kind, but usually single, unique creatures. As such, they 
+			will usually have a number of special powers requiring special rules.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SUPER_Vampire">Vampire</p>
+			<p><em>A cruel fiend that has lived through eons, one part man, the other part demon, or undead. It feeds on 
+			the life essence in the blood of man, having to kill every time it feeds, and has drunk dry entire nations. Its 
+			outward form may appear pleasing, but Detect Sorcery will identify it as sorcerous, and a high Quality of 
+			Success will reveal its true form: that of an emaciated, barely human fiend with fangs, talons, leathery skin 
+			and bat-like wings sprouting from under its arms. It can assume this form openly, and if it does so, it can fly.</p>
+			
+			<p>The vampire is nocturnal and sees perfectly in the tiniest bit of residual light; daylight irritates it. All 
+			of its Target Numbers are at +2 if in direct sunlight, or +1 if in deep shade. In addition, all Target Numbers 
+			are at cumulative +1 penalty for every day it fails to feed on a human being.</p>
+			
+			<p>The vampire can be destroyed by burning (though it does not burn any better than a human, which is to say, 
+			hardly at all) or by clean decapitation, though knowing this requires a Check of Occultism of Legendary 
+			Challenge Level (five successes). All other wounds the vampire suffers, including non-decapitating ones to the 
+			head, heal almost instantly. This includes regenerating severed limbs. Every single wound’s Pain and Blood Loss 
+			are reduced by 1 at the start of every Combat Round.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 10</li>
+							<li>Daring 8</li>
+							<li>Tenacity 7</li>
+							<li>Sagacity 7</li>
+							<li>Heart 7</li>
+							<li>Cunning 9</li>
+							<li>Reflex 9</li>
+							<li>Aim 8</li>
+							<li>Knockdown 9</li>
+							<li>Knockout 9</li>
+							<li>Move 9</li>
+							<li>Power 9</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>22</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>18</li>
+						</ul>
+					</p>
+			
+					<p><strong>Mysteries</strong>
+						<ul>
+							<li>Cursing 6</li>
+							<li>Enslavement 9</li>
+							<li>Mending (Pain) 6</li>
+						</ul>
+					</p>
+							
+					<p><strong>Spell Pool</strong>
+						<ul>
+							<li>Cursing 15</li>
+							<li>Enslavement 18</li>
+							<li>Mending (Pain) 15</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SUPER_EarthboundDemon">Earthbound Demon</p>
+			<p><em>A huge beast, sized between a hippopotamus and an elephant, and that looks like a monstrous cross 
+			between a toad, lizard, and a snail. Its clammy flesh is scaled, warty, and resembles gooey rubber that oozes 
+			into semi-material shadowstuff. Tentacles of different lengths and girth sprout asymmetrically from its flanks, 
+			their surfaces broken in seemingly random places by tiny bloodsucking maws. The entire maddening demon is 
+			composed of matter not entirely from this world; random parts of it seem to shift into immaterial darkness, and 
+			its bloated shape is in constant, pulsating flux. The beast is primitive, but capable of speech, and devilishly 
+			cunning. It might be venerated as a god.</p>
+			
+			<p>In combat, the creature can use the Pounce Maneuver, and it can use its tentacles to constrict or bash at 
+			any Reach of up to Extremely Long. Its tongue can constrict at any Reach up to Extremely Long. It can use fangs 
+			to bite and powerful legs to kick with medium claws.</p>
+			
+			<p>It can engage a maximum of three Characters at a time, acting on each of their Limelights. This insane 
+			abomination’s moist, rubbery skin protects it with a gambeson’s equivalent (1 Piercing, 2 Blunt & Cleaving).</p>
+			
+			<p>If this demon was summoned, it would use a hefty 7 dice to Oppose the sorcerer’s Coercion or Banishment 
+			Checks (3 for its attributes, and +1 each for the special powers of being huge, knowing the Cursing Mystery, 
+			knowing the Mending Mystery, and being able to engage on a third Limelight).</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 12</li>
+							<li>Daring 6</li>
+							<li>Tenacity 7</li>
+							<li>Sagacity 3</li>
+							<li>Heart n/a</li>
+							<li>Cunning 8</li>
+							<li>Reflex 7</li>
+							<li>Aim 6</li>
+							<li>Knockdown 9</li>
+							<li>Knockout 10</li>
+							<li>Move 9</li>
+							<li>Power 8</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Tentacles, Medium Fangs, Medium Claws 14</li>
+						</ul>
+					</p>
+			
+					<p><strong>Mysteries</strong>
+						<ul>
+							<li>Cursing 6</li>
+							<li>Mending (Pain) 4</li>
+						</ul>
+					</p>
+				
+					<p><strong>Spell Pool</strong>
+						<ul>
+							<li>Cursing 14</li>
+							<li>Mending (Pain) 12</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Huge Animal</strong>: all Wound Levels are halved after Armour Values have been applied.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SUPER_WereTiger_AnimalForm">Were-Tiger, Animal Form</p>
+			<p><em>A powerful were-beast at home in hot and humid jungles. Its human aspect is that of a powerful warrior, 
+			but can at will assume the form of either a ferocious human-tiger hybrid, which stands well over 2 meters tall, 
+			or of a very large tiger. These changes taking no longer than a single Combat Round. In both of the latter 
+			aspects it has a tiger’s superb senses, including smell, hearing, and vision.</p>
+			
+			<p>A were-tiger’s wounds heal preternaturally fast. It’s Blood Loss and every single wound’s Pain ratings 
+			are reduced by 1 at the start of every Limelight.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 9</li>
+							<li>Daring 6</li>
+							<li>Tenacity 6</li>
+							<li>Sagacity 5</li>
+							<li>Heart n/a</li>
+							<li>Cunning 7</li>
+							<li>Reflex 8</li>
+							<li>Knockdown 8</li>
+							<li>Knockout 9</li>
+							<li>Move 10</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 18</li>
+						</ul>
+					</p>
+					
+					<p><strong>Spell Pool</strong>
+						<ul>
+							<li>Cursing 14</li>
+							<li>Mending (Pain) 12</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p><strong>Large Animal</strong>: Wound Levels to the torso are halved after Armour Values have been applied.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_SUPER_WereTiger_HybridForm">Were-Tiger, Hybrid Form</p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 8</li>
+							<li>Daring 7</li>
+							<li>Tenacity 6</li>
+							<li>Sagacity 5</li>
+							<li>Heart n/a</li>
+							<li>Cunning 7</li>
+							<li>Reflex 7</li>
+							<li>Aim 5</li>
+							<li>Knockdown 8</li>
+							<li>Knockout 7</li>
+							<li>Move 7</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Medium Fangs & Claws 17</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Can attack with claws equally at Hand and Short Reach.</p>
+			
+			<p class="h4" id="P_SUPER_WereTiger_HumanForm">Were-Tiger, Human Form</p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7</li>
+							<li>Daring 7</li>
+							<li>Tenacity 6</li>
+							<li>Sagacity 5</li>
+							<li>Heart 5</li>
+							<li>Cunning 7</li>
+							<li>Reflex 7</li>
+							<li>Aim 6</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 7</li>
+							<li>Move 7</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiencies</strong>
+						<ul>
+							<li>Brawling Proficiency 10</li>
+							<li>Polearm Proficiency 8</li>
+							<li>Javelin Proficiency 8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Brawling 17</li>
+							<li>Polearm 15</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>Javelin 14</li>
+						</ul>
+					</p>
+			
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Animal Ken 8</li>
+							<li>Animal Mimicry 8</li>
+							<li>Climbing 8</li>
+							<li>Detect Sorcery 6</li>
+							<li>Precognition 6</li>
+							<li>Light Step 8</li>
+							<li>Sneaking 8</li>
+							<li>Survival 8</li>
+							<li>Tracking 8</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SUPER_WalkingDead">Walking Dead</p>
+			<p><em>These are two sample animated dead created with the Arcane Secret of that name, one of a fresh 
+			(soldier’s) corpse, the other that of a (soldier’s dried) skeleton. A mere three casting successes are 
+			assumed, buying an additional +1 Brawn and +4 Proficiency (see <em>Animate the Dead</em>). Instead of dead 
+			animated by use of this – sublimely rare – Arcane Secret, walking dead might also occur as minions of demons, 
+			the results of curses, or for other reasons.</p>
+			
+			<p>Both types of walking dead feel no pain, but are merely hindered by the dismembering effects of wounds; 
+			instead of by Tenacity, any Pain from wounds they suffer is reduced by 10. Animated dead cannot be killed, 
+			only damaged sufficiently to cease to function properly. This is achieved by wounding them sufficiently that their 
+			wounds’ cumulative Pain, after 10 has been subtracted from each single wound’s, equals or exceeds their Melee 
+			Pool – literally hacking them to pieces.</em></p>
+			
+			<br/>
+			
+			<p class="h4" id="P_SUPER_WalkingDead_AnimatedCorpse">Animated Corpse</p>
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 6</li>
+							<li>Daring 5</li>
+							<li>Tenacity 1</li>
+							<li>Sagacity 1</li>
+							<li>Heart 1</li>
+							<li>Cunning 4</li>
+							<li>Reflex 5</li>
+							<li>Aim 3</li>
+							<li>Knockdown 6</li>
+							<li>Knockout n/a</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiencies</strong>
+						<ul>
+							<li>4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>All Wound Levels from Piercing attacks are halved after Armour Values have been applied.</p>
+			
+			<p>Suffer only half Shock from any wound received.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_SUPER_WalkingDead_AnimatedSkeleton">Animated Skeleton</p>
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Daring 5</li>
+							<li>Tenacity 1</li>
+							<li>Sagacity 1</li>
+							<li>Heart n/a</li>
+							<li>Cunning 4</li>
+							<li>Reflex 5</li>
+							<li>Aim 3</li>
+							<li>Knockdown 5</li>
+							<li>Knockout n/a</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiencies</strong>
+						<ul>
+							<li>4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Immune against damage from Piercing attacks.</p>
+			
+			<p>The Impact Rating from Blunt and Cleaving wounds suffered is reduced by one quarter Brawn.</p>
+			
+			<p>Suffer only quarter Shock from any wound received.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SUPER_SerpentFolk">Serpent Folk</p>
+			
+			<p><em>Serpent folk are a mainstay of Sword & Sorcery. They are a humanoid people evolved from snakes; scaled 
+			and cold-blooded reptiles, alien and inimical to mammalian humanity. Usually they exist as tiny, scattered 
+			remnants of a long-lost, advanced evil civilization predating humanity and possibly having had enslaved the 
+			latter. What few serpent folk survive - while still a sophisicated people - are but a mere shadow of their 
+			former greatness. They are bitter and full of glacial hate toward humanity. Their tiny communities might exist 
+			in remote locales, or also insinuated into humanity, plotting its downfall and their own reascendence.</p>
+			
+			<p>The latter is made possible with the serpent folk’s inborn powers of Enslavement. All of them use this 
+			Mystery as Dabblers (Target Number 6 with the Spell-Gifted Asset), and apart from its normal powers they can 
+			exude a strange ensorcelment making them appear completely human, even as perfect duplicates of designated 
+			humans. No Check is normally necessary for this. When confronted with Detect Sorcery, they can oppose their 
+			unmasking with a Check of their Enslavement against the Skill. If viewed with Scrying, they can avoid 
+			discovery with an Opposed Check of their Enslavement against Scrying. Finally, when they take a wound, they 
+			must pass a Sorcery Pool Check with a Quality of Success equal to the wound level, or be revealed for what 
+			they are.</p>
+			
+			<p>Enslvement Checks are usually made against a Target Number of 6, unless the individual serpent man is more 
+			proficient in sorcery, in which case the Target Number might be as low as 5 or even 4. Sorcerers are much more 
+			common among serpent folk than among men, though luckily for humanity serpent folk seem to have lost their 
+			faculty for spawning truly powerful Mysteriarchs.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 4</li>
+							<li>Daring 4</li>
+							<li>Tenacity 5</li>
+							<li>Sagacity 5</li>
+							<li>Heart 2</li>
+							<li>Cunning 6</li>
+							<li>Reflex 5</li>
+							<li>Aim 6</li>
+							<li>Knockdown 3</li>
+							<li>Knockout 5</li>
+							<li>Move 5</li>
+							<li>Power 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Weapon Proficiencies</strong>
+						<ul>
+							<li>Melee 3</li>
+							<li>Crossbow 3</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>11</li>
+						</ul>
+					</p>
+					
+					<p><strong>Mysteries</strong>
+						<ul>
+							<li>Enslavement 4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Spell Pool</strong>
+						<ul>
+							<li>Enslavement 9</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<p>Spell-Gifted Good Asset (Enslavement Target Number –2)</p>
+			
+			<p>Night-sighted Good Asset (reduced darkness penalties)</p>
+			
+			<p>Lithe Good and Poor Asset (Reflex and some Daring Checks with reduced Target Numbers; susceptible to Blunt 
+			damage, the reduced Knockdown has already been calculated into attributes above)</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
