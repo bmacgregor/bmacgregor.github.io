@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Offensive Maneuver Table</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Offensive Maneuver Table</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li class="active"><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Offensive Maneuver Activation Costs</p>
+			<table class="table table-bordered table-condensed" id="TBL_ActivationCosts_ONE">
+				<thead>
+					<th></th>
+					<th>Bash</th>
+					<th>Beat</th>
+					<th>Bind & Strike</th>
+					<th>Cut</th>
+					<th>Disarm</th>
+					<th>Double Attack</th>
+					<th>Evasive Attack</th>
+					<th>Grapple</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Brawling *</td>
+						<td>0/1</td>
+						<td>(3)</td>
+						<td>3</td>
+						<td>(3)</td>
+						<td>3</td>
+						<td>2</td>
+						<td>(2)</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Cut & Thrust</td>
+						<td>(2)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>(2)</td>
+					</tr>
+					<tr>
+						<td>Dagger **</td>
+						<td>1 (2)</td>
+						<td>(3)</td>
+						<td>(2)</td>
+						<td>0</td>
+						<td>2</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Greatsword</td>
+						<td>(1)</td>
+						<td>0</td>
+						<td>(2)</td>
+						<td>1</td>
+						<td>1</td>
+						<td>(3)</td>
+						<td>1</td>
+						<td>(3)</td>
+					</tr>
+					<tr>
+						<td>Lance</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Longsword</td>
+						<td>(1)</td>
+						<td>0</td>
+						<td>(1)</td>
+						<td>0</td>
+						<td>1</td>
+						<td>(2)</td>
+						<td>1</td>
+						<td>(2)</td>
+					</tr>
+					<tr>
+						<td>Mass Weapon & Shield</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>(3)</td>
+						<td>2</td>
+						<td>(3)</td>
+					</tr>
+					<tr>
+						<td>Polearm</td>
+						<td>0</td>
+						<td>0</td>
+						<td>(3)</td>
+						<td>0</td>
+						<td>2</td>
+						<td>(4)</td>
+						<td>1</td>
+						<td>(3)</td>
+					</tr>
+					<tr>
+						<td>Spear & Shield</td>
+						<td>(1)</td>
+						<td>1</td>
+						<td>0</td>
+						<td>(1)</td>
+						<td>(3)</td>
+						<td>(4)</td>
+						<td>2</td>
+						<td>(4)</td>
+					</tr>
+					<tr>
+						<td>Sword & Shield</td>
+						<td>(1)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>(3)</td>
+						<td>2</td>
+						<td>(3)</td>
+					</tr>
+					<tr>
+						<td>Wrestling ***</td>
+						<td>1/2</td>
+						<td>(3)</td>
+						<td>(3)</td>
+						<td>(3)</td>
+						<td>2</td>
+						<td>(3)</td>
+						<td>(4)</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Brawling: Bash Activation Cost 0 is for punches, 1 for kicks and any other Bashes that might 
+			come up.</strong></p>
+			<p><strong>** Dagger: Bash Activation Cost 1 is for punches, 2 for any other Bashes that might come 
+			up.</strong></p>
+			<p><strong>*** Wrestling: Bash Activation Cost 1 is for punches, 2 for kicks and any other Bashes that might 
+			come up.</strong></p>
+			<p><strong>Maneuvers in parenthesis are not normally taught with a certain Proficiency, but are included here for rare and unusual 
+			sitations.</strong></p>
+			
+			<br/>
+			
+			<p class="h4">Offensive Maneuver Activation Costs (Continued)</p>
+			<table class="table table-bordered table-condensed" id="TBL_ActivationCosts_TWO">
+				<thead>
+					<th></th>
+					<th>Hook</th>
+					<th>Master-Strike</th>
+					<th>Murder Stroke</th>
+					<th>Quick Draw</th>
+					<th>Simultaneous Block/Strike</th>
+					<th>Stop Short</th>
+					<th>Thrust</th>
+					<th>Toss</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Brawling</td>
+						<td>3</td>
+						<td>(5)</td>
+						<td>(4)</td>
+						<td>(4)</td>
+						<td>1</td>
+						<td>1</td>
+						<td>3</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Cut & Thrust</td>
+						<td>(2)</td>
+						<td>4</td>
+						<td>(2)</td>
+						<td>2</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Dagger</td>
+						<td>(3)</td>
+						<td>(5)</td>
+						<td>(4)</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Greatsword</td>
+						<td>(2)</td>
+						<td>3</td>
+						<td>1</td>
+						<td>(4)</td>
+						<td>(3)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>(2)</td>
+					</tr>
+					<tr>
+						<td>Lance</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>0</td>
+						<td>-</td>
+						<td>1</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Longsword</td>
+						<td>(2)</td>
+						<td>3</td>
+						<td>1</td>
+						<td>(3)</td>
+						<td>(2)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>(1)</td>
+					</tr>
+					<tr>
+						<td>Mass Weapon & Shield</td>
+						<td>1</td>
+						<td>(5)</td>
+						<td>(2)</td>
+						<td>(4)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>(1)</td>
+					</tr>
+					<tr>
+						<td>Polearm</td>
+						<td>1</td>
+						<td>(6)</td>
+						<td>(2)</td>
+						<td>(4)</td>
+						<td>(3)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>(2)</td>
+					</tr>
+					<tr>
+						<td>Spear & Shield</td>
+						<td>1</td>
+						<td>(6)</td>
+						<td>(3)</td>
+						<td>(4)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>(1)</td>
+					</tr>
+					<tr>
+						<td>Sword & Shield</td>
+						<td>(2)</td>
+						<td>4</td>
+						<td>1</td>
+						<td>2</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>(1)</td>
+					</tr>
+					<tr>
+						<td>Wrestling ***</td>
+						<td>(2)</td>
+						<td>(6)</td>
+						<td>(4)</td>
+						<td>(4)</td>
+						<td>2</td>
+						<td>(1)</td>
+						<td>(3)</td>
+						<td>(1)</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>Maneuvers in parenthesis are not normally taught with a certain Proficiency, but are included here for rare and unusual 
+			sitations.</strong></p>
+						
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
