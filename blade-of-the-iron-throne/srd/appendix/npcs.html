@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NPC's</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : NPC's</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Basic NPC's<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_BASIC_SoldierBasic">Soldier, Rank-and-File</a></li>
+							<li><a href="#P_BASIC_SoldierElite">Soldier, Elite</a></li>
+							<li><a href="#P_BASIC_SoldierChampion">Soldier, Champion</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_Townsman">Townsman</a></li>
+							<li><a href="#P_BASIC_CountryDweller">Country Dweller</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_NomadRaider">Nomad Raider</a></li>
+							<li><a href="#P_BASIC_BarbarianWarrior">Barbarian Warrior</a></li>
+							<li><a href="#P_BASIC_Bandit">Bandit</a></li>
+							<li><a href="#P_BASIC_Pirate">Pirate</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_Prostitute">Prostitute</a></li>
+							<li><a href="#P_BASIC_Pimp">Pimp</a></li>
+							<li><a href="#P_BASIC_Courtesan">Courtesan</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_BouncerEnforcer">Bouncer, Enforcer</a></li>
+							<li><a href="#P_BASIC_ThugBullyMugger">Thug, Bully, or Mugger</a></li>
+							<li><a href="#P_BASIC_Slaver">Slaver</a></li>
+							<li><a href="#P_BASIC_Cultist">Cultist</a></li>
+							<li><a href="#P_BASIC_Gladiator_PitFighter">Gladiator, Pit Fighter</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_BASIC_Pickpocket">Pickpocket</a></li>
+							<li><a href="#P_BASIC_StreetUrchin">Street Urchin</a></li>
+						</ul>
+					</li>
+					
+					<!-- Challenging NPCs : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Challenging NPC's<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_ChallengingNPCs">Challenging NPC's</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_CHLNG_HighClassBodyguard">High-Class Bodyguard</a></li>
+							<li><a href="#P_CHLNG_FanaticalAssassin">Fanatical Assassin</a></li>
+							<li><a href="#P_CHLNG_GladitorialChampion">Gladitorial Champion</a></li>
+							<li><a href="#P_CHLNG_Sorcerer">Sorcerer</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="npcs.html">NPC's</a></li>
+							<li><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">NPC's</p>
+			<p>The creation table for Characters is geared towards the creation of Characters that are much more capable 
+			than common NPCs. Characters created by these mechanics are not representative of the inhabitants of the 
+			various game worlds that <em>Blade</em> is intended for.</p>
+			
+			<p>The vast majority of NPCs, including common soldiers and other combat-trained individuals, will be average 
+			persons. As such, they should have no more than one or two Attributes with ratings other than 4, and their 
+			total number of Attribute points should be as close to 24 as possible, certainly within the 22 to 26 range. 
+			Attribute ratings under 3 and over 5 are exclusive to very exceptional individuals and should not occur with 
+			the vast majority of common NPCs.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">NPC Overview</p>
+			<p>Skills and Proficiencies that are central to an NPC’s profession or walk of life should also be at a rating 
+			of 4, or very close to it. With Skills and Attributes, anyone with a single rating above 6 should be rare, 
+			extremely noticeable, and probably renowned for it. The same holds for Proficiencies above 9.</p>
+			
+			<p><em>True to the trope of Sword & Sorcery fiction, members of societies living more rugged lifestyles closer 
+			to nature, namely those corresponding to the Hillman/Nomad and especially the Savage cultural archetype, are 
+			all around more capable than softer, civilized people and as a rule, can be built with slightly higher 
+			ratings.</em></p>
+			
+			<p>Attributes that are not expressly given in the write-ups are considered to have an average score of 4. 
+			Skills listed are only the most important ones for this NPC’s walk of life, and those that are likely to be 
+			relevant in a game situation. If a Skill isn’t listed, this doesn’t necessarily mean that the NPC doesn’t 
+			possess it, but that Game Master judgement is called for in assigning further Skills.</p>
+			
+			<p>GM's should customize these standard NPCs above and beyond any variation already presented in these 
+			write-ups. When doing so it may be helpful to keep in mind that a single +/– 1 to either Attribute or 
+			Proficiency will result in an individual who is noticeably above or below average to his fellows, and greater 
+			than +/– 1 would be even farther outside the norm.</p>
+			
+			<hr/>
+			
+			<p class="h3">Basic NPC's</p>
+
+			<p class="h4" id="P_BASIC_SoldierBasic">Soldier, Rank-and-File</p>
+			<p><em>The run-of-the-mill common soldier or guardsman. Melee Proficiency will most often be Sword & Shield, 
+			Spear & Shield, or Mass Weapon & Shield.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn or Daring 5</li>
+							<li>Heart or Sagacity 3</li>
+							<li>Reflex 4 or 5</li>
+							<li>Aim 3 or 4</li>
+							<li>Knockdown 4 or 5</li>
+							<li>Knockout 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>4 or 5</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>8 to 10</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Soldiering: 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_SoldierElite">Soldier, Elite</p>
+			<p><em>A soldier of a crack unit.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Daring 5</li>
+							<li>Brawn or Tenacity 5</li>
+							<li>Heart or Sagacity 3</li>
+							<li>Reflex 5</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 5</li>
+							<li>Move 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>5 or 6</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>10 to 11</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Soldiering: 6</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_SoldierChampion">Soldier, Champion</p>
+			<p><em>The best fighter of the company.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>Brawn 5</li>
+							<li>Daring 5</li>
+							<li>Heart or Sagacity 3</li>
+							<li>Reflex 5</li>
+							<li>Aim 4 or 5</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 5</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>7</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>12</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Soldiering: 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Townsman">Townsman</p>
+			<p><em>The average city-dweller, who often tends to be a bit soft from living near the flesh-pots of the cities, 
+			but frequently more savvy and cunning in return. His melee Proficiency is usually Pugilism & Brawling, or less 
+			frequently Dagger.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 3 or 4</li>
+							<li>Cunning 4 or 5</li>
+							<li>Reflex 4 or 5</li>
+							<li>Aim 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>1</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>5 to 6</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Six among Falsehood and Information Gathering (maximum 4)</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_CountryDweller">Country Dweller</p>
+			<p><em>The average rustic inhabiting the rural parts of civilized lands. A bit more rugged and hardy than a 
+			townsman, but often less savvy or educated. Their melee Proficiency is frequently related to Pole-arms, but 
+			sometimes Spear & Shield is acquired instead; a few are also familiar with the Sling or Bow Proficiency.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 4 or 5</li>
+							<li>Sagacity 3 or 4</li>
+							<li>Knockdown 4 or 5</li>
+							<li>Knockout 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>Melee Proficiency 2; sometimes Missile Proficiency 2</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>6; sometimes Archery Pool 6</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_NomadRaider">Nomad Raider</p>
+			<p><em>Members of a nomad tribe, leading a dual existence as both pastoralist and mounted raider on her 
+			settled neighbours or trespassing merchants. Superb horsemen, they will usually attack from horseback, often 
+			by initially circling their opponents and weakening them with harassing arrows. Their Missile Proficiency is 
+			invariably Bow, and their Melee Proficiency either Sword & Shield, Cut & Thrust, or Lance, or more rarely 
+			Mass & Weapon & Shield.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Daring 5</li>
+							<li>Cunning or Brawn 5</li>
+							<li>Reflex 5</li>
+							<li>Aim 4 or 5</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 4 or 5</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencices</strong>
+						<ul>
+							<li>Melee Proficiency 5 and Bow Proficiency 2 or Melee Proficiency 4 and Bow Proficiency 4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Combat Pools</strong>
+						<ul>
+							<li>9 to 10 (Bow) 6 to 9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Riding 5</li>
+							<li>Sneaking 3</li>
+							<li>Survival 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_BarbarianWarrior">Barbarian Warrior</p>
+			<p><em>An average vigorous barbarian from a tribal society. His Missile Proficiency is usually Bow or Spear, 
+			and his Melee Proficiency most commonly Sword & Shield, Spear & Shield, or Mass Weapon & Shield.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 4 or 5</li>
+							<li>Brawn 5</li>
+							<li>Daring 5</li>
+							<li>Tenacity 5</li>
+							<li>Reflex 5</li>
+							<li>Aim 4 or 5</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 5</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencies</strong>
+						<ul>
+							<li>Melee Proficiency 5 and Missile Proficiency 4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Combat Pools</strong>
+						<ul>
+							<li>10, Archery Pool 8 or 9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Sneaking 4</li>
+							<li>Survival 4</li>
+							<li>Tracking 4</li>
+							<li>Eight among Climbing, Riding, and Swimming (maximum 4)</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Bandit">Bandit</p>
+			<p><em>The common highwayman. Her ilk prefers to avoid combat altogether and instead confront her victims with 
+			such advantage that resistance seems futile. Her Missile Proficiency will be Bow, Crossbow or Black Powder 
+			Weapon, and her Melee Proficiency usually Cut & Thrust, Sword & Shield, or Mass Weapon & Shield.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>Brawn or Daring 5</li>
+							<li>Heart 3</li>
+							<li>Sagacity 3</li>
+							<li>Reflex 5</li>
+							<li>Aim 5</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 4 or 5</li>
+							<li>Move 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencies</strong>
+						<ul>
+							<li>Melee Proficiency 2 and Missile Proficiency 4 or Melee Proficiency 4 and Missile Proficiency 2</li>
+						</ul>
+					</p>
+					
+					<p><strong>Combat Pools</strong>
+						<ul>
+							<li>7 to 9, Archery Pool 7 to 9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Sneaking 4</li>
+							<li>Survival 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Pirate">Pirate</p>
+			<p><em>A raider of coastal settlements and the sea lanes alike. Like the bandit he much prefers surprising his 
+			victim with such advantage that an actual fight is not necessary. His Missile Proficiency is Bow, Crossbow or 
+			Black Powder Weapon, and his Melee Proficiency usually Cut & Thrust, Sword & Shield, or Mass Weapon & 
+			Shield.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>Brawn or Daring 5</li>
+							<li>Heart 3</li>
+							<li>Sagacity 3</li>
+							<li>Reflex 5</li>
+							<li>Aim 5</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 4 or 5</li>
+							<li>Move 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+			
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencies</strong>
+						<ul>
+							<li>Melee Proficiency 2 and Missile Proficiency 4 or Melee Proficiency 4 and Missile Proficiency 2</li>
+						</ul>
+					</p>
+					
+					<p><strong>Combat Pools</strong>
+						<ul>
+							<li>7 to 9, Archery Pool 7 to 9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Seamanship 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Prostitute">Prostitute</p>
+			<p><em>The classic, ubiquitous, common prostitute, tavern wench, streetwalker, or bordello bird. Saucy and 
+			pretty in a cheap way. Sometimes with a heart of gold, sometimes with sticky, money-grubbing fingers, but 
+			always with a hidden knife to stick in pesky customers.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning or Heart 5</li>
+							<li>Brawn 3</li>
+							<li>Reflex 4 or 5</li>
+							<li>Aim 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>Dagger Proficiency 2 to 3</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Dagger 6 to 8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Dancing 3</li>
+							<li>Seduction 3</li>
+							<li>Sometimes Pick Pocket 3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Pimp">Pimp</p>
+			<p><em>One of the usually unpleasant fellows living off prostitutes working the streets and taverns of cities.
+			For enforcers at brothels the Bouncer/Enforcer template below is more appropriate.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>Heart or Sagacity 3</li>
+							<li>Reflex 5</li>
+							<li>Aim 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>Dagger Proficiency 4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Dagger 9</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Trailing 3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Courtesan">Courtesan</p>
+			<p><em>A high-class courtesan for high-class customers either set up independently in a house of her own, or 
+			some brothel’s crown jewel. She knows men like the back of her hand, and controls them with ease. And of course 
+			she’s ravishing.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Heart 5</li>
+							<li>Cunning or Sagacity 5</li>
+							<li>Reflex 4 or 5</li>
+							<li>Aim 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencies</strong>
+						<ul>
+							<li>Dagger Proficiency 3, sometimes Thrown Dagger Proficiency 3</li>
+						</ul>
+					</p>
+					
+					<p><strong>Combat Pools</strong>
+						<ul>
+							<li>(Dagger) 7 to 8, sometimes Archery Pool (Thrown Dagger) 8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Dancing 6</li>
+							<li>Etiquette 3</li>
+							<li>Falsehood 5</li>
+							<li>Information Gathering 3</li>
+							<li>Music 3</li>
+							<li>Seduction 6</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_BouncerEnforcer">Bouncer, Enforcer</p>
+			<p><em>“Muscle” employed at brothels, certain taverns and similar establishments to keep rowdy customers in 
+			hand; also the rank-and-file of many a gang terrorizing the cities. The melee Proficiency of these usually big 
+			intimidating guys is either Brawling or Mass Weapon & Shield, the latter mostly for use with clubs and 
+			saps.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Sagacity 3</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Negotiation 3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_ThugBullyMugger">Thug, Bully, or Mugger</p>
+			<p><em>The kind of scum populating dingy taverns and dark back alleys. Proficiency is mostly Dagger, but might 
+			also be Brawling or Cut & Thrust.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Heart or Sagacity 3</li>
+							<li>Aim 3 or 4</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>4</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Sneaking 4 (if Mugger)</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Slaver">Slaver</p>
+			<p><em>A common nasty slaver, more proficient in abducting the unsuspecting or terrorizing helpless folk in 
+			chains, than honest fighting. Melee Proficiency will usually be Sword & Shield, Cut & Thrust, or 
+			Dagger.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>Heart 3</li>
+							<li>Reflex 3</li>
+							<li>Aim 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">	
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>3</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Falsehood 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Cultist">Cultist</p>
+			<p><em>The rank and file of any one of the many unwholesome secret cults. Secrecy and deception is their second 
+			nature, but they have no real combat fighting training – their Proficiency is usually Dagger, for those 
+			fanatically (but ineptly) brandished knives.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>One Attribute at 3</li>
+							<li>Reflex 4 or 5</li>
+							<li>Aim 4 or 5</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>Dagger Proficiency 2</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>(Dagger) 6 to 7</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Falsehood 4</li>
+							<li>Sneaking 2</li>
+							<li>Theology 2</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Gladiator_PitFighter">Gladiator, Pit Fighter</p>
+			<p><em>Gladiatorial shows are a feature in many worlds of Sword & Sorcery, and this is the staple of these 
+			shows’ protagonists: A very athletic man or woman highly trained in both weapons and showmanship, one of the 
+			deadliest single combatants still “common” to any degree. Their melee Proficiency can vary widely.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 6 and Daring 5 or Brawn 5, Cunning 5, Sagacity 3</li>
+							<li>Reflex 5 or 6</li>
+							<li>Knockdown 5 or 6</li>
+							<li>Knockout 5</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>7</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>12 to 13</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Acting 3</li>
+							<li>Healing 2</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_Pickpocket">Pickpocket</p>
+			<p><em>A weasel of a person, the common pickpocket takes no chances. She preys only upon those whom she judges 
+			to be safely inattentive and unlikely to become dangerously violent; sober and conscious Characters are 
+			definitely not among the victims chosen by the average pickpocket. Her melee Proficiency is usually either 
+			Dagger or Pugilism & Brawling, but she will only fight as a last resort.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Cunning 5</li>
+							<li>Tenacity 3</li>
+							<li>Reflex 5</li>
+							<li>Aim 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>2</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>7</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Falsehood 3</li>
+							<li>Pick Pockets 4 or 5</li>
+							<li>Sneaking 3</li>
+							<li>Trailing 3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+				
+			<hr/>
+			
+			<p class="h4" id="P_BASIC_StreetUrchin">Street Urchin</p>
+			<p><em>The big cities’ ubiquitous guttersnipes. Either a poor child with a heart of gold underneath all the 
+			grime, or else a little bastard whom the harsh necessities of surviving on the street have inured against all 
+			softer human emotions. His melee Proficiency is usually Dagger, but can be Pugilism & Brawling 
+			instead.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 3</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">					
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>2</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>6</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Falsehood 3</li>
+							<li>Information Gathering 3</li>
+							<li>Trailing 3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h3" id="P_ChallengingNPCs">Challenging NPC's</p>
+			<p>Finally, a few sample NPCs who are far from being average or common in any way. Each one of these bad-asses 
+			should provide a tough challenge to most Characters.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CHLNG_HighClassBodyguard">High-Class Bodyguard</p>
+			<p><em>The personal bodyguard and part-time enforcer employed by a ranking nobleman or other person of great 
+			wealth and power. She has lead an adventurous life as soldier of fortune, sellsword, mercenary, and bandit 
+			before ending up in her present position.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Sagacity 5</li>
+							<li>Cunning 5</li>
+							<li>Reflex 6</li>
+							<li>Aim 5</li>
+							<li>Knockdown 6</li>
+							<li>Knockout 5</li>
+							<li>Move 5</li>
+						</ul>
+					</p>
+				</div>
+					
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencies</strong>
+						<ul>
+							<li>Sword & Shield Proficiency 9</li>
+							<li>Bow Proficiency 5</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Sword & Shield 15</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>Bow 10</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Healing 3</li>
+							<li>Riding 5</li>
+							<li>Sneaking 4</li>
+							<li>Soldiering 4</li>
+							<li>Survival 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+				
+			<hr/>
+			
+			<p class="h4" id="P_CHLNG_FanaticalAssassin">Fanatical Assassin</p>
+			<p><em>A powerful death cult’s fanatical assassin. He was kidnapped as a child, raised by the cult, and 
+			received years of intense training until he became the utterly devoted agent of the cult he is today.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 5</li>
+							<li>Daring 6</li>
+							<li>Tenacity 6</li>
+							<li>Sagacity 5</li>
+							<li>Cunning 6</li>
+							<li>Reflex 6</li>
+							<li>Aim 6</li>
+							<li>Knockdown 6</li>
+							<li>Knockout 6</li>
+							<li>Move 6</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Combat Proficiencies</strong>
+						<ul>
+							<li>Cut & Thrust Proficiency 10</li>
+							<li>Dagger Proficiency 10</li>
+							<li>Crossbow Proficiency 8</li>
+							<li>Thrown Knife Proficiency 8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Cut & Thrust, Dagger 16</li>
+						</ul>
+					</p>
+					
+					<p><strong>Archery Pool</strong>
+						<ul>
+							<li>Crossbow, Thrown Knife 14</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Acting 4</li>
+							<li>Apothecary 3</li>
+							<li>Climbing 6</li>
+							<li>Customs 4</li>
+							<li>Disguise 4</li>
+							<li>Etiquette 4</li>
+							<li>Falsehood 6</li>
+							<li>Information Gathering 5</li>
+							<li>Lock Picking 4</li>
+							<li>Riding 4</li>
+							<li>Sneaking 6</li>
+							<li>Survival 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+				
+			<hr/>
+			
+			<p class="h4" id="P_CHLNG_GladitorialChampion">Gladitorial Champion</p>
+			<p><em>A veteran of a city’s gladiatorial arena and one of its most popular and famous champions.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Brawn 7</li>
+							<li>Daring 6</li>
+							<li>Tenacity 5</li>
+							<li>Cunning 5</li>
+							<li>Reflex 6</li>
+							<li>Aim 5</li>
+							<li>Knockdown 7</li>
+							<li>Knockout 6</li>
+							<li>Move 6</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>Mass Weapon & Shield Proficiency 10</li>
+							<li>Brawling Proficiency 8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Mass Weapon & Shield 16</li>
+							<li>Brawling 14</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Acting 3</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CHLNG_Sorcerer">Sorcerer</p>
+			<p><em>This sinister sorcerer is not a dry and weak old man, but barely approaching his middle age, in good 
+			shape, and not shrinking back from leading – and enjoying – a physical life. He is already deeply steeped in 
+			gruesome arcane secrets, and is still delving deeper greedily, standing at the very threshold of the greatest 
+			sorcerous mysteries. And he will stop at nothing to cross this threshold, nothing at all.</em></p>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Attributes</strong>
+						<ul>
+							<li>Daring 5</li>
+							<li>Tenacity 7</li>
+							<li>Sagacity 6</li>
+							<li>Cunning 5</li>
+							<li>Reflex 5</li>
+							<li>Aim 6</li>
+							<li>Knockdown 5</li>
+							<li>Knockout 6</li>
+							<li>Move 5</li>
+							<li>Power 7</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Melee Proficiency</strong>
+						<ul>
+							<li>Dagger Proficiency 3</li>
+						</ul>
+					</p>
+					
+					<p><strong>Melee Pool</strong>
+						<ul>
+							<li>Dagger 8</li>
+						</ul>
+					</p>
+					
+					<p><strong>Key Skills</strong>
+						<ul>
+							<li>Ancient Languages 5</li>
+							<li>Apothecary 4</li>
+							<li>Decipher 4</li>
+							<li>Detect Sorcery 5</li>
+							<li>Occultism 6</li>
+							<li>Precognition 4</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<br/>
+			
+			<div class="row">
+				<div class="col-md-5">
+					<p><strong>Mysteries</strong>
+						<ul>
+							<li>Cursing 3</li>
+							<li>Prophecy 3</li>
+							<li>Enslavement 5</li>
+							<li>Scrying 3</li>
+							<li>Witchfire 4</li>
+						</ul>
+					</p>
+				</div>
+				
+				<div class="col-md-5 col-md-offset-2">
+					<p><strong>Sorcery Pool</strong>
+						<ul>
+							<li>Cursing 10</li>
+							<li>Prophecy 10</li>
+							<li>Enslavement 12</li>
+							<li>Scrying 10</li>
+							<li>Witchfire 11</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
