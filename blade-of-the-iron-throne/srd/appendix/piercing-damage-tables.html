@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Piercing Damage Tables</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Piercing Damage Tables</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Attack Zones : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Attack Zones<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Area8">Area Eight, Lower Legs</a></li>
+							<li><a href="#P_Area9">Area Nine, Upper Legs</a></li>
+							<li><a href="#P_Area10">Area Ten, Pelvic Region</a></li>
+							<li><a href="#P_Area11">Area Eleven, Belly</a></li>
+							<li><a href="#P_Area12">Area Twelve, Chest</a></li>
+							<li><a href="#P_Area13">Area Thirteen, Head</a></li>
+							<li><a href="#P_Area14">Area Fourteen, Arms</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Appendix<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blunt-damage-tables.html">Blunt Damage Tables</a></li>
+							<li><a href="cleaving-damage-tables.html">Cleaving Damage Tables</a></li>
+							<li class="active"><a href="piercing-damage-tables.html">Piercing Damage Tables</a></li>
+							<li><a href="swung-piercing-damage-tables.html">Swung Piercing Damage Tables</a></li>
+							<li><a href="generic-damage-table.html">Generic Damage Table</a></li>
+							<li class="divider"></li>
+							<li><a href="melee-weapon-tables.html">Melee Weapon Tables</a></li>
+							<li><a href="missile-weapon-tables.html">Ranged Weapon Tables</a></li>
+							<li><a href="weapon-quality.html">Weapon Quality</a></li>
+							<li class="divider"></li>
+							<li><a href="npcs.html">NPC's</a></li>
+							<li><a href="beasts.html">Beasts & Menaces</a></li>
+							<li><a href="animal-weapon-tables.html">Animal Weapon Tables</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4" id="P_Area8">Area Eight, Lower Legs (Right and Left)</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area8">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Foot</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Strike lands without energy</em></p>
+						</td>
+						<td>
+							<p>Shock: 1</p>
+							<p>Pain: 4</p>
+							<p><em>Foe‘s evasion puts him out of position</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 3</p>
+							<p>Pain: 6</p>
+							<p>Knockdown: 1</p>
+							<p><em>Foe panics</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 6</p>
+							<p>Pain: 8</p>
+							<p>Knockdown: 1</p>
+							<p><em>Foe staggers from the impact</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 8</p>
+							<p>Pain: 10</p>
+							<p>Knockdown: 2</p>
+							<p><em>Massive thrust to foot. If foe has shoe, the blow rips it off</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 11</p>
+							<p>Pain: 12</p>
+							<p>Knockdown: 3</p>
+							<p><em>Your strike pins foe’s foot to the floor</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>2 - 4</td>
+						<td>Shin and Lower Leg</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Your thrust nicks Foe's calf</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 1</p>
+							<p>Pain: 4</p>
+							<p><em>Strike lands oddly</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 3</p>
+							<p>Pain: 6</p>
+							<p>Knockdown: 1</p>
+							<p><em>Foe is fearful of your skill and steps back from your onslaught</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 6</p>
+							<p>Pain: 8</p>
+							<p>Knockdown: 2</p>
+							<p><em>Deal foe a measurable blow to his leg. Any low hanging container on your foe is sliced 
+							open</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 8</p>
+							<p>Pain: 10</p>
+							<p>Knockdown: 2</p>
+							<p><em>Foe is too late to leap away from your thrust</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 11</p>
+							<p>Pain: 12</p>
+							<p>Knockdown: 3</p>
+							<p><em>Agonizing blow to foe‘s leg. He stumbles five feet to your left</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Knee and Nearby Areas</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Foe questions his resolve</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Cheap shot to foe‘s knee</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 7</p>
+							<p>Knockdown: 1</p>
+							<p><em>Foe steps back defensively</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 9</p>
+							<p>Knockdown: 2</p>
+							<p><em>Catch foe‘s leg, opening a wounds below the knee</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 9</p>
+							<p>Pain: 11</p>
+							<p>Knockdown: 2</p>
+							<p><em>Strike plunges into leg with deadly effect. Foe panics</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 12</p>
+							<p>Pain: 13</p>
+							<p>Knockdown: 3</p>
+							<p><em>Strike pierces both of foe‘s legs. He moans in agony</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Passed between Legs</td>
+						<td colspan="7">Missed the target - better luck next time</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Area9">Area Nine, Upper Legs (Right and Left)</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area9">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Knee and Nearby Areas</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Glancing blow to Foe's upper leg</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Strike to Foe‘s leg causes his stride to falter</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 7</p>
+							<p>Knockdown: 1</p>
+							<p><em>Strike Foe in upper leg, blade grinds against bone</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 9</p>
+							<p>Knockdown: 2</p>
+							<p><em>Excellent attack to knee slides deeply and punctures muscle</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 9</p>
+							<p>Pain: 11</p>
+							<p>Knockdown: 2</p>
+							<p><em>Savage strike to kneecap has foe shrieking in agony</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 12</p>
+							<p>Pain: 13</p>
+							<p>Knockdown: 3</p>
+							<p><em>Amazing strike to knee area. If foe has armor it is ripped away</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>2 - 5</td>
+						<td>Thigh</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Foe twitches away; slight damage</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Foe‘s evasion lowers his guard</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 6</p>
+							<p>Knockdown: 1</p>
+							<p><em>Deep wound in Foe's thigh</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 8</p>
+							<p>Knockdown: 1</p>
+							<p><em>Strike to foe‘s thigh slashes muscle. Foe spins off-balance</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 9</p>
+							<p>Pain: 10</p>
+							<p>Knockdown: 2</p>
+							<p><em>Strike pierces cleanly and tears free in a bloody finish</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 12</p>
+							<p>Pain: 12</p>
+							<p>Knockdown: 3</p>
+							<p><em>Foe runs up half the length of your blade</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Hip</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Foe steps back and avoids the worst</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Hip strike leaves Foe shaken and trying to recover</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 6</p>
+							<p><em>Strike bites into foe‘s hip. The impact sounds terrible</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 9</p>
+							<p>Knockdown: 1</p>
+							<p><em>Solid blow to foe‘s hip leaves his side numb and bloody</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 9</p>
+							<p>Pain: 12</p>
+							<p>Knockdown: 2</p>
+							<p><em>Foe is run through the hip. His eyes glaze over</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 12</p>
+							<p>Pain: 14</p>
+							<p>Knockdown: 3</p>
+							<p><em>Foe’s sloppy footwork gets him stuck on your blade</em></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Area10">Area Ten, Pelvic Region</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area10">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 - 2</td>
+						<td>Hip</td>
+						<td>
+							<p>Shock: 2</p>
+							<p>Pain: 2</p>
+							<p><em>Strike fails to pierce</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Thrust slices into foe‘s hip. He yells as though burned</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 6</p>
+							<p><em>Probing strike makes foe cautious</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 9</p>
+							<p>Knockdown: 1</p>
+							<p><em>Foe’s sluggish defense gives you the opening you’ve waited for</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 9</p>
+							<p>Pain: 12</p>
+							<p>Knockdown: 2</p>
+							<p><em>Savage strike rips equipment from right side of foe’s waist</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 12</p>
+							<p>Pain: 14</p>
+							<p>Knockdown: 3</p>
+							<p><em>Authoritative thrust briefly pins foe‘s weapon hand to his hip</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>3 - 4</td>
+						<td>Groin (Male)</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 5</p>
+							<p><em>Close call has him sweating</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 6</p>
+							<p>Pain: 7</p>
+							<p><em>Foe dances clear of the worst</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 8</p>
+							<p>Pain: 9</p>
+							<p><em>Foe reels back from blow</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 10</p>
+							<p>Pain: 11</p>
+							<p>Knockdown: 1</p>
+							<p><em>Foe screeches in pain from your vicious attack</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 12</p>
+							<p>Pain: 13</p>
+							<p>Knockdown: 2</p>
+							<p><em>Foe stumbles free, tearing himself off of your point. He is having trouble 
+							breathing</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 7</p>
+							<p>Shock: 14</p>
+							<p>Pain: 15</p>
+							<p>Knockdown: 3</p>
+							<p><em>Rip foe’s groin wide open with twisting strike that leaves him horrified</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Groin (Female)</td>
+						<td colspan="7">Count as Lower Abdomen (on a 3) or Hip (on a 4)</td>
+					</tr>
+					<tr>
+						<td>5 - 6</td>
+						<td>Lower Abdomen</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Foe is fearful of your skill and leaps back from your flashing blade</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 3</p>
+							<p>Pain: 5</p>
+							<p><em>Foe evades and maneuvers for a better position</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 5</p>
+							<p>Pain: 8</p>
+							<p><em>Strike through foe’s bladder has him frantic to escape</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 8</p>
+							<p>Pain: 10</p>
+							<p><em>Strike up and through foe’s kidney</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 10</p>
+							<p>Pain: 12</p>
+							<p><em>Major abdominal wound. Blood pours out in frightening quantities</em></p>
+						</td>
+						<td><em>Tear out foe‘s guts in a graphic display of violence</em></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Area11">Area Eleven, Belly</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area11">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 - 5</td>
+						<td>Lower Abdomen</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Your thrust falls short when foe leaps back</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 3</p>
+							<p>Pain: 5</p>
+							<p><em>Thrust catches Foe lightly as he spins away</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 5</p>
+							<p>Pain: 8</p>
+							<p><em>Foe staggers away from the worst of your strike</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 8</p>
+							<p>Pain: 10</p>
+							<p><em>Plunge through foe‘s guts with impressive follow-through</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 10</p>
+							<p>Pain: 12</p>
+							<p><em>Strike tears in just below foe‘s belt. He’s frozen in pain</em></p>
+						</td>
+						<td><em>Strike through foe‘s belly spills his guts to the floor. He’s dead</em></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Flesh to the Side</td>
+						<td colspan="7">
+							<p>Blood Loss: 1</p>
+							<p>Shock level +1</p>
+							<p>Pain level +2</p>
+							<p><em>Pierced body without hitting any major organs, mostly just flesh and muscles. It hurts 
+							and bleeds, but probably isn’t lethal</em></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Area12">Area Twelve, Chest</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area12">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 - 2</td>
+						<td>Under the Ribs (Upper Abdomen)</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Catch foe in ribs. He drops his guard and leaps back</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 3</p>
+							<p>Pain: 5</p>
+							<p><em>Foe mostly deflects your attack</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 5</p>
+							<p>Pain: 8</p>
+							<p><em>Foe‘s evasion puts him out of position</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 8</p>
+							<p>Pain: 10</p>
+							<p><em>Solid thrust to Foe's abdomen has blood spraying everywhere</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 10</p>
+							<p>Pain: 12</p>
+							<p><em>Lightning strike up and through ribs staggers foe back and off your blade</em></p>
+						</td>
+						<td><em>Strike through both lungs. Foe drops and passes out. He dies during the next 
+						Limelight</em></td>
+					</tr>
+					<tr>
+						<td>3 - 6</td>
+						<td>Chest</td>
+						<td>
+							<p>Pain: 3</p>
+							<p><em>Minor chest wound. It could have been much better</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 3</p>
+							<p>Pain: 5</p>
+							<p><em>Foe‘s attempt at daring riposte costs him</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 6</p>
+							<p>Pain: 7</p>
+							<p><em>Minor chest wound numbs foe</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 9</p>
+							<p>Pain: 9</p>
+							<p><em>Foe whirls left into your strike</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 12</p>
+							<p>Pain: 11</p>
+							<p><em>Strike plunges into foe‘s chest and emerges from the other side</em></p>
+						</td>
+						<td><em>Shot through heart sends foe reeling back ten feet to a place suitable for death</em></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Area13">Area Thirteen, Head</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area13">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1 - 2</td>
+						<td>Collar and Throat</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Pain: 2</p>
+							<p><em>Foe dodges with vigor to avoid the worst of your assault</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 3</p>
+							<p>Pain: 4</p>
+							<p><em>Foe deflects the weight of your strike at the last moment</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 6</p>
+							<p>Pain: 6</p>
+							<p><em>Shot caroms off foe’s shoulder and up into throat</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 6</p>
+							<p>Shock: 9</p>
+							<p>Pain: 8</p>
+							<p><em>Excellent strike to collar slices through muscle and tendon</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 7</p>
+							<p>Shock: 12</p>
+							<p>Pain: 10</p>
+							<p>Knockdown: 1</p>
+							<p><em>Strike through throat mangles veins and arteries. Foe can't breathe</em></p>
+						</td>
+						<td><em>Piercing strike up through Adam’s Apple. Foe dies instantly</em></td>
+					</tr>
+					<tr>
+						<td>3 - 6</td>
+						<td>Face</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 1</p>
+							<p>Pain: 2</p>
+							<p><em>Foe slips, narrowly escaping</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 4</p>
+							<p>Pain: 4</p>
+							<p><em>Foe’s defense earns him a momentary reprieve</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 6</p>
+							<p>Pain: 6</p>
+							<p><em>Thrust slips through lips and jaw</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 9</p>
+							<p>Pain: 8</p>
+							<p>Knockdown: 1</p>
+							<p><em>Strike through nose. Foe‘s eyes cross momentarily</em></p>
+						</td>
+						<td><em>Strike plunges through foe‘s eye. Instant death</em></td>
+						<td><em>Thrust goes through both ears. Foe drops dead</em></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Area14">Area Fourteen, Arms (Right and Left)</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_Area14">
+				<thead>
+					<th>d6 Roll</th>
+					<th>Location</th>
+					<th>Level One</th>
+					<th>Level Two</th>
+					<th>Level Three</th>
+					<th>Level Four</th>
+					<th>Level Five</th>
+					<th>Level Six</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Hand</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Foe evades, maneuvering for a better position</em></p>
+						</td>
+						<td>
+							<p>Shock: 2</p>
+							<p>Pain: 3</p>
+							<p><em>Strike twists as it lands, blunting the attack</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 4</p>
+							<p>Pain: 5</p>
+							<p><em>Stinging thrust through fleshy web of foe’s hand</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 7</p>
+							<p>Pain: 7</p>
+							<p><em>Artful attack leaves claims a digit</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 9</p>
+							<p>Pain: 9</p>
+							<p><em>Strike and flick leaves two fingers hanging by threads</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 11</p>
+							<p>Pain: 11</p>
+							<p><em>Brutal thrust pierces Foe's hand</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>2 - 3</td>
+						<td>Forearm</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Strike lands without energy</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 3</p>
+							<p><em>Slice Foe‘s forearm with long follow-through</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 5</p>
+							<p><em>Strike along foe‘s arm. The damage takes a moment to show</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 7</p>
+							<p><em>Deep wound to foe‘s arm bleeds fiercly</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 9</p>
+							<p>Pain: 9</p>
+							<p><em>Savage stab to foe’s arm makes him hiss with pain</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 11</p>
+							<p>Pain: 11</p>
+							<p><em>Strike ricochets through muscle in shield arm. If foe has shield, he drops it</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Elbow</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Strike prods foe back</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Strike pierces flesh of foe’s elbow</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 6</p>
+							<p><em>Foe catches your attack on his elbow</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 9</p>
+							<p><em>Foe’s leap sends your point through the flesh of his elbow. He pulls free</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 9</p>
+							<p>Pain: 11</p>
+							<p><em>Foe is stunned when his flurry ends with your steel buried in him</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 11</p>
+							<p>Pain: 13</p>
+							<p><em>Strike plunges into doomed foe‘s elbow and rips out through other side</em></p>
+						</td>
+					</tr>
+					<tr>
+						<td>5 - 6</td>
+						<td>Upper Arm</td>
+						<td>
+							<p>Pain: 2</p>
+							<p><em>Foe veers away and avoids all but the tip of your blade</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 1</p>
+							<p>Shock: 2</p>
+							<p>Pain: 4</p>
+							<p><em>Strike costs foe</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 2</p>
+							<p>Shock: 4</p>
+							<p>Pain: 5</p>
+							<p><em>Stinging shot through foe’s bicep</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 3</p>
+							<p>Shock: 7</p>
+							<p>Pain: 7</p>
+							<p><em>Solid strike pierces flesh and digs into bone</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 4</p>
+							<p>Shock: 9</p>
+							<p>Pain: 9</p>
+							<p><em>Foe loses concentration long enough for your thrust to connect</em></p>
+						</td>
+						<td>
+							<p>Blood Loss: 5</p>
+							<p>Shock: 11</p>
+							<p>Pain: 11</p>
+							<p><em>Savage strike pins foe’s arm briefly to his side</em></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
