@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encumbrance</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Encumbrance</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Travel and Health : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Travel and Health<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="scenes.html">Scene Requests</a></li>
+							<li><a href="health.html">Health and Healing</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="encumbrance.html">Encumbrance (Optional)</a></li>
+						</ul>
+					</li>
+					
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li class="active"><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Optional Rule : Encumbrance</p>
+			<p>Despite many Players’ aversion to it, some systems insist on meticulously tracking a Characters gear, weight, 
+			and bulk. Players who use these optional Encumbrance rules should carefully ensure that their Character only 
+			carries a reasonable amount of gear, and that each item has a common-sense home somewhere on the Character.</p>
+			
+			<p>Basic items - shirts, hats, light backpacks, etc. - are not counted for Encumbrance purposes. Full backpacks 
+			or sacks full of loot count as oversized items. For example, a bag containing 100 coins, a haunch of beef, and 
+			two bottles of wine counts as one oversized item.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Encumbrance, Continued</p>
+			<p>To calculate a Character’s Encumbrance level, consult the following table. Calculate a mount’s Encumbrance 
+			using the Mount Encumbrance table. Then total your points for reference in the third table - Encumbrance 
+			Terrain Modifiers. You will derive an Encumbrance Level and an additional Activation Cost that must be paid 
+			for the Evasion Maneuver and many Terrain Checks. That’s it, you’re done!</p>
+			
+			<p class="h4" id="P_CharacterEncumbrance">Character Encumbrance</p>
+			<table class="table table-striped table-hover" id="TBL_CharacterEncumbrance">
+				<thead>
+				</thead>
+					<th>Circumstance</th>
+					<th>Encumbrance Rating</th>
+				<tbody>
+					<tr>
+						<td>Character wearing bulky robes or similar leg-obstructing clothes</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Character wearing chain armour</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Character wearing plate armour</td>
+						<td>Two Points</td>
+					</tr>
+					<tr>
+						<td>Character is carrying six (6) or more different items* overall</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Character is carrying eleven (11) or more different items* overall</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Character is carrying sixteen (16) or more different items* overall</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Character is carrying twenty-one (21) or more different items* overall</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Character is carrying an oversized item</td>
+						<td>Add One Point per Item</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Multiple small items of the same type (bolts, arrows, etc.) count as one item for this purpose. 
+			Worn clothing/armor/jewelry does not count for this encumbrance calculation. All weapons count as separate 
+			items. Very small single items do not count for encumbrance purposes. Oversized items are counted 
+			separately.</p>
+			
+			<p></strong>Oversized items include two handed weapons, any item that requires two hands to carry or is as 
+			tall as the carrying Character.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_MountEncumbrance">Mount Encumbrance</p>
+			<table class="table table-striped table-hover" id="TBL_MountEncumbrance">
+				<thead>
+				</thead>
+					<th>Circumstance</th>
+					<th>Encumbrance Rating</th>
+				<tbody>
+					<tr>
+						<td>For every person riding the animal</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>If the rider is Heavily Encumbered or greater</td>
+						<td>One Point</td>
+					</tr>
+					<tr>
+						<td>Animal is wearing barding</td>
+						<td>Two Points</td>
+					</tr>
+					<tr>
+						<td>Animal is pulling a vehicle</td>
+						<td>One Point per Axle</td>
+					</tr>
+					<tr>
+						<td>A teamster has packed the animal's load</td>
+						<td>Subtract One Point</td>
+					</tr>
+					<tr>
+						<td>Per fifteen (15) items the animal is carrying</td>
+						<td>Add One Point</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p class="h4" id="P_TerrainModifiers">Encumbrance Terrain Modifiers</p>
+			<table class="table table-striped table-hover" id="TBL_TerrainModifiers">
+				<thead>
+				</thead>
+					<th>Encumbrance Points</th>
+					<th>Encumbrance Level</th>
+					<th>Additional Cost for Terrain Checks</th>
+				<tbody>
+					<tr>
+						<td>0 - 1</td>
+						<td>Unencumbered</td>
+						<td>Zero</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Lightly Encumbered</td>
+						<td>One</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Heavily Encumbered</td>
+						<td>Two</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Severly Encumbered</td>
+						<td>Three</td>
+					</tr>
+					<tr>
+						<td>5 +</td>
+						<td>Over Encumbered</td>
+						<td>Four</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
