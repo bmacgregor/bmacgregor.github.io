@@ -12,6 +12,7 @@
 	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
 	
 	<script src="damage-calculator.js"></script>
+	<script src="table-setup.js"></script>
 </head>
 <body onload="setupPage()">
   <div class="container text-justify">
@@ -91,5 +92,20 @@
 	    <p id="test"></p>
 	  </div>
   </div>
+  
+  <script>
+  	var allBlunt = new Array();
+	var allCleaving = new Array();
+	var allPiercing = new Array();
+	var allSwung = new Array();
+		
+	function setupPage(){
+		updateLocations();
+		setupBlunt(); // beginning to build this array
+		setupCleaving();
+		setupPiercing();
+		setupSwung();
+	}
+  </script>
 </body>
 </html>
