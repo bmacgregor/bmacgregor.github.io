@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sorcery</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Sorcery</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_Mechanics">The Mechanics of Sorcery</a></li>
+					<li><a href="#P_SorceryPool">The Sorcery Pool</a></li>
+					<li><a href="#P_Taint">Taint</a></li>
+					<li><a href="#P_CombiningSorcerousEfforts">Combining Sorcerous Efforts</a></li>
+					<li><a href="#P_AffectingMultipleTargets">Affecting Multiple Targets</a></li>
+					
+					<!-- Sorcery : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Sorcery<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="sorcery.html">Sorcery</a></li>
+							<li class="divider"></li>
+							<li><a href="sorcerous-mysteries.html">Sorcerous Mysteries</a></li>
+							<li><a href="arcane-secrets.html">Arcane Secrets</a></li>
+							<li class="divider"></li>
+							<li><a href="duel-of-wills.html">Duel of Wills</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li class="active"><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Sorcery</p>
+			<p>Sorcery is not an academic, scholarly pursuit. Its practitioners don't theorize, engage in complicated 
+			experiments, conduct research into sorcery’s underlying principles, study ways to apply them to novel uses.</p>
+			
+			<p>The inner workings of sorcery are unknowable, and even the greatest sorcerers can only guess at why and how 
+			their invocations work. While sorcerers in <em>Blade</em> may or may not be erudite, bookish types, they are not 
+			scientists. After all, sorcery isn't a science; it's a strange, unknowable force of uncertain origin, an origin 
+			that is usually somehow transmundane. It isn't just another natural force, like gravity or magnetism. Instead, 
+			a degree of “outsideness” is always inherent to it.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">		
+			<p class="h4">Sorcery Overview</p>
+			<p>Sorcerers certainly have ideas where the power they manipulate derives from, but they can never be certain. 
+			In one setting, it may come from something between the stars, in another, it might be channelled from some 
+			eldritch and alien deity, or many other things. It is, however, never a beneficent or wholesome power, and is 
+			likely impersonal.</p>
+			
+			<p>Those beings that impart and grant sorcerous power always have an agenda of their own; an agenda that will 
+			often be unfathomable, especially if it is derived from contact with supernatural, godlike beings.</p>
+			
+			<p>This agenda is - at best - totally alien and entirely indifferent to human beings and their plight. At worst, 
+			it's inimical to humanity. The former might be true in cases where sorcery is perceived as a strange power from 
+			beyond the limits of this universe, the latter in cases where it is channelled from some sinister deity. In the 
+			common instance, where sorcery is derived from dealings with demonic gods, sorcerers are usually worshippers or 
+			cultists of such deities, or have formed pacts with them. This doesn't mean that such sorcerers actually have 
+			to be devout – for many, it will be a pact, where they further a demonic being’s agenda in return for receiving 
+			other-worldly powers.</p>
+			
+			<p>This brings us to the topic of how sorcery is learned. The fantasy trope of the apprenticeship to a sorcerer 
+			exists in <em>Blade</em>, but it's not the sole, and perhaps not the most common way of acquiring sorcerous 
+			knowledge. Alongside it always exists the possibility of approaching a sorcerous deity – provided such exists 
+			in the setting – and forging a pact with it to receive sorcerous knowledge in return for whatever such an 
+			unfathomable and unwholesome entity might require of a mere human. Only the most driven will head down such a 
+			path, and it is usually strength of will and intensity of personality that characterise a sorcerer in 
+			<em>Blade</em>, rather than intelligence and erudition.</p>
+			
+			<p>Ultimately, sorcery means always dealing with strange, alien, and inimical powers, whether personal, or 
+			detached. As it is no science, it rarely attracts practitioners who are in it for the intellectual challenge 
+			offered, though it sometimes attracts curious induviduals of a philosophical bent. Overwhelmingly, those 
+			attracted to sorcery are in it for sheer power. Much more often than scientists, sorcerers will be priests, 
+			fanatical, sacrificial dagger wielding cultists of a god of darkness, or calculating schemers trying to get the 
+			most out of their sinister patron for the least amount of their own involvement, perhaps even playing the 
+			dangerous game of playing one patron against another. Whomever they are, however, they are never detached, 
+			ivory-tower scholars in pointy hats.</p>
+			
+			<p>Because of this, sorcery in <em>Blade</em> is the manipulation of ultramundane powers that are at best alien, 
+			and at worst, hostile towards humanity. In working with sorcery, one’s body and soul are exposed to these 
+			inimical powers.</p>
+			
+			<p>The wise sorcerer will refrain from overreaching himself, and take good care not to open his soul’s portals 
+			too far to the influences from beyond, lest he become tainted with them.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Mechanics">The Mechanics of Sorcery</p>
+			<p>Sorcery rests on three legs. First, there are the six Lesser Mysteries, of which the occasional hedge 
+			wizard, shaman, or cultist may know one or two. Then there are the two Greater Mysteries; powerful magics that 
+			are the sole domain of dedicated sorcerers. Finally, there are the Arcane Secrets - mythical feats of great 
+			magic - the stuff of sorcerous legends known to only the very greatest of sorcerers.</p>
+			
+			<p>How Arcane Secrets are learned is a special case, explained later, but Lesser and Greater Mysteries are 
+			learned in a fashion similar to weapon Proficiencies. At Character creation, ratings in Mysteries are bought 
+			with points from the Proficiency priority. As with Attributes and Skills, the maximum rating that can be 
+			attained in any Mystery is 8, with a rating of 9 allowed in a single Mystery, purchased through the course of 
+			play.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SorceryPool">The Sorcery Pool</p>
+			<p>The Mystery's proficiency score makes up one half of the Sorcery Pool. The other half is Power, the 
+			sorcerer’s innate ability to create magic.</p>
+			
+			<p><strong>Power = (Sagacity + Tenacity + Brawn + Bonus) / 3</strong></p>
+			
+			<p>The Bonus is equal to the number of Mysteries the sorcerer is proficient in, but it can <em>never be higher 
+			than the rating of the Mystery she is most proficient in</em>.</p>
+			
+			<p>The total Sorcery Pool available for any sorcerous action is equal to Power + Mystery Proficiency. Sorcery 
+			Pool dice are split into two parts, with a minimum of 1 die in each. The first of these parts is to work the 
+			sorcery; to make the Casting Check. The second part is used to contain the eldritch powers invoked; to make a 
+			Containment Check.</p>
+			
+			<p>The base Target Numbers of these Checks vary with the Sorcery Priority the Character is built on.</p>
+			
+			<ul>
+				<li>Mysteriarch (A Priority) : Target Number 6</li>
+				<li>Sorcerer (B Priority) : Target Number 7</li>
+				<li>Dabbler (C Priority) : Target Number 8</li>								
+			</ul>
+			
+			<p>First, the Mystery (or spell) is cast. To achieve the desired effect, Sorcery Pool dice are checked against 
+			the appropriate Target Number, based on the Character's Priority level. Depending on the sorcery, this Casting 
+			Check may be an Opposed one; for specifics, see the various Mysteries and Arcane Secrets. One Success will 
+			usually be sufficient to achieve some kind of effect, but more may be required for the desired magnitude of 
+			effect. Details on this can also be found within the description of the various Mysteries and Arcane Secrets.</p>
+			
+			<p>Once the Check for casting the spell is made, the remaining, allotted dice in the Sorcery Pool are used to 
+			<strong>contain the effect</strong>. This Containment Check is made against a Target Number of 7, and requires 
+			<em>at least as many Successes as on the Casting Check to fully contain the sorcerous energies</em>. For every 
+			Success short, the sorcerer accumulates one point of Taint. If the Containment Check does not yield at least 
+			half as many Successes as the Casting Check, the effect is cast uncontained. In such cases, the sorcery takes 
+			effect as intended, but also turns against the sorcerer. This takes the form of a Complication to be affected by 
+			the Game Master at the earliest opportunity. Often, this will be a side-effect of the sorcery turning against 
+			the sorcerer or against someone he does not wish ensorcelled, but it can also take the form of entirely mundane 
+			unpleasantries.</p>
+			
+			<p>Optionally, any uncontained effect (ex. a Containment Check that yields less than half the Successes of the 
+			Casting Check) can also cause the sorcerer physical damage from eldritch energies turning against herself. If 
+			this rule is used, inflict a level 1 wound from the Generic Damage Table on the sorcerer every time one of her 
+			effects is uncontained, or a level 2 wound if the Containment Check doesn’t yield a single Success.</p>
+			
+			<p>Depending on the setting, this may manifest as withering, bleeding, scorching, or another form of generic 
+			damage that cannot be negated by use of the <em>It’s Only a Scratch</em> mechanic.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_Taint">Taint</p>
+			<p>In working magic, the sorcerer opens himself up to alien, transmundane powers. If he isn't careful, these 
+			powers will leave their mark on him. This metaphysical stench is called Taint.</p>
+			
+			<p>Uncontained sorcery inflicts Taint on the sorcerer; one point for every corresponding uncontained success. 
+			Taint interferes with the working of further sorcery, and imparts an aura of sinister otherworldliness to the 
+			Character which is disturbing to man and beast alike. Depending on the severity of a Character’s current 
+			Taint, dice are subtracted from her Sorcery Pool, and additional Successes are required on all Checks for 
+			non-hostile interaction with both beast and men, as per the Taint Effect Table.</p>
+			
+			<br/>
+			
+			<p class="h4" id="P_TaintEffects">Taint Effects</p>
+			<table class="table table-striped table-hover" id="TBL_TaintEffects">
+				<thead>
+					<th>Taint</th>
+					<th>Sorcery Pool Penalty</th>
+					<th>Interaction</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>+ 0 Successes</td>
+					</tr>
+					<tr>
+						<td>2 - 3</td>
+						<td>2</td>
+						<td>+ 1 Success</td>
+					</tr>
+					<tr>
+						<td>4 - 6</td>
+						<td>3</td>
+						<td>+ 2 Successes</td>
+					</tr>
+					<tr>
+						<td>7 - 10</td>
+						<td>4</td>
+						<td>+ 3 Successes</td>
+					</tr>
+					<tr>
+						<td>11 - 15</td>
+						<td>5</td>
+						<td>+ 4 Successes</td>
+					</tr>
+					<tr>
+						<td>16 - 21</td>
+						<td>6</td>
+						<td>+ 5 Successes</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>The additional Successes required for successful interaction do not apply to interaction with sorcerous 
+			creatures and animals that have a reputation in the setting as being sorcerous themselves (ex. cats, ravens, 
+			toads, etc.), but does apply to interaction with other sorcerers. Taint fades over time. Every 12 hours, at 
+			concrete, setting-specific times (ex. moonrise, sunset, midnight, etc.), Taint is reduced by 1, provided no 
+			new Taint was acquired during the last 12 hours. Taint can also be reduced in various ways:</p>
+			
+			<p>Characters with a faith-related Passion Attribute can attempt to reduce their current Taint by praying and 
+			offering up a sacrifice at an appropriately consecrated locale. After the sacrifice, the faith-related Passion 
+			is checked against a Target Number of 7, with the number of Successes deducted from the current Taint rating. 
+			Only a single sacrifice is possible per week.</p>
+			
+			<p>Alternatively, the sorcerer can conduct a ritual of purification, which might also take the form of some 
+			nefarious rite in the case of sorcerers invoking some supernatural patron for their power. Such a ritual 
+			requires about 12 hours, during which nothing else can be done, and will - depending on the setting and the 
+			culture - involve chanting, meditation, drug-induced trances, and the like. After the ritual is conducted, the 
+			sorcerer checks Power against a Target Number of 7, with every Success reducing his current Taint by 1 point.</p>
+			
+			<p>Finally, Taint can also reduce itself in a backlash. For this to occur the sorcerer’s current Taint must at 
+			least be equal to her Heart, and she must either acquire at least another 3 points of Taint at once, or cast 
+			an uncontained sorcery (ex. Containment Successes equalling less than half of her Casting Successes). In such a 
+			case, the Taint discharges itself, usually in the guise of a curse (see the Cursing Mystery). This discharge 
+			cuts the sorcerer’s Taint rating in half (again, round up fractions of 0.50 and above), but the sorcerer 
+			becomes victim of a curse with a curse rating equal to the number of Taint points that were lost in the 
+			discharge.</p>
+			
+			<p>In some settings it might be more fitting to have the Taint backlash assume the form of some temporary 
+			physical affliction like a twisted limb, a bulging eye, scales instead of skin, or a third eye popping up in 
+			some conspicuous area of the body, or anything else that fits the flavour of sorcery in the setting. Such an 
+			affliction will have the game effects of requiring 1 or more additional Successes on one or more broad types 
+			of action (social interaction, physical exertion, mental exercises, etc). Each penalty of 1 imparted will 
+			reduce the curse rating from the Taint backlash by 1. No more than half the original curse rating may be  
+			converted.</p>
+			
+			<p>These afflictions last until the curse from the Taint discharge has run its course and fades. In some 
+			settings, it might be desirable to have some minor and non-debilitating trace of the afflictions remain, like a 
+			scar from a wound.</p>
+			
+			<p>If the group feels that even more gruesome additional consequences are appropriate for their setting, they 
+			might decide that any Taint backlash of a certain magnitude immediately deducts one point from the sorcerer’s 
+			Heart Attribute, only to be regained through normal Character development mechanics.</p>
+			
+			<p>Finally, and independent of any additional Taint mechanics, if the optional rule about insufficient 
+			containment causing damage is used, any damage suffered from an uncontained sorcery that also causes a Taint 
+			backlash is increased by 1 level (to a theoretical maximum of 3).</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_CombiningSorcerousEfforts">Combining Sorcerous Efforts</p>
+			<p>In <em>Blade</em>, sorcerers are a rare commodity, most especially those knowing more than one or two 
+			Lesser Mysteries. Thus, there will seldom be a situation when several sorcerers combine their arcane powers. 
+			When they do, it is an absolute necessity for the combination of such efforts that the cooperating sorcerers 
+			belong to the same cult, coven, or sorcerous order. >Merely practicing sorcery of the same general cultural 
+			tradition is not enough. Actual membership in some kind of shared sorcerous brotherhood is indispensable. If 
+			this prerequisite is met - while it is not necessary that every sorcerer partaking in this pooling of power 
+			know the particular Mystery being used - it is beneficial.</p>
+			
+			<p>The sorcerer with the highest rating in the Mystery being attempted (not the sorcerer with the largest 
+			Sorcery Pool), heads the effort, and his pool is the one modified. Dice from each participating sorcerer are 
+			cumulatively added to his Sorcery Pool as follows:</p>
+			
+			<ul>
+				<li>+1 to the caster’s pool if the contributor knows a Lesser Mystery</li>
+				<li>+1 to the caster’s pool if the contributor knows more than three Lesser Mysteries</li>
+				<li>+1 to the caster’s pool if the contributor knows a Greater Mystery</li>
+				<li>+1 to the caster’s pool if the contributor knows two Greater Mysteries</li>
+				<li>+1 to the caster’s pool if the contributor knows any Arcane Secrets</li>
+				<li>-1 to the caster’s pool if a Lesser Mystery is being cast that is unknown to the contributor</li>
+				<li>-2 to the caster’s pool if a Greater Mystery or Arcane Secret are being cast that is unknown to the 
+				contributor</li>
+			</ul>
+			
+			<p>The downside of such combined sorcerous efforts is that its consequences are not merely confined to the 
+			primary caster, but afflict every participant in full. This includes both Taint and any other negative effects 
+			resulting from insufficiently successful Containment Checks – they afflict every participating sorcerer in 
+			their entirety.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_AffectingMultipleTargets">Affecting Multiple Targets</p>
+			<p>Sorcerers can affect more than one victim at once with a single application of the Cursing, Enslavement, and 
+			Mending Mysteries. The targets affected must all constitute a group, either in the sense of their physical 
+			proximity (with no non-members of the group interspersed between them), or else in another, clearly delineated 
+			sense. For example, a sorcerer could affect all present redheads, or eunuchs, or priests, even if those are 
+			mixed into a larger group.</p>
+			
+			<p>Casting and Containment Checks are made as usual, but 1 Casting Success is discarded for every target after 
+			the first. The remaining Casting Successes are Opposed as by the mechanics for the Mystery used, but only once, 
+			by the single target with the best chances to succeed at resisting the Mystery. The outcome of this single 
+			Check determines whether the sorcery overcomes the resistance of all targets; if it fails, all targets are 
+			affected, if it is successful, no target is affected.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_AffectMultipleTargets">
+				<p><em><strong>Example</strong>: : A sorcerer uses Pain against three guardsmen charging him. He achieves 6 
+				Casting Successes, of which 2 are discarded for the two additional targets. The guardsmen with the best TY 
+				Checks this Attribute to oppose the 4 Casting Successes. If he achieves 4 or more Successes, no guardsman 
+				is affected; if he achieves less than 4 Successes, all three guardsmen suffer Pain 12.</p>
+				
+				<p>The Witchfire Mystery can also be used against several targets at once, with the same mechanic of 
+				discarding Casting Successes for additional targets. The reduced number of Casting Successes are used both 
+				for damage calculation and for the attack rolls. Unlike with the other Mysteries, Checks to hit and avoid 
+				the Witchfire attack are made individually, for every target and by every target.</em></p>
+			</div>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
