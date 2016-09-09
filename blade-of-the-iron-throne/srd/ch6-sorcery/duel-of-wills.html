@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blade SRD Duel of Wills</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Duel of Wills</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_SorcerousManeuvers">Sorcerous Maneuvers</a></li>
+					
+					<!-- Offensive Maneuvers : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Offensive Maneuvers<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_ATK_Creep">Creep</a></li>
+							<li><a href="#P_ATK_Grind">Grind</a></li>
+							<li><a href="#P_ATK_Overpower">Overpower</a></li>
+							<li><a href="#P_ATK_Strike">Strike</a></li>
+						</ul>
+					</li>
+					
+					<!-- Defensive Maneuvers : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Defensive Maneuvers<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_DEF_Counterstroke">Counterstroke</a></li>
+							<li><a href="#P_DEF_Deflect">Deflect</a></li>
+							<li><a href="#P_DEF_Endure">Endure</a></li>
+							<li><a href="#P_DEF_Evade">Evade</a></li>
+						</ul>
+					</li>
+					
+					<!-- Sorcery : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Sorcery<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sorcery.html">Sorcery</a></li>
+							<li class="divider"></li>
+							<li><a href="sorcerous-mysteries.html">Sorcerous Mysteries</a></li>
+							<li><a href="arcane-secrets.html">Arcane Secrets</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="duel-of-wills.html">Duel of Wills</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li class="active"><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">The Duel of Wills</p>
+			<p>When two sorcerers battle, they don’t usually slug it out, Mystery against Mystery (though they may, of 
+			course). Instead, they engage in a Duel of Wills. The Duel of Wills matches Sorcery Pool against Sorcery Pool, 
+			similar to how melee combat matches Melee Pool against Melee Pool, and it has a similar structure of Exchanges 
+			and Rounds.</p>
+			
+			<p>First of all, a Duel of Wills requires two willing participants. It's not possible for one sorcerer to 
+			engage another in it against his will, and because of this, there is no possibility of surprise. Each sorcerer 
+			uses a Spell Proficiency of his choice (usually his best) and announces this choice. There is no need for the 
+			Sorcery Pools to derive from the same Mystery, and no need to stick to the same Mystery every Round. Penalties 
+			from Taint and other sources fully apply to the Sorcery Pools during a Duel of Wills.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Duel of Wills Overview</p>
+			<p>One sorcerer is determined as the initial aggressor and one as defender. In some cases, these roles might be 
+			obvious from the circumstances under which the Duel is entered, and in others, the participants might be in 
+			agreement about who is the initial aggressor. If neither is the case, the roles are assigned as desired by the 
+			sorcerer with the higher Sorcerous Priority, the higher Sorcery Pool if that is a tie, the higher Power 
+			Attribute if this is a tie as well, and the higher Occultism Skill if tied again.</p>
+			
+			<p>The aggressor announces a sorcerous Offensive Maneuver and a number of dice from her Sorcery Pool assigned 
+			to it, to which the defender reacts to by declaring a sorcerous Defensive Maneuver and assigning dice. Both 
+			then pay any necessary Activation Costs for their chosen Maneuvers from their Sorcery Pools, roll their 
+			assigned Maneuvers against their normal Casting Target Numbers for the Mystery used (from 6 to 8), applying any 
+			modifiers from the Maneuver chosen, in an Opposed Check.</p>
+			
+			<p>If the aggressor is victorious, she retains initiative as aggressor, and there are additional effects as per 
+			the Maneuver chosen. If the Defender is victorious, she may assume the part of the aggressor and possibly also 
+			invoke additional effects as per her chosen Maneuver. In case of a tie, the aggressor retains this role.</p>
+			
+			<p>If the first Exchange does not result in an immediate decision, a second Exchange follows, for which the 
+			remainder of the Sorcery Pool dice can be used, as per the melee rules. If this Exchange does still not yield 
+			a decision, the Sorcery Pools refresh, and a new Round of Exchanges begin.</p>
+			
+			<p>The eventual loser of the duel is thrown to the ground under the onslaught of his opponent’s sorcerous 
+			power, where he lies stunned for the next Combat Round (all Pools at 0 dice). In addition, his sorcerous 
+			defences have been invaded and battered down by his opponent: For the remainder of the scene, he is at a +2 
+			Target Number penalty to resist the victor’s sorceries, and is at +2 Casting Target Number penalty to affect 
+			the victor with his own sorcery.</p>
+			
+			<p>Finally, he acquires 1 point of Taint. Depending on the actual Offensive Maneuver by which he was overcome, 
+			the loser may also suffer physical damage on the Generic Damage Table. Armour Value never averts such injuries, 
+			but Brawn soaks up some of it as normal.</p>
+			
+			<p>While crippling injuries are possible from a Duel of Wills, outright annihilation is rare. Wound Levels 1 
+			through 4 are attained normally, by a result (Impact Rating – half Brawn) of 1 to 4 respectively. Wound Level 5 
+			does however require a result of 6+, and Wound Level 6 of 8+.</p>
+			
+			<p>Under certain circumstances, a group of sorcerers may gang up on a single sorcerer, pooling their 
+			ultramundane strength to best him. The circumstances under which this is possible and the mechanical aspects 
+			of combining efforts are exactly as with Combining Sorcerous Efforts, as are the consequences of defeat (ex. 
+			they are experienced by all to their full extent).</p>
+			
+			<p>The Duel of Wills is then handled normally, with the leader of each group of combatants making all decisions 
+			and Checks. The only exception is that the Mystery used must remain the same throughout the contest. The 
+			default physical aspect of a Duel of Wills is the two sorcerers staring at each other intently, maybe breaking 
+			into sweat from the strain and swaying under the onslaught of the opponent’s will. For some settings it might 
+			however be appropriate to be a bit gaudier. Lightning flickering between the sorcerers, gusts of wind tearing 
+			at them, tongues of flame licking at them, vortexes of barely glimpsed demonic entities wavering between them 
+			are only a small portion of the possibilities.</p>
+			
+			<p>Lastly, Duel of Will may, at the GM's discretion, be used between sorcerers and certain kinds of incorporeal 
+			creatures, whom the Game Master would have to assign the equivalent of a Sorcery Pool. It can also be used for 
+			battles between hostile beings they encounter while using the Scrying Mystery, though the latter under these 
+			circumstances is at a decided Target Number advantage, being as they are on their home ground.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_SorcerousManeuvers">Sorcerous Maneuvers</p>
+			<p>All Maneuvers have an Activation Cost that must be paid from the Sorcery Pool to utilize them. Some 
+			Maneuvers are easier to use with Sorcery Pools based on certain Mysteries. Any such Mystery is listed as 
+			“Favoured” with the Maneuver. <strong>Activation Costs are 2 dice less if the Sorcery Pool used is based on a 
+			favoured Mystery, though never less than 0 dice, with the sole exception of the Endure defense, which may add 
+			+2 dice to a Sorcery Pool if used with the Mending Mystery</strong>. Minimum Activation Costs are noted with 
+			the Maneuvers.</p>
+			
+			<hr/>
+			
+			<p class="h3" id="P_OffensiveManeuvers">Offensive Maneuvers</p>
+			<p class="h4" id="P_ATK_Creep">Creep</p>
+			<p><em>Activation: 2 (minimum 0)</em></p>
+			<p><em>Favoured: Necromancy, Prophecy, Scrying</em></p>
+			
+			<p>Creep is an attempt to find a weak spot in the opponent’s psychic defences and to get an assault through. In 
+			effect, this is a feint. The aggressor first declares another Offensive Maneuver, and only announces Creep once 
+			the defender has committed dice to a Defensive Maneuver. The aggressor may then add dice from his uncommitted 
+			Sorcery Pool to the already committed dice to the attack at the additional Activation Cost of 1 die per die 
+			added. The remainder of the offence is then resolved as a Strike Maneuver.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Grind">Grind</p>
+			<p><em>Activation: 2 (minimum 0)</em></p>
+			<p><em>Favoured: Cursing</em></p>
+			
+			<p>Grind is for keeping up a steady assault to wear down an opponent’s defences. Assigned Sorcery Pool dice are 
+			checked against the Casting Target Number, and Opposed by enemy’s chosen defence. If Grind is victorious, half 
+			of the Quality of Success is added to the victor’s Sorcery Pool for the following Exchange, up to a maximum 
+			bonus dice equal to the number of dice in her Sorcery Pool at the beginning of the following Exchange. Grind is 
+			no way to win a Duel of Wills in itself; some other Offensive Maneuver is needed to finally deliver the 
+			decisive blow.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Overpower">Overpower</p>
+			<p><em>Activation: 6 (minimum 4)</em></p>
+			<p><em>Favoured: Enslavement, Goety, Witchfire</em></p>
+			
+			<p>Overpower is the tactic used by a sorcerer sure of his own superiority; it is a brutal onslaught of eldritch 
+			power, attempting to outright shatter the opponent’s defence. The assigned Sorcery Pool dice are checked 
+			against the Casting Target Number, and Opposed by the enemy’s assigned defence dice. If the defender wins or 
+			ties, he may immediately assume the part of aggressor.</p>
+			
+			<p>However, if the aggressor is victorious, he has broken through the opponent’s defences, and inflicts damage 
+			of an Impact Rating equal to the total number of his Successes, not just those surpassing the defence 
+			Successes.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Strike">Strike</p>
+			<p><em>Activation: 0 (minimum 0)</em></p>
+			
+			<p>Strike is the standard action of attacking with one’s sorcerous power. Assigned dice are checked against the 
+			Casting Target Number, and are opposed by enemy’s chosen defence. If victorious, the victor may retain the 
+			initiative, or may choose to inflict damage of an Impact Rating equal to the Quality of Success. If this Impact 
+			Rating fails to inflict at least a level 1 wound, the attacker overestimated the power of his strike. The Duel 
+			of Wills is still undecided, and the defender assumes the role of the aggressor.</p>
+			
+			<hr/>
+			
+			<p class="h3" id="P_DefensiveManeuvers">Defensive Maneuvers</p>
+			<p class="h4" id="P_DEF_Counterstroke">Counterstroke</p>
+			<p><em>Activation: 3 (minimum 1)</em></p>
+			<p><em>Favoured: Cursing</em></p>
+			
+			<p>The finicky and difficult tactic of turning the opponent’s power against herself. Defence dice are assigned 
+			and checked as normal, with a tie having the usual result of the aggressor retaining this role.</p>
+			
+			<p>If the defender surpasses the attacker’s number of Successes, she immediately becomes the aggressor and 
+			attacks with a Strike on the very next Exchange (no choice here). She can assign as many dice from her Sorcery 
+			Pool as she wants to this Strike, and will have additional bonus dice equal to the previous’ aggressor’s number 
+			of Successes on the attack successfully defended against.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Deflect">Deflect</p>
+			<p><em>Activation: 0 (minimum 0)</em></p>
+			
+			<p>The standard tactic of deflecting the opponent’s attack. If the number of Successes from the assigned 
+			Sorcery Pool checked against the Casting Target Number equals the aggressor’s attack Successes, the attack was 
+			deflected. If it exceeds them, the defender may assume the mantle of aggressor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Endure">Endure</p>
+			<p><em>Activation: 0 (minimum -2)</em></p>
+			<p><em>Favoured: Mending (including Pain), Necromancy</em></p>
+			
+			<p>The tactic of hunkering down and taking everything the opponent throws at you in the hope that he will wear 
+			himself out. If the defence is successful, no matter to what degree, the defender may not assume the role of 
+			aggressor (see the sole exception below.) However, the aggressor loses dice from his Sorcery Pool equal to half 
+			the number of Successes on his attack for his next Exchange; the successful defender loses half as many dice as 
+			the aggressor, though always less than him (ex. if the aggressor loses 1 die, the defender loses none).</p>
+			
+			<p>If this results in the next Exchange starting with the current aggressor’s Sorcery Pool depleted, and the 
+			defender still retaining dice in his Sorcery Pool, the latter may assume the part of aggressor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Evade">Evade</p>
+			<p><em>Activation: 0 (minimum 0)</em></p>
+			<p><em>Favoured: Prophecy</em></p>
+			
+			<p>The tactic of getting the hell out of the fight, evading is only possible if the sorcerer that wants to 
+			utilize it didn't use an Offensive Maneuver in the immediately preceding Exchange; neither can this Maneuver be 
+			used on a confrontation’s very first Exchange. The assigned defence dice are checked against the Casting Target 
+			Number with a –2 bonus. If they tie the attack dice’s Successes, the Duel of Will is ended. It does, however, 
+			entail acknowledgement of defeat and inferiority.</p>
+			
+			<p>For the remainder of the scene, the sorcerer ending a Duel of Wits by means of Evade suffers a Casting 
+			Target Number penalty of +1 to affect his opponent with any sorcery, and the opponent affects him with a 
+			Casting Target number bonus of –1.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+</body>
+
+</html>
