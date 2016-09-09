@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Limelights</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Limelights</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li class="active"><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Limelight and the Combat Round</p>
+			<p>The basic temporal unit any Combat Scene in <em>Blade</em> is the Combat Round. During the Combat Round, 
+			every combatant has dice to spend on actions equal to his Melee Pool. Players will have to be judicious about 
+			what activities they spend their Melee Pool dice on, and all associated costs to their Melee Pool. A 
+			subdivision of the Combat Round is the Exchange, with every Combat Round consisting of two.</p>
+			
+			<p>The Exchange is the shortest division of a Combat Scene, which can consist of any number of Combat Rounds, 
+			each made up of a pair of Exchanges. In <em>Blade</em>, combat isn't handled by going around the table from 
+			Player to Player in order every single Round, let alone Exchange. Instead, every Player goes through a number 
+			of Rounds before it is the next Player’s turn. This collection of unbroken Combat Rounds is called the 
+			<em>Limelight</em>.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4" id="P_Limelight">Limelight Overview</p>
+			<p>Limelight harks back to the way swashbuckling fights were once portrayed in movies, when the camera focused 
+			on one combatant and his enemies for an intense set of actions and then, at a suitably dramatic moment, cut 
+			to another exciting moment within the scene. This cut to another moment, sometimes pulling the viewer back in 
+			time if the scene’s new focus took place prior to the moment cut from. This tried and true dramatic way of 
+			portraying fights is reborn in <em>Blade</em>.</p>
+			
+			<p>There are no firm rules as to how many Combat Rounds a Limelight has, only guidelines when to end it and 
+			move to another Player’s Limelight. Generally speaking, a Limelight is terminated at the end of its first 
+			Combat Round in which something significant happens. We call this a <strong>cliff-hanger</strong>. A 
+			cliff-hanger can be a wound being inflicted, a combatant being killed, a weapon being lost or knocked away, 
+			a change in how the fight is being waged (for instance, opponents switching from Melee combat to a grappling 
+			match), or any other noticeable change in the flow of the fight. Once something like this happens, the Game 
+			Master calls an end to one Limelight and switches to another Player’s Limelight.</p>
+			
+			<p>The order in which Players go through their Limelight’s is largely determined at the outset of the fight, 
+			and then remains fixed, unless changed by Player action, which is described later in this section.</p>
+			
+			<p>Under some circumstances - for instance when one Character out of several is under surprise attack - it’s 
+			obvious whose Limelight is handled first, but in most cases it isn’t. If circumstances don’t dictate the order 
+			of Limelight’s, the GM taps Players in ascending order of their Character's Cunning; lower Cunning levels go 
+			first and high Cunning levels go last, with ties broken by Reflex, or by the highest Melee Proficiency if 
+			still tied. However, any Player whose Character’s Cunning is higher than the Cunning of the Character being 
+			called up by the Game Master may opt to step in before the round begins and have her Character’s Limelight 
+			resolved earlier. Because of this, Characters with high Cunning have control of the initial Limelight order.</p>
+			
+			<p>Once every Player at the table has had a Limelight (called a <em>Round</em> of Limelights) the order of 
+			Limelights is established, and this order remains unchanged for the entire combat – unless a Player steps in to 
+			change this sequence.</p>
+			
+			<br/>
+			
+			<p class="h4">A Word on Time</p>
+			<p>Neither Exchanges nor Combat Rounds take a fixed amount of time. Depending on circumstances, a Round may 
+			easily be as little as one second and as much as fifteen seconds, or even more; as long as a Character is going 
+			through his Limelight, there is no telling how much time has actually passed. However, once a Round of 
+			Limelights has been completed, time snaps back, and the Characters all realign to the same point in time. Thus, 
+			the Player who - in his Limelight - played through five Combat Rounds is at the same point in time as the 
+			Player who played through just two.</p>
+			
+			<p><em>At any time</em> between one Player’s Limelight completion but before the next Player’s Limelight 
+			commences, <em>any Player who has not yet had her Limelight moment within the round</em> may step in and 
+			Steal the Limelight, having her Limelight conducted immediately. Doing so requires the payment of one Drama 
+			point, and the sole caution that the Player who Steals the Limelight must not yet have had her Limelight moment 
+			during the current Round of Limelights.</p>
+			
+			<p>By Stealing the Limelight, the sequence of Limelights is changed – and remains changed. The Player who has 
+			spent the Drama point has thereby elevated herself from her old place in the sequence to a new one, and the 
+			order of Limelights created by this act becomes the new order of Limelights for the remainder of the combat – 
+			or until someone else Steals the Limelight yet again. Stealing the Limelight can be advantageous in many 
+			situations, and is often done to enable one Character to rush to the aid of another.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_Limelights">
+				<p><em><strong>Example</strong>: Three characters, Rufo, Karg, and Otho, are each fighting an enemy in 
+				this order during the current round of Limelights. When the second Round of Limelights begins, all three 
+				are engaged in melee combat. Having his Limelight first, Rufo is wounded, allowing the GM to cut to Karg’s 
+				Limelight.</p>
+				
+				<p>Sometime into Karg’s Limelight, he and his opponent go from melee into a grappling ground fight, again 
+				a useful juncture to cut to Otho, who during his Limelight dispatches his opponent and ends his 
+				own Limelight. A new Round of Limelights begins, with Rufo going first – but as Rufo has just been wounded, 
+				there is a danger of him being killed. Otho’s Player decides to spend a Drama point to Steal the Limelight. 
+				Otho, now going first and being unengaged, has gained a chance to rush to Rufo’s side and save his 
+				life.</em></p>
+			</div>
+			
+			<br/>
+			
+			<p>In quite a few fights, not all Characters will actually be Melee combatants, or combatants at all, and their 
+			Limelights work a bit differently. While their place in the sequence of Limelights is determined normally, 
+			instead of fighting, they use their Limelight to do one relevant thing - not <em>preparing</em> for something 
+			relevant, but doing it, all the way. This relevant action could be a lot of things. Often, it will be firing a 
+			missile (and yes, even cocking a heavy crossbow, loading and then discharging it are accomplished within the 
+			space of a single Limelight) or casting a spell, but it might be picking a lock, breaking down a door, lighting 
+			a fire, untethering the group’s horses – anything really.</p>
+			
+			<p>The sole constraint is that the action should be one that could conceivably be accomplished within the 
+			space of thirty seconds. So, all sorcery and missile attacks work alike in melee situations. You can use your 
+			pool, whether Archery or Sorcery Pool, once, <strong>and only once</strong> per Limelight. That said, there is 
+			nothing to prevent a sorcerer from beginning a Limelight using his Melee Pool, and then switching over to a 
+			sorcerous action and using his Sorcery Pool. This would be governed by exactly the same mechanics as someone 
+			switching over from using his Melee Pool to using his Archery Pool. Note that he may do so only at the 
+			beginning of a round’s second Exchange, with an upfront Activation Cost equaling the amount of Melee Pool 
+			points spent by him during the first Exchange. This represents the rigors of invoking sorcery in the middle of 
+			a hectic melee.</p>
+			
+			<p>NPCs, even the most important ones, do not have a Limelight of their own. An NPC’s opportunity to act 
+			arrives when the Character with whom she is locked in some kind of struggle or other interaction has her own 
+			Limelight. If this Character moves to a new place within the Order of Limelights, the NPC moves with hrt. In 
+			those cases, where NPCs not currently in some form of contest with a Character try to accomplish something 
+			entirely on their own and unopposed by a Character (e.g. breaking down a door), the Game Master should 
+			adjudicate this action with common sense and announce its progress or completion as seems right.</p>
+			
+			<p>In those very rare cases when timing should be more important, such an NPC can be given a place within the 
+			Order of Limelights of their own. However, this is only possible for as long as this NPC does not interact with 
+			a Character; the moment they start interacting with a Character (ex. having broken down the door, the NPC 
+			charges a Character), they loses their place within the Order of Limelights, and commence acting during the 
+			Characters Limelight.</p>
+			
+			<p>All NPCs must be assigned to a given Character’s Limelight at the beginning of that Limelight, with all 
+			Players being informed of any NPC attached to their Character’s Limelight, whether the Character would be aware 
+			of the presence of the NPC or not. An NPC who was not assigned to a Character’s Limelight cannot interact with 
+			that Character during this Limelight.</p>
+			
+			<p>In addition, an NPC can only be assigned to one Characters Limelight during any given Round of Limelights; 
+			should she fail to act on this Limelight, she cannot be reassigned to another Limelight later taking place 
+			during the current Round of Limelights.</p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
