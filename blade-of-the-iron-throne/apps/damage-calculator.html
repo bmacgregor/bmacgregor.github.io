@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Damage Calculator</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+	
+	<script src="damage-calculator.js"></script>
+</head>
+<body onload="setupPage()">
+  <div class="container text-justify">
+    <div class="panel-body">
+	    <span>Select Damage Type : </span>
+	    <select id="damageType" onchange="updateLocations()">
+		    <option value="blunt">Blunt</option>
+		    <option value="cleaving">Cleaving</option>
+		    <option value="piercing">Piercing</option>
+		    <option value="swung">Swung Piercing</option>
+	    </select>
+	
+	    <br/>
+	
+	    <span>Select Damage Area : </span>
+	    <select id="damageArea"></select>
+	
+	    <br/>
+	
+	    <span>Select Damage Level : </span>
+	    <select id="damageLevel">
+		    <option value="level_1" selected="selected">1</option>
+		    <option value="level_2">2</option>
+		    <option value="level_3">3</option>
+		    <option value="level_4">4</option>
+		    <option value="level_5">5</option>
+		    <option value="level_6">6</option>
+	    </select>
+	
+	    <br/>
+	
+    	<span>d6 Roll : </span>
+	    <select id="d6Roll">
+		    <option value="d6_1" selected="selected">1</option>
+		    <option value="d6_2">2</option>
+		    <option value="d6_3">3</option>
+		    <option value="d6_4">4</option>
+		    <option value="d6_5">5</option>
+		    <option value="d6_6">6</option>
+	    </select>
+	
+	    <br/>
+	
+	    <span>Opponent is Male?</span>
+	    <input type="checkbox" id="chb_gender" checked="checked">
+	
+	    <input type="button" onclick="updateDamage()" value="Get Damage">
+	
+	    <hr/>
+	
+	    <table class="table table-bordered table-responsive">
+		    <thead>
+			    <tr>
+				    <th>Shock</th>
+				    <th>Pain</th>
+				    <th>Blood Loss</th>
+				    <th>Knockdown</th>
+				    <th>Knockout</th>
+			    </tr>
+		    </thead>
+		    <tbody>
+			    <tr>
+				    <td id="Shock"> </td>
+				    <td id="Pain"> </td>
+				    <td id="BloodLoss"> </td>
+				    <td id="Knockdown"> </td>
+				    <td id="Knockout"> </td>
+			    </tr>
+		    </tbody>
+	    </table>
+	
+	    <br/>
+	
+	    <p id="Location"><strong>Location: </strong></p>
+	    <p id="Desc"><strong>Description: </strong></p>
+	
+	    <p id="test"></p>
+	  </div>
+  </div>
+</body>
+</html>
