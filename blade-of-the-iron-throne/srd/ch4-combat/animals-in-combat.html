@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animals in Combat</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Animals in Combat</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<li><a href="#P_LargeAnimals">Large Animals</a></li>
+					<li><a href="#P_HugeAnimals">Huge Animals</a></li>
+					<li><a href="#P_FightingAnimals">Fighting Animals</a></li>
+					
+					<!-- Animal Maneuvers : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Animal Maneuvers<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_ATK_Bash">Bash</a></li>
+							<li><a href="#P_ATK_Bite">Bite</a></li>
+							<li><a href="#P_ATK_Claw">Claw</a></li>
+							<li><a href="#P_ATK_Constricting">Constricting</a></li>
+							<li><a href="#P_ATK_EvasiveAttack">Evasive Attack</a></li>
+							<li><a href="#P_ATK_Grapple">Grapple</a></li>
+							<li><a href="#P_ATK_Pouncing">Pouncing</a></li>
+							<li><a href="#P_ATK_Raking">Raking</a></li>
+							<li><a href="#P_ATK_Stampede">Stampede</a></li>
+							<li><a href="#P_ATK_Swooping">Swooping</a></li>
+							<li><a href="#P_ATK_TakeDown">Take Down</a></li>
+							<li><a href="#P_ATK_Worrying">Worrying</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#P_PackTactics">Pack Tactics</a></li>
+					
+					<!-- Pack Maneuvers : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Pack Maneuvers<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_PACK_Baiting">Baiting</a></li>
+							<li><a href="#P_PACK_Swarming">Swarming</a></li>
+						</ul>
+					</li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+					
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Animals in Combat</p>
+			<p>In <em>Blade</em>, animals of the wild are, after men, the second most common combat adversaries for the 
+			Characters, and much more common opponents than monsters or supernatural beasts. Game Masters are advised to 
+			somewhat ignore the actual behaviour of real-world animals.</p>
+			
+			<p>The latter have learned to fear man, and usually only attack under exceptional circumstances, and even then, 
+			only as a last resort. The world of Sword & Sorcery (being the ferocious place that it is), makes it 
+			appropriate to reduce this natural fear. Here, man might not be simply prey of the last resort for packs of 
+			wolves, bears, tigers, and other predators, but may actually be well within their normal range of prey.</p>
+			
+			<p>While wild animals of the Sword & Sorcery genre are often more aggressive, they should not be portrayed as 
+			universally rabid. In most cases, they don't fight to the death. A single level three wound should be enough to 
+			drive off most animals, unless they are truly desperate, or cornered.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Animals in Combat Overview</p>
+			<p>In targeting animals with attacks, the human Target Zone template will usually not be appropriate. In many 
+			cases, common sense may better serve instead of a template – hits to birds and snakes can be allocated quite 
+			easily. For quadrupeds of all sizes, a separate target location template is provided.</p>
+			
+			<p>No separate Wound Tables for animals are provided. Instead, just use the human ones and interpret the 
+			results with a bit of common sense.</p>
+			
+			<p>Knockdown against quadrupeds is the one wound result that usually needs modification. As long as all four 
+			legs of a quadruped are functioning properly (ex. no wound greater than level three to any leg), Knockdown 
+			success requirements for any wound received is reduced by two.</p>
+			
+			<p>If one leg is already impaired, Knockdown is applied normally, and if two legs should already be impaired 
+			and the animal is still aggressive, Knockdown success requirements are increased by two.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_LargeAnimals">Large Animals and Wounds</p>
+			<p>Wounds to animals are calculated exactly like wounds against humans, but for large animals that are much 
+			more massive, this may yield odd results. For those animals, final Wound Levels suffered after subtraction of 
+			half Brawn and Armour Values should be halved.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_LargeAnimals">
+				<p><em><strong>Example</strong>: The wound result of a large Grizzly bear’s level five wound would be 
+				reduced to a level three wound (5 divided by 2 = 2.5 which then rounds up to 3). As a rule of the thumb, 
+				this applies to wounds to the torso (not head and limbs) to all animals larger than a pony, and for all 
+				wounds (including both head and limbs) to any animal the size of a rhinoceros or larger. As an optional 
+				rule for those who want added realism (and added complication), all Piercing damage that would simply be 
+				halved due to a target animal’s large size is increased by +1 before being halved.</em></p>
+			</div>
+			
+			<br/>
+			
+			<hr/>
+			
+			<p class="h4" id="P_HugeAnimals">Huge Animals</p>
+			<p>Even though such creatures are rarely encountered in Sword & Sorcery, some Game Masters might want to 
+			utilize truly huge creatures as opponents for their Characters. A creature that is at the very least as big as 
+			a rhinoceros may engage more than one Character at once, provided its build logically allows for this. A giant 
+			octopus creature might, for example, engage several Characters simultaneously, as might a tyrannosaur, biting 
+			one and kicking another opponent, but a giant wolf, lacking multiple modes of attack, might not. A creature 
+			able to engage more than one Character at once can - within one and the same Round of Limelights - act in 
+			more than one Character’s Limelight. During how many Characters’ Limelights it can act, and how many Characters 
+			it could engage needs to be adjudicated by the Game Masters on the basis of the creature’s size and physical 
+			shape.</p>
+			
+			<p>The creature need not split its Melee Pool between Limelights, but gets its full Melee Pool against every 
+			Character. However, the Melee Pool is reduced by two dice for every Character after the first that the creature 
+			engages. This penalty does not become bigger by two for every additional Character’s Limelight during which the 
+			creature acts, but is applied to its Melee Pool across all Limelights equally.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_HugeAnimals">
+				<p><em><strong>Example</strong>: Otho and Rufo are fighting a gargantuan crab-demon, huge enough to act in 
+				both Limelights, attacking each of them with one of its pincers. The demon’s Melee Pool is 15, but this is 
+				reduced by two for fighting a second Character, making its effective Melee Pool against both Otho and Rufo 
+				a 13.</em></p>
+			</div>
+			
+			<br/>
+			
+			<p>If the discontinuity between a huge creatures’ various combats in any given Round of Limelights and the 
+			lack of cooperation among its opponents worries a group, the following optional rule may be used:</p>
+			
+			<p>The huge creature’s Melee Pool for any given Limelight is penalized by the sum of the total Wound Levels it 
+			has suffered previously during the same Round of Limelights. This is a slight violation of the basic principle 
+			that the Limelights of any given Round of Limelights occur at the same time, but simulates how one Character’s 
+			efforts in fighting a huge animal carry over to dramatically aid his comrades’ efforts. If this optional rule 
+			is being used, the huge creature’s Melee Pool is not reduced by two dice per opponent after the first, but by 
+			only one die per opponent.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_FightingAnimals">Fighting Animals</p>
+			<p>Animals do not use the normal Offensive and Defensive Maneuvers of humans, but their own take on some of 
+			them, or Maneuvers entirely exclusive to them. By and large, animals that enter combat at all fight very 
+			aggressively, using the better part of their Melee Pool for offence. The single defensive action they have at 
+			their disposal is Evasion, though they do tend to make liberal use of the Evasive Attack Offensive Maneuver.</p>
+			
+			<p class="h3">Animal Maneuvers</p>
+			<p class="h4" id="P_ATK_Bash">Bash</p>
+			<p>Most kicks by hooved animals are handled by the Bash Maneuver, but it may also be used for powerful tail 
+			swipes or, for example, a hit by an elephant’s trunk. The Bash may also be used by horned animals to butt 
+			opponents with their horns, for either Blunt, or Piercing damage, depending on the beast in question.</p>
+			
+			<p>This type of attack carries an additional 1 Melee Pool point Activation Cost (ex. 1, or 2 in case of an 
+			attack causing +1 damage). Note that the option of spending 1 Melee Pool point to increase the attack’s Damage 
+			Rating by +1 is not available if the attack causes Piercing damage.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Bite">Bite</p>
+			<p>A simple bite, with most damage being Cleaving. Metal armour offers very good protection against bites.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Claw">Claw</p>
+			<p>A swipe with claws usually inflicts Blunt damage with some additional Blood Loss, but may - with some rare 
+			animal’s long talons - inflict Cleaving damage instead. Metal armour protects very well against animal clawing 
+			attacks.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Constricting">Constricting</p>
+			<p>Some animals kill their prey through constricting them. Prime examples are the many forms of large snakes, 
+			but this form of attack may, at the GM's discretion, also be available to bears, if she desires to include the 
+			infamous bear hug attack in her game. To use the Constricting Maneuver, the beast must first have made a 
+			successful grapple attack on an opponent, though a bite attack may be substituted for animals like snakes that 
+			can establish the initial hold by biting.</p>
+			
+			<p>Once the hold is established by the use of the Grapple (or Bite) Maneuver, the animal may attack by use of a 
+			Constricting Maneuver each Round, free of Activation Cost. Melee Pool dice are assigned for the attack, and the 
+			constricted opponent assigns any number of Melee Pool dice for the defense (remember that a grappled opponent 
+			must use his Wrestling Proficiency to calculate his Melee Pool). Both parties roll against a Target Number of 
+			7.</p>
+			
+			<p>If the defender is victorious, he breaks free of the constriction and normal melee combat resumes at Reach 
+			Hand, with the victorious defender now having initiative as aggressor. If the attacker ties or is victorious, 
+			he inflicts Blunt damage on his opponent. The amount of damage inflicted is calculated without use of Quality 
+			of Success or Armour Value, but by subtracting half the defender’s Brawn from half the attacker’s Brawn, with 
+			a cumulative +1 added for every subsequent Round of constriction. The Wound Level inflicted may not surpass the 
+			constrictor’s Quality of Success. The location of this Blunt damage depends on the circumstances. With snakes, 
+			it will usually be to the lower abdomen or the legs, with a bear, a hug to the chest.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_EvasiveAttack">Evasive Attack</p>
+			<p>This Offensive Maneuver is used quite extensively by animals. It functions exactly as for humans, (ex. the 
+			animal spends the Activation Cost of 1 Melee Pool die, and additional dice as desired). The enemy’s Attack 
+			Target Number is increased by the number of additional dice thus spent, whereas the animal’s own Attack Target 
+			Number is only increased by half the number of the additional dice.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Grapple">Grapple</p>
+			<p>Animals use the Grapple Offensive Maneuver, but what they do with a grappled opponent is different from 
+			what humans may choose to do. A beast may not choose to immobilize a grappled opponent, but it may attempt to 
+			throw her to the ground, or to break the grappled limb. In addition, certain types of animals have other options 
+			as well: Snakes may attempt to crush the opponent to death, felines may rake her with their hind claws, and 
+			canines may worry her with their powerful jaws. Details can be found under the respective Maneuvers.</p>
+			
+			<p>Beasts that can either use the Constricting, Raking, Pouncing, or Worrying Maneuver may use a successful 
+			bite attack to enter a clinch. They can do this by attacking normally with the Bite Maneuver and simply 
+			declaring after a successful hit, even one causing no wound, that they won’t let go. This immediately 
+			establishes a clinch, though one in which the animal does not receive the establishing attack’s Quality of 
+			Success as bonus dice on its subsequent Melee Pool, as would be the case with a clinch entered by use of the 
+			Grapple Maneuver.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Pouncing">Pouncing</p>
+			<p>Some animals such as tigers are proficient at surprising a victim by leaping upon them, using their 
+			considerable mass coupled with speed of impact to stun their prey. This gives the Pouncing animal a decided 
+			advantage in the Bite Maneuver that inevitably follows. All dice assigned to Pouncing are checked against a 
+			Target Number of 7, and can be defended against by only by Evasion (the target probably has to first pass a 
+			Surprise Check to be aware of the Pouncing animal and evade it).</p>
+			
+			<p>If the Pouncing attacker is victorious, it inflicts Blunt damage on its opponent. The amount of damage 
+			inflicted is calculated without use of Quality of Success or Armour Value, but by subtracting half the 
+			defender’s Brawn from half the attacker’s Brawn. Should the attacker be considerably heavier than the defender 
+			(more than twice as heavy), +1 is added to this damage; if the attacker is considerably lighter (less than half 
+			as massive), -1 is subtracted. The Wound Level inflicted may not surpass the Pouncing animal’s Quality of 
+			Success.</p>
+			
+			<p>The location of this Blunt damage depends on the circumstances. With tigers for example, it will usually 
+			be to the Shoulders, Chest, Ribs, or Abdominal areas. A successful Pounce attack also requires the opponent to 
+			pass a Knockdown Check with a Challenge Level equal to the Pouncing attacker’s Quality of Success. If the 
+			Pounce is successfully defended against (ex. evaded) in such a way that initiative passes to the defender, the 
+			melee continues with Reach now set at Hand, and the defender as the new aggressor.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Raking">Raking</p>
+			<p>Felines are especially fond of this Offensive Maneuver, one that can be considered an option of the Grapple 
+			Maneuver available to them. Any time the animal is in a clinch with its opponent, whether this clinch was 
+			established by use of the Grapple or the Bite Maneuver, it may pay an Activation Cost of 1 Melee Pool point and 
+			attack with its hind claws. Such an attack does not in itself break the clinch.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Stampede">Stampede</p>
+			<p>Certain animals (such as bulls) are able to attack opponents by charging and running over them. This 
+			requires a run up and the expenditure of 1 Melee Pool die as an Activation Cost and can only be defended 
+			against by Evasion. The attack is rolled against a Target Number of 7, and inflicts Blunt damage with a Damage 
+			Rating of zero, or Damage Rating +1 if the beast has substantial horns. Knockdown from this attack is increased 
+			by +1 to a minimum of 1, and the Check to avoid the Knockdown is made against (6 + the Quality of Success on 
+			the attack roll). If the stampede is successfully defended against (ex. evaded) in such a way that initiative 
+			passes to the defender, the follow-up attack of the new aggressor is made at +1 Attack Target Number. This is 
+			due to the stampeding animal’s speed carrying it quickly out of range of any attack.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Swooping">Swooping</p>
+			<p>Swooping is the favourite attack of birds and other, sometimes larger, airborne attackers. Essentially, 
+			it’s a fly-by claw attack. To initiate the Maneuver, the avian aggressor announces a Swoop. Her opponent then 
+			declares any number of dice from her Melee Pool to prolong the contact with the avian, who then sets aside a 
+			number of dice from her Melee Pool in opposition. Those dice are rolled as an Opposed Terrain Check. If the 
+			Swoop’s victim is victorious, the Combat Round has the usual two Exchanges. If the result is a tie or a victory 
+			for the avian, it is limited to a single Exchange.</p>
+			
+			<p>Whether the avian is successful on Swooping or not, it now has initiative as aggressor at its optimum 
+			engagement Reach. An opponent conscious of the attack may attempt to Steal Initiative or declare as aggressor 
+			as well, in which case her attack will only be resolved after the Swooping attack and at the avian’s Reach.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_TakeDown">Take Down</p>
+			<p>Some animals are especially adept at bringing an opponent down to their level, either by launching their 
+			mass at him, by attacking his legs, or by cunningly unbalancing him. The dice assigned to the Take Down 
+			Maneuver are checked against a Target Number of 7, and can be defended against by Blocking or Evasion, but not 
+			by Parrying.</p>
+			
+			<p>A successful Take Down attack causes no damage, but requires the opponent to pass a Knockdown Check with a 
+			Challenge Level equal to the Take Down’s Quality of Success. Animals that are used to working as a team, like 
+			packs of canines, may combine forces to Take Down an opponent. Knockdown Checks must be made against every 
+			individual Take Down, but for every previous Knockdown Check passed in one and the same Exchange, the Challenge 
+			Level of the Knockdown Checks against Take Down is increased by one.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ATK_Worrying">Worrying</p>
+			<p>Certain beasts, particularly canines and certain large felines, have extremely strong jaws. Once such an 
+			animal has made a successful bite attack on an opponent, it may choose to hold on, thereby entering a clinch, 
+			and to “Worry” the attack (meaning that it locks its teeth and shakes its head).</p>
+			
+			<p>On the exchange following a successful bite attack, the animal may assign any number of dice to the Worrying 
+			Maneuver. The opponent may assign dice from his Melee Pool, but as he is now in a clinch, his Melee Pool is 
+			based upon his Wrestling Proficiency. Should the bitten opponent wish to go on attacking the animal, he is 
+			allowed to use his weapon Melee Pool instead, but in this case may not assign more dice to resisting the 
+			Worrying than the value of his Reflex score (plus any Passion Attribute dice figuring in the Melee Pool).</p>
+			
+			<p>Both opponents roll against Target Numbers of 7. If the worrying animal is victorious, the wound inflicted 
+			by the previous bite becomes aggravated by one Wound Level, with all attending penalties, including Pain, Blood 
+			Loss, and Knockdown, but excluding Shock and Knockout. The animal may choose to hold on and continue with the 
+			Worrying Maneuver, or it may let go. If the Check is tied, the wound does not worsen, but the animal may choose 
+			to let go or hold on, as above.</p>
+			
+			<p>If the defender is victorious, he breaks free and the melee continues with Reach now set at Hand, and with 
+			him as the new aggressor. The victim of a Worrying may attempt to attack the animal with the part of the Melee 
+			Pool he does not set aside for resisting the Worrying, after the Worrying attack has been resolved. Such an 
+			attack is made at Reach Hand and carries an additional Activation Cost equal to half the animal’s Quality of 
+			Success on the Worrying Check, plus the usual Activation Cost for declaring an attack as defender (ex. half the 
+			aggressor’s Daring score). If this Activation Cost reduces his Melee Pool to zero or below, he may not 
+			attack.</p>
+			
+			<p>While holding on to the prey, the worrying animal can defend only by use of Duck & Weave. Whether it is hit 
+			or not, the animal will retain initiative as aggressor and will not be forced to let go, though may of course 
+			choose to do so. Apart from possibly killing the beast or wounding it seriously enough to drive it off, the use 
+			of attacking and wounding a worrying beast lies in the dice it will lose from its Melee Pool for the next 
+			Worrying attack.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_PackTactics">Pack Tactics</p>
+			<p>Many animals naturally form communities. Strong ties are often formed, especially in the case of canines 
+			(including wolves, hyenas, jackals and the like) and some wild cats (tigers and leopards, for instance). Such 
+			animals are highly effective at working together to bring down foes. If a pack or team of animals is fought, 
+			and the number of combatants on both sides are roughly equal, the combat is handled as usual, but if the 
+			animals clearly outnumber their opponents, the rules below should be used. In such cases, predators, who are 
+			cunning at evaluating prey will always concentrate their surplus number on the weakest victim, while more 
+			dangerous ones will simply be kept in check by a single animal each.</p>
+			
+			<p>These single beasts will not expose themselves by fighting offensively, but will merely attempt to stall 
+			their opponent until their comrades bring down the weaker prey.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_PACK_Baiting">Baiting</p>
+			<p>This is a form of feint used by a group of animals working together closely. The beast using the Baiting 
+			Maneuver pays an Activation Cost of one die, but declares another Offensive Maneuver. Once the defender has 
+			assigned dice to the defence, the Baiting Maneuver is revealed for what it is. The baiting beast may now add 
+			any number of dice to the attack, at an additional Activation Cost equal to half the number of dice added. 
+			The initially declared Offensive Maneuver is then rolled and defended against as usual.</p>
+			
+			<p>If the defender wins the Opposed Check, she takes initiative as normal. If the aggressor ties or wins, no 
+			damage is dealt, as the entire attack was only a ruse to draw out the defender. Instead, the defender loses 
+			dice equal to the aggressor’s Quality of Success from her Melee Pool for either the following Exchange or the 
+			following Round if the current Exchange was this Round’s last one.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_PACK_Swarming">Swarming</p>
+			<p>Animals fighting in packs are extremely good at surrounding an opponent and attacking him from different 
+			sides at the same time. Up to four medium sized animals (such as wolves) may attack an opponent, rather than 
+			the usual limit of three.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
