@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blade SRD Maneuvers</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Maneuvers</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Offensive Maneuvers : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Offensive Maneuvers<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_OFF_Bash">Bash</a></li>
+							<li><a href="#P_OFF_Beat">Beat</a></li>
+							<li><a href="#P_OFF_BindNStrike">Bind & Strike</a></li>
+							<li><a href="#P_OFF_Cut">Cut</a></li>
+							<li><a href="#P_OFF_Disarm">Disarm</a></li>
+							<li><a href="#P_OFF_DoubleAttack">Double Attack</a></li>
+							<li><a href="#P_OFF_EvasiveAttack">Evasive Attack</a></li>
+							<li><a href="#P_OFF_FeintNSwing">Feint & Swing</a></li>
+							<li><a href="#P_OFF_FeintNThrust">Feint & Thrust</a></li>
+							<li><a href="#P_OFF_Grapple">Grapple</a></li>
+							<li><a href="#P_OFF_Half-Sword">Half-Sword</a></li>
+							<li><a href="#P_OFF_Hook">Hook</a></li>
+							<li><a href="#P_OFF_Master-Strike">Master-Strike</a></li>
+							<li><a href="#P_OFF_MurderStroke">Murder Stroke</a></li>
+							<li><a href="#P_OFF_Quick-Draw">Quick-Draw</a></li>
+							<li><a href="#P_OFF_SimultaneousBlock/Strike">Simultaneous Block Strike</a></li>
+							<li><a href="#P_OFF_StopShort">Stop Short</a></li>
+							<li><a href="#P_OFF_Thrust">Thrust</a></li>
+							<li><a href="#P_OFF_Toss">Toss</a></li>
+						</ul>
+					</li>
+					
+					<!-- Defensive Maneuvers : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Defensive Maneuvers<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_DEF_DefensiveManeuvers">Defensive Maneuvers Described</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_DEF_Block">Block</a></li>
+							<li><a href="#P_DEF_BlockOpenNStrike">Block Open & Strike</a></li>
+							<li><a href="#P_DEF_Counter">Counter</a></li>
+							<li><a href="#P_DEF_Disarm">Disarm</a></li>
+							<li><a href="#P_DEF_Evasion">Evasion</a></li>
+							<li><a href="#P_DEF_Expulsion">Expulsion</a></li>
+							<li><a href="#P_DEF_Grapple">Grapple</a></li>
+							<li><a href="#P_DEF_Half-Sword">Half-Sword</a></li>
+							<li><a href="#P_DEF_Master-Strike">Master-Strike</a></li>
+							<li><a href="#P_DEF_Overrun">Overrun</a></li>
+							<li><a href="#P_DEF_Parry">Parry</a></li>
+							<li><a href="#P_DEF_Quick-Draw">Quick-Draw</a></li>
+							<li><a href="#P_DEF_Rota">Rota</a></li>
+							<li><a href="#P_DEF_WindingNBinding">Winding & Binding</a></li>
+						</ul>
+					</li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li class="active"><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Maneuvers</p>
+			<p class="text-justify">Maneuvers are listed together in a lump sum. Each has an Activation Cost, which is 
+			outlined above under Proficiencies.</p>
+			
+			<p>What follows are mechanics for using offensive and defensive Maneuvers in the course of a bout or battle. 
+			Every Maneuver description details a minimum Proficiency score at which the Maneuver becomes available. 
+			Character may use Maneuvers up to 2 Proficiency levels beyond their own Proficiency, with a flat +1 Activation 
+			Cost. Proficiencies more than 2 levels beyond a character’s Proficiency are entirely unusable.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Offensive Maneuvers Described</p>
+			<p>Offensive Maneuvers are those initiated by the aggressor/s in any Exchange (see Chapter Four – Melee Combat).
+			Most Maneuvers may be combined for a greater effect, so long as all Activation Costs are paid.</p>
+			
+			<p>All offensive Maneuvers, unless otherwise stated, use a weapon’s Attack Target Number (ATN) for all 
+			Checks.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Bash">Bash</p>
+			<table class="table table-bordered table-condensed" id="TBL_BashCosts">
+				<thead>
+					<th>Brawling *</th>
+					<th>Dagger **</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Wrestling ***</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0/1</td>
+						<td>1 (2)</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1/2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Brawling: Bash Activation Cost 0 is for punches, 1 for kicks and any other Bashes that might 
+			come up.</strong></p>
+			<p><strong>** Dagger: Bash Activation Cost 1 is for punches, 2 for any other Bashes that might come 
+			up.</strong></p>
+			<p><strong>*** Wrestling: Bash Activation Cost 1 is for punches, 2 for kicks and any other Bashes that might come 
+			up.</strong></p>
+			
+			<p>This is the standard attack for all blunt weapons that are swung. It is learned immediately.</p>
+			
+			<p><strong>Extra power may be added to a Bash by expending one (and only one) extra Melee Pool die prior to 
+			rolling</strong>, and adding one to damage in the event of a successful hit. If a Bash successfully strikes the 
+			head, the Shock rating of such a hit is increased by half that hit’s Impact Rating before the defender’s 
+			Armour Value and half Brawn are subtracted. This Shock even applies if no actual wound is caused.</p>
+			
+			<p>In addition, if the head (and not just the shoulder or arm) is struck, the attendant Shock rating is 
+			increased by a number equal to half the attacker’s total of (Quality of Success + half Brawn + Damage Rating) 
+			before the defender’s Brawn and Armor Value are subtracted - as with any other Bash to the head.</p>
+			
+			<p>This Shock even applies if no actual wound is caused, also as usual for Bashes to the head.</p>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Beat">Beat</p>
+			<table class="table table-bordered table-condensed" id="TBL_BeatCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The Beat is an attack upon an opponent’s weapon or shield as an attempt to remove it temporarily. 
+			<strong>Beats may only be performed at the start of a bout or following a “pause,”</strong>. This sudden, 
+			brutal, and effective Maneuver is executed by declaring “Beat” as your offensive Maneuver, along with the dice 
+			allotted to the attack. The defender assigns defense dice to a defensive Maneuver (Parry, Evade, Block, etc.) 
+			and the contest is rolled normally. If the attacker wins the Beat, then the defender’s weapon (or whatever else 
+			was being “Beaten”) is knocked aside and cannot be used in the following Exchange.</p>
+			
+			<p>Additionally, every success in the attacker’s Quality of Success costs the defender two Melee Pool die, and 
+			functions similarly to Shock.</p>
+			
+			<p>If the defender wins, the round is resolved normally and initiative changes over. Using a Beat is an 
+			excellent way to handle opponents with longer weapons as all Reach penalties are cut in half (.50 rounds up) 
+			when Beating.</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 3.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_BindNStrike">Bind & Strike</p>
+			<table class="table table-bordered table-condensed" id="TBL_BindNStrikeCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Maneuver uses off hand weapons (daggers, shields, etc.) to pin down or bind an opponent’s shield or 
+			weapon, opening him up for a follow-up attack. With this Maneuver, an attack is rolled as normal with the 
+			shield or off hand weapon, at the usual +1 Attack Target Number for attacking with the offhand.</p>
+			
+			<p>If using a shield to bind the opponent’s weapon, the Attack Target Number is six (6) for both bucklers and 
+			large shields, and five (5) for small shields, without penalty for using the off hand. The defender can Evade 
+			or use the weapon or shield that is being “Bound” to Parry or Block, but he may not use another weapon or 
+			shield to defend against the Bind.</p>
+			
+			<p>If this attack is successful, the opponent cannot use the “Bound” weapon or shield on the subsequent 
+			Exchange and he loses one Melee Pool die per point of Success, also good on the next Exchange. Thus, if Beat 
+			were conducted with a Quality of Success of three (3), your opponent’s Melee Pool for the next Exchange is 
+			reduced by three dice. If this would take the Melee Pool into the negative range, those negative dice are 
+			added as bonus dice to the winner’s Melee Pool for the next Exchange, as usual.</p>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Cut">Cut</p>
+			<table class="table table-bordered table-condensed" id="TBL_CutCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Cutting is the standard mode of attack conducted with edged weapons like swords, axes, and other 
+			predominantly slashing weapons. It is executed by a swinging or slashing motion, from minor ones using just the 
+			wrist, to those with the entire arm.</p>
+			
+			<p><strong>More force may be applied to a Cut by the expenditure of one (and no more) extra Melee Pool die 
+			prior to rolling and then adding one to damage in the event of a successful hit.</strong></p>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Disarm">Disarm</p>
+			<table class="table table-bordered table-condensed" id="TBL_ATK_DisarmCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Disarming is a popular Maneuver when you are trying to avoid hurting your opponent or trying to make him 
+			surrender, but it can just as easily be used as a prelude to an easy kill.</p>
+			
+			<p>A Disarm is performed in a similar manner to the Beat Maneuver, except that it is not necessary to perform 
+			the Disarm after a break in the combat like a Beat. All Reach modifiers are halved (0.50 rounds up). The 
+			attacker assigns as many dice to the Disarm as he likes (after paying the Activation Cost) while the defender 
+			makes whichever defense he chooses. If the Disarm attack is successful, the defender must make a Knockdown 
+			Check with a Difficulty equal to the attacker’s Quality of Success.</p>
+			
+			<p>If this Check is failed, then the weapon has been dropped. If the Knockdown Check is successful, then the 
+			defender has managed to retain his grip on his weapon, <strong>but the attacker retains the role of 
+			aggressor.</strong></p>
+			
+			<p><em>This Maneuver is available at Proficiency level 3.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_DoubleAttack">Double Attack</p>
+			<table class="table table-bordered table-condensed" id="TBL_DoubleAttackCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>A double attack is the demanding action of attacking with one weapon in either hand on the same Exchange. 
+			The Melee Pool dice allocated to the Exchange are first divided between the two attacks in any way the attacker 
+			desires. Modifiers for Reach are applied, and then the attacks rolled as normal with the usual Attack Target 
+			Number +1 penalty for using a weapon in the off hand. Your opponent will have a difficult time defending 
+			against both your attacks, with viable defenses being only Evasion, Parry (if he has two weapons), or Block 
+			and Parry (if he has both weapon and shield).</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 4.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_EvasiveAttack">Evasive Attack</p>
+			<table class="table table-bordered table-condensed" id="TBL_EvasiveAttackCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This is a defensive measure that takes place during an attack (thus it counts as an offensive Maneuver). In 
+			principle the attacker cuts with his weapon while simultaneously leaping backward so as to evade an opponent’s 
+			attack. This Maneuver requires a great deal of skill, but it is indispensable to those who find themselves in 
+			quick-draw style duels with opponents that go straight for the attack.</p>
+			
+			<p>To execute this Maneuver <strong>one attacks as normal with a slashing-type attack</strong>, spending this
+			Maneuver’s Activation Cost in addition to the normal Activation Cost of the attack.</p>
+			
+			<p>If the optional Encumbrance rules are being used, a further Activation Cost equal to the Encumbrance score 
+			must be paid, as per an Evasion.</p>
+			
+			<p>Once the Maneuver is activated, any number of additional dice may be spent to raise an opponent’s Attack 
+			Target Number by one per additional die spent. On the downside, your own Attack Target Number also rises, 
+			though only by one for every two additional dice spent (round up all fractions of .50 and above) – it’s hard 
+			to hit an opponent when you’re going the other way...</p>
+			
+			<p><strong>This Maneuver is impossible to use in conjunction with any Thrust-based Maneuver.</strong></p>
+					
+			<p><em>This Maneuver is available at Proficiency level 4.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_FeintNSwing">Feint & Swing</p>
+			<p>This is a relatively difficult trick to perform, and has a higher Activation Cost than Feint & Thrust. It 
+			involves swinging at one region of the body, then changing direction mid-swing in an effort to bypass the 
+			defender’s defenses entirely.</p>
+			
+			<p>Once the Activation Cost is paid (see below), any number of dice may be added to the attacker’s hand <em>at a 
+			cost of one Melee Pool die for every additional die rolled in the attack</em>. A Feint is always declared 
+			<strong>after</strong> the defender declares defense, but before dice are rolled.</p>
+			
+			<p>It’s important to note that a Feinted attack lands in a different spot than originally declared. The 
+			attacker must also state the new location of attack (within no more than two Target Zones of the original 
+			attack). <strong>The Activation Cost is equal to the “distance” from the original to the ultimate Target 
+			Zone</strong>, (ex. either one or two).</p>
+			
+			<p>When used against the same opponent Feints have a tendency to lose their novel effect after a while. Each 
+			repeated <em>identical</em> Feint against a single opponent, in the same location (over any number or duels — 
+			not just one), costs an extra Melee Pool die to execute.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 3.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_FeintNThrust">Feint & Thrust</p>
+			<p>This is among the first “tricks” that most swordsmen learn. Like the Feint & Strike it begins with a false 
+			swing, in this case always either overhand or across, but finishes with a Thrust to the head, neck, or 
+			torso.</p>
+			
+			<p>This Maneuver is executed almost identically to the Feint & Swing. When attempting a Feint & Thrust, the 
+			attacker declares a Slashing attack aimed at Target Zones 3, 4, or 5, complete with Melee Pool die expenditure. 
+			The defender then declares her own defense — <strong>if this defense isn’t based on the Parry Maneuver, Feint & 
+			Thrust cannot be executed</strong> and the aggressor has to stick with her originally declared Swing type 
+			offense.</p>
+			
+			<p>If the Maneuver can proceed, the attacker now states that he is Feinting & Thrusting and adds any number of 
+			Melee Pool dice to her pool <em>at a cost of one die thrown away for every one added to the attacking hand</em> 
+			(as per Feint & Strike). She also declares a new Target Zone for his Thrust, which must be zones 11, 12, or 
+			13.</p>
+			
+			<p>Feints have a tendency to lose their novel effect after a while when used against the same opponent. Each 
+			repeated <em>identical</em> Feint against a single opponent, in the same location (over any number or duels — 
+			not just one), costs an extra Melee Pool die to execute.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 2.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Grapple">Grapple</p>
+			<table class="table table-bordered table-condensed" id="TBL_ATK_GrappleCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Dagger</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The basics of this Maneuver are governed by many Proficiencies. It consists of grabbing the opponent, 
+			removing any weapon he wields, and changing the bout from free-flowing combat into a wrestling match, with 
+			the purpose of immobilizing the opponent, throwing him to the ground or breaking his limb.</p>
+			
+			<p>The Activation Costs assume that the Grapple Maneuver is launched against an opponent’s limb, specifically 
+			the primary attacking limb if the Maneuver is used defensively. In this instance (and only then), it may be 
+			targeted against other parts of the body, for instance the torso or the head, but its Activation Cost is in 
+			this case increases by +1. Reach modifiers apply to use of the Maneuver, which of course has a Reach range of 
+			Hand.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_GrappleOne">			
+				<p><em><strong>Example</strong>: Using Grapple to defend against a Longsword (Reach Long) by attempting to 
+				grab the opponent’s weapon arm carries an additional Activation Cost of +4 (+3 for Reach, +1 for 
+				defending against a weapon).</em></p>
+			</div>
+			
+			<br/>
+			
+			<p>The Grapple’s Target Number is invariably 7. If used successfully, a hold is established on whichever part 
+			of the body is targeted. <strong>After a successful Grapple, both combatants find themselves in a 
+			clinch</strong> at the Reach range of Hand.</p>
+			
+			<p>Until the clinch is broken, both opponents must use Melee Pool dice from their Wrestling Proficiency. Should 
+			the clinch be entered mid-Round when another Proficiency – one other than Wrestling - was being used in the 
+			first Exchange, Melee Pools are recalculated for the second Exchange based on Wrestling Proficiency, with dice 
+			spent in the first Exchange subtracted from the Wrestling Pool.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_GrappleTwo">			
+				<p><em><strong>Example</strong>: On Exchange One, Character A attacked with six (6) dice from his Longsword 
+				Melee Pool but met with a successful defense in a grapple. He is now in the clinch. With Reflex five (5) 
+				and Wrestling four (4) he has a Wrestling Melee Pool of nine (9) dice. Having spent six dice in Exchange 
+				One, he now has three (3) Melee Pool dice remaining for Exchange Two.</em></p>
+			</div>
+			
+			<br/>
+			
+			<p>Once the clinch is established, the aggressor, receives a number of bonuc dice to his Melee Pool equal to
+			the Quality of Success of the Grapple Maneuver, and now has three options:</p>
+			
+			<ol>
+				<li><p><strong>Immobilize</strong>: The aggressor tries to improve his initial hold in such a way as to 
+				completely immobilize his opponent. This may require several Exchanges of wrestling.</p>
+				
+				<p>The aggressor assigns Melee Pool dice and, without paying any Activation Cost, checks against a Target 
+				Number of seven (7). If he is beaten by the opponent’s defense, the hold is broken and combat returns to a 
+				normal melee at a range of Hand, with the former defender now the aggressor.</p>
+				
+				<p>If the defense is tied or overcome, the victor’s Quality of Success is subtracted from the opponent’s 
+				Melee Pool for the next Exchange. If this leads at any time to one combatant beginning a Combat Round with 
+				a Melee Pool of zero (0) or less, the defender is immobilized and unable to break free until circumstances 
+				change significantly.</p></li>
+				
+				<li><p><strong>Throw</strong>: The aggressor tries to throw her opponent to the ground. To do so, she 
+				assigns Melee Pool dice and rolls her Opposed Check. The Target Number is six (6) if the initial hold was 
+				on a leg, or eight (8) if the hold is on the torso, head, or arm.</p>
+				
+				<p>If the defense against the throw is successful, the hold is broken and the previous defender becomes 
+				the new aggressor at a Reach range of Hand.</p>
+				
+				<p>In case of a tie, the clinch is broken and the combat continues at Reach range Hand, but without a 
+				change of aggressor.</p>
+				
+				<p>If the aggressor is victorious, the clinch is broken and he remains the aggressor, but the opponent is 
+				thrown to the ground, with all the attendant penalties of being prone.</p></li>
+				
+				<li><p><strong>Break</strong>: The aggressor attempts to break the limb he has grabbed. To do so, he 
+				assigns Melee Pool dice and rolls them in an Opposed Check. His Target Number for this roll is seven (7) if 
+				an arm is grabbed, eight (8) for a leg, and nine (9) for the neck. This is opposed by the defender’s 
+				assigned Melee Pool dice.</p>
+				
+				<p>If the defender is victorious, the clinch is broken, and he becomes next Exchange’s aggressor at a Range 
+				of Hand. If the roll is tied, the outcome is identical to a tied attempt to immobilize.</p>
+				
+				<p>If the aggressor is victorious, the aggressor and defender immediately make an Opposed Brawn Checks, 
+				with the aggressor receiving his Qulaity of Success as bonus dice for the roll. If the aggressor wins with 
+				a Quality of Success of at least two (2), the limb is broken. If this is the neck, the wound is fatal.</p>
+				
+				<p>For any other limb, refer to the Blunt Swing Damage Tables, Zone 1 for broken legs and Zone 7 for broken 
+				arms. Roll d6 on the Table for Zone 1 or 7 and apply the result of a level four (4) wound to the exact 
+				location determined by the die.</p></li>
+			</ol>
+			
+			<p>Any other outcome is treated as a tied attempt to immobilize.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Half-Sword">Half-Sword</p>
+			<p>This is one of the few practical ways to kill an armored opponent in full harness (full plate) with a sword. 
+			Used with long swords, hand-and-a-half swords, and other longer weapons, the Half-Sword technique is performed 
+			by grasping the blade of the sword with the off (usually left) hand in order to use the sword as a short 
+			spear or pole-weapon. This technique is particularly useful in close-quarters when swinging a long weapon 
+			may be impractical.</p>
+			
+			<p>Half-Swording reduces a sword’s effective Reach by one or two steps - from Long to either Medium or Short - 
+			at the player’s discretion. Note that the Half-Sword may be released into a one-handed attack at any time, 
+			nullifying any Half-Sword bonuses, but gaining Reach.</p>
+			
+			<p>Half-Swording precludes the sword being used for slashing, but it increases control over the weapon, lowering 
+			both Defence Target Numbers and Thrust Attack Target Numbers by one (1). The latter effectively increases 
+			damage dealt. Against any type of armour, Half-Swording it also raises the Thrust Damage Rating by +1.</p>
+			
+			<p>One can shift from normal grip to the Half-Sword at any time, though doing so during an Exchange 
+			(shifting suddenly into or out of the Half-Sword in order to execute a particular counter, for example) costs 
+			one Melee Pool die.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Hook">Hook</p>
+			<table class="table table-bordered table-condensed" id="TBL_HookCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>(2)</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Many polearms and axes are capable of hooking an opponent’s limb or head. This Maneuver is executed like 
+			a Thrust that intentionally misses, and the shaft is pressed against the target and pulled. It is 
+			particularly effective on the legs, causing one’s opponent to fall and become prone.</p>
+			
+			<p>After spending the Activation Cost (usually one), allot dice for a regular Thrust-like attack. The hooked 
+			party Checks Knockdown with a Challenge Level equal to the aggressor’s Quality of Success. Failure drops him to 
+			the ground, which halves the prone opponents Melee Pool due to being prone.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			<p><em>The Khopesh is the only sword which Hook is available for.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Master-Strike">Master-Strike</p>
+			<table class="table table-bordered table-condensed" id="TBL_ATK_MasterStrikeCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>4</td>
+						<td>3</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The jewel of the art of fighting is the Master-Strike, a type of attack that both defends and offends in 
+			one motion. The technique, as it applies to <em>Blade</em>, can be used either as an offensive or defensive 
+			Maneuver. In many ways it resembles the Simultaneous Block/Strike Maneuver, however it involves only 
+			one weapon.</p>
+			
+			<p>Declare a Master-Strike alongside any Cleaving attack, and pay the Activation Cost. Divide the attacking 
+			dice into offense and defense in any proportion. This is clearly most useful in a situation where both 
+			opponents are attacking simultaneously.</p>
+			
+			<p>Should your defense fail, regardless of offensive or defensive role, the attack also fails, and all dice 
+			assigned to it are lost.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 10.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_MurderStroke">Murder Stroke</p>
+			<table class="table table-bordered table-condensed" id="TBL_MurderStrokeCosts">
+				<thead>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>This Maneuver is only available for swords and similar weapons</strong> and is utilized to overcome 
+			opponents too heavily armored to have a realistic chance to wound them using a blade. It is performed with the 
+			sturdier types of either one- or two-handed swords. To execute it, the attacker grips the sword by the 
+			blade to forcefully beat the opponent in the head with the grip, pommel, or crossguard of the sword. 
+			<em>Gripping the sword by the blade reduces the effective Reach of the weapon by one increment</em>.</p>
+			
+			<p>The attack itself is a swing typically directed at the head, targeting areas 4 or 5. Damage from a 
+			successful hit is calculated with a Damage Rating of +1 Blunt. In addition, if the head (and not just the 
+			shoulder or arm) is struck, the attendant Shock rating is increased by a number equal to half the attacker’s 
+			total of (Quality of Success + half Brawn + Damage Rating) before the defender’s Brawn and Armor Value are 
+			subtracted - as with any other Bash to the head.</p>
+			
+			<p>This Shock even applies if no actual wound is caused, also as usual for Bashes to the head.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 3.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Quick-Draw">Quick-Draw</p>
+			<table class="table table-bordered table-condensed" id="TBL_ATK_QuickDrawCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Characters using this maneuver can attack with a Cut, Bash, or Parry <strong>with any weapon of Medium Reach 
+			or shorter</strong>. Because the curvature of a weapon makes this Maneuver easier, straight-bladed or 
+			hafted weapons of Medium or longer Reach require an additional 1 Melee Pool over the normal Activation Cost. 
+			Weapons with a Reach of Hand and Short need no such curvature, and can be quick-drawn with no penalty.</p>
+			
+			<p>Weapons of Long Reach and shorter can also benefit from this Maneuver by making a sudden thrusting attack 
+			with the pommel or butt end of the weapon. This has no additional cost, but its statistics differ than the 
+			parent weapons: the attack has a Reach of Hand, and is a Thrust Attack with a Target Number of six (6), 
+			and a Damage Rating of –1 Blunt.</p>
+			
+			<p>In all cases, the weapon being quick-drawn is assumed to be at the hip or in some other very accessible 
+			place.  For those weapons carried in less accessible places - such as a boot knife or short weapon over the 
+			shoulder - add 1 Melee Pool die to the Activation Cost (compounding with any other penalties or modifiers). 
+			Weapons in packs or other immediately inaccessible places are just that; inaccessible.</p>
+			
+			<p>To perform this Maneuver, declare which weapon is being quick-drawn at the beginning of any Exchange 
+			(usually the first, but not necessarily), and state whether it is being used to Cut, Bash, or Parry.</p>
+			
+			<p>After spending the Activation Cost and allowing for any penalties, a Terrain Check is made against the 
+			weapons normal Attack Target Number -1 (if the drawing hand is free) or Attack Target Number -2 (if the 
+			drawing hand is on the weapon’s grip already). If this Terrain Check is successful, the attack goes forward 
+			normally, using standard attack rules. The weapon will be free for the next Exchange.</p>
+			
+			<p>This Maneuver can be combined with the rules for initiative and stealing it. Likewise, don’t forget to use 
+			Reach rules here, including those rules for getting inside of a weapon’s Reach, or this Maneuver will lose 
+			much of its bite.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 4.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_SimultaneousBlock/Strike">Simultaneous Block/Strike</p>
+			<table class="table table-bordered table-condensed" id="TBL_SimulBlockStrikeCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Lance</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This gutsy Maneuver is not unlike the Bind & Strike Maneuver, except that it all happens in the course of 
+			one Exchange. To perform this Maneuver, divide your Melee Pool between attack and defense (remember that you’ll 
+			still need dice for the next Exchange).</p>
+			
+			<p>The defense is then rolled against your opponent’s attack, and your offense against his defense (if any). 
+			This Maneuver is obviously only useful in situations where both you and your opponent are attacking at once. 
+			All attacks are resolved normally.</p>
+			
+			<p>This Maneuver maybe performed with a parrying weapon instead of a shield in the offhand, in which case it 
+			should more properly be called “Simultaneous Parry/Strike”. Don’t forget that, unlike shields, parrying 
+			weapons wielded in the off hand have their Damage Target Numbers increased by +1.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_StopShort">Stop Short</p>
+			<table class="table table-bordered table-condensed" id="TBL_StopShortCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Maneuver consists of leaping or stomping at an opponent, and then halting suddenly to throw him off 
+			guard. To execute the Maneuver, pay the Activation Cost and then roll an Opposed Check of the attacker’s 
+			Cunning against the defender’s Sagacity. This counts as an attack. The attacker, and only he, may spend 
+			additional dice from his Melee Pool to lower the Target Number for this Check on a one-for-one basis, up to 
+			half his Heart score.</p>
+			
+			<p>If the defender at least ties the attacker, he may assume the role of aggressor. If the attacker wins, his 
+			opponent loses a number of dice from his Melee Pool for the next Exchange equal to the attacker’s Quality of 
+			Success. Should this take his Melee Pool below zero (0), any negative dice are added as bonus dice to the 
+			winner’s Melee Pool for the next Exchange.</p>
+			
+			<p>This is a Maneuver that can be performed without expenditure of Melee Pool dice, apart from any Activation 
+			Cost, and is therefore available to an attacker who has run out of MP. It is, however, effective only once per 
+			opponent (<em>ever</em> – not just per combat). Every additional attempt against the same person, whether 
+			previous ones were successful or not, acquires a cumulative +1 Melee Pool Activation Cost.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 2.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Thrust">Thrust</p>
+			<table class="table table-bordered table-condensed" id="TBL_ThrustCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>All Thrust-capable weapons have an Attack Target Number for Thrusting. Some weapons are better suited to 
+			this form of attack, as reflected in their Attack Target Number. Thrusts are also notoriously fast. <strong>In 
+			cases where two combatants attack at the same time, should one of them Thrust as his Offensive Maneuver, he 
+			receives a +1 die on his Opposed Reflex Check</strong> to determine who goes first.</p>
+			
+			<p>Should two parties with equal Reflex Thrust at the same time, both parties receive the +1 bonus to their 
+			Reflex Check.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_OFF_Toss">Toss</p>
+			<table class="table table-bordered table-condensed" id="TBL_TossCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Distraction has always been an important part of combat. This Maneuver allows you to toss a hat, glove, 
+			sidearm, or other object into your opponent’s face, causing no actual physical injury but distracting the 
+			opponent and making him lose Melee Pool dice.</p>
+			
+			<p>To execute this Maneuver, the aggressor pays any Activation Cost and then assigns dice from her Melee Pool 
+			for throwing a hand-held object at the defender. The Attack Target Number for most objects suitable for the 
+			Toss Maneuver is 6, but as an object will usually be thrown with the off hand, the final Attack Target Number 
+			is normally increased by +1.</p>
+			
+			<p>The opponent may defend by using a shield to block (but due to the surprise must use the Defence Target 
+			Numbers for projectile weapons from Table 4.2), or she may opt to use Partial Evasion as her defense.</p>
+			
+			<p>If the defender wins by a Quality of Success of at least 1, she takes initiative if having used a shield, 
+			or may purchase it if having resorted to Partial Evasion, as normal. If the attacker is victorious, she not 
+			only retains initiative but also subtracts her Qulaity of Success from her opponent’s Melee Pool for the 
+			following Exchange. As always, if this would take the Melee Pool into the negative range, these dice are added 
+			as bonus dice to the winner’s Melee Pool for the next Exchange.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_DefensiveManeuvers">Defensive Maneuvers Described</p>
+			<p>Most Defensive Maneuvers in a combat Exchange can be combined with others for greater effect. All Tests 
+			are assumed to be made against the Defence Target Number (DTN) of the weapon at hand, unless otherwise 
+			stated.</p>
+			
+			<p class="h4" id="P_DEF_Block">Block</p>
+			<table class="table table-bordered table-condensed" id="TBL_BlockCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Lance</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This is the most basic of defences used to halt or deflect an incoming attack. Where game mechanics are 
+			concerned, Blocking works essentially the same as any Parry, except that it uses the shield’s Defence Target 
+			Number.</p>
+			
+			<p>Block is the one exception to the rule that a Character may only execute one Maneuver per Exchange, as it 
+			may be combined with a Parry if both weapon and shield are wielded. In this case, the Defence Target Number for 
+			Blocking is increased by +1 for using the off-hand. Otherwise, Blocking with a designated shield in the 
+			off-hand does not increase Defence Target Number.</p>
+			
+			<table class="table table-striped table-hover" id="TBL_ShieldValues">
+				<thead>
+					<th>Shield Type</th>
+					<th>Defense Target Number vs. Melee</th>
+					<th>Defense Target Number vs. Thrown</th>
+					<th>Defense Target Number vs. Projectiles</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Large</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Small</td>
+						<td>6</td>
+						<td>7</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Buckler</td>
+						<td>7</td>
+						<td>9</td>
+						<td>11</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_BlockOpenNStrike">Block Open & Strike</p>
+			<table class="table table-bordered table-condensed" id="TBL_BlockOpenCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Maneuver consists of Blocking or Parrying an incoming attack in an open manner in order to use a 
+			second (usually the primary) weapon to attack the new opening. In an Exchange, defend with either a normal 
+			Block or Parry, but declare Block Open & Strike alongside this defense and pay its Activation Cost. In the 
+			event of a successful defense, the follow-up attack in the subsequent Exchange may be executed with bonus 
+			dice equal to this Maneuver’s Quality of Success.</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 4.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Counter">Counter</p>
+			<table class="table table-bordered table-condensed" id="TBL_CounterCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Sword & Shield *</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>2</td>
+						<td>3/2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Sword & Shield: Lower of the two given Activation Costs is for use without a shield.</strong></p>
+			
+			<p>Though primarily an offensive action, Counters are initiated by the defender. Sometimes called a Riposte, 
+			a Counter relies on receiving an opponent’s attack and using it against him. There are literally hundreds or 
+			even thousands of Counters, designed to deal with almost any attack from any direction.</p>
+			
+			<p>When a defender declares Counter as his chosen defence, he spends this Maneuver’s Activation Cost and then 
+			allocates dice as in any standard Parry. If the defender fails the Parry, his Counter also fails and he is 
+			hit. If the Parry is successful with a Quality of Success of at least one (1), the Counter is also successful, 
+			and the defender assumes the role of aggressor as normal. He receives bonus dice on his counter-attack equal 
+			to the number of Successes that were rolled in the attack successfully defended with the Counter.</p>
+			
+			<p class="h4">Effects of Counters</p>
+			<table class="table table-striped table-hover" id="TBL_Counters">
+				<thead>
+					<th>Roll d6 : Half-sword *</th>
+					<th>Roll d12 : Normal</th>
+					<th>Effect</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>1</td>
+						<td>Swing to Area One</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>2</td>
+						<td>Swing to Area Two</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>3</td>
+						<td>Swing to Area Three</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>4</td>
+						<td>Swing to Area Four</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>5</td>
+						<td>Swing to Area Five</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>6</td>
+						<td>Pommel to 13 (Damage Rating -1, Blunt)</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>7</td>
+						<td>Thrust to Face (Area 13)</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>8</td>
+						<td>Swing at the same location attacked by the opponent</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>9</td>
+						<td>Grapple</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>10</td>
+						<td>Disarm **</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>11</td>
+						<td>Thrust to Body (Areas 11 or 12)</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>12</td>
+						<td>Thrust to Body (Areas 11 or 12)</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Roll on this column when half-swording</p>
+			<p>** Defender has to pass a Knockdown Check with a Challenge Level equal to the aggressor's Quality
+			of Success.  Failure results in a successful disarm, as per the Disarm Maneuver.</strong></p>
+			
+			<p>Additionally, due to the myriad nature of Counters, the countering party should roll on the displayed table 
+			to determine the exact effect of his Counter (note that Counters with light, fencing-style blades use the 
+			Half-sword column of the Table).</p>
+			
+			<p>No Activation Cost for countering Maneuvers derived from this table need be paid, but Activation Costs for 
+			Reach differences and those singular to the weapon used must be paid.  If the countering attack changes 
+			the engagement range of the combatants, the countering party may decide whether to return to the previous 
+			engagement range once the Counter is concluded, or to remain at the new one.</p>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Disarm">Disarm</p>
+			<table class="table table-bordered table-condensed" id="TBL_DEF_DisarmCostsCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>5</td>
+						<td>3</td>
+						<td>4</td>
+						<td>3</td>
+						<td>3</td>
+						<td>3</td>
+						<td>4</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Disarming is a popular Maneuver when you are trying to avoid hurting your opponent or trying to make her 
+			surrender, but it can just as easily be used as a prelude to an easy kill.</p>
+			
+			<p>As a defense the Disarm Maneuver is performed in a similar manner to a Parry. Perfect timing is required, 
+			as the defender must wait for the attack to come and sweep her attacker’s weapon aside at the optimal moment, 
+			twisting it out of her hands. Unlike other defences, Disarm incurs a Reach penalty, such as an offense, if 
+			it is attempted against longer weapons, but only half the usual ones (0.50 rounds up). After the Activation 
+			Cost has been paid, dice are assigned as if for a Parry. If the defense is successful, the attacker must 
+			make a Knockdown Check with a Difficulty equal to the defender’s Quality of Success.</p>
+			
+			<p>Failure in the Knockdown Check means that the attacker has instead been disarmed. Whether the attacker 
+			drops his weapon or not, the defender now takes initiative. Of course, if the attacker wins, then the Disarm 
+			attempt has failed and the attack goes through (minus the defender’s Quality of Success, as usual).</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 3.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Evasion">Evasion</p>
+			<p>This is the Maneuver of avoiding an attack by moving out of its way. If Evasion is chosen as a Defensive 
+			Maneuver, any number of Evasions are possible during the Exchange, provided that dice from the Melee Pool are 
+			set aside for each individual Evasion. Defence Target Numbers are described below.</p>
+			
+			<table class="table table-striped table-hover" id="TBL_Evasion">
+				<thead>
+					<th>Defense Target Number</th>
+					<th>Type of Evasion</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>5</td>
+						<td>Full Evasion</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Partial Evasion</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Duck & Weave</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Expulsion">Expulsion</p>
+			<table class="table table-bordered table-condensed" id="TBL_ExpulsionCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>This Maneuver is not dissimilar to the offensive Beat, but is initiated by the defender’s side. It is only 
+			effective against Thrusts and Thrust-based attacks, or against Slash-based attacks made with four (4) dice 
+			or less.</p>
+			
+			<p>To execute an Expulsion, simply declare “Expulsion” alongside the standard Parry, pay this Maneuver’s 
+			Activation Cost, and allocate dice to the Parry as usual. The effects are nearly identical to those of an 
+			offensive Beat. If the Parry fails, then the round is resolved normally. If the Parry is effective, then all 
+			Maneuvers utilizing the weapon that was successfully expulsed receive a penalty equal to the defender’s 
+			Quality of Success, applicable in the Exchange immediately following the Expulsion.</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 3.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Grapple">Grapple</p>
+			<table class="table table-bordered table-condensed" id="TBL_DEF_GrappleCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>2</td>
+						<td>2</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The basics of this Maneuver are governed by many Proficiencies. It consists of grabbing the opponent, 
+			removing any weapon he wields, and changing the bout from free-flowing combat into a wrestling match, with 
+			the purpose of immobilizing the opponent, throwing him to the ground or breaking his limb.</p>
+			
+			<p>If used defensively against any attack other than an unarmed one, the Activation Cost is increased by +1. 
+			Also, Reach modifiers apply to both offensive and defensive use of the Maneuver, which of course has a Reach 
+			range of Hand.</p>
+			
+			<p>The Grapple’s Target Number is invariably 7. If the Maneuver is successfully used defensively, a hit is not 
+			only avoided, but a hold on the opponent’s weapon arm is also established. If successful, the defender is now 
+			the agressor. If the defender ties, they remain on the defense. After a successful Grapple both combatants 
+			find themselves in a clinch at the Reach range of Hand.</p>
+			
+			<p>Against an opponent grappling, the defender is assumed to be in a clinch. Until the clinch is broken, both 
+			opponenets must use Melee Pool dice from their Wrestling Proficiency. Should the clinch be entered mid-Round 
+			when another Proficiency – one other than Wrestling - was being used in the first Exchange, the Melee Pool is 
+			recalculated for the second Exchange based on Wrestling Proficiency, with dice spent in the first Exchange 
+			subtracted from the Wrestling Melee Pool.</p>
+			
+			<p>An attempt to break out of an opponent’s hold is one’s defence against attempts to immobilize, throw, or 
+			break a limb, which is a defensive Maneuver, free of any Activation Cost. The defender simply assigns dice 
+			from his Melee Pool and, checks them against a Target Number of seven (7).  Victory in this contest usually 
+			signifies the breaking of the clinch and a switch of the roles of aggressor and defender. However, this may 
+			vary according to the actual wrestling attack defended against.</p>
+			
+			<p>Alternatively, a grabbed opponent may choose to forego any attempt to break the enemy’s hold on him and 
+			simply attack him instead. He cannot use the limb that is being held for such an attack, and the Melee Pool for 
+			attacks with another part of the body are modified by –1/2 Melee Pool due to the awkwardness of having one’s 
+			freedom of movement restricted by the hold.</p>
+			
+			<p>Engagement Reach range for this attack is Hand, and it is only conducted after the enemy has carried out 
+			his – now unopposed – offensive Grapple Maneuver.</p>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Half-Sword">Half-Sword</p>
+			<p>This is one of the few practical ways to kill an armored opponent in full harness (full plate) with a sword. 
+			Used with long swords, hand-and-a-half swords, and other longer weapons, the Half-Sword technique is performed 
+			by grasping the blade of the sword with the off (usually left) hand in order to use the sword as a short 
+			spear or pole-weapon. This technique is particularly useful in close-quarters when swinging a long weapon 
+			may be impractical.</p>
+			
+			<p>Half-Swording reduces a sword’s effective Reach by one or two steps from Long to either Medium or Short, at 
+			the Player’s discretion. Note that the Half-Sword may be released into a one-handed attack at any time, 
+			nullifying any Half-Sword bonuses, but gaining Reach.</p>
+			
+			<p>Half-Swording precludes the sword being used for slashing, but it increases control over the weapon and 
+			thus lowers both Defence Target Numbers and Thrust Attack Target Numbers by one (1). The latter effectively 
+			increases damage dealt. Against any type of armor, Half-Swording it also raises the Thrust Damage Rating 
+			by +1.</p>
+			
+			<p>One can shift from normal grip to the Half-Sword at any time, though doing so during an Exchange 
+			(shifting suddenly into or out of the Half-Sword in order to execute a particular counter, for example) costs 
+			one Melee Pool die.</p>
+					
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Master-Strike">Master-Strike</p>
+			<table class="table table-bordered table-condensed" id="TBL_DEF_MasterStrikeCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>4</td>
+						<td>3</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The jewel of the art of fighting is the Master-Strike, a type of attack that both defends and offends in 
+			one motion. The technique, as it applies to <em>Blade</em>, can be used either as an offensive or defensive 
+			Maneuver. In many ways it resembles the Simultaneous Block/Strike Maneuver, however it involves only one 
+			weapon.</p>
+			
+			<p>The defender declares a Master-Strike as a defense or alongside a Parry, and pays the Activation Cost. 
+			Split this Exchange’s dice into offense and defense. Roll the defense first, as your opponent attacks. If your 
+			defence is successful, carry the dice in your Quality of Success over into the offensive roll!</p>
+			
+			<p>Should your defense fail, regardless of offensive or defensive role, the attack also fails, and all dice 
+			assigned to it are lost.</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 10.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Overrun">Overrun</p>
+			<table class="table table-bordered table-condensed" id="TBL_OverrunCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield *</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>3/2</td>
+						<td>3</td>
+						<td>3</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Mass Weapon & Shield: Lower of the two given Activation Costs is for use without a shield.</strong></p>
+			
+			<p>An Overrun is a highly specialized and demanding Maneuver, similar in concept to a Master-Strike, but it is 
+			more limited than the latter. It combines a defense and an attack in the same action, in the same Exchange, 
+			and involves evading an opponent’s blow while at the same time launching an attack of your own.</p>
+			
+			<p>After paying the Activation Cost for the Maneuver, the Player assigns dice to its defensive and offensive 
+			actions. The defensive action is an Evasion, rolled against a Target Number of eight (8) like a Partial 
+			Evasion. Any additional Activation Cost from Encumbrance, if these optional rules are being used, must be 
+			paid as well, <em>out of the dice assigned to the defense.</em></p>
+			
+			<p>If the Evasion is successful (Quality of Success of zero or greater), the dice assigned to the offensive 
+			part of the Overrun are now used to launch an immediate Bash, Cut, or Thrust against the opponent. Any 
+			Activation Cost for this Offensive Maneuver, including Reach penalties, must be paid as well, <em>out of the 
+			dice assigned to the offense.</em> Any positive Quality of Success from the Evasion carries over into the 
+			offensive part of the Maneuver as bonus dice.</p>
+			
+			<p>If the Evasion is unsuccessful, the offensive part of the Overrun goes ahead anyway, but any damage is 
+			determined before the Overrunning Character’s attack roll, and its consequences are applied in full, 
+			including Shock penalties and any possible Knockdown.</p>
+			
+			<p>A combatant carrying out a successful Overrun as her defence may assume the role of aggressor, unless the 
+			attacker inflicted a higher wound level on the Overrunner than the Overrunner inflicted on the Attacker, in 
+			which case the attacker remains the aggressor. Overrun leaves the combatants at the engagement range of the 
+			Reach of the weapon of the combatant who emerges as the aggressor.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 8.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Parry">Parry</p>
+			<table class="table table-bordered table-condensed" id="TBL_ParryCosts">
+				<thead>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield *</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>1/0</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>* Sword & Shield: Lower of the two given Activation Costs is for use without a shield.</strong></p>
+			
+			<p>This Maneuver is the basis for all non-shield, non-dodging defenses. It consists primarily of using one’s 
+			own weapon to deflect - not halt - an incoming attack. Parries are performed by simply rolling defense with 
+			the Defence Target Number of the weapon at hand as the normal Opposed check of a combat Exchange.</p>
+			
+			<p>If a combatant is wielding two weapons, one in each hand, this Maneuver allows him to deflect two attacks, 
+			one with each weapon. To do so, he assigns dice from his Melee Pool in any proportion to either Parry. Remember 
+			that actions with a weapon in the off hand are at +1 Target Number.</p>
+			
+			<p><em>This Maneuver is available at all Proficiency levels.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Quick-Draw">Quick-Draw</p>
+			<table class="table table-bordered table-condensed" id="TBL_DEF_QuickDrawCosts">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Characters using this maneuver can attack with a Cut, Bash, or Parry <strong>with any weapon of Medium Reach 
+			or shorter</strong>. Because the curvature of a weapon makes this Maneuver easier, straight-bladed or 
+			hafted weapons of Medium or longer Reach require an additional 1 Melee Pool over the normal Activation Cost. 
+			Weapons with a Reach of Hand and Short need no such curvature, and can be quick-drawn with no penalty.</p>
+			
+			<p>Weapons of Long Reach and shorter can also benefit from this Maneuver by making a sudden thrusting attack 
+			with the pommel or butt end of the weapon. This has no additional cost, but its statistics differ than the 
+			parent weapons: the attack has a Reach of Hand, and is a Thrust Attack with a Target Number of six (6), 
+			and a Damage Rating of –1 Blunt.</p>
+			
+			<p>In all cases, the weapon being quick-drawn is assumed to be at the hip or in some other very accessible 
+			place.  For those weapons carried in less accessible places - such as a boot knife or short weapon over the 
+			shoulder - add 1 Melee Pool die to the Activation Cost (compounding with any other penalties or modifiers). 
+			Weapons in packs or other immediately inaccessible places are just that: inaccessible.</p>
+			
+			<p>To perform this Maneuver in play simply declare which weapon is being quick-drawn at the beginning of any 
+			Exchange (usually the first, but not necessarily), and state whether it is being used to Cut, Bash, or Parry. 
+			After spending the Activation Cost and allowing for any penalties, a Terrain Check is made against the weapons 
+			normal Attack Target Number -1 (if the drawing hand is free) or Attack Target Number -2 (if the drawing hand 
+			is on the weapon’s grip already).  If this Terrain Check is successful, the Parry goes forward normally, using 
+			defense rules. If this Terrain Check fails, the character is forced to use some form of Evasion or get hit. 
+			The weapon will be free for the next Exchange.</p>
+			
+			<p>This Maneuver can be combined with the rules for initiative and stealing it. Likewise, don’t forget to use 
+			Reach rules here, including those rules for getting inside of a weapon’s Reach, or this Maneuver will lose 
+			much of its bite.</p>
+					
+			<p><em>This Maneuver is available at Proficiency level 4.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_Rota">Rota</p>
+			<table class="table table-bordered table-condensed" id="TBL_Rota">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>3</td>
+						<td>3</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The Rota is a riposte maneuver. The back edge of the blade is used to deflect an opposing attack, after 
+			which an immediate cut with the forward edge is performed. The weapon is not moved far, and as such, the 
+			location of the counter attack is fixed. <strong>This maneuver is only available against swinging (Cleaving 
+			or Blunt) attacks</strong>, and the counter attack must be a Cleaving or blunt swinging attack, not a 
+			thrust.</p>
+			
+			<p>The Rota is similar to the Counter Maneuver with the same benefit for success (the attacker’s successes as 
+			bonus dice for the counter attack the following exchange). However, instead of the random location of the 
+			counter attack, the Rota counter attacks the same Target Zone on the opponent that he originally targeted on 
+			the character.</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 2.</em></p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DEF_WindingNBinding">Winding & Binding</p>
+			<table class="table table-bordered table-condensed" id="TBL_WindNBind">
+				<thead>
+					<th>Cut & Thrust</th>
+					<th>Greatsword</th>
+					<th>Longsword</th>
+					<th>Sword & Shield</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Winding & Binding is a deadly game that results when two weapons clash and stick together for a time. While 
+			declared as a standard Parry, the Activation Cost of both Maneuvers must be paid. If the Parry fails, the 
+			defender is struck as normal. However, if it is successful, the Winding & Binding comes into play, with an 
+			opponent’s weapon not deflected, but instead collected on the defender’s sword, both weapons sticking 
+			together.</p>
+			
+			<p>Even if the defender merely ties the attacker, the initiative passes to him and he receives the Quality of 
+			Success of his Winding & Binding defence as bonus dice for his counterattack from the bind in the subsequent 
+			Exchange. The nature of this follow-up attack, which has no Activation Cost, is somewhat random. It is the 
+			result of the shoving and winding match of the two combatants locked together, each trying to either disengage 
+			or strike past his foe’s defending weapon.</p>
+			
+			<p>While a Thrust past an opponent’s guard is the most likely outcome, it is by no means the only one possible. 
+			To determine the actual form of the follow-up attack, the initiator of the Winding & Binding roll a d6 on
+			the following table.</p>
+			
+			<p class="h4">Winding & Binding</p>
+			<table class="table table-striped table-hover" id="TBL_WindingNBinding">
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Wind for Advantage</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Thrust to Area 13</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Thrust to Area 12</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Thrust to Area 11</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Grapple Opponent's (primary) weapon arm</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Head Butt or Hilt Strike (player's choice) to Area 13</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Swing to Area 7 (left or right, player's choice)</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>The combatant winds into an advantageous position for an attack. The Winding & Binding continues 
+			into the next Exchange without change of aggressors, but with twice this Exchange’s Quality of Success as 
+			bonus dice for the current aggressor, any or all of which may also be used as a + / - modifier for the d6 roll 
+			on the above table.</strong></p>
+			
+			<p>Winding & Binding changes the engagement range. All attacks from the above table happen at optimum Reach 
+			for the attacker, this now being the new engagement range.</p>
+			
+			<p>The defender has the choice of three defenses against the Winding & Binding attack determined on the 
+			above table:</p>
+			
+			<ol>
+				<li>If she knows the Winding & Binding Maneuver herself, she may declare it alongside a standard Parry, 
+				paying the Activation Cost for both. If she at least ties his opponent, the bind is maintained, but she 
+				becomes the new aggressor, carrying her Quality of Success in the defence over as bonus dice into her 
+				follow-up attack, as determined by her roll.</li>
+				
+				<li>SHe may try to disengage her weapon. This is handled as a normal Parry with an additional Activation 
+				Cost of +1. In addition, initiative only switches to the defender if she is successful by a Quality of 
+				Success of at least three (3).</li>
+				
+				<li>She may try to run off completely. This is handled as an Evasion with an additional Activation Cost 
+				of +3. On the first Exchange of the Winding & Binding, only Partial Evasion is possible, as the 
+				defender was attacking on the previous Exchange. Should the Winding & Binding continue into a second 
+				Exchange, the defender may now also try a Full Evasion, which – if successful - ends the bout as usual.</li>
+			</ol>
+			
+			<p>No matter how the Winding & Binding ultimately ends, the loser is now at an optimum engagement range for 
+			the combatant who emerges from Winding & Binding as the aggressor, provided the bout is not broken up by a 
+			successful Full Evasion.</p>
+			
+			<p><em>This Maneuver is available at Proficiency level 5.</em></p>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
