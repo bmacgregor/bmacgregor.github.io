@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Defence</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Defence</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Evasion : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Evasion<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_Evasion">Evasion</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_EVA_FullEvasion">Full Evasion</a></li>
+							<li><a href="#P_EVA_PartialEvasion">Partial Evasion</a></li>
+							<li><a href="#P_EVA_DuckNWeave">Duck & Weave</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_EVA_EvadingMissileAtks">Evading Missile Attacks</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="P_DefensiveActions">Defensive Actions</a></li>
+					<li><a href="P_Blocking">Blocking</a></li>
+					<li><a href="P_Shields">Shields</a></li>
+					
+					<!-- Armour : Dropdown -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Armour<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#P_ArmourOverview">Armour Overview</a></li>
+							<li><a href="#P_ArmourValues">Armour Values</a></li>
+							<li class="divider"></li>
+							<li><a href="#P_ARM_Gambeson">Gambeson</a></li>
+							<li><a href="#P_ARM_Leather">Leather</a></li>
+							<li><a href="#P_ARM_LeatherWMetal">Leather with Metal</a></li>
+							<li><a href="#P_ARM_HardenedLeather">Hardened Leather</a></li>
+							<li><a href="#P_ARM_LeatherHornScaleLamellar">Leather / Horn Scale / Lamellar</a></li>
+							<li><a href="#P_ARM_Brigandine">Brigandine</a></li>
+							<li><a href="#P_ARM_Maille">Maille</a></li>
+							<li><a href="#P_ARM_BrigandineOverMaille">Brigandine over Maille</a></li>
+							<li><a href="#P_ARM_Plate">Plate</a></li>
+						</ul>
+					</li>
+					
+					<!-- Combat : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Combat<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="melee-combat.html">Melee Combat</a></li>
+							<li><a href="ranged-combat.html">Ranged Combat</a></li>
+							<li><a href="mounted-combat.html">Mounted Combat</a></li>
+							<li class="divider"></li>
+							<li class="active"><a href="defence.html">Defence</a></li>
+							<li><a href="terrain-checks.html">Terrain Checks</a></li>
+							<li><a href="damage-types.html">Damage Types</a></li>
+							<li><a href="reach.html">Weapon Reach</a></li>
+							<li><a href="limelight.html">Limelights</a></li>
+							<li class="divider"></li>
+							<li><a href="maneuvers.html">Maneuvers</a></li>
+							<li><a href="maneuvers-offensive.html">Offensive Maneuver Table</a></li>
+							<li><a href="maneuvers-defensive.html">Defensive Maneuver Table</a></li>
+							<li class="divider"></li>
+							<li><a href="animals-in-combat.html">Animals in Combat</a></li>
+							<li><a href="melee-combat-example.html">Melee Combat Example</a></li>
+							<li><a href="fatigue.html">Fatigue (Optional)</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p class="h4">Defence</p>
+			<p>Defence focuses squarely on a warrior’s efforts to avoid being struck by an opponent.</p>
+			
+			<p class="h4" id="P_Evasion">Evasion</p>
+			<p>Evasion can be done by anyone and used with every Proficiency. It doesn’t carry any Activation Cost, 
+			unless the Character is encumbered and the optional Encumbrance rules are being used. In that case, there is 
+			an Activation Cost; it can be found on the Encumbrance Terrain Modifier table.</p>
+			
+			<p>The table below provides Target Numbers for the three common forms of evasion:</p>
+			
+			<p class="h4">Evasion Target Numbers</p>
+			<table class="table table-striped table-hover" id="TBL_EvasionTNs">
+				<tbody>
+					<tr>
+						<td>Five</td>
+						<td>Full Evasion</td>
+					</tr>
+					<tr>
+						<td>Eight</td>
+						<td>Partial Evasion</td>
+					</tr>
+					<tr>
+						<td>Ten</td>
+						<td>Duck and Weave</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p class="h4" id="P_EVA_FullEvasion">Full Evasion</p>
+			<p>Full Evasion - if successful - brings all melee to a halt as the fighters separate and possibly attempt to 
+			re-establish initiative. The bout ends for the moment, and stances can once again be assumed. If a Character 
+			conducts a Full Evasion during an Exchange, the Quality of Success is added as bonus dice.</p>
+			
+			<p class="h4" id="P_EVA_PartialEvasion">Partial Evasion</p>
+			<p>Partial Evasion - if successful - does not allow the defender to assume the role of aggressor as usual. No 
+			matter what the actual Quality of Success of the successful Partial Evasion, assuming the role of aggressor 
+			requires the immediate expenditure of 2 Melee Pool points. If the successful defender is unable (or unwilling) 
+			to spend those dice, the aggressor retains his role.</p>
+			
+			<p class="h4" id="P_EVA_DuckNWeave">Duck & Weave</p>
+			<p>Duck and Weave - if successful - gives the evading warrior a great opportunity to strike her opponent. She 
+			automatically assumes the role of aggressor (even if her Quality of Success was merely zero) and moves into the 
+			optimum range for her weapon’s Reach. Her opponent may <em>not</em> employ a shield against her follow-up 
+			attack on the next Exchange, and loses dice from her Melee Pool equal to the Successes on the attack roll Duck 
+			and Weave defended against. Should this penalty take the Melee Pool into the negative range, those dice are 
+			added as bonus dice to the other party’s Melee Pool.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_EVA_EvadingMissileAtks">Evading Missile Attacks</p>
+			<p>Evasion can also be used to defend against missile attacks, provided the defender is aware of them. The 
+			Target Number for this is 8 (Partial Evasion) for thrown weapons, and 10 (Duck & Weave) for arrows, crossbow 
+			bolts, and bullets.</p>
+			
+			<p>If the defender is aware that a gun, bow, or crossbow is being aimed at him, and has the opportunity to 
+			start evasive movement before the missile is fired, the Evasion Target Number is now merely 8 (Partial 
+			Evasion). This represents weaving around in a highly unpredictable way. If the Character is engaged in a bout 
+			of melee combat, his unpredictable combat moves automatically count as this type of weaving movement, allowing 
+			him to use the Partial Evasion Target Number against a missile attack.</p>
+			
+			<p>Evading missile attacks as outlined above is also possible when a Character is not in a melee situation. 
+			In this case, she may use dice equal to half her best Melee Pool rating, even if she may not currently have the 
+			equipment necessary for fighting with that Proficiency at hand. Applicable Passion Attributes figure normally 
+			in this halved Melee Pool rating (they are added before dividing the pool in two).</p>
+			
+			<p>When a Character uses either Partial Evasion or Duck & Weave as a defence against a melee or a missile 
+			attack, the result of this single defence roll is applied against all missile attacks aimed at him during this 
+			Exchange. Equally, if a Character not currently in a melee is fired upon <strong>and</strong> uses Partial 
+			Evasion to defend against a missile attack, the result of this single roll is applied against all missile 
+			attacks on him within this Combat Round. Should he be targeted by both thrown and launched weapons which 
+			require different Target Numbers to defend against (8 and 10), a single roll is still used to defend against all 
+			of the attacks, but this roll will still cover the two different Quality of Successes required; one against the 
+			Target Number of 8 and one against the Target Number of 10.</p>
+			
+			<div class="panel-body bg-warning" id="DIV_Example_RangedEvasion">
+				<p><em><strong>Example</strong>: Otho evades both a javelin and a crossbow. He is not aware of the 
+				crossbow, so his Defence Target Number against the javelin is 8 and against the crossbow bolt 10... His 
+				Melee Pool is 13, but as he isn't in a melee, he rolls half his of his Melee Pool (7 dice). The dice come 
+				up 2, 5, 6, 7, 8, 10, 12 – he has 3 Successes against the javelin (8, 10, 12) and 2 against the 
+				crossbow (10, 12).</em></p>
+			</div>
+			
+			<p>If somebody fires into a melee combat, the missile attack is always resolved on Exchange 1.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_DefensiveActions">Defensive Actions</p>
+			<p>The bedrock of all Defensive Maneuvers discussed is the Block, the Parry, and Evasion. Most defensive 
+			Maneuvers are directly tied to these basics. <strong>Parrying</strong> is the preferred defence of warriors 
+			everywhere. Most warriors grasp the idea of turning the attack of an opponent’s weapon with their own. Any 
+			amount of Melee Pool dice may be devoted to parrying while defending. The challenge of deflecting another’s 
+			weapon is reflected by the defending weapon’s Defence Target Number (DTN).</p>
+			
+			<p>Some weapon schools, for instance those of the Cut & Thrust Proficiency, teach using a secondary parrying 
+			weapon, usually a dagger, in the off-hand, allowing the person to potentially parry twice in a single Exchange, 
+			or to perform Maneuvers like Simultaneous Block/Strike. Although parrying does not involve great manual 
+			dexterity, a person’s secondary arm is still handicapped. <strong>The Defence Target Number of any parry 
+			conducted with the off-hand is therefore increased by one</strong>.</p>
+			
+			<p class="h4" id="P_Blocking">Blocking</p>
+			<p>Blocking is the action of interposing an object, usually a shield, between oneself and the attack, perhaps 
+			in a rather unsophisticated way, but also by skilfully angling a shield or using it offensively to beat 
+			aside an attacking weapon. In this use, it is similar to the parry. Every blocking object is assigned a Target 
+			Number for defending with it, this Target Number being dependent on the size of the object, and how quickly and 
+			gracefully it can be moved. It is thus almost identical to a weapon’s Defence Target Number, but with one 
+			important difference: Shields (and only shields, not improvised blocking objects like chairs and the like) are 
+			designed to be used in the off-hand, and therefore suffer no penalty for being used with the wrong hand.</p>
+			
+			<p class="h4" id="P_Shields">Shields</p>
+			<p>Shields are divided into three types, depending on size: large, small, and bucklers. A large shield is just 
+			that – a very large shield, measuring over one meter in length if an oblong shape, or having a diameter of not 
+			much less than one meter if more squarish or round. It offers superior protection but is unwieldy to carry 
+			about and very awkward to use on horseback as one’s horse constantly gets in the way of the shield. On the 
+			positive side, most large shields are big enough to completely hunker down behind, removing its owner, 
+			provided he remains static, from the danger of missile attacks.</p>
+			
+			<p>A small shield is anything larger than a buckler and smaller than a large shield. It is versatile, and of 
+			equal use on foot or horseback.</p>
+			
+			<p>Finally, a buckler is a small, agile shield. It isn't strapped to the arm, but instead, carried in a 
+			fist-grip. It's rarely any larger than 0.3 meters in diameter. All types of shields have variable Defence 
+			Target Numbers against different forms of attack such as melee, missile attacks with thrown weapons such as 
+			javelins or hatchets, or against fired projectiles like arrows, crossbow bolts, and sling stones – though fired 
+			objects are often so fast (causing the defender to roll vs. a high Defence Target Number) as to often rule out 
+			blocking as a viable defence against fired missiles.</p>
+			
+			<p>The applicable Defensive Target Number depends on both the type of shield, and the attack being resisted. 
+			See the table, below:</p>
+			
+			<p class="h4" id="P_ShieldValues">Shield Defence Target Numbers</p>
+			<table class="table table-striped table-hover" id="TBL_ShieldValues">
+				<thead>
+					<th>Shield Type</th>
+					<th>Versus Melee</th>
+					<th>Versus Thrown</th>
+					<th>Versus Projectile</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Large</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Small</td>
+						<td>6</td>
+						<td>7</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Buckler</td>
+						<td>7</td>
+						<td>9</td>
+						<td>11</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ArmourOverview">Armour Overview</p>
+			<p>The function of armour is to reduce or prevent injury to someone being hit in armoured spot. It does so by 
+			reducing the Wound Level of any hit to an armoured location by the Armour Value (AV) of that armour. If the 
+			Wound Level is reduced to zero or less, no wound is inflicted. Armour in <em>Blade</em> doesn't apply to all 
+			locations of the armoured person, but to each location only to the extent that armour is worn in the spot being 
+			struck.</p>
+			
+			<p>Someone wearing a short tunic of sturdy leather and an iron helmet will have a different Armour Value to the 
+			crown of her head than to her guts or shins. Because of this, it is essential to record which spot is armoured, 
+			and to what degree. The <em>Blade</em> Character sheet provides space for such notation. Armour doesn’t provide 
+			the same Armour Value against all types of damage; a thickly padded gambeson provides decent protection against 
+			Blunt damage, but much less so against Piercing. Each armour type has three Armour Values; one against 
+			Piercing, one against Blunt, and one against Cleaving. These Armour Values can be found in the table below.</p>
+			
+			<p>Not all armours have an Armour Value against Cleaving damage. Metal armours are virtually impossible to cut 
+			through with any weapon driven by human strength; the most that can be achieved is a dent or a small rip, a far 
+			cry from a serious wound. This doesn’t mean that the wearer of such armour is immune against Cleaving weapons – 
+			even if a blade does not actually cut through the armour, the impact will still transfer Blunt trauma, possibly 
+			breaking bones, or perhaps even killing the wearer, all without seriously damaging the armour.</p>
+			
+			<p>For this reason, all weapon stats in the Appendix include Blunt Damage Ratings. Armour lacking a Cleaving 
+			Value uses the Blunt Armour Value against Cleaving attacks, while attacking weapons calculate damage inflicted 
+			against such armour use their Blunt Damage Ratings.</p>
+			
+			<p class="h4" id="P_ArmourValues">Armour Values vs. Weapon Type</p>
+			<table class="table table-striped table-hover" id="TBL_ArmourValues">
+				<thead>
+					<th>Protection Type</th>
+					<th>Versus Piercing</th>
+					<th>Versus Blunt</th>
+					<th>Versus Cleaving</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Gambeson</td>
+						<td>1</td>
+						<td>2</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Leather</td>
+						<td>2</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Leather with Metal</td>
+						<td>2</td>
+						<td>1</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>Hardened Leather</td>
+						<td>3</td>
+						<td>2</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Leather / Horn Scale / Lamellar *</td>
+						<td>3</td>
+						<td>3</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>Metal Scale / Lamellar *</td>
+						<td>4</td>
+						<td>4</td>
+						<td>n/a</td>
+					</tr>
+					<tr>
+						<td>Brigandine *</td>
+						<td>4</td>
+						<td>4</td>
+						<td>n/a</td>
+					</tr>
+					<tr>
+						<td>Maille *</td>
+						<td>4</td>
+						<td>3</td>
+						<td>n/a</td>
+					</tr>
+					<tr>
+						<td>Brigandine over Maille *</td>
+						<td>5</td>
+						<td>3</td>
+						<td>n/a</td>
+					</tr>
+					<tr>
+						<td>Plate **</td>
+						<td>6 / 7</td>
+						<td>4 / 5</td>
+						<td>n/a</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p><strong>* Requires the wearing of a gambeson to be functional. If such armour is worn without a gambeson, 
+			all Armour Values are halved.</p>
+			<p>** Use the lesser value if suits of articulated plate are not available, otherwise, use the greater value for
+			the head and torso and the lesser value for the limbs. Requires the use of a gambeson.</strong></p>
+			
+			<hr/>
+			
+			<p class="h3">3. Armour Types</p>
+			<p class="h4" id="P_ARM_Gambeson">Gambeson</p>
+			<p>Pliable textile armour made of a number of layers of quilted cloth and stuffed with cotton, animal hair or 
+			other padding. Many other types of armour require the wearing of a gambeson underneath to function properly, 
+			which is why the gambeson is also called an arming doublet.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_Leather">Leather</p>
+			<p>Tough, yet pliable, cured hide.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_LeatherWMetal">Leather with Metal</p>
+			<p>Pliable leather with short metal strips or rings sewn in strategic places to guard against cuts.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_HardenedLeather">Hardened Leather</p>
+			<p>Cured hide boiled and then dried to make it harder at the cost of most of its pliability. It can be 
+			fashioned into segments large enough to serve as helmets and greaves, but not for workable breastplates.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_LeatherHornScaleLamellar">Leather / Horn Scale / Lamellar</p>
+			<p>Armour fashioned from strips of either hardened leather or animal bone. For scale armour, the strips are sewn 
+			onto a backing of soft leather or heavy canvas, and then overlapped like roofing tiles. For lamellar armour, 
+			each strip has holes fashioned into its edges and are then bound together and overlapped by two neighbouring 
+			pieces while yet again overlapping others. Lamellar is therefore quite rigid, while scale is minimally 
+			pliable. Still, neither can be used to protect a joint, and both require the wearing of a gambeson 
+			underneath.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_Brigandine">Brigandine</p>
+			<p>Armour made of palm- to hand-sized metal plates, each sandwiched between two layers of heavy canvas or 
+			soft leather and riveted together to stay in place, also known as Coat of Plates. Brigandine is quite rigid 
+			and cannot be used to protect joints. It requires wearing of a gambeson underneath. Brigandine Armour Values 
+			can also be used for Imperial Roman legionaries’ segmented armour.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_Maille">Maille</p>
+			<p>Also known as chainmail, this armour consists of a mesh of small metal rings, each interlinked with 
+			neighbouring rings. It is supremely pliable and can therefore be used to protect joints, but it, too, is 
+			dependent on a gambeson being worn underneath.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_BrigandineOverMaille">Brigandine over Maille</p>
+			<p>A special blend of layering armours, this was common during the transitional period from maille to plate, 
+			and consists of maille with additional brigandine worn over it to protect the torso from shoulder to hip.</p>
+			
+			<hr/>
+			
+			<p class="h4" id="P_ARM_Plate">Plate</p>
+			<p>Metal plates shaped to encase the body, including helmets. Plate armour requires the wearing of a gambeson, 
+			which along with an articulated suit of plate may also have insets of maille.</p>
+			
+			<!-- Content must end before this -->
+			<br/>  
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
