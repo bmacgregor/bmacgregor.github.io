@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proficiency Table</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar begins here -->
+	<nav class="navbar navbar-inverse navbar-static-top no-margin" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				
+				<!-- Hamburger -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-test-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<!-- "logo" text -->
+				<a class="navbar-brand" href="#">Blade SRD : Proficiency Table</a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-right" id="bs-test-navbar-collapse-1">
+			
+				<!-- Navbar links -->
+				<ul class="nav navbar-nav">
+					<li><a href="../home.html">SRD Home</a></li>
+					
+					<!-- Character Creation : Dropdown items -->
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Training<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="training.html">Training and Advancement</a></li>
+							<li class="divider"></li>
+							<li><a href="assets.html">Assets</a></li>
+							<li><a href="proficiencies.html">Proficiencies</a></li>
+							<li class="active"><a href="proficiency-table.html">Proficiency Table</a></li>
+							<li><a href="skills.html">Skills</a></li>
+							<li><a href="skill-guide.html">Skill Guide</a></li>
+							<li class="divider"></li>
+							<li><a href="passion-attributes.html">Passion Attributes</a></li>
+							<li><a href="drama.html">Drama</a></li>
+							<li><a href="karma.html">Karma</a></li>
+						</ul>
+					</li>
+
+					<!-- Dropdown items -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Chapters<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="../ch1-mechanics/home.html">Chapter One: Mechanics</a></li>
+							<li><a href="../ch2-characters/home.html">Chapter Two: Character Creation</a></li>
+							<li class="active"><a href="../ch3-training/home.html">Chapter Three: Training</a></li>
+							<li><a href="../ch4-combat/home.html">Chapter Four: Combat</a></li>
+							<li><a href="../ch5-travel/home.html">Chapter Five: Travel and Health</a></li>
+							<li><a href="../ch6-sorcery/home.html">Chapter Six: Sorcery</a></li>
+							<li><a href="../ch7-sns-gaming/home.html">Chapter Seven: S&S Gaming</a></li>
+							<li class="divider"></li>
+							<li><a href="../appendix/home.html">Appendix and Tables</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar ends here -->
+	
+	<!-- Jumbotron begins here -->
+	<div class="jumbotron">
+		<div class="container">
+			<p class="h2">Proficiencies Described</p>
+			<p>Some fighting styles are quite similar to others, and each Proficiency lists those styles that are closely 
+			related. These “Defaults” are designated with a negative Proficiency modifier based on the Proficiency from 
+			which the default originates.</p>
+		</div>
+	</div>
+	<!-- Jumbotron ends here -->
+	
+	<!-- Content begins here -->
+	<div class="container text-justify">
+		<div class="panel-body">
+			<p>Defaults are listed in the following table. Thus, if your primary Proficiency is Sword & Shield and you 
+			need to find the default for Greatsword, read the “defaults from Sword & Shield” column on the Greatsword 
+			line of the proficiencies table, and apply this modifier to your Sword & Shield rating. In this case it is –3, 
+			meaning that you can use the Greatsword Proficiency at 3 less than your Sword & Shield Proficiency.</p>
+			
+			<hr/>
+			
+			<p class="h4">Melee Proficiency Defaults</p>
+			<table class="table table-bordered table-condensed table-hover" id="TBL_MeleeProfDefaults">
+				<thead>
+					<th></th>
+					<th>Brawling</th>
+					<th>Cut & Thrust</th>
+					<th>Dagger</th>
+					<th>Greatsword</th>
+					<th>Lance</th>
+					<th>Longsword</th>
+					<th>Mass Weapon & Shield</th>
+					<th>Polearm</th>
+					<th>Spear & Shield</th>
+					<th>Sword & Shield</th>
+					<th>Wrestling</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Brawling</td>
+						<td>-</td>
+						<td>-2</td>
+						<td>-1</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-1</td>
+					</tr>
+					<tr>
+						<td>Cut & Thrust</td>
+						<td>-4</td>
+						<td>-</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-4</td>
+					</tr>
+					<tr>
+						<td>Dagger</td>
+						<td>-1</td>
+						<td>-2</td>
+						<td>-</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-2</td>
+					</tr>
+					<tr>
+						<td>Greatsword</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-</td>
+						<td>n/a</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+					</tr>
+					<tr>
+						<td>Lance</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>-</td>
+						<td>n/a</td>
+						<td>n/a</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>n/a</td>
+						<td>n/a</td>
+					</tr>
+					<tr>
+						<td>Longsword</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-1</td>
+						<td>n/a</td>
+						<td>-</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-3</td>
+					</tr>
+					<tr>
+						<td>Mass Weapon & Shield</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-4</td>
+						<td>-</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-4</td>
+					</tr>
+					<tr>
+						<td>Polearm</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-4</td>
+					</tr>
+					<tr>
+						<td>Spear & Shield</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-2</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-3</td>
+						<td>-</td>
+						<td>-3</td>
+						<td>-4</td>
+					</tr>
+					<tr>
+						<td>Sword & Shield</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>n/a</td>
+						<td>-2</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>-3</td>
+						<td>-</td>
+						<td>-4</td>
+					</tr>
+					<tr>
+						<td>Wrestling</td>
+						<td>-1</td>
+						<td>-4</td>
+						<td>-2</td>
+						<td>-4</td>
+						<td>n/a</td>
+						<td>-3</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-4</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<br/>
+		</div>
+	</div>
+	<!-- Content ends here -->
+	
+	<!-- Footer begins here -->
+	<footer class="site-footer footer-static-bottom">
+		<div class="container-fluid">
+			<h4>SRD created by Brennan MacGregor, 2016</h4>
+		</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
