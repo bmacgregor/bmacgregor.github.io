@@ -1256,46 +1256,46 @@ function setupSwung(){
 	allSwung[5] = new damage("area_1", "level_1", "d6_6", 0, 2, 0, 0, 0, "Foe fakes to the right and avoids most of your strike", "Knee and Nearby Areas", "m", false);
 	
 	allSwung[6] = new damage("area_1", "level_2", "d6_1", 1, 4, 0, 0, 0, "Your point drifted – Foe would have been hobbled otherwise", "Foot", "m", false);
-	allSwung[7] = new damage("area_1", "level_2", "d6_2", 1, 4, 1, 0, 0, "Wild swing would have removed foe's leg had it connected properly", "Shin and Lower Leg", "m", false);
-	allSwung[8] = new damage("area_1", "level_2", "d6_3", 1, 4, 1, 0, 0, "Wild swing would have removed foe's leg had it connected properly", "Shin and Lower Leg", "m", false);
-	allSwung[9] = new damage("area_1", "level_2", "d6_4", 1, 4, 1, 0, 0, "Wild swing would have removed foe's leg had it connected properly", "Shin and Lower Leg", "m", false);
+	allSwung[7] = new damage("area_1", "level_2", "d6_2", 1, 4, 1, 0, 0, "Wild swing would have removed Foe's leg had it connected properly", "Shin and Lower Leg", "m", false);
+	allSwung[8] = new damage("area_1", "level_2", "d6_3", 1, 4, 1, 0, 0, "Wild swing would have removed Foe's leg had it connected properly", "Shin and Lower Leg", "m", false);
+	allSwung[9] = new damage("area_1", "level_2", "d6_4", 1, 4, 1, 0, 0, "Wild swing would have removed Foe's leg had it connected properly", "Shin and Lower Leg", "m", false);
 	allSwung[10] = new damage("area_1", "level_2", "d6_5", 2, 4, 1, 0, 0, "Lazy strike delivers weak tap on knee", "Knee and Nearby Areas", "m", false);
 	allSwung[11] = new damage("area_1", "level_2", "d6_6", 2, 4, 1, 0, 0, "Lazy strike delivers weak tap on knee", "Knee and Nearby Areas", "m", false);
 	
 	allSwung[12] = new damage("area_1", "level_3", "d6_1", 3, 6, 1, 1, 0, "Great recovery slices Foe's foot", "Foot", "m", false);
-	allSwung[13] = new damage("area_1", "level_3", "d6_2", 3, 6, 2, 1, 0, "Cheap shot to foe's shin causes him to rage", "Shin and Lower Leg", "m", false);
-	allSwung[14] = new damage("area_1", "level_3", "d6_3", 3, 6, 2, 1, 0, "Cheap shot to foe's shin causes him to rage", "Shin and Lower Leg", "m", false);
-	allSwung[15] = new damage("area_1", "level_3", "d6_4", 3, 6, 2, 1, 0, "Cheap shot to foe's shin causes him to rage", "Shin and Lower Leg", "m", false);
-	allSwung[16] = new damage("area_1", "level_3", "d6_5", 4, 7, 2, 1, 0, "Reckless assault drives foe back", "Knee and Nearby Areas", "m", false);
-	allSwung[17] = new damage("area_1", "level_3", "d6_6", 4, 7, 2, 1, 0, "Reckless assault drives foe back", "Knee and Nearby Areas", "m", false);
+	allSwung[13] = new damage("area_1", "level_3", "d6_2", 3, 6, 2, 1, 0, "Cheap shot to Foe's shin causes him to rage", "Shin and Lower Leg", "m", false);
+	allSwung[14] = new damage("area_1", "level_3", "d6_3", 3, 6, 2, 1, 0, "Cheap shot to Foe's shin causes him to rage", "Shin and Lower Leg", "m", false);
+	allSwung[15] = new damage("area_1", "level_3", "d6_4", 3, 6, 2, 1, 0, "Cheap shot to Foe's shin causes him to rage", "Shin and Lower Leg", "m", false);
+	allSwung[16] = new damage("area_1", "level_3", "d6_5", 4, 7, 2, 1, 0, "Reckless assault drives Foe back", "Knee and Nearby Areas", "m", false);
+	allSwung[17] = new damage("area_1", "level_3", "d6_6", 4, 7, 2, 1, 0, "Reckless assault drives Foe back", "Knee and Nearby Areas", "m", false);
 	
-	allSwung[18] = new damage("area_1", "level_4", "d6_1", 6, 8, 2, 1, 0, "Powerful chop hammers through foe's foot", "Foot", "m", false);
+	allSwung[18] = new damage("area_1", "level_4", "d6_1", 6, 8, 2, 1, 0, "Powerful chop hammers through Foe's foot", "Foot", "m", false);
 	allSwung[19] = new damage("area_1", "level_4", "d6_2", 6, 8, 3, 2, 0, "Foe frenzies with pain", "Shin and Lower Leg", "m", false);
 	allSwung[20] = new damage("area_1", "level_4", "d6_3", 6, 8, 3, 2, 0, "Foe frenzies with pain", "Shin and Lower Leg", "m", false);
 	allSwung[21] = new damage("area_1", "level_4", "d6_4", 6, 8, 3, 2, 0, "Foe frenzies with pain", "Shin and Lower Leg", "m", false);
 	allSwung[22] = new damage("area_1", "level_4", "d6_5", 7, 9, 3, 2, 0, "A solid strike hammers into Foe's knee", "Knee and Nearby Areas", "m", false);
 	allSwung[23] = new damage("area_1", "level_4", "d6_6", 7, 9, 3, 2, 0, "A solid strike hammers into Foe's knee", "Knee and Nearby Areas", "m", false);
 	
-	allSwung[24] = new damage("area_1", "level_5", "d6_1", 8, 10, 3, 2, 0, "Animal swing tears into foe's instep", "Foot", "m", false);
-	allSwung[25] = new damage("area_1", "level_5", "d6_2", 8, 10, 3, 2, 0, "You shift gears and surprise foe with wicked blow to shin", "Shin and Lower Leg", "m", false);
-	allSwung[26] = new damage("area_1", "level_5", "d6_3", 8, 10, 3, 2, 0, "You shift gears and surprise foe with wicked blow to shin", "Shin and Lower Leg", "m", false);
-	allSwung[27] = new damage("area_1", "level_5", "d6_4", 8, 10, 3, 2, 0, "You shift gears and surprise foe with wicked blow to shin", "Shin and Lower Leg", "m", false);
+	allSwung[24] = new damage("area_1", "level_5", "d6_1", 8, 10, 3, 2, 0, "Animal swing tears into Foe's instep", "Foot", "m", false);
+	allSwung[25] = new damage("area_1", "level_5", "d6_2", 8, 10, 3, 2, 0, "You shift gears and surprise Foe with wicked blow to shin", "Shin and Lower Leg", "m", false);
+	allSwung[26] = new damage("area_1", "level_5", "d6_3", 8, 10, 3, 2, 0, "You shift gears and surprise Foe with wicked blow to shin", "Shin and Lower Leg", "m", false);
+	allSwung[27] = new damage("area_1", "level_5", "d6_4", 8, 10, 3, 2, 0, "You shift gears and surprise Foe with wicked blow to shin", "Shin and Lower Leg", "m", false);
 	allSwung[28] = new damage("area_1", "level_5", "d6_5", 9, 11, 3, 2, 0, "Foe dodges madly, but ends up taking the full force of your blow", "Knee and Nearby Areas", "m", false);
 	allSwung[29] = new damage("area_1", "level_5", "d6_6", 9, 11, 3, 2, 0, "Foe dodges madly, but ends up taking the full force of your blow", "Knee and Nearby Areas", "m", false);
 	
-	allSwung[30] = new damage("area_1", "level_6", "d6_1", 11, 12, 3, 3, 0, "Color drains from foe's face as he collapses", "Foot", "m", false);
-	allSwung[31] = new damage("area_1", "level_6", "d6_2", 11, 12, 4, 3, 0, "Your raging swing destroys foe's leg below the knee", "Shin and Lower Leg", "m", false);
-	allSwung[32] = new damage("area_1", "level_6", "d6_3", 11, 12, 4, 3, 0, "Your raging swing destroys foe's leg below the knee", "Shin and Lower Leg", "m", false);
-	allSwung[33] = new damage("area_1", "level_6", "d6_4", 11, 12, 4, 3, 0, "Your raging swing destroys foe's leg below the knee", "Shin and Lower Leg", "m", false);
+	allSwung[30] = new damage("area_1", "level_6", "d6_1", 11, 12, 3, 3, 0, "Color drains from Foe's face as he collapses", "Foot", "m", false);
+	allSwung[31] = new damage("area_1", "level_6", "d6_2", 11, 12, 4, 3, 0, "Your raging swing destroys Foe's leg below the knee", "Shin and Lower Leg", "m", false);
+	allSwung[32] = new damage("area_1", "level_6", "d6_3", 11, 12, 4, 3, 0, "Your raging swing destroys Foe's leg below the knee", "Shin and Lower Leg", "m", false);
+	allSwung[33] = new damage("area_1", "level_6", "d6_4", 11, 12, 4, 3, 0, "Your raging swing destroys Foe's leg below the knee", "Shin and Lower Leg", "m", false);
 	allSwung[34] = new damage("area_1", "level_6", "d6_5", 12, 13, 4, 3, 0, "Foe tries to hold his ground against your assault. You rip off his kneecap", "Knee and Nearby Areas", "m", false);
 	allSwung[35] = new damage("area_1", "level_6", "d6_6", 12, 13, 4, 3, 0, "Foe tries to hold his ground against your assault. You rip off his kneecap", "Knee and Nearby Areas", "m", false);
 	
 	// area two values
 	allSwung[36] = new damage("area_2", "level_1", "d6_1", 0, 2, 0, 0, 0, "Foe deflects most of your attack", "Knee and Nearby Areas", "m", false);
 	allSwung[37] = new damage("area_2", "level_1", "d6_2", 0, 2, 0, 0, 0, "Foe deflects most of your attack", "Knee and Nearby Areas", "m", false);
-	allSwung[38] = new damage("area_2", "level_1", "d6_3", 0, 2, 0, 0, 0, "Near miss to groin has foe panicked", "Thigh", "m", false);
-	allSwung[39] = new damage("area_2", "level_1", "d6_4", 0, 2, 0, 0, 0, "Near miss to groin has foe panicked", "Thigh", "m", false);
-	allSwung[40] = new damage("area_2", "level_1", "d6_5", 0, 2, 0, 0, 0, "Near miss to groin has foe panicked", "Thigh", "m", false);
+	allSwung[38] = new damage("area_2", "level_1", "d6_3", 0, 2, 0, 0, 0, "Near miss to groin has Foe panicked", "Thigh", "m", false);
+	allSwung[39] = new damage("area_2", "level_1", "d6_4", 0, 2, 0, 0, 0, "Near miss to groin has Foe panicked", "Thigh", "m", false);
+	allSwung[40] = new damage("area_2", "level_1", "d6_5", 0, 2, 0, 0, 0, "Near miss to groin has Foe panicked", "Thigh", "m", false);
 	allSwung[41] = new damage("area_2", "level_1", "d6_6", 0, 2, 0, 0, 0, "Foe snarls at you", "Hip", "m", false);
 	
 	allSwung[42] = new damage("area_2", "level_2", "d6_1", 2, 4, 1, 0, 0, "The blow cleaves down, ripping at Foe's knee", "Knee and Nearby Areas", "m", false);
@@ -1314,17 +1314,17 @@ function setupSwung(){
 	
 	allSwung[54] = new damage("area_2", "level_4", "d6_1", 7, 9, 3, 2, 0, "Impact on Foe's kneecap causes him to stumble", "Knee and Nearby Areas", "m", false);
 	allSwung[55] = new damage("area_2", "level_4", "d6_2", 7, 9, 3, 2, 0, "Impact on Foe's kneecap causes him to stumble", "Knee and Nearby Areas", "m", false);
-	allSwung[56] = new damage("area_2", "level_4", "d6_3", 7, 8, 3, 1, 0, "Smooth delivery leaves foe dazed", "Thigh", "m", false);
-	allSwung[57] = new damage("area_2", "level_4", "d6_4", 7, 8, 3, 1, 0, "Smooth delivery leaves foe dazed", "Thigh", "m", false);
-	allSwung[58] = new damage("area_2", "level_4", "d6_5", 7, 8, 3, 1, 0, "Smooth delivery leaves foe dazed", "Thigh", "m", false);
-	allSwung[59] = new damage("area_2", "level_4", "d6_6", 7, 9, 3, 1, 0, "Sweeping attack staggers foe. He is off-balance", "Hip", "m", false);
+	allSwung[56] = new damage("area_2", "level_4", "d6_3", 7, 8, 3, 1, 0, "Smooth delivery leaves Foe dazed", "Thigh", "m", false);
+	allSwung[57] = new damage("area_2", "level_4", "d6_4", 7, 8, 3, 1, 0, "Smooth delivery leaves Foe dazed", "Thigh", "m", false);
+	allSwung[58] = new damage("area_2", "level_4", "d6_5", 7, 8, 3, 1, 0, "Smooth delivery leaves Foe dazed", "Thigh", "m", false);
+	allSwung[59] = new damage("area_2", "level_4", "d6_6", 7, 9, 3, 1, 0, "Sweeping attack staggers Foe. He is off-balance", "Hip", "m", false);
 	
 	allSwung[60] = new damage("area_2", "level_5", "d6_1", 9, 11, 3, 2, 0, "Brutal swing to the leg causes Foe to sob in agony", "Knee and Nearby Areas", "m", false);
 	allSwung[61] = new damage("area_2", "level_5", "d6_2", 9, 11, 3, 2, 0, "Brutal swing to the leg causes Foe to sob in agony", "Knee and Nearby Areas", "m", false);
-	allSwung[62] = new damage("area_2", "level_5", "d6_3", 9, 10, 4, 2, 0, "Fake foe out and rip open his thigh", "Thigh", "m", false);
-	allSwung[63] = new damage("area_2", "level_5", "d6_4", 9, 10, 4, 2, 0, "Fake foe out and rip open his thigh", "Thigh", "m", false);
-	allSwung[64] = new damage("area_2", "level_5", "d6_5", 9, 10, 4, 2, 0, "Fake foe out and rip open his thigh", "Thigh", "m", false);
-	allSwung[65] = new damage("area_2", "level_5", "d6_6", 9, 12, 4, 2, 0, "Titan strike buries point deep in foe's hip", "Hip", "m", false);
+	allSwung[62] = new damage("area_2", "level_5", "d6_3", 9, 10, 4, 2, 0, "Fake Foe out and rip open his thigh", "Thigh", "m", false);
+	allSwung[63] = new damage("area_2", "level_5", "d6_4", 9, 10, 4, 2, 0, "Fake Foe out and rip open his thigh", "Thigh", "m", false);
+	allSwung[64] = new damage("area_2", "level_5", "d6_5", 9, 10, 4, 2, 0, "Fake Foe out and rip open his thigh", "Thigh", "m", false);
+	allSwung[65] = new damage("area_2", "level_5", "d6_6", 9, 12, 4, 2, 0, "Titan strike buries point deep in Foe's hip", "Hip", "m", false);
 	
 	allSwung[66] = new damage("area_2", "level_6", "d6_1", 12, 13, 4, 3, 0, "Vicious assault brings Foe to the ground", "Knee and Nearby Areas", "m", false);
 	allSwung[67] = new damage("area_2", "level_6", "d6_2", 12, 13, 4, 3, 0, "Vicious assault brings Foe to the ground", "Knee and Nearby Areas", "m", false);
@@ -1334,6 +1334,225 @@ function setupSwung(){
 	allSwung[71] = new damage("area_2", "level_6", "d6_6", 12, 14, 6, 3, 0, "Foe goes white with pain and struggles to keep standing", "Hip", "m", false);
 	
 	// area three values
+	allSwung[72] = new damage("area_3", "level_1", "d6_1", 0, 2, 0, 0, 0, "Foe springs away at the last moment", "Hip", "m", false);
+	allSwung[73] = new damage("area_3", "level_1", "d6_2", 0, 2, 0, 0, 0, "Solid swing, but poor impact", "Upper Abdominals", "m", false);			
+	allSwung[74] = new damage("area_3", "level_1", "d6_3", 0, 2, 0, 0, 0, "Solid swing, but poor impact", "Lower Abdominals", "m", false);
+	allSwung[75] = new damage("area_3", "level_1", "d6_4", 0, 3, 0, 0, 0, "Strike landed flat", "Ribcage", "m", false);
+	allSwung[76] = new damage("area_3", "level_1", "d6_5", 0, 3, 0, 0, 0, "Strike landed flat", "Ribcage", "m", false);
+	allSwung[77] = new damage("area_3", "level_1", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	
+	allSwung[78] = new damage("area_3", "level_2", "d6_1", 2, 4, 1, 0, 0, "Foe vaults left to avoid disaster", "Hip", "m", false);
+	allSwung[79] = new damage("area_3", "level_2", "d6_2", 3, 5, 2, 0, 0, "Foe is slammed back, and paces warily", "Upper Abdominals", "m", false);			
+	allSwung[80] = new damage("area_3", "level_2", "d6_3", 3, 5, 2, 0, 0, "Foe is slammed back, and paces warily", "Lower Abdominals", "m", false);
+	allSwung[81] = new damage("area_3", "level_2", "d6_4", 3, 5, 2, 0, 0, "Foe clumsily tries to disarm you; your strike flicks past his guard", "Ribcage", "m", false);
+	allSwung[82] = new damage("area_3", "level_2", "d6_5", 3, 5, 2, 0, 0, "Foe clumsily tries to disarm you; your strike flicks past his guard", "Ribcage", "m", false);
+	allSwung[83] = new damage("area_3", "level_2", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	
+	allSwung[84] = new damage("area_3", "level_3", "d6_1", 4, 6, 2, 0, 0, "Foe screams at you, clutching his wound", "Hip", "m", false);
+	allSwung[85] = new damage("area_3", "level_3", "d6_2", 5, 8, 4, 0, 0, "Foe roars as blow tears into his abdomen", "Upper Abdominals", "m", false);			
+	allSwung[86] = new damage("area_3", "level_3", "d6_3", 5, 8, 4, 0, 0, "Foe roars as blow tears into his abdomen", "Lower Abdominals", "m", false);
+	allSwung[87] = new damage("area_3", "level_3", "d6_4", 6, 7, 4, 0, 0, "Blow cracks ribs, Foe sputters for air", "Ribcage", "m", false);
+	allSwung[88] = new damage("area_3", "level_3", "d6_5", 6, 7, 4, 0, 0, "Blow cracks ribs, Foe sputters for air", "Ribcage", "m", false);
+	allSwung[89] = new damage("area_3", "level_3", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	
+	allSwung[90] = new damage("area_3", "level_4", "d6_1", 7, 9, 3, 1, 0, "Your footwork pays off as your strike connects with Foe's hip", "Hip", "m", false);
+	allSwung[91] = new damage("area_3", "level_4", "d6_2", 8, 10, 5, 0, 0, "Your strike leaves him pale and shaking", "Upper Abdominals", "m", false);			
+	allSwung[92] = new damage("area_3", "level_4", "d6_3", 8, 10, 5, 0, 0, "Your strike leaves him pale and shaking", "Lower Abdominals", "m", false);
+	allSwung[93] = new damage("area_3", "level_4", "d6_4", 9, 9, 5, 0, 0, "Foe screams as your point tears into his ribs", "Ribcage", "m", false);
+	allSwung[94] = new damage("area_3", "level_4", "d6_5", 9, 9, 5, 0, 0, "Foe screams as your point tears into his ribs", "Ribcage", "m", false);
+	allSwung[95] = new damage("area_3", "level_4", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	
+	allSwung[96] = new damage("area_3", "level_5", "d6_1", 9, 12, 4, 2, 0, "Foe screams as you give weapon a twist to widen wound track", "Hip", "m", false);
+	allSwung[97] = new damage("area_3", "level_5", "d6_2", 10, 12, 6, 0, 0, "Foe charges at the wrong moment. You bury your blade in his guts", "Upper Abdominals", "m", false);			
+	allSwung[98] = new damage("area_3", "level_5", "d6_3", 10, 12, 6, 0, 0, "Foe charges at the wrong moment. You bury your blade in his guts", "Lower Abdominals", "m", false);
+	allSwung[99] = new damage("area_3", "level_5", "d6_4", 12, 11, 6, 0, 0, "Ruthless strike leaves blood spatter everywhere", "Ribcage", "m", false);
+	allSwung[100] = new damage("area_3", "level_5", "d6_5", 12, 11, 6, 0, 0, "Ruthless strike leaves blood spatter everywhere", "Ribcage", "m", false);
+	allSwung[101] = new damage("area_3", "level_5", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	
+	allSwung[102] = new damage("area_3", "level_6", "d6_1", 12, 14, 6, 3, 0, "Swing catches Foe on the recovery and lays him flat", "Hip", "m", false);
+	allSwung[103] = new damage("area_3", "level_6", "d6_2", "-", "-", "-", "-", "-", "Foe goes berserk - you step to the side and deliver a fatal blow", "Upper Abdominals", "m", true);			
+	allSwung[104] = new damage("area_3", "level_6", "d6_3", "-", "-", "-", "-", "-", "Foe goes berserk - you step to the side and deliver a fatal blow", "Lower Abdominals", "m", true);
+	allSwung[105] = new damage("area_3", "level_6", "d6_4", "-", "-", "-", "-", "-", "Vicious assault leaves Foe's ribcage a bloody ruin. He dies", "Ribcage", "m", true);
+	allSwung[106] = new damage("area_3", "level_6", "d6_5", "-", "-", "-", "-", "-", "Vicious assault leaves Foe's ribcage a bloody ruin. He dies", "Ribcage", "m", true);
+	allSwung[107] = new damage("area_3", "level_6", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
+	
+	// area four values
+	allSwung[108] = new damage("area_4", "level_1", "d6_1", 0, 2, 0, 0, 0, "Foe sidesteps much of your assault", "Upper Arm and Shoulder", "m", false);
+	allSwung[109] = new damage("area_4", "level_1", "d6_2", 0, 2, 0, 0, 0, "Foe sidesteps much of your assault", "Upper Arm and Shoulder", "m", false);
+	allSwung[110] = new damage("area_4", "level_1", "d6_3", 0, 3, 0, 0, 0, "Foe gets nervous and retreats", "Chest Crosscut", "m", false);
+	allSwung[111] = new damage("area_4", "level_1", "d6_4", 0, 2, 1, 0, 0, "Clumsy strike followed by smooth recovery nicks Foe", "Neck", "m", false);
+	allSwung[112] = new damage("area_4", "level_1", "d6_5", 1, 2, 1, 0, 0, "Foe curses you as your blade sweeps across his forehead", "Head (Lower), including the Face", "m", false);
+	allSwung[113] = new damage("area_4", "level_1", "d6_6", 1, 2, 1, 0, 0, "Your opponent dives away from your swing", "Head (Upper)", "m", false);
+	
+	allSwung[114] = new damage("area_4", "level_2", "d6_1", 2, 4, 1, 0, 0, "Light swing backs Foe up", "Upper Arm and Shoulder", "m", false);
+	allSwung[115] = new damage("area_4", "level_2", "d6_2", 2, 4, 1, 0, 0, "Light swing backs Foe up", "Upper Arm and Shoulder", "m", false);
+	allSwung[116] = new damage("area_4", "level_2", "d6_3", 3, 5, 2, 0, 0, "Swing partially connects and spoils Foe's aim", "Chest Crosscut", "m", false);
+	allSwung[117] = new damage("area_4", "level_2", "d6_4", 3, 4, 3, 0, 0, "Foe shifts stance at last moment and saves himself", "Neck", "m", false);
+	allSwung[118] = new damage("area_4", "level_2", "d6_5", 4, 4, 1, 0, 0, "Glancing blow takes skin with it", "Head (Lower), including the Face", "m", false);
+	allSwung[119] = new damage("area_4", "level_2", "d6_6", 4, 4, 1, 0, 0, "Strike blunted by poor attack angle", "Head (Upper)", "m", false);
+	
+	allSwung[120] = new damage("area_4", "level_3", "d6_1", 4, 5, 2, 0, 0, "Foe tries to go toe-to-toe with you and loses his nerve", "Upper Arm and Shoulder", "m", false);
+	allSwung[121] = new damage("area_4", "level_3", "d6_2", 4, 5, 2, 0, 0, "Foe tries to go toe-to-toe with you and loses his nerve", "Upper Arm and Shoulder", "m", false);
+	allSwung[122] = new damage("area_4", "level_3", "d6_3", 6, 7, 4, 0, 0, "Foe's distraction gives you an opening", "Chest Crosscut", "m", false);
+	allSwung[123] = new damage("area_4", "level_3", "d6_4", 6, 6, 5, 0, 0, "Foe slips and stumbles into your strike", "Neck", "m", false);
+	allSwung[124] = new damage("area_4", "level_3", "d6_5", 6, 6, 3, 0, 0, "Your blow hooks into Foe's face. He is hysterical", "Head (Lower), including the Face", "m", false);
+	allSwung[125] = new damage("area_4", "level_3", "d6_6", 6, 6, 3, 0, 0, "Foe parries desperately, narrowly avoiding death", "Head (Upper)", "m", false);
+	
+	allSwung[126] = new damage("area_4", "level_4", "d6_1", 7, 7, 3, 0, 0, "Clipped Foe on follow-through", "Upper Arm and Shoulder", "m", false);
+	allSwung[127] = new damage("area_4", "level_4", "d6_2", 7, 7, 3, 0, 0, "Clipped Foe on follow-through", "Upper Arm and Shoulder", "m", false);
+	allSwung[128] = new damage("area_4", "level_4", "d6_3", 9, 9, 5, 0, 0, "Foe is confused by your style", "Chest Crosscut", "m", false);
+	allSwung[129] = new damage("area_4", "level_4", "d6_4", 9, 8, 6, 0, 0, "Foe can't keep up and backs away - exhausted and bloody", "Neck", "m", false);
+	allSwung[130] = new damage("area_4", "level_4", "d6_5", 9, 8, 4, 1, 0, "Massive power strike drives Foe's weapon back and through his cheek", "Head (Lower), including the Face", "m", false);
+	allSwung[131] = new damage("area_4", "level_4", "d6_6", 9, 8, 4, 1, 0, "Your blow briefly nails Foe's shield to his forehead", "Head (Upper)", "m", false);
+	
+	allSwung[132] = new damage("area_4", "level_5", "d6_1", 9, 9, 4, 0, 0, "Your swing catches Foe on his weapon arm", "Upper Arm and Shoulder", "m", false);
+	allSwung[133] = new damage("area_4", "level_5", "d6_2", 9, 9, 4, 0, 0, "Your swing catches Foe on his weapon arm", "Upper Arm and Shoulder", "m", false);
+	allSwung[134] = new damage("area_4", "level_5", "d6_3", 12, 11, 6, 0, 0, "Slash to Foe's chest causes organ damage", "Chest Crosscut", "m", false);
+	allSwung[135] = new damage("area_4", "level_5", "d6_4", 12, 10, 7, 1, 0, "Foe panics as your blade cleaves into his neck", "Neck", "m", false);
+	allSwung[136] = new damage("area_4", "level_5", "d6_5", 11, 10, 5, 2, 0, "Foe gibbers as he pulls free from your point", "Head (Lower), including the Face", "m", false);
+	allSwung[137] = new damage("area_4", "level_5", "d6_6", "-", "-", "-", "-", "-", "Foe turns to run and you bury your point through the back of his head", "Head (Upper)", "m", true);
+	
+	allSwung[138] = new damage("area_4", "level_6", "d6_1", 11, 11, 5, 0, 0, "Savage swing drives Foe to his knees before you", "Upper Arm and Shoulder", "m", false);
+	allSwung[139] = new damage("area_4", "level_6", "d6_2", 11, 11, 5, 0, 0, "Savage swing drives Foe to his knees before you", "Upper Arm and Shoulder", "m", false);
+	allSwung[140] = new damage("area_4", "level_6", "d6_3", "-", "-", "-", "-", "-", "Your blow rips through Foe's chest. He tries to crawl away and dies after moving a few feet", "Chest Crosscut", "m", true);
+	allSwung[141] = new damage("area_4", "level_6", "d6_4", "-", "-", "-", "-", "-", "Strike leaves Foe stuck on your point. He shudders and dies", "Neck", "m", true);
+	allSwung[142] = new damage("area_4", "level_6", "d6_5", "-", "-", "-", "-", "-", "Your point plows through Foe's forehead and scrambles his brains. He's gone", "Head (Lower), including the Face", "m", true);
+	allSwung[143] = new damage("area_4", "level_6", "d6_6", "-", "-", "-", "-", "-", "Foe mistimes his block and you tear his head off above the ears", "Head (Upper)", "m", true);
+	
+	// area five values
+	allSwung[144] = new damage("area_5", "level_1", "d6_1", 1, 2, 1, 0, 0, "Foe screams and dodges away", "Head (Upper)", "m", false);
+	allSwung[145] = new damage("area_5", "level_1", "d6_2", 1, 2, 1, 0, 0, "Foe screams and dodges away", "Head (Upper)", "m", false);
+	allSwung[146] = new damage("area_5", "level_1", "d6_3", 1, 2, 1, 0, 0, "Foe screams and dodges away", "Head (Upper)", "m", false);
+	allSwung[147] = new damage("area_5", "level_1", "d6_4", 1, 2, 1, 0, 0, "Foe backpedals out of your reach", "Head (Lower), including the Face", "m", false);
+	allSwung[148] = new damage("area_5", "level_1", "d6_5", 0, 2, 0, 0, 0, "Catch Foe with a glancing blow to the shoulder", "Shoulders", "m", false);
+	allSwung[149] = new damage("area_5", "level_1", "d6_6", 0, 2, 0, 0, 0, "Catch Foe with a glancing blow to the shoulder", "Shoulders", "m", false);
+	
+	allSwung[150] = new damage("area_5", "level_2", "d6_1", 4, 4, 1, 0, 0, "Blow opens messy cut in scalp", "Head (Upper)", "m", false);
+	allSwung[151] = new damage("area_5", "level_2", "d6_2", 4, 4, 1, 0, 0, "Blow opens messy cut in scalp", "Head (Upper)", "m", false);
+	allSwung[152] = new damage("area_5", "level_2", "d6_3", 4, 4, 1, 0, 0, "Blow opens messy cut in scalp", "Head (Upper)", "m", false);
+	allSwung[153] = new damage("area_5", "level_2", "d6_4", 4, 4, 1, 0, 0, "An opening appears, but all you can do is tap at Foe lightly", "Head (Lower), including the Face", "m", false);
+	allSwung[154] = new damage("area_5", "level_2", "d6_5", 2, 4, 1, 0, 0, "Your assault catches Foe in right shoulder and forces him back", "Shoulders", "m", false);
+	allSwung[155] = new damage("area_5", "level_2", "d6_6", 2, 4, 1, 0, 0, "Your assault catches Foe in right shoulder and forces him back", "Shoulders", "m", false);
+	
+	allSwung[156] = new damage("area_5", "level_3", "d6_1", 6, 6, 3, 0, 0, "Your cut slices off Foe's earlobe and clips his skull", "Head (Upper)", "m", false);
+	allSwung[157] = new damage("area_5", "level_3", "d6_2", 6, 6, 3, 0, 0, "Your cut slices off Foe's earlobe and clips his skull", "Head (Upper)", "m", false);
+	allSwung[158] = new damage("area_5", "level_3", "d6_3", 6, 6, 3, 0, 0, "Your cut slices off Foe's earlobe and clips his skull", "Head (Upper)", "m", false);
+	allSwung[159] = new damage("area_5", "level_3", "d6_4", 6, 6, 3, 0, 0, "Foe panics as your stroke nearly plucks out an eye", "Head (Lower), including the Face", "m", false);
+	allSwung[160] = new damage("area_5", "level_3", "d6_5", 4, 5, 2, 0, 0, "You remove a chunk of Foe's shoulder on your recovery", "Shoulders", "m", false);
+	allSwung[161] = new damage("area_5", "level_3", "d6_6", 4, 5, 2, 0, 0, "You remove a chunk of Foe's shoulder on your recovery", "Shoulders", "m", false);
+	
+	allSwung[162] = new damage("area_5", "level_4", "d6_1", 9, 8, 4, 1, 0, "Foe deflects your stroke to a spot just above his eye", "Head (Upper)", "m", false);
+	allSwung[163] = new damage("area_5", "level_4", "d6_2", 9, 8, 4, 1, 0, "Foe deflects your stroke to a spot just above his eye", "Head (Upper)", "m", false);
+	allSwung[164] = new damage("area_5", "level_4", "d6_3", 9, 8, 4, 1, 0, "Foe deflects your stroke to a spot just above his eye", "Head (Upper)", "m", false);
+	allSwung[165] = new damage("area_5", "level_4", "d6_4", 9, 8, 4, 1, 0, "Solid strike removes Foe's nose and part of chin", "Head (Lower), including the Face", "m", false);
+	allSwung[166] = new damage("area_5", "level_4", "d6_5", 7, 7, 3, 0, 0, "Reaching blow rips deeply into Foe's right shoulder blade. He turns white as a sheet", "Shoulders", "m", false);
+	allSwung[167] = new damage("area_5", "level_4", "d6_6", 7, 7, 3, 0, 0, "Reaching blow rips deeply into Foe's right shoulder blade. He turns white as a sheet", "Shoulders", "m", false);
+	
+	allSwung[168] = new damage("area_5", "level_5", "d6_1", "-", "-", "-", "-", "-", "Your stroke tears out back of Foe's head. He spins, drops his weapon, and collapses", "Head (Upper)", "m", true);
+	allSwung[169] = new damage("area_5", "level_5", "d6_2", "-", "-", "-", "-", "-", "Your stroke tears out back of Foe's head. He spins, drops his weapon, and collapses", "Head (Upper)", "m", true);
+	allSwung[170] = new damage("area_5", "level_5", "d6_3", "-", "-", "-", "-", "-", "Your stroke tears out back of Foe's head. He spins, drops his weapon, and collapses", "Head (Upper)", "m", true);
+	allSwung[171] = new damage("area_5", "level_5", "d6_4", 11, 10, 5, 2, 0, "Master strike removes Foe's jaw", "Head (Lower), including the Face", "m", false);
+	allSwung[172] = new damage("area_5", "level_5", "d6_5", 9, 9, 4, 0, 0, "Tricky strike destroys Foe's left shoulder", "Shoulders", "m", false);
+	allSwung[173] = new damage("area_5", "level_5", "d6_6", 9, 9, 4, 0, 0, "Tricky strike destroys Foe's left shoulder", "Shoulders", "m", false);
+	
+	allSwung[174] = new damage("area_5", "level_6", "d6_1", "-", "-", "-", "-", "-", "Foe's weapon is shattered as he tries to block your thunderous strike. Blow tears through his brain", "Head (Upper)", "m", true);
+	allSwung[175] = new damage("area_5", "level_6", "d6_2", "-", "-", "-", "-", "-", "Foe's weapon is shattered as he tries to block your thunderous strike. Blow tears through his brain", "Head (Upper)", "m", true);
+	allSwung[176] = new damage("area_5", "level_6", "d6_3", "-", "-", "-", "-", "-", "Foe's weapon is shattered as he tries to block your thunderous strike. Blow tears through his brain", "Head (Upper)", "m", true);
+	allSwung[177] = new damage("area_5", "level_6", "d6_4", "-", "-", "-", "-", "-", "Block Foe's weapon arm away and then rip off his face. He retches and dies", "Head (Lower), including the Face", "m", true);
+	allSwung[178] = new damage("area_5", "level_6", "d6_5", "-", "-", "-", "-", "-", "You strike through Foe's shoulder and tear off his arm. He bleeds out", "Shoulders", "m", true);
+	allSwung[179] = new damage("area_5", "level_6", "d6_6", "-", "-", "-", "-", "-", "You strike through Foe's shoulder and tear off his arm. He bleeds out", "Shoulders", "m", true);
+	
+	// area six values
+	allSwung[180] = new damage("area_6", "level_1", "d6_1", 0, 2, 0, 0, 0, "Foe hisses through his teeth as your exchange nicks his leg", "Inner Thigh", "m", false);
+	allSwung[181] = new damage("area_6", "level_1", "d6_2", 0, 2, 0, 0, 0, "Foe hisses through his teeth as your exchange nicks his leg", "Inner Thigh", "m", false);
+	allSwung[182] = new damage("area_6", "level_1", "d6_3", 0, 2, 0, 0, 0, "Foe hisses through his teeth as your exchange nicks his leg", "Inner Thigh", "m", false);
+	allSwung[183] = new damage("area_6", "level_1", "d6_4", 2, 5, 1, 0, 0, "Foe is off-balance", "Groin (Male)", "m", false);
+	allSwung[184] = new damage("area_6", "level_1", "d6_4", 0, 2, 0, 0, 0, "Foe is off-balance", "Groin (Female)", "f", false);
+	allSwung[185] = new damage("area_6", "level_1", "d6_5", 0, 2, 0, 0, 0, "Foe trips", "Abdomen", "m", false);
+	allSwung[186] = new damage("area_6", "level_1", "d6_6", 0, 3, 0, 0, 0, "Foe cries out in fear and anger", "Chest", "m", false);
+	
+	allSwung[187] = new damage("area_6", "level_2", "d6_1", 2, 4, 1, 0, 0, "Foe deflects most of your attack", "Inner Thigh", "m", false);
+	allSwung[188] = new damage("area_6", "level_2", "d6_2", 2, 4, 1, 0, 0, "Foe deflects most of your attack", "Inner Thigh", "m", false);
+	allSwung[189] = new damage("area_6", "level_2", "d6_3", 2, 4, 1, 0, 0, "Foe deflects most of your attack", "Inner Thigh", "m", false);
+	allSwung[190] = new damage("area_6", "level_2", "d6_4", 6, 7, 2, 0, 0, "Strike is buried deep into Foe's groin", "Groin (Male)", "m", false);
+	allSwung[191] = new damage("area_6", "level_2", "d6_4", 2, 4, 1, 0, 0, "Strike is buried deep into Foe's groin", "Groin (Female)", "f", false);
+	allSwung[192] = new damage("area_6", "level_2", "d6_5", 3, 5, 2, 0, 0, "Foe is nervous and retreats", "Abdomen", "m", false);
+	allSwung[193] = new damage("area_6", "level_2", "d6_6", 3, 5, 2, 0, 0, "You lift your swing higher and catch Foe off-guard", "Chest", "m", false);
+	
+	allSwung[194] = new damage("area_6", "level_3", "d6_1", 4, 6, 2, 1, 0, "Your weapon stings Foe, but nothing solid", "Inner Thigh", "m", false);
+	allSwung[195] = new damage("area_6", "level_3", "d6_2", 4, 6, 2, 1, 0, "Your weapon stings Foe, but nothing solid", "Inner Thigh", "m", false);
+	allSwung[196] = new damage("area_6", "level_3", "d6_3", 4, 6, 2, 1, 0, "Your weapon stings Foe, but nothing solid", "Inner Thigh", "m", false);
+	allSwung[197] = new damage("area_6", "level_3", "d6_4", 9, 8, 3, 0, 0, "Slap Foe in groin. He drops his guard and stumbles away from you", "Groin (Male)", "m", false);
+	allSwung[198] = new damage("area_6", "level_3", "d6_4", 4, 6, 2, 0, 0, "Slap Foe in groin. She drops her guard and stumbles away from you", "Groin (Female)", "f", false);
+	allSwung[199] = new damage("area_6", "level_3", "d6_5", 5, 8, 4, 0, 0, "Light swing up cuts across Foe's stomach, blood flies", "Abdomen", "m", false);
+	allSwung[200] = new damage("area_6", "level_3", "d6_6", 6, 7, 4, 0, 0, "A clever strike to Foe's chest leaves him pale and shaken", "Chest", "m", false);
+	
+	allSwung[201] = new damage("area_6", "level_4", "d6_1", 7, 8, 3, 1, 0, "You lured Foe in and punished him with a brutal strike", "Inner Thigh", "m", false);
+	allSwung[202] = new damage("area_6", "level_4", "d6_2", 7, 8, 3, 1, 0, "You lured Foe in and punished him with a brutal strike", "Inner Thigh", "m", false);
+	allSwung[203] = new damage("area_6", "level_4", "d6_3", 7, 8, 3, 1, 0, "You lured Foe in and punished him with a brutal strike", "Inner Thigh", "m", false);
+	allSwung[204] = new damage("area_6", "level_4", "d6_4", 10, 11, 4, 1, 0, "Artful strike has Foe cursing in agony", "Groin (Male)", "m", false);
+	allSwung[205] = new damage("area_6", "level_4", "d6_4", 7, 9, 3, 1, 0, "Artful strike has Foe cursing in agony", "Groin (Female)", "f", false);
+	allSwung[206] = new damage("area_6", "level_4", "d6_5", 8, 10, 5, 0, 0, "The force of your strike lifts Foe into the air", "Abdomen", "m", false);
+	allSwung[207] = new damage("area_6", "level_4", "d6_6", 9, 9, 5, 0, 0, "Foe dances into your blow, his eyes are wide with shock", "Chest", "m", false);
+	
+	allSwung[208] = new damage("area_6", "level_5", "d6_1", 9, 10, 4, 2, 0, "Foe babbles at you as you pull your weapon free", "Inner Thigh", "m", false);
+	allSwung[209] = new damage("area_6", "level_5", "d6_2", 9, 10, 4, 2, 0, "Foe babbles at you as you pull your weapon free", "Inner Thigh", "m", false);
+	allSwung[210] = new damage("area_6", "level_5", "d6_3", 9, 10, 4, 2, 0, "Foe babbles at you as you pull your weapon free", "Inner Thigh", "m", false);
+	allSwung[211] = new damage("area_6", "level_5", "d6_4", 12, 13, 5, 3, 0, "Your strike rips into Foe. He rages and screams", "Groin (Male)", "m", false);
+	allSwung[212] = new damage("area_6", "level_5", "d6_4", 9, 12, 4, 5, 0, "Your strike rips into Foe. She rages and screams", "Groin (Female)", "f", false);
+	allSwung[213] = new damage("area_6", "level_5", "d6_5", 10, 12, 6, 0, 0, "Foe stumbles into your point and vomits blood", "Abdomen", "m", false);
+	allSwung[214] = new damage("area_6", "level_5", "d6_6", 12, 11, 6, 0, 0, "Wild swing buries your weapon in Foe's chest. He claws at you weakly", "Chest", "m", false);
+	
+	allSwung[215] = new damage("area_6", "level_6", "d6_1", 12, 12, 5, 3, 0, "You gamble with a daring stroke. It pays off as you tear off Foe's leg", "Inner Thigh", "m", false);
+	allSwung[216] = new damage("area_6", "level_6", "d6_2", 12, 12, 5, 3, 0, "You gamble with a daring stroke. It pays off as you tear off Foe's leg", "Inner Thigh", "m", false);
+	allSwung[217] = new damage("area_6", "level_6", "d6_3", 12, 12, 5, 3, 0, "You gamble with a daring stroke. It pays off as you tear off Foe's leg", "Inner Thigh", "m", false);
+	allSwung[218] = new damage("area_6", "level_6", "d6_4", 14, 15, 7, 3, 0, "Foe drops weapon and clutches ruined manhood", "Groin (Male)", "m", false);
+	allSwung[219] = new damage("area_6", "level_6", "d6_4", 12, 14, 6, 3, 0, "Foe drops weapon and clutches ruined femininity", "Groin (Female)", "f", false);
+	allSwung[220] = new damage("area_6", "level_6", "d6_5", "-", "-", "-", "-", "-", "Your weapon gets fouled in Foe's guts. He sobs before collapsing dead", "Abdomen", "m", true);
+	allSwung[221] = new damage("area_6", "level_6", "d6_6", "-", "-", "-", "-", "-", "Brilliant strike rips into Foe's chest. Instant death", "Chest", "m", true);
+	
+	// area seven values
+	allSwung[222] = new damage("area_7", "level_1", "d6_1", 0, 2, 0, 0, 0, "A motion to your left distracted you", "Hand", "m", false);
+	allSwung[223] = new damage("area_7", "level_1", "d6_2", 0, 2, 0, 0, 0, "Foe glances behind you as the blow lands", "Forearm", "m", false);
+	allSwung[224] = new damage("area_7", "level_1", "d6_3", 0, 2, 0, 0, 0, "Foe glances behind you as the blow lands", "Forearm", "m", false);
+	allSwung[225] = new damage("area_7", "level_1", "d6_4", 0, 2, 0, 0, 0, "Foe catches part of your swing on his shield", "Elbow", "m", false);
+	allSwung[226] = new damage("area_7", "level_1", "d6_5", 0, 2, 0, 0, 0, "You sting Foe with the tip of your blade", "Upper Arm and Shoulder", "m", false);
+	allSwung[227] = new damage("area_7", "level_1", "d6_6", 0, 2, 0, 0, 0, "You sting Foe with the tip of your blade", "Upper Arm and Shoulder", "m", false);
+	
+	allSwung[228] = new damage("area_7", "level_2", "d6_1", 2, 3, 0, 0, 0, "Foe's plodding defense costs him", "Hand", "m", false);
+	allSwung[229] = new damage("area_7", "level_2", "d6_2", 2, 3, 1, 0, 0, "Fake Foe out and score a cheap hit", "Forearm", "m", false);
+	allSwung[230] = new damage("area_7", "level_2", "d6_3", 2, 3, 1, 0, 0, "Fake Foe out and score a cheap hit", "Forearm", "m", false);
+	allSwung[231] = new damage("area_7", "level_2", "d6_4", 2, 4, 1, 0, 0, "Strike slices into Foe's elbow. It fails to bite deep. He recoils", "Elbow", "m", false);
+	allSwung[232] = new damage("area_7", "level_2", "d6_5", 2, 4, 1, 0, 0, "Your assault catches Foe's arm in a messy strike", "Upper Arm and Shoulder", "m", false);
+	allSwung[233] = new damage("area_7", "level_2", "d6_6", 2, 4, 1, 0, 0, "Your assault catches Foe's arm in a messy strike", "Upper Arm and Shoulder", "m", false);
+	
+	allSwung[234] = new damage("area_7", "level_3", "d6_1", 4, 5, 1, 0, 0, "Foe's reflexes betray him", "Hand", "m", false);
+	allSwung[235] = new damage("area_7", "level_3", "d6_2", 4, 5, 2, 0, 0, "Foe tries to flashy dodge that ends with him getting the point of your weapon", "Forearm", "m", false);
+	allSwung[236] = new damage("area_7", "level_3", "d6_3", 4, 5, 2, 0, 0, "Foe tries to flashy dodge that ends with him getting the point of your weapon", "Forearm", "m", false);
+	allSwung[237] = new damage("area_7", "level_3", "d6_4", 4, 6, 2, 0, 0, "Foe catches your attack on his bracer. He howls when your edge slips into his elbow", "Elbow", "m", false);
+	allSwung[238] = new damage("area_7", "level_3", "d6_5", 4, 5, 2, 0, 0, "Strike Foe high on bicep. Light wound bleeds strongly", "Upper Arm and Shoulder", "m", false);
+	allSwung[239] = new damage("area_7", "level_3", "d6_6", 4, 5, 2, 0, 0, "Strike Foe high on bicep. Light wound bleeds strongly", "Upper Arm and Shoulder", "m", false);
+	
+	allSwung[240] = new damage("area_7", "level_4", "d6_1", 7, 7, 2, 0, 0, "Your point slides down Foe's weapon and removes a finger", "Hand", "m", false);
+	allSwung[241] = new damage("area_7", "level_4", "d6_2", 7, 7, 3, 0, 0, "Foe tried to block your strike with his arm", "Forearm", "m", false);
+	allSwung[242] = new damage("area_7", "level_4", "d6_3", 7, 7, 3, 0, 0, "Foe tried to block your strike with his arm", "Forearm", "m", false);
+	allSwung[243] = new damage("area_7", "level_4", "d6_4", 7, 9, 3, 0, 0, "Elbow cracking strike leaves Foe bleeding", "Elbow", "m", false);
+	allSwung[244] = new damage("area_7", "level_4", "d6_5", 7, 7, 3, 0, 0, "Pain from your strike has Foe raving madly", "Upper Arm and Shoulder", "m", false);
+	allSwung[245] = new damage("area_7", "level_4", "d6_6", 7, 7, 3, 0, 0, "Pain from your strike has Foe raving madly", "Upper Arm and Shoulder", "m", false);
+	
+	allSwung[246] = new damage("area_7", "level_5", "d6_1", 9, 9, 3, 0, 0, "Strike through Foe's hand and swing him about on your point", "Hand", "m", false);
+	allSwung[247] = new damage("area_7", "level_5", "d6_2", 9, 9, 3, 0, 0, "Foe ducked to avoid strike to guts and now has your weapon stuck in his arm", "Forearm", "m", false);
+	allSwung[248] = new damage("area_7", "level_5", "d6_3", 9, 9, 3, 0, 0, "Foe ducked to avoid strike to guts and now has your weapon stuck in his arm", "Forearm", "m", false);
+	allSwung[249] = new damage("area_7", "level_5", "d6_4", 9, 11, 3, 0, 0, "Foe is stunned when his flurry ends with your steel buried through his elbow", "Elbow", "m", false);
+	allSwung[250] = new damage("area_7", "level_5", "d6_5", 9, 9, 4, 0, 0, "Nail Foe's arm to his side. He is speechless", "Upper Arm and Shoulder", "m", false);
+	allSwung[251] = new damage("area_7", "level_5", "d6_6", 9, 9, 4, 0, 0, "Nail Foe's arm to his side. He is speechless", "Upper Arm and Shoulder", "m", false);
+	
+	allSwung[252] = new damage("area_7", "level_6", "d6_1", 11, 11, 4, 0, 0, "Tear off Foe's hand in a graphic display of violence", "Hand", "m", false);
+	allSwung[253] = new damage("area_7", "level_6", "d6_2", 11, 11, 4, 0, 0, "Your blow stabs deep and shatters Foe's weapon arm", "Forearm", "m", false);
+	allSwung[254] = new damage("area_7", "level_6", "d6_3", 11, 11, 4, 0, 0, "Your blow stabs deep and shatters Foe's weapon arm", "Forearm", "m", false);
+	allSwung[255] = new damage("area_7", "level_6", "d6_4", 11, 13, 4, 0, 0, "Strike ricochets through elbow of shield arm and shreds it. If Foe has shield, he drops it", "Elbow", "m", false);
+	allSwung[256] = new damage("area_7", "level_6", "d6_5", 11, 11, 5, 0, 0, "Destroy Foe's shield arm with savage strike. Foe shrieks in agony", "Upper Arm and Shoulder", "m", false);
+	allSwung[257] = new damage("area_7", "level_6", "d6_6", 11, 11, 5, 0, 0, "Destroy Foe's shield arm with savage strike. Foe shrieks in agony", "Upper Arm and Shoulder", "m", false);
 }
 
 // end hiding script from old browsers -->
