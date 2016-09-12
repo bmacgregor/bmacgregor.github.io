@@ -84,7 +84,7 @@ function getFeedback(result){
 	var feedback;
 	
 	if (result.Shock > 0){
-		feedback = "<strong>Shock: </strong>Shock is only applied once for each wound, but deducts dice from all " +
+		feedback = "<hr/><strong>Shock: </strong>Shock is only applied once for each wound, but deducts dice from all " +
 		"three dice pools (Melee, Archery, and Sorcery) the moment the Character is struck by the blow. If the " +
 		"received Shock exceeds a Character’s total current Melee Pool for his very next action, the remainder of " +
 		"the Shock penalty is instead added to the aggressor's Melee Pool for the next Combat Round or Exchange. " +
@@ -93,7 +93,7 @@ function getFeedback(result){
 		"— new or old — is applied (or re-applied) to the wounded party.<br/><br/>";
 	}
 	if (result.Pain > 0){
-		feedback += "<strong>Pain: </strong>Pain is deducted from each of the three pools at the beginning of each " +
+		feedback += "<hr/><strong>Pain: </strong>Pain is deducted from each of the three pools at the beginning of each " +
 		"Combat Round, starting with the one following the Combat Round in which Shock from the wound was applied. " +
 		"Pain is reduced by one’s Tenacity. For the purposes of wound healing, where Pain is important, record the " +
 		"unreduced Pain rating of every wound, but apply only Pain in excess of the character’s Tenacity as a " +
@@ -104,7 +104,7 @@ function getFeedback(result){
 		"the highest shock penalty — new or old — is applied (or re-applied) to the wounded party.<br/><br/>";
 	}
 	if (result.BloodLoss > 0){
-		feedback += "<strong>Blood Loss: </strong>Blood Loss ratings of all wounds sustained are cumulative " +
+		feedback += "<hr/><strong>Blood Loss: </strong>Blood Loss ratings of all wounds sustained are cumulative " +
 		"provided they come from different parts of the body. Each limb, the entire torso, and the head each count " +
 		"as individual locations. If a body part already sports a wound with an attendant Blood Loss rating and is " +
 		"wounded again in a way to indicate further Blood Loss, only the higher of the two ratings comes (or stays) " +
@@ -123,7 +123,7 @@ function getFeedback(result){
 		"Loss rating to be successful. This includes Characters' unconscious from Blood Loss.";
 	}
 	if (result.Knockdown > 0){
-		feedback += "<strong>Knockdown: </strong>Knockdown can be the result of some wounds, especially (but not " +
+		feedback += "<hr/><strong>Knockdown: </strong>Knockdown can be the result of some wounds, especially (but not " +
 		"exclusively) those to the legs. With such wounds, the description will include a Knockdown number which " +
 		"denotes the number of Successes needed on a Knockdown Check to avoid falling prone. The Challenge Rating " +
 		"of this Check will be set at Challenging (two successes) if the Character’s Melee Pool is reduced to " +
@@ -136,7 +136,7 @@ function getFeedback(result){
 		"difference between his Melee Pool at the beginning of the Round and half that number.<br/><br/>";
 	}
 	if (result.Knockout > 0){
-		feedback += "<strong>Knockout: </strong>Knockout can be a consequence of blows to the head. If the " +
+		feedback += "<hr/><strong>Knockout: </strong>Knockout can be a consequence of blows to the head. If the " +
 		"description of a wound contains a Knockout number, this is the Challenge Level the wounded Character needs " +
 		"to pass on an immediate Check of her Knockout Attribute. Failure on this check indicates unconsciousness. " +
 		"Optionally, any blow to the head that fails to cause a wound will still call for a Knockout Check " +
