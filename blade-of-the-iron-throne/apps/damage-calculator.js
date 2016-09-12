@@ -81,7 +81,7 @@ function getDamage(array){
 }
 
 function getFeedback(result){
-	var feedback;
+	var feedback = "";
 	
 	if (result.Pain !== "-"){
 	if (result.Shock > 0 || result.Shock === "Level +1"){
