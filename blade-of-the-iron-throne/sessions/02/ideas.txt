@@ -22,11 +22,63 @@ Scene Two: Spider Warren
 	The younglings are smaller, the size of a child, and are less armoured  (1 Piercing & Cleaving). Their poison is not as potent (QoS 2), 
 		and they use small fangs
 	Spider poison can be milked and studied by an apothecary, and may provide some clues as to the death of the king
+	At the centre of the warren are several corpses and a second, dead, monstrous arachnid.  Although these corpses have been mostly devoured, the 
+		livery of the house of Garont - a minor Eldrani house - can be found; Crom's character will recognize the house colours and corresponding 
+		heraldry. Wheels in Kerrin's character's head will start spinning at the presence of dead men in a place that holds such a virulent poison
+		
+	There are human tracks in the snow, and a skilled huntsman will note that it appears that more footprints go into the warren than come out 
+		of it
 
 Scene Three: Whitelake at Dawn
 	Story Thread : Hedeg's contact - Lost Naivunnan arc
+		The contact's home, a squat house on the outskirts of Whitelake, appears locked and deserted
+		Hedeg is worried, and suggests the Characters attempt to force their way into the home, in case his friend is within
+		Once the players find their way in, they will see signs of a struggle, but no one is in the house
+		Hedeg suggests the Players rest while they can, clean up, and then move into town to try and uncover what happened here
+			Hedeg will take up residence in the house until the players progress in their side-quests. This seems like a good place to get
+			him out of the way, "researching" what happened to his contact, the Things Beneath the Ice, 
 	
-	Thread 1 : Sunken Temple (Abi / Amanda)
-	Thread 2 : The Things Beneath the Ice / A Sickening Population (Kerrin)
-	Thread 3 : The Bastard's Deserters / Company Slain in Ambush (Mike)
-	Thread 4 : Percel's Tapestry and Linen Shoppe / Eldrani Contact (Crom)
+		Thread 1 : Sunken Temple (Abi / Amanda)
+			At the inn, Farstin (a local drunkard) will regale any who choose to listen (or come too close) of a haunted tomb half a days ride from
+				Whitelake that was worshipped by Kevanjan savages "afore we took the fire to them heathens". No one's managed to get inside the 
+				damn thing - "sealed up tighter than an Eldran's arse" - but he's sure there's riches to be had.
+			If questioned, Farstin will mention chilling blood-rituals that "them godless Kevanjans" used to partake in. Amanda will know this to be
+				false - blood ritual is not part of any mainstream Kevanjan rite - but might be convinced to go when Farstin scribbles a few Kevanjan 
+				runes which he's "seen with his own eyes, if ya don't believe me" - these runes, though poorly drawn - are for undeath, sickness, 
+				and godhood
+			While Whitelake is quite far from Kevanja, it's not impossible that the nomadic people would have made it this far east, but to build 
+				something like a tomb - like what the drunk is describing - is highly unlikely. If they chose to entomb something so far from home,
+				they must have had a good reason to do so
+				
+			THIS THREAD LEADS TO A DUNGEON, AND UNLOCKS ABI'S LIFEDRAIN ABILITY
+		
+		Thread 2 : A Sickening Population / Snow Spiders (Kerrin)
+			A number of travellers have been afflicted with a terrible wasting sickness that is sure to kill them, without proper medical care
+			The wise woman has tried pungent smokes and healing herbs, but to no effect, and fears that it is a plague
+			On careful inspection, the wounded have been bitten by snow spiders, and are suffering the effects of their poison
+			There are a half-dozen wounded, are most of them are raving at this point, jabbering nonsense, and sometimes switching into a language
+				that none of the Whitelake locals can mark, but that Crom will surely recognize as Eldrani.  Mike will probably regonize it as well,
+				and maybe Kerrin due to her education
+			Their symptoms are strikingly similar to that of the late King, so this might bear some study
+			An antivenom could perhaps be created, but the players would have to find what caused the poison in the first place
+			The travellers were found on the outskirts of town, ominously close to the spider warren
+		
+		Thread 3 : The Bastard's Deserters / Bandits on the Road (Mike)
+			Also found at the inn are a worn pair that look to be merchants. Down to their last copper, and low on luck, they eye anyone coming into
+				the inn - anyone who looks armed, they will attempt to wave over.
+			The pair were waylaid on the road by bandits, though not the normal sort - these moved with precision, instead of the usual swaggering 
+				arrogance of the common highwayman. Whitelake isn't too far from the Eldrani border, so putting two and two together, it's possible
+				that these bandits are deserters from the war, and if that's found out, will reflect badly on the Bastard, as well as any claim he 
+				might have to the throne
+			THERE NEEDS TO BE BIGGER PAYOFF / MOTIVATION HERE
+		
+		Thread 4 : Percel's Tapestry and Linen Shoppe / Eldrani Contact (Crom)
+			Percel's Shoppe is off of the main street, and features a large, hanging sign out front. This sign, with is mostly unobtrusive, displays
+				the wares of the shop - tapestries, but it contains a curious glyph, marking it as a safehouse for Eldrani spies.
+			Percel will explain to Crom that there are several wounded Eldrani agents in town, and that they either need to be killed, to 
+				avoid detection (they're raving and starting to lapse into their native tongue), or somehow spirited out of the town, though Percel
+				thinks this option is incredibly unlikely
+			Perhaps by convincing the townsfolk, who seem to be ready to believe it, that these men are carrying the plague, they might easily be
+				gotten rid of?
+	
+	Story Thread : The Things Beneath the Ice - A Nightmare of Lost Naivunnan
