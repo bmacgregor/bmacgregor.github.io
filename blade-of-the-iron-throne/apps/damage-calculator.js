@@ -90,7 +90,7 @@ function getFeedback(result){
 		"the Shock penalty is instead added to the aggressor's Melee Pool for the next Combat Round or Exchange. " +
 		"Such bonus dice are only usable against the Shocked opponent.<br/><br/>Shock is cumulative as long as it " +
 		"is applied to different zones. Should one attack the same area multiple times, the highest shock penalty " +
-		"— new or old — is applied (or re-applied) to the wounded party.<br/><br/>";
+		"— new or old — is applied (or re-applied) to the wounded party.";
 	}
 	if (result.Pain > 0){
 		feedback += "<hr/><strong>Pain: </strong>Pain is deducted from each of the three pools at the beginning of each " +
@@ -101,7 +101,7 @@ function getFeedback(result){
 		"up Pain from several wounds first and then apply the Tenacity score. Instead, apply Tenacity to every " +
 		"single wound and then add up the reduced Pain ratings to determine the penalty to die pools.<br/><br/>Pain " +
 		"is cumulative as long as it is applied to different zones. Should one attack the same area multiple times, " +
-		"the highest shock penalty — new or old — is applied (or re-applied) to the wounded party.<br/><br/>";
+		"the highest shock penalty — new or old — is applied (or re-applied) to the wounded party.";
 	}
 	if (result.BloodLoss > 0){
 		feedback += "<hr/><strong>Blood Loss: </strong>Blood Loss ratings of all wounds sustained are cumulative " +
@@ -114,7 +114,7 @@ function getFeedback(result){
 		"Melee, Archery, and Spell Pools. In addition, her Attribute and Skill Checks will need an additional " +
 		"Success per full four dice penalty. The Brawn Check to avoid further Blood Loss is exempt from this " +
 		"requirement for additional Successes. These penalties represent dizziness or weakness from loss of blood, " +
-		"and accumulate from failed Brawn Check to failed Brawn Check.<br/><br/><br/><br/>Once accumulated " +
+		"and accumulate from failed Brawn Check to failed Brawn Check.<br/><br/>Once accumulated " +
 		"penalties from failed Blood Loss Checks equal or exceed the character’s Brawn, the Character passes out " +
 		"from blood loss, and will likely die without quick medical attention. Thereafter, a Blood Loss Check is " +
 		"made for the unconscious Character at the end of each subsequent Round of Limelights. If any Check fails, " +
@@ -133,7 +133,7 @@ function getFeedback(result){
 		"can use only half of their Melee Pool while fighting from the ground. The number of dice used is halved " +
 		"after all other modifiers (Shock, Pain, Blood Loss, etc.) have been applied. If he is knocked down during " +
 		"an ongoing Combat Round, he immediately loses a number of dice from his Melee Pool equal to the " +
-		"difference between his Melee Pool at the beginning of the Round and half that number.<br/><br/>";
+		"difference between his Melee Pool at the beginning of the Round and half that number.";
 	}
 	if (result.Knockout > 0){
 		feedback += "<hr/><strong>Knockout: </strong>Knockout can be a consequence of blows to the head. If the " +
