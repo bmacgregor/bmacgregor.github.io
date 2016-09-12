@@ -99,7 +99,7 @@ function getFeedback(result){
 		"unreduced Pain rating of every wound, but apply only Pain in excess of the character’s Tenacity as a " +
 		"penalty to her pools.<br/><br/>Tenacity is applied in full to Pain with every single wound; do not total " +
 		"up Pain from several wounds first and then apply the Tenacity score. Instead, apply Tenacity to every " +
-		"single wound and then add up the reduced Pain ratings to determine the penalty to die pools.Pain " +
+		"single wound and then add up the reduced Pain ratings to determine the penalty to die pools. Pain " +
 		"is cumulative as long as it is applied to different zones. Should one attack the same area multiple times, " +
 		"the highest shock penalty — new or old — is applied (or re-applied) to the wounded party.";
 	}
