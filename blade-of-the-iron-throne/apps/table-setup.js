@@ -103,8 +103,8 @@ function setupBlunt(){
 	allBlunt[83] = new damage("area_3", "level_2", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
 	
 	allBlunt[84] = new damage("area_3", "level_3", "d6_1", 7, 7, 1, 1, 0, "Blow to Foe's hip causes him to rage", "Hip", "m", false);
-	allBlunt[85] = new damage("area_3", "level_3", "d6_2", 9, 7, 1, 0, 0, "Foe walks into your blow, you leave him winded", "Upper Abdominals", "m", false);			
-	allBlunt[86] = new damage("area_3", "level_3", "d6_3", 9, 7, 1, 0, 0, "Foe walks into your blow, you leave him winded", "Lower Abdominals", "m", false);
+	allBlunt[85] = new damage("area_3", "level_3", "d6_2", 9, 7, 1, 0, 0, "Foe walks into your blow; you leave him winded", "Upper Abdominals", "m", false);			
+	allBlunt[86] = new damage("area_3", "level_3", "d6_3", 9, 7, 1, 0, 0, "Foe walks into your blow; you leave him winded", "Lower Abdominals", "m", false);
 	allBlunt[87] = new damage("area_3", "level_3", "d6_4", 9, 7, 1, 0, 0, "Blow to chest. Foe seeks to regain his wind and survive", "Ribcage", "m", false);
 	allBlunt[88] = new damage("area_3", "level_3", "d6_5", 9, 7, 1, 0, 0, "Blow to chest. Foe seeks to regain his wind and survive", "Ribcage", "m", false);
 	allBlunt[89] = new damage("area_3", "level_3", "d6_6", "-", "-", "-", "-", "-", "Go to Arms (Area 7)", "-", "m", false);
@@ -495,10 +495,10 @@ function setupBlunt(){
 	// area twelve values
 	allBlunt[414] = new damage("area_12", "level_1", "d6_1", 3, 2, 0, 0, 0, "Foe vaults back five feet", "Under the Ribs (Upper Abdomen)", "m", false);
 	allBlunt[415] = new damage("area_12", "level_1", "d6_2", 3, 2, 0, 0, 0, "Foe vaults back five feet", "Under the Ribs (Upper Abdomen)", "m", false);
-	allBlunt[416] = new damage("area_12", "level_1", "d6_3", 3, 2, 0, 0, 0, "Strike blunted by Foe's shieldwork", "Chest", "m", false);
-	allBlunt[417] = new damage("area_12", "level_1", "d6_4", 3, 2, 0, 0, 0, "Strike blunted by Foe's shieldwork", "Chest", "m", false);
-	allBlunt[418] = new damage("area_12", "level_1", "d6_5", 3, 2, 0, 0, 0, "Strike blunted by Foe's shieldwork", "Chest", "m", false);
-	allBlunt[419] = new damage("area_12", "level_1", "d6_6", 3, 2, 0, 0, 0, "Strike blunted by Foe's shieldwork", "Chest", "m", false);
+	allBlunt[416] = new damage("area_12", "level_1", "d6_3", 3, 2, 0, 0, 0, "Strike blunted by Foe's shield work", "Chest", "m", false);
+	allBlunt[417] = new damage("area_12", "level_1", "d6_4", 3, 2, 0, 0, 0, "Strike blunted by Foe's shield work", "Chest", "m", false);
+	allBlunt[418] = new damage("area_12", "level_1", "d6_5", 3, 2, 0, 0, 0, "Strike blunted by Foe's shield work", "Chest", "m", false);
+	allBlunt[419] = new damage("area_12", "level_1", "d6_6", 3, 2, 0, 0, 0, "Strike blunted by Foe's shield work", "Chest", "m", false);
 	
 	allBlunt[420] = new damage("area_12", "level_2", "d6_1", 6, 4, 0, 0, 0, "Foe turns with your strike", "Under the Ribs (Upper Abdomen)", "m", false);
 	allBlunt[421] = new damage("area_12", "level_2", "d6_2", 6, 4, 0, 0, 0, "Foe turns with your strike", "Under the Ribs (Upper Abdomen)", "m", false);
@@ -806,7 +806,7 @@ function setupCleaving(){
 	allCleaving[150] = new damage("area_5", "level_2", "d6_1", 5, 4, 2, 0, 0, "You clip your Foe across the forehead", "Head (Upper)", "m", false);
 	allCleaving[151] = new damage("area_5", "level_2", "d6_2", 5, 4, 2, 0, 0, "You clip your Foe across the forehead", "Head (Upper)", "m", false);			
 	allCleaving[152] = new damage("area_5", "level_2", "d6_3", 5, 4, 2, 0, 0, "You clip your Foe across the forehead", "Head (Upper)", "m", false);
-	allCleaving[153] = new damage("area_5", "level_2", "d6_4", 6, 5, 2, 0, 0, "Your strike unbalaces the Foe", "Head (Lower), including the Face", "m", false);
+	allCleaving[153] = new damage("area_5", "level_2", "d6_4", 6, 5, 2, 0, 0, "Your strike unbalances the Foe", "Head (Lower), including the Face", "m", false);
 	allCleaving[154] = new damage("area_5", "level_2", "d6_5", 4, 4, 1, 0, 0, "Strike failed to connect well", "Shoulders", "m", false);
 	allCleaving[155] = new damage("area_5", "level_2", "d6_6", 4, 4, 1, 0, 0, "Strike failed to connect well", "Shoulders", "m", false);
 	
@@ -1225,8 +1225,8 @@ function setupPiercing(){
 	allPiercing[245] = new damage("area_14", "level_3", "d6_6", 4, 5, 2, 0, 0, "Stinging shot through Foe's bicep", "Upper Arm", "m", false);
 	
 	allPiercing[246] = new damage("area_14", "level_4", "d6_1", 7, 7, 2, 0, 0, "Artful attack claims a digit", "Hand", "m", false);
-	allPiercing[247] = new damage("area_14", "level_4", "d6_2", 7, 7, 3, 0, 0, "Deep wound to Foe's arm bleeds fiercly", "Forearm", "m", false);
-	allPiercing[248] = new damage("area_14", "level_4", "d6_3", 7, 7, 3, 0, 0, "Deep wound to Foe's arm bleeds fiercly", "Forearm", "m", false);
+	allPiercing[247] = new damage("area_14", "level_4", "d6_2", 7, 7, 3, 0, 0, "Deep wound to Foe's arm bleeds fiercely", "Forearm", "m", false);
+	allPiercing[248] = new damage("area_14", "level_4", "d6_3", 7, 7, 3, 0, 0, "Deep wound to Foe's arm bleeds fiercely", "Forearm", "m", false);
 	allPiercing[249] = new damage("area_14", "level_4", "d6_4", 7, 9, 3, 0, 0, "Foe's leap sends your point through the flesh of his elbow. He pulls free", "Elbow", "m", false);
 	allPiercing[250] = new damage("area_14", "level_4", "d6_5", 7, 7, 3, 0, 0, "Solid strike pierces flesh and digs into bone", "Upper Arm", "m", false);
 	allPiercing[251] = new damage("area_14", "level_4", "d6_6", 7, 7, 3, 0, 0, "Solid strike pierces flesh and digs into bone", "Upper Arm", "m", false);
@@ -1305,8 +1305,8 @@ function setupSwung(){
 	allSwung[46] = new damage("area_2", "level_2", "d6_5", 2, 4, 1, 0, 0, "Scary swing draws a line of blood from Foe's thigh", "Thigh", "m", false);
 	allSwung[47] = new damage("area_2", "level_2", "d6_6", 2, 4, 1, 0, 0, "Savage strike rips against Foe's hip", "Hip", "m", false);
 	
-	allSwung[48] = new damage("area_2", "level_3", "d6_1", 4, 7, 2, 1, 0, "Foe's rickity attack creates an opening for your swing", "Knee and Nearby Areas", "m", false);
-	allSwung[49] = new damage("area_2", "level_3", "d6_2", 4, 7, 2, 1, 0, "Foe's rickity attack creates an opening for your swing", "Knee and Nearby Areas", "m", false);
+	allSwung[48] = new damage("area_2", "level_3", "d6_1", 4, 7, 2, 1, 0, "Foe's rickety attack creates an opening for your swing", "Knee and Nearby Areas", "m", false);
+	allSwung[49] = new damage("area_2", "level_3", "d6_2", 4, 7, 2, 1, 0, "Foe's rickety attack creates an opening for your swing", "Knee and Nearby Areas", "m", false);
 	allSwung[50] = new damage("area_2", "level_3", "d6_3", 4, 6, 2, 1, 0, "Foe falls for your feint; he howls in pain", "Thigh", "m", false);
 	allSwung[51] = new damage("area_2", "level_3", "d6_4", 4, 6, 2, 1, 0, "Foe falls for your feint; he howls in pain", "Thigh", "m", false);
 	allSwung[52] = new damage("area_2", "level_3", "d6_5", 4, 6, 2, 1, 0, "Foe falls for your feint; he howls in pain", "Thigh", "m", false);
@@ -1493,7 +1493,7 @@ function setupSwung(){
 	allSwung[204] = new damage("area_6", "level_4", "d6_4", 10, 11, 4, 1, 0, "Artful strike has Foe cursing in agony", "Groin (Male)", "m", false);
 	allSwung[205] = new damage("area_6", "level_4", "d6_4", 7, 9, 3, 1, 0, "Artful strike has Foe cursing in agony", "Groin (Female)", "f", false);
 	allSwung[206] = new damage("area_6", "level_4", "d6_5", 8, 10, 5, 0, 0, "The force of your strike lifts Foe into the air", "Abdomen", "m", false);
-	allSwung[207] = new damage("area_6", "level_4", "d6_6", 9, 9, 5, 0, 0, "Foe dances into your blow, his eyes are wide with shock", "Chest", "m", false);
+	allSwung[207] = new damage("area_6", "level_4", "d6_6", 9, 9, 5, 0, 0, "Foe dances into your blow; his eyes are wide with shock", "Chest", "m", false);
 	
 	allSwung[208] = new damage("area_6", "level_5", "d6_1", 9, 10, 4, 2, 0, "Foe babbles at you as you pull your weapon free", "Inner Thigh", "m", false);
 	allSwung[209] = new damage("area_6", "level_5", "d6_2", 9, 10, 4, 2, 0, "Foe babbles at you as you pull your weapon free", "Inner Thigh", "m", false);
