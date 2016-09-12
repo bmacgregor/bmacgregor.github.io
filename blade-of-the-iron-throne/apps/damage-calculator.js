@@ -83,7 +83,8 @@ function getDamage(array){
 function getFeedback(result){
 	var feedback;
 	
-	if (result.Shock > 0){
+	if (result.Pain !== "-"){
+	if (result.Shock > 0 || result.Shock === "Level +1"){
 		feedback = "<hr/><strong>Shock: </strong>Shock is only applied once for each wound, but deducts dice from all " +
 		"three dice pools (Melee, Archery, and Sorcery) the moment the Character is struck by the blow. If the " +
 		"received Shock exceeds a Character’s total current Melee Pool for his very next action, the remainder of " +
@@ -92,7 +93,7 @@ function getFeedback(result){
 		"is applied to different zones. Should one attack the same area multiple times, the highest shock penalty " +
 		"— new or old — is applied (or re-applied) to the wounded party.";
 	}
-	if (result.Pain > 0){
+	if (result.Pain > 0 || result.Pain === "Level +2"){
 		feedback += "<hr/><strong>Pain: </strong>Pain is deducted from each of the three pools at the beginning of each " +
 		"Combat Round, starting with the one following the Combat Round in which Shock from the wound was applied. " +
 		"Pain is reduced by one’s Tenacity. For the purposes of wound healing, where Pain is important, record the " +
@@ -144,6 +145,7 @@ function getFeedback(result){
 		"Challenge Level of this Check is Average (one success) if a swung Piercing attack, Challenging (two " +
 		"successes) if a swung Cleaving or thrusting Blunt attack, and Difficult (three successes) if a swung Blunt " +
 		"attack, but may be under no circumstances higher than half the attack’s Quality of Success.";
+	}
 	}
 	
 	return feedback;
