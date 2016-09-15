@@ -45,7 +45,7 @@ Scene Three: Whitelake at Dawn
 			If questioned, Farstin will mention chilling blood-rituals that "them godless Kevanjans" used to partake in. Amanda will know this to be
 				false - blood ritual is not part of any mainstream Kevanjan rite - but might be convinced to go when Farstin scribbles a few Kevanjan 
 				runes which he's "seen with his own eyes, if ya don't believe me" - these runes, though poorly drawn - are for undeath, sickness, 
-				and godhood
+				and breath
 			While Whitelake is quite far from Kevanja, it's not impossible that the nomadic people would have made it this far east, but to build 
 				something like a tomb - like what the drunk is describing - is highly unlikely. If they chose to entomb something so far from home,
 				they must have had a good reason to do so
@@ -62,6 +62,8 @@ Scene Three: Whitelake at Dawn
 			Their symptoms are strikingly similar to that of the late King, so this might bear some study
 			An antivenom could perhaps be created, but the players would have to find what caused the poison in the first place
 			The travellers were found on the outskirts of town, ominously close to the spider warren
+			
+			THIS THREAD LEADS BACK TO THE SPIDER WARREN AND PROVIDES CLUES TO TRAEM'S POSIONING
 		
 		Thread 3 : The Bastard's Deserters / Bandits on the Road (Mike)
 			Also found at the inn are a worn pair that look to be merchants. Down to their last copper, and low on luck, they eye anyone coming into
@@ -70,7 +72,12 @@ Scene Three: Whitelake at Dawn
 				arrogance of the common highwayman. Whitelake isn't too far from the Eldrani border, so putting two and two together, it's possible
 				that these bandits are deserters from the war, and if that's found out, will reflect badly on the Bastard, as well as any claim he 
 				might have to the throne
-			THERE NEEDS TO BE BIGGER PAYOFF / MOTIVATION HERE
+			If Mike doesn't manage to get this far in the logic, have the merchants mention their suspicion - that they think the bandits were 
+				soldiers who deserted, and that given how close they are to the border, they're probably the Bastards' Men. Perhaps the war isn't 
+				going as well as they've all been told, or maybe the Bastard's given up on Eldran, and is coming home to take the crown by force
+			In any case, enough prompting should encourage Mike to investigate
+			
+			THIS THREAD LEADS TO THE BANDIT'S CAMP, AND POTENTIALLY A RUN-IN WITH THE IRON LEGION
 		
 		Thread 4 : Percel's Tapestry and Linen Shoppe / Eldrani Contact (Crom)
 			Percel's Shoppe is off of the main street, and features a large, hanging sign out front. This sign, with is mostly unobtrusive, displays
@@ -80,5 +87,11 @@ Scene Three: Whitelake at Dawn
 				thinks this option is incredibly unlikely
 			Perhaps by convincing the townsfolk, who seem to be ready to believe it, that these men are carrying the plague, they might easily be
 				gotten rid of?
+			Of utmost importance, however, is that one of the men carries a coded letter, intercepted from a courier. It could provide valuable 
+				insight for the war effort
+				
+			THIS THREAD UNCOVERS INTELLIGENCE OF THE COUNCIL OF LORDS TROOP MOVEMENTS
 	
-	Story Thread : The Things Beneath the Ice - A Nightmare of Lost Naivunnan
+Story Thread : The Things Beneath the Ice - A Nightmare of Lost Naivunnan
+	Once the Players have followed up on the threads that they're interested in, Hedeg will go looking for them. He's found some troubling notes
+		in his search through the adandoned house, and urges the Players to investigate the dockyards.
