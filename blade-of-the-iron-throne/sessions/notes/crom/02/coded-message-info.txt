@@ -1,0 +1,40 @@
+Olmsday, Second of Erustide
+
+My lord, we have sighted the Fallen Legion near the Aranis and are in pursuit, as instructed.  I have left Harkster and Jorrum’s 
+regiments entrenched near Queensreach to deal with the peasantry.  Their own communiques will be arriving in the usual method.  
+We will use the Red Boar.
+
+Greetings – the time is set.  We will meet in Fallsbridge at midnight on the date of this missive, near the old shrine to 
+Keradis to discuss the overthrow of the Princess and the Church.  You will know our company by their ruby earrings.  The rest of 
+this message will be coded to throw off spies.
+
+Your servant, Lancaster, Ninth Division.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Olmsday, Second of Erustide
+
+Ph oxum, zn kjyn vrjqwng ckn Ijouhw Onjrrw qnda wqh Jujqrv jqm dah rq yxavdlc, db lwvcudfchm.  L qdeh uhow Qdanbwnu jqm Mxuaxv’v 
+ahplvhwwb hwwahwfqhm qnda Tdhnqbundlk cr mhjo flck ckn sndbdwwab.  Cknla rfq lrvpdqrtdhb zrou en dauryrqp lw wqh dvddu pnwqrm.  
+Zn zrou xbh ckn Ung Krju.
+
+Jhhwlqjv – wkh wlph lv vhw.  Zh zloo phhw lq Idooveulgjh dw plgqljkw rq wkh gdwh ri wklv plvvlyh, qhdu wkh rog vkulqh wr 
+Nhudglv wr glvfxvv wkh ryhuwkurz ri wkh Sulqfhvv dqg wkh Fkxufk.  Brx zloo nqrz rxu frpsdqb eb wkhlu uxeb hduulqjv.  Wkh uhvw ri 
+wklv phvvdjh zloo eh frghg wr wkurz rii vslhv. 
+
+Hrdu bhayjqc, Ojqldbwnu, Wlwwq Gryrvrrw.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+The message is coded in an odd shift-cypher; the first and third parts are pieces of the same message, while the second 
+paragraph is a trap, intended on luring the unwary into an ambush.  The date gives a clue on how to read the message - Olmsday 
+is the third day of the week, and the first shift used in the cypher. The second indicates which paragraph is a false lead, and 
+can be disregarded by those in the know.  It is also a three-shift cypher, and because it is easy to solve, it should be the 
+first message a thief will find.  Indeed, because the real message also uses a shift of three steps, a spy is guaranteed to 
+see the trap first.
+
+Erustide is the sixth month.  To solve the complex cypher, every character is shifted down three steps. Then, every even 
+character is shifted ANOTHER six steps to reveal the true message.
+
+Finally, the date of the message - Olmsday, the Second of Erustide, is two weeks in the future.  This is also a clue as to 
+how to solve the puzzle.
