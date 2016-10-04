@@ -4,7 +4,7 @@ function shift(text, n1, n2){
   var result = "";
   
   for (var i = 0; i < text.length; i++) {
-    //var shift = n2;
+    var shift = n2;
     
     //if (i % 2 === 0)  // if we're at an even index, use n1 shift value, else, use the n2 value
       //shift = n1;
@@ -12,7 +12,7 @@ function shift(text, n1, n2){
 		var c = text.charCodeAt(i);
 		if (c >= 65 && c <=  90){
 			var upperCaseNum = c - 65;
-			upperCaseNum += n1;
+			upperCaseNum += parseInt(shift, 10);
 			upperCaseNum %= 26;
 			upperCaseNum += 65;
 			result += String.fromCharCode(upperCaseNum);
