@@ -10,6 +10,8 @@
 	<!-- Bootstrap JS items -->
 	<script src="../../../bootstrap-files/js/jquery.js"></script>
 	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+	
+	<script src="shift-cypher.js"></script>
 </head>
 <body>
   <div class="container text-justify">
@@ -71,10 +73,21 @@
       			<option value="25">25</option>
       		</select></p>
       		<p>Enter the cypher: <textarea class="form-control" id="TXB_cypher_input" rows="5"></textarea></p>
-      		<p><input type="button" value="Encode/Decode" id="BTN_run"></p>
+      		<p><input type="button" value="Encode/Decode" id="BTN_run" onclick="beginShift()"></p>
       		<p>Your message: <textarea class="form-control" id="TXB_cypher_output" rows="5" readonly="true"></textarea></p>
       		<p id="feedback"></p>
 	</div>
   </div>
+	
+	<script>
+		function beginShift(){
+			var messageIn = document.getElementById("TXB_cypher_input");
+			var n1 = document.getElementById("SEL_N1_value");
+			var n2 = document.getElementById("SEL_N2_value");
+			var messageOut = document.getElementById("TXB_cypher_output");
+			
+			messageOut.value = shift(messageIn.value, n1.value, n2.value);
+		}
+	</script>
 </body>
 </html>
