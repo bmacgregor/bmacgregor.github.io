@@ -6,7 +6,7 @@ function shift(text, n1, n2){
   for (var i = 0; i < text.length; i++) {
     var shift = n2;
     
-    if (n1 % 2 === 1)
+    if (i % 2 === 0)  // if we're at an even index, use n1 shift value, else, use the n2 value
       shift = n1;
       
 		var c = text.charCodeAt(i);
