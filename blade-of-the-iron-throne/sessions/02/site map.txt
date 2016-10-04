@@ -1,0 +1,50 @@
+Intro
+	Note : Abi (Untapped Potential)
+	Note : Amanda (The Old Gods)
+	Note : Crom (Your Alliegance Renewed)
+	Note : Kerrin (Questions of the Dead)
+	Note : Mike (The Bastards War)
+Spider Warren
+	Note : Amanda (A Vision of Ill-Omen)
+	Note : Crom (House Garont)
+	Note : Kerrin (The Beasts' Lair)
+The Missing Archivist
+Questions and Bargains
+Whitelake
+
+Thread : Kerrin
+	Whitelake Infirmary
+	Return to the Warren
+		Note : Kerrin (Poison for a Cure)
+	Search for a Cure
+		Note : Kerrin (A Half-Dozen Dead)
+	House Garont's Involvement
+		Note : Kerrin (The Broken Sword)
+
+Thread : Crom
+	Percel's Shoppe
+	Return to the Warren
+		Note : Crom (The Lost Letter)
+		Riddle : Crom (A Cyphered Letter)
+	Return to Percel
+	A Choice of Two Paths
+		Note : Crom (The Lord's Council)
+
+Thread : Abi & Amanda
+	Rose and Barrel
+	Farstin's Tale
+		Note : Abi (The Fool's Signs)
+		Note : Amanda (A Cryptic Tomb)
+	Sunken Temple
+	The Grotto
+	Foreboding
+	Vessjin's Tomb
+	Glyphed Chamber
+
+Thread : Mike
+	Rose and Barrel
+	Robbed by Bastards
+		Note : Mike (Reputation in Tatters)
+	The Bandit Camp
+	Launching the Attack
+	Prisoners and Revelations
