@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shift Cypher</title>
+	<link href="../../../bootstrap-files/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../bootstrap-files/css/style.css" rel="stylesheet"> <!-- my stylesheet -->
+	
+	<!-- Bootstrap JS items -->
+	<script src="../../../bootstrap-files/js/jquery.js"></script>
+	<script src="../../../bootstrap-files/js/bootstrap.min.js"></script>
+	
+	<script src="shift-cypher.js"></script>
+</head>
+<body>
+  <div class="container text-justify">
+    <div class="panel-body">
+      		<p>N1 value: <select id="SEL_N_value">
+      			<option value="0" selected="selected">0</option>
+      			<option value="1">1</option>
+      			<option value="2">2</option>
+      			<option value="3">3</option>
+      			<option value="4">4</option>
+      			<option value="5">5</option>
+      			<option value="6">6</option>
+      			<option value="7">7</option>
+      			<option value="8">8</option>
+      			<option value="9">9</option>
+      			<option value="10">10</option>
+      			<option value="11">11</option>
+      			<option value="12">12</option>
+      			<option value="13">13</option>
+      			<option value="14">14</option>
+      			<option value="15">15</option>
+      			<option value="16">16</option>
+      			<option value="17">17</option>
+      			<option value="18">18</option>
+      			<option value="19">19</option>
+      			<option value="20">20</option>
+      			<option value="21">21</option>
+      			<option value="22">22</option>
+      			<option value="23">23</option>
+      			<option value="24">24</option>
+      			<option value="25">25</option>
+      		</select></p>
+      		<p>Enter the cypher: <textarea class="form-control" id="TXB_cypher_input" rows="5"></textarea></p>
+      		<p><input type="button" value="Encode/Decode" id="BTN_run" onclick="beginShift()"></p>
+      		<p>Your message: <textarea class="form-control" id="TXB_cypher_output" rows="5" readonly="true"></textarea></p>
+      		<p id="feedback"></p>
+	</div>
+  </div>
+	
+	<script>
+		function beginShift(){
+			var messageIn = document.getElementById("TXB_cypher_input");
+			var n = document.getElementById("SEL_N_value");
+			var messageOut = document.getElementById("TXB_cypher_output");
+			
+			messageOut.value = shift(messageIn.value, n.value);
+		}
+	</script>
+</body>
+</html>
