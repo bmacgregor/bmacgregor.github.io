@@ -27,23 +27,18 @@ function shift(text, n1, n2){
   return result;
 }
 
-function shift(text, n){
+function basicShift(text, n){
 	var result = "";
-	var counter = 0;
   
 	for (var i = 0; i < text.length; i++) {
 		var shift = parseInt(n, 10);
 		
 		var c = text.charCodeAt(i);
 		
-		if (c >= 65 && c <=  90){ // Uppercase
+		if (c >= 65 && c <=  90) // Uppercase
 			result += String.fromCharCode((c - 65 + shift) % 26 + 65);
-		  	counter++;
-	  	}
-		else if (c >= 97 && c <= 122){ // Lowercase
+		else if (c >= 97 && c <= 122) // Lowercase
 			result += String.fromCharCode((c - 97 + shift) % 26 + 97);
-			counter++;
-		}
 		else  // Copy
 			result += text.charAt(i);
 	}
