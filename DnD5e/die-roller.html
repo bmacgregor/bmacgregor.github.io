@@ -18,7 +18,9 @@
 		
 		<div>
 			<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
-			<input type="number" id="NUM_toHit" min="0" style="text-align:center" onchange="UpdateTotal()">
+			<input type="number" id="NUM_toHit" min="-100" style="text-align:center" onchange="UpdateTotal()">
+															 
+			<div class="row">
 														      
 		      	<label for="NUM_dieNumber">Enter the number of damage dice : </label>
 			<input type="number" id="NUM_dieNumber" min="1" style="text-align:center" onchange="UpdateTotal()">
@@ -32,6 +34,8 @@
 				<option>d10</option>
 				<option>d12</option>
   			</select>
+			</div>
+														   
 		</div>
 		
 		<br/>
