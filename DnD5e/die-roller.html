@@ -16,5 +16,29 @@
 	
 		<h1>D&D Die Roller</h1><hr/>
 		
+		<div>
+			<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
+			<input type="number" id="NUM_toHit" min="0" style="text-align:center" onchange="UpdateTotal()">
+														      
+		      	<label for="NUM_dieNumber">Enter the number of damage dice : </label>
+			<input type="number" id="NUM_dieNumber" min="1" style="text-align:center" onchange="UpdateTotal()">
+														      
+			<label for="SEL_dX">Enter your damage die : </label>
+			<select class="form-control" id="SEL_dX" style="text-align:center" onchange="UpdateTotal()">
+    				<option>d2</option>
+    				<option>d4</option>
+    				<option>d6</option>
+				<option>d8</option>
+				<option>d10</option>
+				<option>d12</option>
+  			</select>
+		</div>
+		
+		<br/>
+		
+		<button id="BTN_Roll" class="btn btn-primary btn-lg" onclick="RollDice()">Roll Dice</button><br/><br/>
+		
+		<div><p id="PAR_total" class="h4"></p></div>
+	</div>
 </body>
 </html>
