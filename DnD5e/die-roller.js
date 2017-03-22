@@ -47,8 +47,8 @@ function DisplayRoll() {
 
 		if ((d20Roll + parseInt(document.getElementById("NUM_toHit").value) >= parseInt(document.getElementById("NUM_targetAC").value)
 		   || d20Roll === 20) && d20Roll !== 1) {
-			document.getElementById("DIV_total").innerHTML += "<br/><br/>Target hit!"; 
-		} else { document.getElementById("DIV_total").innerHTML += "<br/><br/>Target missed!"; }
+			document.getElementById("DIV_total").innerHTML += " : Target hit!"; 
+		} else { document.getElementById("DIV_total").innerHTML += " : Target missed!"; }
 	}
 }
 
@@ -56,7 +56,7 @@ function TellMeTheOdds() {
 	var odds = Math.floor((((parseFloat(document.getElementById("NUM_targetAC").value - 1) 
 		    - parseFloat(document.getElementById("NUM_toHit").value)) / 20) - 1) * -100);
 	
-	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting";
+	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting on a normal roll";
 }
 
 // end hiding script from old browsers -->
