@@ -44,7 +44,7 @@
 
 	<div>
 		<label for="SEL_damage">Select damage die type:</label>
-		<select class="form-control" id="SEL_damage">
+		<select class="form-control" id="SEL_damage" onchange="DisplayRoll()">
 			<option value="2">d2</option>
 			<option value="4">d4</option>
 			<option value="6">d6</option>
@@ -54,10 +54,10 @@
 		</select>
 		
 		<label for="NUM_damDice">Enter the number of dice to roll : </label>
-			<input type="number" id="NUM_dice" min="1" style="text-align:center">
+			<input type="number" id="NUM_dice" min="1" onchange="DisplayRoll()" style="text-align:center">
 		
 		<label for="NUM_toHit">Enter your Damage Modifier : </label>
-			<input type="number" id="NUM_damage" style="text-align:center">
+			<input type="number" id="NUM_damage" onchange="DisplayRoll()" style="text-align:center">
 	</div>
 	
 	<button id="BTN_Roll" class="btn btn-primary btn-lg" onclick="Rolld20()">Roll Dice</button><br/><br/>
