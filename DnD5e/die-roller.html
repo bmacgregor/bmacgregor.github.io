@@ -17,10 +17,15 @@
 		<h1>D&D Die Roller - 8:43</h1><hr/>
 					   
 		<div>
-			<label class="radio-inline"><input type="radio" name="d20RollType" value="normal" checked=true>Normal Roll</label>
-		    	<label class="radio-inline"><input type="radio" name="d20RollType" value="advantage">Advantage</label>
-		    	<label class="radio-inline"><input type="radio" name="d20RollType" value="disadvantage">Disadvantage</label>
+			<label class="radio-inline"><input type="radio" name="d20RollType" 
+		  		value="0" checked=true onchange="RollType()">Normal Roll</label>
+		    	<label class="radio-inline"><input type="radio" name="d20RollType" value="1" 
+		    		onchange="RollType()">Advantage</label>
+		    	<label class="radio-inline"><input type="radio" name="d20RollType" value="-1"
+		     		onchange="RollType()">Disadvantage</label>
 	   	</div>
+													       
+	       	<br/>
 		
 		<div>
 			<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
