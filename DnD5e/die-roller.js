@@ -5,6 +5,7 @@ var d20Roll2 = 0;
 
 function SetUpDisplay() {
 	document.getElementById("NUM_toHit").value = 0;
+	document.getElementById("NUM_targetAC").value = 10;
 	DisplayRoll();
 }
 
@@ -40,6 +41,16 @@ function DisplayRoll() {
 	} else if (document.getElementById("RDO_disadvantage").checked) {
 		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Disadvantage (" + 
 		d20Roll + " vs " + d20Roll2 + ")"; }
+	
+	if (d20Roll + document.getElementById("NUM_toHit").value >= document.getElementById("NUM_targetAC").value) {
+		document.getElementById("DIV_total").innerHTML += "<br/><br/>Target hit!"; 
+	} else { document.getElementById("DIV_total").innerHTML += "<br/><br/>Target missed!"; }
+}
+
+function TellMeTheOdds() {
+	var odds = (document.getElementById("NUM_targetAC").value - document.getElementById("NUM_toHit").value) / 0.2;
+	
+	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting";
 }
 
 // end hiding script from old browsers -->
