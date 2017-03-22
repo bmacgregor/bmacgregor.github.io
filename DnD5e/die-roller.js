@@ -72,8 +72,9 @@ function GetDamage() {
 	var damage = 0;
 	
 	damage = Math.random * parseFloat(document.getElementById("SEL_damage").value);
+	
 	damage = parseFloat(document.getElementById("SEL_damage").value);
-	damage = Math.random * damage;
+	damage = Math.random * parseFloat(damage);
 	damage += 1;
 	damage = Math.floor(damage);
 	damage += dMod;
