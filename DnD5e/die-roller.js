@@ -17,7 +17,7 @@ function Rolld20() {
 function DisplayRoll() {
 	console.log("Displaying roll");
 	document.getElementById("DIV_total").innerHTML = "d20 Roll : " + 
-		(parseInt(document.getElementById("NUM_toHit").value) + d20Roll + "(" + d20Roll + " + " + 
+		(parseInt(document.getElementById("NUM_toHit").value) + d20Roll + " (" + d20Roll + " + " + 
 		document.getElementById("NUM_toHit").value + ")");
 	
 	if (d20Roll === 20)
