@@ -8,10 +8,6 @@ function SetUpDisplay() {
 	DisplayRoll();
 }
 
-function RollType() {
-	if (document.getElementById("d20RollType").value === 0)
-}
-
 function Rolld20() {
 	d20Roll = Math.floor(Math.random() * 20 + 1);
 	d20Roll2 = Math.floor(Math.random() * 20 + 1);
