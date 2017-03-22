@@ -9,13 +9,17 @@ function SetUpDisplay() {
 }
 
 function Rolld20() {
+	var temp = 0;
+	
 	d20Roll = Math.floor(Math.random() * 20 + 1);
 	d20Roll2 = Math.floor(Math.random() * 20 + 1);
+	temp = d20Roll;
 	
 	if (document.getElementById("RDO_advantage").checked && d20Roll2 > d20Roll) {
 		d20Roll = d20Roll2;
-	} else if (document.getElementById("RDO_disadvantage").checked === -1 && d20Roll2 < d20Roll) {
+	} else if (document.getElementById("RDO_disadvantage").checked && d20Roll2 < d20Roll) {
 		d20Roll = d20Roll2; }
+	d20Roll2 = temp; 
 	
 	DisplayRoll();
 }
@@ -31,9 +35,11 @@ function DisplayRoll() {
 		document.getElementById("DIV_total").innerHTML += " Critical Failure!"; }
 	
 	if (document.getElementById("RDO_advantage").checked) {
-		document.getElementById("DIV_total").innerHTML += "<br/>Rolled with Advantage";
+		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Advantage (" + 
+		d20Roll + "vs " + d20Roll2 + ")";
 	} else if (document.getElementById("RDO_disadvantage").checked) {
-		document.getElementById("DIV_total").innerHTML += "<br/>Rolled with Disadvantage"; }
+		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Disadvantage(" + 
+		d20Roll + "vs " + d20Roll2 + ")"; }
 }
 
 // end hiding script from old browsers -->
