@@ -69,7 +69,11 @@ function GetDamage() {
 	var dMod = parseInt(document.getElementById("NUM_damage").value);
 	var dCount = parseInt(document.getElementById("NUM_dice").value);
 	
-	var damage = (Math.floor(Math.random * dType + 1)) + dMod;
+	var damage = Math.random * dType;
+	damage += 1;
+	damage = Math.floor(damage);
+	damage += dMod;
+	//var damage = (Math.floor(Math.random * dType + 1)) + dMod;
 
       	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + dCount + "d" + dType + " + " + dMod + ")";
 }
