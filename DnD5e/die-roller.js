@@ -42,9 +42,10 @@ function DisplayRoll() {
 		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Disadvantage (" + 
 		d20Roll + " vs " + d20Roll2 + ")"; }
 	
+	if (d20Roll !== 0) {
 	if (d20Roll + document.getElementById("NUM_toHit").value >= document.getElementById("NUM_targetAC").value) {
 		document.getElementById("DIV_total").innerHTML += "<br/><br/>Target hit!"; 
-	} else { document.getElementById("DIV_total").innerHTML += "<br/><br/>Target missed!"; }
+	} else { document.getElementById("DIV_total").innerHTML += "<br/><br/>Target missed!"; } }
 }
 
 function TellMeTheOdds() {
