@@ -52,7 +52,7 @@ function DisplayRoll() {
 }
 
 function TellMeTheOdds() {
-	var odds = Math.floor((((parseFloat(document.getElementById("NUM_targetAC").value) 
+	var odds = Math.floor((((parseFloat(document.getElementById("NUM_targetAC").value - 1) 
 		    - parseFloat(document.getElementById("NUM_toHit").value)) / 20) - 1) * -100);
 	
 	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting";
