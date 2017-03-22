@@ -37,23 +37,24 @@ function DisplayRoll() {
 	TellMeTheOdds();
 	
 	if (d20Roll !== 0) {
-		if (d20Roll === 20) {
-			document.getElementById("DIV_total").innerHTML += " Double Damage!";
-		} else if (d20Roll === 1) {
-			document.getElementById("DIV_total").innerHTML += " Critical Failure!"; }
+	if (d20Roll === 20) {
+		document.getElementById("DIV_total").innerHTML += " Double Damage!";
+	} else if (d20Roll === 1) {
+		document.getElementById("DIV_total").innerHTML += " Critical Failure!"; }
 
-		if (document.getElementById("RDO_advantage").checked) {
-			document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Advantage (" + 
-			d20Roll + " vs " + d20Roll2 + ")";
-		} else if (document.getElementById("RDO_disadvantage").checked) {
-			document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Disadvantage (" + 
-			d20Roll + " vs " + d20Roll2 + ")"; }
+	if (document.getElementById("RDO_advantage").checked) {
+		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Advantage (" + 
+		d20Roll + " vs " + d20Roll2 + ")";
+	} else if (document.getElementById("RDO_disadvantage").checked) {
+		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Disadvantage (" + 
+		d20Roll + " vs " + d20Roll2 + ")"; }
 
-		if ((d20Roll + parseInt(document.getElementById("NUM_toHit").value) >= parseInt(document.getElementById("NUM_targetAC").value)
-		   || d20Roll === 20) && d20Roll !== 1) {
-			document.getElementById("DIV_total").innerHTML += " : Target hit!"; 
-		} else { document.getElementById("DIV_total").innerHTML += " : Target missed!"; }
-	}
+	if ((d20Roll + parseInt(document.getElementById("NUM_toHit").value) >= parseInt(document.getElementById("NUM_targetAC").value)
+	   || d20Roll === 20) && d20Roll !== 1) {
+		document.getElementById("DIV_total").innerHTML += " : Target hit!"; 
+	} else { document.getElementById("DIV_total").innerHTML += " : Target missed!"; } 
+	
+	GetDamage(); }
 }
 
 function TellMeTheOdds() {
@@ -61,6 +62,15 @@ function TellMeTheOdds() {
 		    - parseFloat(document.getElementById("NUM_toHit").value)) / 20) - 1) * -100);
 	
 	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting on a normal roll";
+}
+
+function GetDamage() {
+	var damage = (Math.floor(Math.random * parseInt(document.getElementById("SEL_damage").value) + 1) + 
+		parseInt(document.getElementById("NUM_damage").value);
+
+      	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + 
+    		document.getElementById("NUM_dice").value + "d" + document.getElementById("SEL_damage").value + " + " + 
+	    	document.getElementById("NUM_damage").value + ")";
 }
 
 // end hiding script from old browsers -->
