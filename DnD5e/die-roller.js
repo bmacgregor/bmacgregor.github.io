@@ -69,7 +69,9 @@ function GetDamage() {
 	var dMod = parseFloat(document.getElementById("NUM_damage").value);
 	var dCount = parseFloat(document.getElementById("NUM_dice").value);
 	
-	var damage = Math.random * dType;
+	var damage = 0;
+	
+	damage = Math.random * parseFloat(dType);
 	damage += 1;
 	damage = Math.floor(damage);
 	damage += dMod;
