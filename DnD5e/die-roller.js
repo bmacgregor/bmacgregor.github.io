@@ -65,12 +65,13 @@ function TellMeTheOdds() {
 }
 
 function GetDamage() {
-	var damage = (Math.floor(Math.random * parseInt(document.getElementById("SEL_damage").value) + 1)) + 
-    		parseInt(document.getElementById("NUM_damage").value);
+	var dType = document.getElementById("SEL_damage").value;
+	var dMod = document.getElementById("NUM_damage").value;
+	var dCount = document.getElementById("NUM_dice").value;
+	
+	var damage = (Math.floor(Math.random * dType + 1)) + dMod;
 
-      	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + 
-    		document.getElementById("NUM_dice").value + "d" + document.getElementById("SEL_damage").value + " + " + 
-	    	document.getElementById("NUM_damage").value + ")";
+      	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + dCount + "d" + dType + " + " + dMod + ")";
 }
 
 // end hiding script from old browsers -->
