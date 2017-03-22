@@ -36,10 +36,10 @@ function DisplayRoll() {
 	
 	if (document.getElementById("RDO_advantage").checked) {
 		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Advantage (" + 
-		d20Roll + "vs " + d20Roll2 + ")";
+		d20Roll + " vs " + d20Roll2 + ")";
 	} else if (document.getElementById("RDO_disadvantage").checked) {
 		document.getElementById("DIV_total").innerHTML += "<br/><br/>Rolled with Disadvantage(" + 
-		d20Roll + "vs " + d20Roll2 + ")"; }
+		d20Roll + " vs " + d20Roll2 + ")"; }
 }
 
 // end hiding script from old browsers -->
