@@ -65,8 +65,8 @@ function TellMeTheOdds() {
 }
 
 function GetDamage() {
-	var damage = (Math.floor(Math.random * parseInt(document.getElementById("SEL_damage").value) + 1) + 
-		parseInt(document.getElementById("NUM_damage").value);
+	var damage = (Math.floor(Math.random * parseInt(document.getElementById("SEL_damage").value) + 1)) + 
+    		parseInt(document.getElementById("NUM_damage").value);
 
       	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + 
     		document.getElementById("NUM_dice").value + "d" + document.getElementById("SEL_damage").value + " + " + 
