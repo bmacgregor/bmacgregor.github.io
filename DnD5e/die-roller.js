@@ -69,16 +69,7 @@ function GetDamage() {
 	var dMod = parseFloat(document.getElementById("NUM_damage").value);
 	var dCount = parseFloat(document.getElementById("NUM_dice").value);
 	
-	var damage = 0;
-	
-	damage = Math.random * parseFloat(document.getElementById("SEL_damage").value);
-	
-	damage = parseFloat(document.getElementById("SEL_damage").value);
-	damage = Math.random * parseFloat(damage);
-	damage += 1;
-	damage = Math.floor(damage);
-	damage += dMod;
-	//var damage = (Math.floor(Math.random * dType + 1)) + dMod;
+	var damage = Math.floor(Math.random() * dType + 1) + dMod;
 
       	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + dCount + "d" + dType + " + " + dMod + ")";
 }
