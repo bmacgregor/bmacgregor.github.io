@@ -65,11 +65,11 @@ function TellMeTheOdds() {
 }
 
 function GetDamage() {
-	var dType = document.getElementById("SEL_damage").value;
-	var dMod = document.getElementById("NUM_damage").value;
-	var dCount = document.getElementById("NUM_dice").value;
+	var dType = parseInt(document.getElementById("SEL_damage").value);
+	var dMod = parseInt(document.getElementById("NUM_damage").value);
+	var dCount = parseInt(document.getElementById("NUM_dice").value);
 	
-	var damage = (Math.floor(Math.random * parseInt(dType) + 1)) + dMod;
+	var damage = (Math.floor(Math.random * dType + 1)) + dMod;
 
       	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + dCount + "d" + dType + " + " + dMod + ")";
 }
