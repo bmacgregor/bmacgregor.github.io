@@ -65,11 +65,11 @@ function TellMeTheOdds() {
 }
 
 function GetDamage() {
-	var dType = document.getElementById("SEL_damage").value;
-	var dMod = document.getElementById("NUM_damage").value;
-	var dCount = document.getElementById("NUM_dice").value;
+	var dType = parseFloat(document.getElementById("SEL_damage").value);
+	var dMod = parseFloat(document.getElementById("NUM_damage").value);
+	var dCount = parseFloat(document.getElementById("NUM_dice").value);
 	
-	var damage = Math.random * parseFloat(dType);
+	var damage = Math.random * dType;
 	damage += 1;
 	damage = Math.floor(damage);
 	damage += dMod;
