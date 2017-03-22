@@ -17,26 +17,22 @@
 		<h1>D&D Die Roller</h1><hr/>
 					   
 		<div>
-			<label class="radio-inline"><input type="radio" name="d20RollType" 
-		  		id="RDO_normal" checked=true onchange="Rolld20()">Normal Roll</label>
-		    	<label class="radio-inline"><input type="radio" name="d20RollType" id="RDO_advantage" 
-		    		onchange="Rolld20()">Advantage</label>
-		    	<label class="radio-inline"><input type="radio" name="d20RollType" id="RDO_disadvantage"
-		     		onchange="Rolld20()">Disadvantage</label>
+			<label class="radio-inline">
+		   		<input type="radio" name="d20RollType" id="RDO_normal" checked=true onchange="Rolld20()">Normal Roll</label>
+		    	<label class="radio-inline">
+			   	<input type="radio" name="d20RollType" id="RDO_advantage" onchange="Rolld20()">Advantage</label>
+		    	<label class="radio-inline">
+			   	<input type="radio" name="d20RollType" id="RDO_disadvantage" onchange="Rolld20()">Disadvantage</label>
 	   	</div>
 													       
 	       	<br/>
 		
 		<div>
-	    	<table>
-		<tr>
-		    	<td><label for="NUM_toHit">Enter your To-Hit Modifier : </label></td>
-		  	<td><input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()"></td>
-		</tr><tr>
-		  	<td><label for="NUM_targetAC">Enter the target AC : </label></td>
-			<td><input type="number" id="NUM_targetAC" style="text-align:center" onchange="TellMeTheOdds()"></td>
-	       	</tr>
-	       	</table>
+	    		<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
+		  		<input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()">
+		
+		  	<label for="NUM_targetAC">Enter the target AC : </label>
+				<input type="number" id="NUM_targetAC" style="text-align:center" onchange="TellMeTheOdds()">
 		</div>
 		
 		<br/>
