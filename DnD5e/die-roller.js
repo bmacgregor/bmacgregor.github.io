@@ -52,8 +52,8 @@ function DisplayRoll() {
 }
 
 function TellMeTheOdds() {
-	var odds = (((parseFloat(document.getElementById("NUM_targetAC").value) 
-		    - parseFloat(document.getElementById("NUM_toHit").value)) / 20) - 1) * -100;
+	var odds = Math.Floor((((parseFloat(document.getElementById("NUM_targetAC").value) 
+		    - parseFloat(document.getElementById("NUM_toHit").value)) / 20) - 1) * -100);
 	
 	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting";
 }
