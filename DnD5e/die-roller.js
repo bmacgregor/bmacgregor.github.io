@@ -6,6 +6,10 @@ var d20Roll2 = 0;
 function SetUpDisplay() {
 	document.getElementById("NUM_toHit").value = 0;
 	document.getElementById("NUM_targetAC").value = 10;
+	
+	document.getElementById("NUM_dice").value = 1;
+	document.getElementById("NUM_damage").value = 0;
+	
 	DisplayRoll();
 }
 
