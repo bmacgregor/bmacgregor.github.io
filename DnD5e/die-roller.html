@@ -12,36 +12,41 @@
 	<script src="die-roller.js"></script>
 </head>
 <body onload="SetUpDisplay()">
-	<div class="container text-center"">
+<div class="container text-center">
+
+	<h1>D&D Die Roller</h1>
 	
-		<h1>D&D Die Roller</h1><hr/>
-					   
-		<div>
-			<label class="radio-inline">
-		   		<input type="radio" name="d20RollType" id="RDO_normal" checked=true onchange="Rolld20()">Normal Roll</label>
-		    	<label class="radio-inline">
-			   	<input type="radio" name="d20RollType" id="RDO_advantage" onchange="Rolld20()">Advantage</label>
-		    	<label class="radio-inline">
-			   	<input type="radio" name="d20RollType" id="RDO_disadvantage" onchange="Rolld20()">Disadvantage</label>
-	   	</div>
-													       
-	       	<br/>
-		
-		<div>
-	    		<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
-		  		<input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()">
-		
-		  	<label for="NUM_targetAC">Enter the target AC : </label>
-				<input type="number" id="NUM_targetAC" style="text-align:center" onchange="TellMeTheOdds()">
-		</div>
-		
-		<br/>
-														   
-		<div><p id="DIV_hitChance" class="h4"></p></div>
-		
-		<button id="BTN_Roll" class="btn btn-primary btn-lg" onclick="Rolld20()">Roll Dice</button><br/><br/>
-		
-		<div><p id="DIV_total" class="h4"></p></div>
+	<hr/>
+	
+	<div>
+		<label class="radio-inline">
+			<input type="radio" name="d20RollType" id="RDO_normal" checked=true onchange="Rolld20()">Normal Roll</input>
+		</label>
+		<label class="radio-inline">
+			<input type="radio" name="d20RollType" id="RDO_advantage" onchange="Rolld20()">Advantage</input>
+		</label>
+		<label class="radio-inline">
+			<input type="radio" name="d20RollType" id="RDO_disadvantage" onchange="Rolld20()">Disadvantage</input>
+		</label>
 	</div>
+	
+	<br/>
+	
+	<div>
+			<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
+			<input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()">
+	
+		<label for="NUM_targetAC">Enter the target AC : </label>
+			<input type="number" id="NUM_targetAC" style="text-align:center" onchange="TellMeTheOdds()">
+	</div>
+	
+	<br/>
+													   
+	<div><p id="DIV_hitChance" class="h4"></p></div>
+	
+	<button id="BTN_Roll" class="btn btn-primary btn-lg" onclick="Rolld20()">Roll Dice</button><br/><br/>
+	
+	<div><p id="DIV_total" class="h4"></p></div>
+</div>
 </body>
 </html>
