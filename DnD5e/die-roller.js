@@ -52,7 +52,7 @@ function DisplayRoll() {
 }
 
 function TellMeTheOdds() {
-	var odds = (document.getElementById("NUM_targetAC").value - document.getElementById("NUM_toHit").value) / 0.2;
+	var odds = (document.getElementById("NUM_targetAC").value + document.getElementById("NUM_toHit").value) / 0.2;
 	
 	document.getElementById("DIV_hitChance").innerHTML = odds + "% chance of hitting";
 }
