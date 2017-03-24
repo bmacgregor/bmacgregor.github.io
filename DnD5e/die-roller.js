@@ -71,13 +71,14 @@ function GetDamage() {
 	var dCount = parseFloat(document.getElementById("NUM_dice").value);
 	var damage = 0;
 	
-	//var damage = Math.floor(Math.random() * dType + 1) + dMod;
+	if (d20Roll === 20) { dCount *= 2; }
+	
 	for (var i = 0; i < dCount ; i++) { damage += Math.floor(Math.random() * dType + 1) }
 	
 	dMod *= dCount;
 
       	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + (damage+dMod) + 
-		" (" + dCount + " rolled, " + dMod + " added)";
+		" (" + damage + " rolled, " + dMod + " added)";
 }
 
 function AverageDamage() {
@@ -86,7 +87,7 @@ function AverageDamage() {
 	var dCount = parseFloat(document.getElementById("NUM_dice").value);
 	
 	var avg = (dCount + (dCount * dType) + (dCount * dMod)) / 2.0;
-	avg = avg.toFixed(1);
+	//avg = avg.toFixed(1);
 	
 	document.getElementById("DIV_dAvg").innerHTML = "Average damage : " + avg;
 }
