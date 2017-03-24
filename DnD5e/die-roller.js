@@ -30,13 +30,14 @@ function Rolld20() {
 }
 
 function DisplayRoll() {
+	TellMeTheOdds();
+	AverageDamage();
+	
+	if (d20Roll !== 0) {
 	document.getElementById("DIV_total").innerHTML = "d20 Roll : " + 
 		(parseInt(document.getElementById("NUM_toHit").value) + d20Roll + " (" + d20Roll + " + " + 
 		document.getElementById("NUM_toHit").value + ")");
-		
-	TellMeTheOdds();
 	
-	if (d20Roll !== 0) {
 	if (d20Roll === 20) {
 		document.getElementById("DIV_total").innerHTML += " Double Damage!";
 	} else if (d20Roll === 1) {
@@ -68,10 +69,25 @@ function GetDamage() {
 	var dType = parseFloat(document.getElementById("SEL_damage").value);
 	var dMod = parseFloat(document.getElementById("NUM_damage").value);
 	var dCount = parseFloat(document.getElementById("NUM_dice").value);
+	var damage = 0;
 	
-	var damage = Math.floor(Math.random() * dType + 1) + dMod;
+	//var damage = Math.floor(Math.random() * dType + 1) + dMod;
+	for (var i = 0; i < dCount ; i++) { damage += Math.floor(Math.random() * dType + 1) }
+	
+	dMod *= dCount;
 
-      	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + damage + " (" + dCount + "d" + dType + " + " + dMod + ")";
+      	document.getElementById("DIV_damage").innerHTML = "Damage Roll : " + (damage+dMod) + 
+		" (" + dCount + " rolled, " + dMod + " added)";
+}
+
+function AverageDamage() {
+	var dType = parseFloat(document.getElementById("SEL_damage").value);
+	var dMod = parseFloat(document.getElementById("NUM_damage").value);
+	var dCount = parseFloat(document.getElementById("NUM_dice").value);
+	
+	var avg = parseFloat((dCount + (dCount * dType) + (dCount + dMod)) / 2).toFixed(1);
+	
+	document.getElementById("DIV_dAvg").innerHTML = "Average damage : " + avg;
 }
 
 // end hiding script from old browsers -->
