@@ -85,7 +85,8 @@ function AverageDamage() {
 	var dMod = parseFloat(document.getElementById("NUM_damage").value);
 	var dCount = parseFloat(document.getElementById("NUM_dice").value);
 	
-	var avg = parseFloat((dCount + (dCount * dType) + (dCount + dMod)) / 2).toFixed(1);
+	var avg = (dCount + (dCount * dType) + (dCount + dMod)) / 2;
+	avg = avg.toFixed(2);
 	
 	document.getElementById("DIV_dAvg").innerHTML = "Average damage : " + avg;
 }
