@@ -33,17 +33,17 @@
 	<br/>
 	
 	<div>
-		<label for="NUM_toHit">Enter your To-Hit Modifier : </label>
+		<label for="NUM_toHit">Enter your To-Hit Modifier : </label><br/>
 			<input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()">
 	
-		<label for="NUM_targetAC">Enter the target AC : </label>
+		<label for="NUM_targetAC">Enter the target AC : </label><br/>
 			<input type="number" id="NUM_targetAC" style="text-align:center" onchange="DisplayRoll()">
 	</div>
 													   
-	<div><p id="DIV_hitChance" class="h4"></p></div>
+	<div><p id="DIV_hitChance" class="h5"></p></div>
 
 	<div>
-		<label for="SEL_damage">Select damage die type:</label>
+		<label for="SEL_damage">Select damage die type:</label><br/>
 		<select class="form-control" id="SEL_damage" onchange="DisplayRoll()">
 			<option value="2">d2</option>
 			<option value="4">d4</option>
@@ -53,12 +53,12 @@
 			<option value="12">d12</option>
 		</select>
 		
-		<label for="NUM_damDice">Enter the number of dice to roll : </label>
+		<label for="NUM_damDice">Enter the number of dice to roll : </label><br/>
 			<input type="number" id="NUM_dice" min="1" onchange="DisplayRoll()" style="text-align:center">
 		
-		<label for="NUM_toHit">Enter your Damage Modifier : </label>
+		<label for="NUM_toHit">Enter your Damage Modifier : </label><br/>
 			<input type="number" id="NUM_damage" onchange="DisplayRoll()" style="text-align:center">
-	<div><p id="DIV_dAvg" class="h4"></p></div>
+	<div><p id="DIV_dAvg" class="h5"></p></div>
 
 	<div>
 	
