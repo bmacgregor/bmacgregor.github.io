@@ -30,39 +30,32 @@
 		</label>
 	</div>
 	
-	<br/>
+	<label for="NUM_toHit">Enter your To-Hit Modifier : </label><br/>
+		<input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()"/><br/>
 	
-	<div>
-		<label for="NUM_toHit">Enter your To-Hit Modifier : </label><br/>
-			<input type="number" id="NUM_toHit" style="text-align:center" onchange="DisplayRoll()"><br/>
-	
-		<label for="NUM_targetAC">Enter the target AC : </label><br/>
-			<input type="number" id="NUM_targetAC" style="text-align:center" onchange="DisplayRoll()">
-	</div>
+	<label for="NUM_targetAC">Enter the target AC : </label><br/>
+		<input type="number" id="NUM_targetAC" style="text-align:center" onchange="DisplayRoll()"/>
 													   
 	<div><p id="DIV_hitChance" class="h5"></p></div>
 
-	<div>
-		<label for="SEL_damage">Select damage die type:</label><br/>
-		<select class="form-control" id="SEL_damage" onchange="DisplayRoll()">
-			<option value="2">d2</option>
-			<option value="4">d4</option>
-			<option value="6">d6</option>
-			<option value="8">d8</option>
-			<option value="10">d10</option>
-			<option value="12">d12</option>
-		</select>
+	<label for="SEL_damage">Select damage die type:</label><br/>
+	<select class="form-control" id="SEL_damage" onchange="DisplayRoll()">
+		<option value="2">d2</option>
+		<option value="4">d4</option>
+		<option value="6">d6</option>
+		<option value="8">d8</option>
+		<option value="10">d10</option>
+		<option value="12">d12</option>
+	</select>
 		
-		<label for="NUM_damDice">Enter the number of dice to roll : </label><br/>
-			<input type="number" id="NUM_dice" min="1" onchange="DisplayRoll()" style="text-align:center"><br/>
+	<label for="NUM_damDice">Enter the number of dice to roll : </label><br/>
+		<input type="number" id="NUM_dice" min="1" onchange="DisplayRoll()" style="text-align:center"/><br/>
 		
-		<label for="NUM_toHit">Enter your Damage Modifier : </label><br/>
-			<input type="number" id="NUM_damage" onchange="DisplayRoll()" style="text-align:center">
+	<label for="NUM_toHit">Enter your Damage Modifier : </label><br/>
+		<input type="number" id="NUM_damage" onchange="DisplayRoll()" style="text-align:center"/>
 	<div><p id="DIV_dAvg" class="h5"></p></div>
 
-	<div>
-	
-	<button id="BTN_Roll" class="btn btn-primary btn-lg" onclick="Rolld20()">Roll Dice</button><br/><br/>
+	<button id="BTN_Roll" class="btn btn-primary btn-lg" onclick="Rolld20()">Roll Dice</button>
 	
 	<div><p id="DIV_total" class="h4"></p></div>
 	<div><p id="DIV_damage" class="h4"></p></div>
